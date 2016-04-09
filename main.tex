@@ -1,0 +1,477 @@
+%%% LaTeX Template: Curriculum Vitae
+%%%
+%%% Source: http://www.howtotex.com/
+%%% Feel free to distribute this template, but please keep the referal to HowToTeX.com.
+%%% Date: July 2011
+
+%%% ------------------------------------------------------------
+%%% BEGIN PREAMBLE
+%%% ------------------------------------------------------------
+\documentclass[paper=a4,fontsize=11pt]{scrartcl}	 			% KOMA-article class
+							
+%\usepackage[english]{babel}								% English language/hyphenation
+%\usepackage[protrusion=true,expansion=true]{microtype}		% Better typography
+\usepackage{amsmath,amsfonts,amsthm}					% Math packages
+\usepackage[pdftex]{graphicx}								% Enable pdflatex
+\usepackage[svgnames]{xcolor}							% Colors by their 'svgnames'
+\usepackage{geometry}
+	\textheight=700px									% Saving trees ;-) 
+\usepackage{url}										% Clickable URL's
+\usepackage{wrapfig}									% Wrap text along figures
+\usepackage{tabu}
+\usepackage{longtable}
+\usepackage{ulem}
+\usepackage{mdframed}
+\usepackage{makeidx}
+%\usepackage[margin=1in,showframe]{geometry}
+%\frenchspacing									% Better looking spacings after periods
+%\pagestyle{empty}								% No pagenumbers/headers/footers
+%\usepackage{bbding}									% Symbols
+
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}							% Custom sectioning (see below)
+
+\sectionfont{%									% Change font of \section command
+	\usefont{OT1}{phv}{b}{n}%					% bch-b-n: CharterBT-Bold font
+	\sectionrule{0pt}{0pt}{-5pt}{3pt}
+	}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}				% Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}			% Vertical space macro
+
+\newcommand{\MyName}[1]{
+		\Huge \usefont{OT1}{phv}{b}{n}#1 		% Name
+		\par \normalsize \normalfont}
+
+\newcommand{\ixo}[1]{\index{#1}}  % index only
+\newcommand{\ixb}[1]{\ixo{#1}#1}  % index before text item
+
+\newcommand{\activity}{\ixb{a}}
+\newcommand{\helmholtz}{\ixb{A}}
+\newcommand{\magind}{\ixb{B}}
+\newcommand{\exergy}{\ixb{B}}
+\newcommand{\virialcoeff}{\ixb{B_{n}}}
+\newcommand{\biot}{\ixb{Bi}}
+\newcommand{\brinkman}{\ixb{Br}}
+\newcommand{\dragcoeff}{\ixb{c_{D}}}                  % changed c{D} to c_{D}
+\newcommand{\conc}{\ixb{C}}
+\newcommand{\cp}{\ixb{C_{P}}}
+\newcommand{\cv}{\ixb{C_{V}}}
+\newcommand{\elecdisplace}{\ixb{D}}
+\newcommand{\diff}{\ixb{D_{ij}}}
+\newcommand{\pdiff}{\ixb{D_{i}}}
+\newcommand{\damkohler}{\ixb{Da}}
+\newcommand{\eneatom}{\ixb{D_{e}}}
+\newcommand{\mbde}{\ixb{D_{0}}}
+\newcommand{\uv}{\ixb{\underline{e}_{i}}}
+\newcommand{\mcef}{\ixb{\underline{e}}}
+\newcommand{\elecfield}{\ixb{E}}
+\newcommand{\energy}{\ixb{E}}
+\newcommand{\fug}{\ixb{f}}
+\newcommand{\mixfug}{\widehat{f}}
+\newcommand{\dforce}{f_{\underline{e}_{i}}}
+\newcommand{\force}{F}
+\newcommand{\bodyforce}{F_{B}}
+\newcommand{\raddist}{g(r)}
+\newcommand{\gibbs}{G}
+\newcommand{\grashof}{Gr}
+\newcommand{\heattranscoeff}{h}
+\newcommand{\magfield}{H}
+\newcommand{\surfcurv}{\mathcal{H}}
+\newcommand{\enthalpy}{H}
+\newcommand{\henry}{\mathcal{H}_{i}}
+\newcommand{\energysource}{H_{V}}
+\newcommand{\currentdensity}{i}
+\newcommand{\mominertia}{I}
+\newcommand{\molspecflux}{J_{i}}
+\newcommand{\thermcond}{k}
+\newcommand{\masstranscoeff}{k_{c,i}}
+\newcommand{\dilfac}{K}
+\newcommand{\taylordisp}{K}
+\newcommand{\partcoeff}{\mathcal{K}_{i}}
+\newcommand{\eqconst}{K_{a}}
+\newcommand{\peqconst}{K_{P}}
+\newcommand{\yeqconst}{K_{y}}
+\newcommand{\acteqconst}{K_{\gamma}}
+\newcommand{\fugeqconst}{K_{\phi}}
+\newcommand{\length}{L}
+\newcommand{\mass}{m}
+\newcommand{\mw}{M_{W}}
+\newcommand{\normvec}{\underline{n}}
+\newcommand{\nummoles}{N}
+\newcommand{\massspecflux}{N_{i}}
+\newcommand{\nusselt}{Nu}
+\newcommand{\p}{P}
+\newcommand{\prob}{P}
+\newcommand{\peclet}{Pe}
+\newcommand{\prandtl}{Pr}
+\newcommand{\charge}{q_{i}}
+\newcommand{\heatflux}{q}
+\newcommand{\empc}{q_{elec}}
+\newcommand{\impc}{q_{int}}
+\newcommand{\nmpc}{q_{nuc}}
+\newcommand{\rmpc}{q_{rot}}
+\newcommand{\tmpc}{q_{trans}}
+\newcommand{\vmpc}{q_{vib}}
+\newcommand{\dufour}{q^{(x)}}
+\newcommand{\heatflow}{Q}
+\newcommand{\ipc}{Q_{int}}
+\newcommand{\cpc}{Q_{cl}}
+\newcommand{\cmpc}{Q_{cm}}
+\newcommand{\cpf}{Q_{N}}
+\newcommand{\pos}{r}
+\newcommand{\specsource}{R_{V}}
+\newcommand{\rayleigh}{Ra}
+\newcommand{\reynolds}{Re}
+\newcommand{\entropy}{S}
+\newcommand{\sa}{S_{A}}
+\newcommand{\stressvec}{\underline{S}}
+\newcommand{\schmidt}{Sc}
+\newcommand{\sherwood}{Sh}
+\newcommand{\strouhal}{Sr}
+\newcommand{\timet}{t}                              %comman \time doesnt work
+\newcommand{\Temp}{T}
+\newcommand{\forcepot}{u}
+\newcommand{\intenergy}{U}
+\newcommand{\uvel}{U}
+\newcommand{\vvel}{v}
+\newcommand{\vol}{V}
+\newcommand{\freevol}{V_{f}}
+\newcommand{\vort}{\underline{w}}
+\newcommand{\vorttens}{\uuline{w}}
+\newcommand{\work}{W}
+\newcommand{\disp}{x}
+\newcommand{\conjcoor}{x_{i}}
+\newcommand{\specfrac}{x_{i}}
+\newcommand{\height}{z}
+\newcommand{\charges}{z_{i}}
+\newcommand{\compress}{Z}
+\newcommand{\configint}{Z^{*}}
+\newcommand{\tdiff}{\ixb{\alpha}}
+\newcommand{\boltznorm}{\beta}                          %defined by benjie
+\newcommand{\texpcoeff}{\beta}
+\newcommand{\sexcoeff}{\beta_{i}}
+\newcommand{\actcoeff}{\gamma_{i}}
+\newcommand{\surftens}{\gamma}
+\newcommand{\straintens}{\uuline{\Gamma}}
+\newcommand{\blthick}{\delta}
+\newcommand{\iipf}{\Delta}
+\newcommand{\eddydiff}{\epsilon_{M}, \epsilon_{i}, \epsilon_{E}}
+\newcommand{\dielec}{\epsilon}
+\newcommand{\heateffic}{\eta}
+\newcommand{\intrinsvisc}{\eta}
+\newcommand{\dimltemp}{\Theta}
+\newcommand{\vibrfreqfac}{\Theta_{\nu}}
+\newcommand{\fftcoeff}{\Theta_{n}}
+\newcommand{\comeback}{\kappa}                          %defined by benjie
+\newcommand{\wavel}{\lambda}
+\newcommand{\latheat}{\lambda}
+\newcommand{\debye}{\lambda}
+\newcommand{\debroglie}{\Lambda}
+\newcommand{\chempot}{\mu}
+\newcommand{\visc}{\mu}
+\newcommand{\freq}{\nu}
+\newcommand{\kinvisc}{\nu}
+\newcommand{\stoich}{\nu_{ij}}
+\newcommand{\chargeval}{\nu_{i}}
+\newcommand{\conjcoortwo}{\xi}                       %conjcoor is already defined    
+\newcommand{\extent}{\xi}
+\newcommand{\gcpf}{\Xi}
+\newcommand{\osmpress}{\Pi}
+\newcommand{\dens}{\rho}
+\newcommand{\symfac}{\sigma}
+\newcommand{\molecrad}{\sigma}
+\newcommand{\stresstens}{\uuline{\sigma}}
+\newcommand{\torque}{\tau}
+\newcommand{\shear}{\tau_{ij}}
+\newcommand{\fhmolefrac}{\phi_{i}}
+\newcommand{\fugcoeff}{\phi}
+\newcommand{\eleccoeff}{\phi}
+\newcommand{\pot}{\Phi}
+\newcommand{\diss}{\Phi}
+\newcommand{\potfunc}{\Phi_{ij}(r)}
+\newcommand{\fftbasis}{\Phi_{n}}
+\newcommand{\fhparam}{\chi}
+\newcommand{\streamfunc}{\Psi}
+\newcommand{\dlesselecpot}{\Psi}
+\newcommand{\mpf}{\omega}                               %defined by benjie
+\newcommand{\accentfac}{\omega}                         %accent is already defined
+\newcommand{\elecdegen}{\omega_{e}}
+\newcommand{\mpc}{\Omega}
+\newcommand{\combmixfunc}{\Omega_{mix}}
+\newcommand{\dof}{\Im}
+\newcommand{\dynpress}{\wp}
+\newcommand{\surfreac}{\mathcal{R}}
+\newcommand{\lightspeed}{c}
+\newcommand{\e}{e}
+\newcommand{\grav}{g}
+\newcommand{\faraday}{\mathcal{F}}
+\newcommand{\planck}{h}
+\newcommand{\av}{N_{A}}
+\newcommand{\gasconst}{R}
+\newcommand{\boltz}{k_{B}}
+%\newcommand{\pi}{\pi}                                   %pi is already defined
+\newcommand{\exscal}{x}                                 %defined by benjie
+\newcommand{\exvecone}{\underline{x}}                   %defined by benjie
+\newcommand{\exvectwo}{\uuline{x}}                      %defined by benjie
+\newcommand{\exvecthree}{\tilde{x}}                     %defined by benjie
+\newcommand{\matrx}{\textbf{X}}                        %defined by benjie
+\newcommand{\intscal}{\widehat{x}}                      %defined by benjie
+\newcommand{\partmol}{\overline{x}}                     %defined by benjie
+\newcommand{\tderiv}{\dot{x}}                           %defined by benjie
+\newcommand{\gradop}{\underline{\nabla}}                %defined by benjie
+\newcommand{\surfgradop}{\underline{\nabla}_{s}}        %defined by benjie
+\newcommand{\axbiop}{E^{4}}                             %defined by benjie
+\newcommand{\init}{0}                                   %defined by benjie
+\newcommand{\state}{i}                                  %defined by benjie
+\newcommand{\mixfunc}{mix}                              %defined by benjie
+\newcommand{\atfunc}{atherm}                           %defined by benjie
+\newcommand{\bound}{\sigma}                             %defined by benjie
+\newcommand{\crit}{c}                                   %defined by benjie
+\newcommand{\exfunc}{EX}                                %defined by benjie
+\newcommand{\idgas}{id}                                 %defined by benjie
+\newcommand{\satvap}{sat}                               %defined by benjie
+
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\makeindex
+
+%%% ------------------------------------------------------------
+%%% BEGIN DOCUMENT
+%%% ------------------------------------------------------------
+\begin{document}
+
+\MyName{APPENDIX: Quantities}
+\sepspace
+
+
+\begin{longtabu} { | X[1.5, l] | X[1, c] | X[3, l] | X[1, c]| } 
+ \hline
+    \textbf{command} & \textbf{latex} & \textbf{name} & \textbf{units} &
+ \hline
+ \endhead
+ \textbackslash activity & $\activity$ & \text{Activity} &  \\
+ \textbackslash helmholtz & $\helmholtz$ & \text{Helmholtz Energy} & {J}\\
+ \textbackslash magind & $\magind$ & \text{Magnetic Induction} & $\frac{V s}{m^{2}}$\\
+ \textbackslash exergy & $\exergy$ & \text{Exergy} & {J}\\
+ \textbackslash virialcoeff & $\virialcoeff$ & \text{$n^{th}$~Virial Coefficient} & $\left(\frac{m^{3}}{Kg} \right)^{n}$\\
+ \textbackslash biot & $\biot$ & \text{Biot Number} & {none}\\
+ \textbackslash brinkman & $\brinkman$ & \text{Brinkman Number} & {none}\\
+ \textbackslash dragcoeff & $\dragcoeff$ & \text{Drag Coefficient} & {none}\\
+ \textbackslash conc & $\conc$ & \text{Concentration} & $\frac{kg of i}{m^{3}}$\\
+ \textbackslash cp & $\cp$ & \text{Constant Pressure Heat Capacity} & $\frac{J}{Kg K}$\\
+ \textbackslash cv & $\cv$ & \text{Constant Volume Heat Capacity} & $\frac{J}{Kg K}$\\
+ \textbackslash elecdisplace & $\elecdisplace$ & \text{Electric Displacement} & $\frac{Coulombs}{m^{2}}$\\
+ \textbackslash diff & $\diff$ & \text{Diffusivity of component $i$ in fluid $j$} & $\frac{m^{2}}{s}$\\
+ \textbackslash pdiff & $\pdiff$ & \text{Pseudobinary diffusivity of $i$} & $\frac{m^{2}}{s}$\\
+ \textbackslash damkohler & $\damkohler$ & \text{Damkohler Number} & {none}\\
+ \textbackslash eneatom & $\eneatom$ & \text{Energy of Atomization} & $\frac{J}{mol}$\\
+ \textbackslash mbde & $\mbde$ & \text{Measured Bond Dissociation Energy} & $\frac{J}{mol}$\\
+ \textbackslash uv & $\uv$ & \text{Unit Vector in direction $i$} & {none}\\
+ \textbackslash mcef & $\mcef$ & \text{Multicomponent Energy Flux} &  \\
+ \textbackslash elecfield & $\elecfield$ & \text{Electric Field Strength} & $\frac{V}{m}$\\
+ \textbackslash energy & $\energy$ & \text{Energy} & {J}\\ 
+ \textbackslash fug & $\fug$ & \text{Fugacity} & \\
+ \textbackslash mixfug & $\mixfug$ & \text{Mixture Fugacity} & \\
+ \textbackslash dforce & $\dforce$ & \text{Differential Force in direction of $\underline{e}_{i}$} & \\
+ \textbackslash force & $\force$ & \text{Force} & {N}\\  
+ \textbackslash bodyforce & $\bodyforce$ & \text{Body Force} & {N}\\
+ \textbackslash raddist & $\raddist$ & \text{Radial Distribution Function} & {none}\\
+ \textbackslash gibbs & $\gibbs$ & \text{Gibbs Energy} & {J}\\
+ \textbackslash grashof & $\grashof$ & \text{Grashof Number} & {none}\\  
+ \textbackslash heattranscoeff & $\heattranscoeff$ & \text{Heat Transfer Coefficient} & $\frac{W}{m^{2}k}$\\
+ \textbackslash magfield & $\magfield$ & \text{Magnetic Field Strength} & $\frac{A}{m}$\\
+ \textbackslash surfcurv & $\surfcurv$ & \text{Surface Mean Curvature} & \\
+ \textbackslash enthalpy & $\enthalpy$ & \text{Enthalpy} & {J}\\  
+ \textbackslash henry & $\henry$ & \text{Henry's Law Constant for species $i$} & $\frac{atm}{mol fraction}$\\
+ \textbackslash energysource & $\energysource$ & \text{Volumetric Energy Source} & $\frac{W}{m^{3}}$\\
+ \textbackslash currentdensity & $\currentdensity$ & \text{Current Density} & $\frac{A}{m^2}$\\
+ \textbackslash mominertia & $\mominertia$ & \text{Moment of Inertia} & $Kg m^{2}$\\  
+ \textbackslash molspecflux & $\molspecflux$ & \text{Molar Diffusive species flux of $i$} & $\frac{mol}{s m^{2}}$\\
+ \textbackslash thermcond & $\thermcond$ & \text{Thermal Conductivity} & $\frac{W}{mK}$\\
+ \textbackslash masstranscoeff & $\masstranscoeff$ & \text{Mass Transfer Coefficient for species $i$} & \multicolumn{1}{m{1in}|}{$\frac{mol}{sm^{2}conc.difference}$}\\ %to wrap text
+ \textbackslash dilfac & $\dilfac$ & \text{Dilation Factor} & \\  
+ \textbackslash taylordisp & $\taylordisp$ & \text{Taylor Dispersion} & \\
+ \textbackslash partcoeff & $\partcoeff$ & \text{Partition Coefficient} & {none}\\
+ \textbackslash eqconst & $\eqconst$ & \text{Equilibrium Constant} & {varies}\\
+ \textbackslash peqconst & $\peqconst$ & \text{Pressure Equilibrium Constant Contribution} & {varies}\\  
+ \textbackslash yeqconst & $\yeqconst$ & \multicolumn{1}{m{3in}|}{Mole Fraction Equilibrium Constant Contribution} & {varies}\\ %to wrap text
+ %\textbackslash yeqconst & $\yeqconst$ & \text{Mole Fraction Equilibrium Constant Contribution} & {varies}\\
+ \textbackslash acteqconst & $\acteqconst$ & \multicolumn{1}{m{3in}|}{Activity Coefficient Equilibrium Constant Contribution} & {varies}\\  %to wrap text
+ \textbackslash fugeqconst & $\fugeqconst$ & \multicolumn{1}{m{3in}|}{Fugacity Coefficient Equilibrium Constant Contribution} & {varies}\\  %to wrap text
+ \textbackslash length & $\length$ & \text{Length Scale} & {m}\\  
+ \textbackslash mass & $\mass$ & \text{Mass} & {Kg}\\
+ \textbackslash mw & $\mw$ & \text{Molecular Weight} & $\frac{g}{mol}$\\
+ \textbackslash normvec & $\normvec$ & \text{Normal Vector} & {none}\\
+ \textbackslash nummoles & $\nummoles$ & \text{Number of Moles} & {none}\\  
+ \textbackslash massspecflux & $\massspecflux$ & \text{Mass Species Flux of $i$} & $\frac{Kg}{m^{2} s}$\\
+ \textbackslash nusselt & $\nusselt$ & \text{Nusselt Number} & {none}\\
+ \textbackslash p & $\p$ & \text{Thermodynamic Pressure} & {Pa}\\
+ \textbackslash prob & $\prob$ & \text{Probability} & {none}\\  
+ \textbackslash peclet & $\peclet$ & \text{Peclet Number} & {none}\\
+ \textbackslash prandtl & $\prandtl$ & \text{Prandtl Number} & {none}\\
+ \textbackslash charge & $\charge$ & \text{charge} & {Coulombs}\\
+ \textbackslash heatflux & $\heatflux$ & \text{heat flux} & $\frac{W}{m^{2}}$\\ 
+ \textbackslash empc & $\empc$ & \text{Electronic Molecular Partition Coefficient} & \\
+ \textbackslash impc & $\impc$ & \text{Internal Molecular Partition Coefficient} & \\
+ \textbackslash nmpc & $\nmpc$ & \text{Nuclear Molecular Partition Coefficient} & \\
+ \textbackslash rmpc & $\rmpc$ & \text{Rotational Molecular Partition Coefficient} & \\  
+ \textbackslash tmpc & $\tmpc$ & \text{Translational Molecular Partition Coefficient} & \\
+ \textbackslash vmpc & $\vmpc$ & \text{Vibrational Molecular Partition Coefficient} & \\
+ \textbackslash dufour & $\dufour$ & \text{Dufour Heat Flux} & \\
+ \textbackslash heatflow & $\heatflow$ & \text{Heat Flow} & {W}\\  
+ \textbackslash ipc & $\ipc$ & \text{Internal Partition Coefficient} & \\
+ \textbackslash cpc & $\cpc$ & \text{Classical Partition Coefficient} & \\
+ \textbackslash cmpc & $\cmpc$ & \text{Center-of-Mass Partition Coefficient} & \\
+ \textbackslash cpf & $\cpf$ & \text{Canonical Partition Function} & \\  
+ \textbackslash pos & $\pos$ & \text{Position} & {m}\\
+ \textbackslash specsource & $\specsource$ & \text{Volumetric Species Source} & $\frac{mol}{s m^{3}}$\\
+ \textbackslash rayleigh & $\rayleigh$ & \text{Rayleigh Number} & {none}\\
+ \textbackslash reynolds & $\reynolds$ & \text{Reynolds Number} & {none}\\  
+ \textbackslash entropy & $\entropy$ & \text{Entropy} & $\frac{J}{K}$\\
+ \textbackslash sa & $\sa$ & \text{Surface Area} & $m^{2}$\\
+ \textbackslash stressvec & $\stressvec$ & \text{Stress Vector} & \\
+ \textbackslash schmidt & $\schmidt$ & \text{Schmidt Number} & {none}\\  
+ \textbackslash sherwood & $\sherwood$ & \text{Sherwood Number} & {none}\\
+ \textbackslash strouhal & $\strouhal$ & \text{Strouhal Number} & {none}\\
+ \textbackslash time & $\timet$ & \text{Time} & {s}\\
+ \textbackslash temp & $\Temp$ & \text{Temperature} & {K}\\  
+ \textbackslash forcepot & $\forcepot$ & \text{Force Potential} & \\
+ \textbackslash intenergy & $\intenergy$ & \text{Internal Energy} & {J}\\
+ \textbackslash uvel & $\uvel$ & \text{Velocity} & $\frac{m}{s}$\\
+ \textbackslash vvel & $\vvel$ & \text{Velocity} & $\frac{m}{s}$\\  
+ \textbackslash vol & $\vol$ & \text{Volume} & $m^{3}$\\
+ \textbackslash freevol & $\freevol$ & \text{Free Volume} & $m^{3}$\\
+ \textbackslash vort & $\vort$ & \text{Vorticity Vector} & {none}\\
+ \textbackslash vorttens & $\vorttens$ & \text{Vorticity Tensor} & {none}\\  
+ \textbackslash work & $\work$ & \text{Work} & {J}\\
+ \textbackslash disp & $\disp$ & \text{Displacement} & {m}\\
+ \textbackslash conjcoor & $\conjcoor$ & \text{$i^{th}$ Conjugate Coordinate} & \\
+ \textbackslash specfrac & $\specfrac$ & \text{Fraction of species $i$} & {none}\\   
+ \textbackslash height & $\height$ & \text{Height} & {m}\\
+ \textbackslash charges & $\charges$ & \text{Charge of species $i$} & {Coulombs}\\  
+ \textbackslash compress & $\compress$ & \text{Compressibility} & {none}\\
+ \textbackslash configint & $\configint$ & \text{Configurational Integral} & {none}\\
+ \textbackslash tdiff & $\tdiff$ & \text{Thermal Diffusivity} & $\frac{m^{2}}{s}$\\
+ \textbackslash boltznorm & $\boltznorm$ & \text{Boltzmann Normalization} & $\frac{1}{J}$\\  
+ \textbackslash texpcoeff & $\texpcoeff$ & \text{Thermal Expansion Coefficient} & $\frac{1}{K}$\\
+ \textbackslash sexcoeff & $\sexcoeff$ & \text{Solute Expansion Coefficient due to species $i$} & $\frac{1}{mol}$\\
+ \textbackslash actcoeff & $\actcoeff$ & \text{Activity Coefficient for species $i$} & {none}\\
+ \textbackslash surftens & $\surftens$ & \text{Surface Tension, CHANGE SIGMAS } & $\frac{N}{m}$\\  
+ \textbackslash straintens & $\straintens$ & \text{Rate-of-Strain Tensor} & \\
+ \textbackslash blthick & $\blthick$ & \text{Boundary Layer Thickness} & {m}\\
+ \textbackslash iipf & $\iipf$ & \text{Isobaric/Isothermal Partition Function} & \\
+ \textbackslash eddydiff & $\eddydiff$ & \multicolumn{1}{m{3in}|}{Eddy Diffusivity for Momentum, Species, and Energy} & $\frac{m^{2}}{s}$\\    %to wrap text
+ \textbackslash dielec & $\dielec$ & \text{Dielectric Constant} & $\frac{Coulombs^{2}}{J m}$\\
+ \textbackslash heateffic & $\heateffic$ & \tex{heat cycle efficiency} & {none}\\
+ \textbackslash intrinsvisc & $\intrinsvisc$ & \text{Intrinsic Viscosity} & $\frac{m^{3}}{Kg}$\\
+ \textbackslash dimltemp & $\dimltemp$ & \text{Dimensionless Concentration or Temperature} & {none}\\  
+ \textbackslash vibrfreqfac & $\vibrfreqfac$ & \text{Vibrational Frequency Factor} & \\
+ \textbackslash fftcoeff & $\fftcoeff$ & \text{$n^{th}$ FFT Coefficients} & \\
+ \textbackslash comeback & $\comeback$ & \text{COME BACK} & \\
+ \textbackslash wavel & $\wavel$ & \text{Wavelength} & {m}\\  
+ \textbackslash latheat & $\latheat$ & \text{Latent Heat} & $\frac{J}{mol}$\\
+ \textbackslash debye & $\debye$ & \text{Debye Length} & {m}\\
+ \textbackslash debroglie & $\debroglie$ & \text{DeBroglie Wavelegth} & {m}\\
+ \textbackslash chempot & $\chempot$ & \text{Chemical Potential} & {J}\\  
+ \textbackslash visc & $\visc$ & \text{Viscosity} & {Pa s}\\
+ \textbackslash freq & $\freq$ & \text{Frequency} & $\frac{1}{s}$\\
+ \textbackslash kinvisc & $\kinvisc$ & \text{Kinematic Viscosity} & $\frac{m^{2}}{s}$\\
+ \textbackslash stoich & $\stoich$ & \multicolumn{1}{m{3in}|}{Stoichiometric Coefficient for species $i$ in reaction $j$} & \\  % to wrap text
+ \textbackslash chargeval & $\chargeval$ & \text{Charge Valency of species $i$} & \\
+ \textbackslash conjcoortwo & $\conjcoortwo$ & \text{Conjugate Coordinate} & \\  
+ \textbackslash extent & $\extent$ & \text{Extent of Reaction} & {none}\\
+ \textbackslash gcpf & $\gcpf$ & \text{Grand Canonical Partition Function} & \\
+ \textbackslash osmpress & $\osmpress$ & \text{Osmotic Pressure} & {Pa}\\
+ \textbackslash dens & $\dens$ & \text{Density} & $\frac{Kg}{m^{3}}$\\  
+ \textbackslash symfac & $\symfac$ & \text{Symmetry Factor} & \\
+ \textbackslash molecrad & $\molecrad$ & \text{Molecular Radius} & {A}\\
+ \textbackslash stresstens & $\stresstens$ & \text{Stress Tensor} & \\
+ \textbackslash torque & $\torque$ & \text{Torque} & {N m}\\
+ \textbackslash shear & $\shear$ & \multicolumn{1}{m{3in}|}{Shear Rate in direction $i$ perpendicular to $j$ (CHECK FOR CONSISTENCY)} & $\frac{N}{m^{2}}$\\ % to wrap text
+ \textbackslash fhmolefrac & $\fhmolefrac$ & \text{Flory-Huggins Mole Fraction of species $i$} & {none}\\
+ \textbackslash fugcoeff & $\fugcoeff$ & \text{Fugacity Coefficient} & {none}\\
+ \textbackslash eleccoeff & $\eleccoeff$ & \text{Electric Potential} & \\
+ \textbackslash pot & $\pot$ & \text{Potential} & \\
+ \textbackslash diss & $\diss$ & \text{Dissipation Function} & \\
+ \textbackslash potfunc & $\potfunc$ & \text{Potential Function} & \\
+ \textbackslash fftbasis & $\fftbasis$ & \text{FFT Basis Function} &  \\  
+ \textbackslash fhparam & $\fhparam$ & \text{Flory-Huggins Parameter} & {none}\\
+ \textbackslash streamfunc & $\streamfunc$ & \text{Stream Function} & $\frac{m^{2}}{s}$\\
+ \textbackslash dlesselecpot & $\dlesselecpot$ & \text{Dimensionless Electric Potential} & {none}\\
+ \textbackslash mpf & $\mpf$ &\text{Microcanonical Partition Function} & \\
+ \textbackslash accentfac & $\accentfac$ &\text{Accentricity Factor} & {none}\\
+ \textbackslash elecdegen & $\elecdegen$ & \text{Electronic Degeneracy} & {none}\\
+ \textbackslash mpc & $\mpc$ & \text{Microcanonical Partition Function} & \\
+ \textbackslash combmixfunc & $\combmixfunc$ & \text{Combinatorial Mixing Function} & {none}\\
+ \textbackslash dof & $\dof$ & \text{Degrees of Freedom} & {none}\\
+ \textbackslash dynpress & $\dynpress$ & \text{Dynamic Pressure} & {Pa}\\
+ \textbackslash surfreac & $\surfreac$ & \text{Surface Reaction Rate} & \\
+ \textbackslash lightspeed & $\lightspeed$ & \text{Speed of Light} & \\
+ \textbackslash e & $\e$ & \text{Base of Natural Logarithm} & \\
+ \textbackslash grav & $\grav$ & \text{Gravitational Acceleration} & \\
+ \textbackslash faraday & $\faraday$ &\text{Faraday's Constant} & \\
+ \textbackslash planck & $\planck$ & \text{Planck's Constant} & \\
+  \textbackslash av & $\av$ & \text{Avogadro's Number} & \\
+ \textbackslash gasconst & $\gasconst$ & \text{Ideal Gas Constant} & \\
+ \textbackslash boltz & $\boltz$ & \text{Boltzmann Constant} & \\ 
+ \textbackslash pi & $\pi$ & \text{Constant} & \\
+ \textbackslash exscal & $\exscal$ & \text{Extensive Scalar} & \\
+ \textbackslash exvecone & $\exvecone$ & \text{Extensive Vector} & \\
+ \textbackslash exvectwo & $\exvectwo$ &\text{Extensive Vector} & \\
+ \textbackslash exvecthree & $\exvecthree$ &\text{Extensive Vector} & \\
+ \textbackslash matrx & $\matrx$ & \text{Matrix} & \\
+ \textbackslash intscal & $\intscal$ & \text{Intensive Scalar} & \\
+ \textbackslash partmol & $\partmol$ & \text{Partial Molar} & \\
+ \textbackslash tderiv & $\tderiv$ & \text{Time Derivative} & \\
+ \textbackslash gradop & $\gradop$ & \text{Gradient Operator} & \\
+ \textbackslash surfgradop & $\surfgradop$ & \text{Surface Gradient Operator} & \\
+ \textbackslash axbiop & $\axbiop$ & \text{Axisymmetric Biharmonic Operator} & \\
+ \textbackslash init & $\init$ & \text{Initial} & \\
+ \textbackslash state & $\state$ & \text{State or Level, COMPONENT?} & \\
+ \textbackslash mixfunc & $\mixfunc$ &\text{Mixing Function} & \\
+ \textbackslash atfunc & $\atfunc$ & \text{Athermal Function} & \\
+ \textbackslash bound & $\bound$ & \text{Boundary} &  \\
+ \textbackslash crit & $\crit$ & \text{Critical} & \\
+ \textbackslash exfunc & $\exfunc$ & \text{Excess Function} & \\
+ \textbackslash idgas & $\idgas$ &\text{Ideal Gas} & \\
+ \textbackslash satvap & $\satvap$ & \text{Saturated Vapor} & \\
+ \hline
+\end{longtabu}}
+
+\newpage
+
+\begin{mdframed}
+    \text{Energy Constitutive Equations} \\
+    
+    %\begin{equation}
+    \\
+    \text{Fourier:} $\underline{\heatflux}$ = -$\tdiff\gradop$($\dens\hat{\cp}\Temp)$ \\
+    \\
+    \text{Where} $\tdiff \equiv (\frac{\thermcond}{\dens\hat{cp}})$\\
+    \\
+    Fourier Simplified: $\underline{\heatflux}$ = -$\thermcond\gradop\Temp)$\\
+    - Pure material, constant isotropic $\thermcond$\\
+    - Constant $\dens\hat{\cp}$\\
+    Constant pressure
+    $\energy$
+%\end{equation}
+
+\end{mdframed}
+
+\newpage
+
+
+
+
+
+  \printindex
+
+
+
+\end{document}
