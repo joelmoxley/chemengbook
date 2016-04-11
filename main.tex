@@ -58,14 +58,8 @@
 \newcommand{\uv}{\index{$\uline{e}_{i}$!Unit Vector in direction $i$ $[none]$}\underline{e}_{i}}
 \newcommand{\mcef}{\index{$\uline{e}$!Multicomponent Energy Flux }\underline{e}}
 \newcommand{\elecfield}{\index{E!Electric Field Strength $\left[\frac{V}{m}\right]$}E}
-%
-% NEW COMMAND / INDEX STRUCTURING BELOW
-% THIS WILL REPLACE THE APPENDIX TABLE
-% See https://en.wikibooks.org/wiki/LaTeX/Indexing#Sophisticated_indexing and see subentries & controlling sorting
-%\newcommand{\energy}{\ixb{E}}
 \newcommand{\energy}{\index{E!Energy $[J]$}E}
-%
-\newcommand{\fug}{\index{$f$ !Fugacity} f}                                                                                                %'\widehat{}' cant be indexed. Use '\hat{}' instead.(by benjie)
+\newcommand{\fug}{\index{$f$ !Fugacity} f}      %'\widehat{}' cant be indexed. Use '\hat{}' instead.(by benjie)
 \newcommand{\mixfug}{\index{$\hat{f}$!Mixture Fugacity}\widehat{f}}
 \newcommand{\dforce}{\index{$f_{\uline{e}_{i}}$ !Differential Force in direction of $\uline{e}_{i}$}f_{\underline{e}_{i}}}
 \newcommand{\force}{\index{F!Force $[N]$}F}
@@ -127,7 +121,7 @@
 \newcommand{\schmidt}{\index{Sc!Schmidt Number $[none]$}Sc}
 \newcommand{\sherwood}{\index{Sh!Sherwood Number $[none]$}Sh}
 \newcommand{\strouhal}{\index{Sr! Strouhal Number $[none]$}Sr}
-\newcommand{\timet}{\index{t!Time $[s]$}t}                                                                                           %'\time' is pre-defined and couldnt be used. Use '\timet' instead (by benjie)
+\newcommand{\timet}{\index{t!Time $[s]$}t}               %'\time' is pre-defined and couldnt be used. Use '\timet' instead (by benjie)
 \newcommand{\Temp}{\index{T!Temperature $[K]$}T}
 \newcommand{\forcepot}{\index{u!Force Potential}u}
 \newcommand{\intenergy}{\index{U!Internal Energy $[J]$}U}
@@ -145,15 +139,8 @@
 \newcommand{\charges}{\index{$z_{i}$!Charge of species $i$ $[Coulombs]$}z_{i}}
 \newcommand{\compress}{\index{Z!Compressibility $[none]$}Z}
 \newcommand{\configint}{\index{$Z^{*}$!Configurational Integral $[none]$}Z^{*}}
-%
-% NEW COMMAND / INDEX STRUCTURING BELOW
-% THIS WILL REPLACE THE APPENDIX TABLE
-% See https://en.wikibooks.org/wiki/LaTeX/Indexing#Sophisticated_indexing and see subentries & controlling sorting
-%\newcommand{\tdiff}{\ixb{\alpha}}
-% In order to determine how an index key is sorted, place a value to sort by before the key with the '@' as a separator.
 \newcommand{\tdiff}{\index{$\alpha$ !Thermal Diffusivity $\left[\frac{m^{2}}{s}\right]$}\alpha}
-%
-\newcommand{\boltznorm}{\index{$\beta$!Boltzmann Normalization $\left[\frac{1}{J}\right]$}\beta}                                    %'\boltznorm' defined (by benjie)
+\newcommand{\boltznorm}{\index{$\beta$!Boltzmann Normalization $\left[\frac{1}{J}\right]$}\beta}            %'\boltznorm' defined (by benjie)
 \newcommand{\texpcoeff}{\index{$\beta$!Thermal Expansion Coefficient $\left[\frac{1}{K}\right]$}\beta}
 \newcommand{\sexcoeff}{\index{$\beta_{i}$!Solute Expansion Coefficient due to species $i$ $\left[\frac{1}{mol}\right]$}\beta_{i}}
 \newcommand{\actcoeff}{\index{$\gamma_{i}$!Activity Coefficient for species $i$ $[none]$}\gamma_{i}}
@@ -246,15 +233,15 @@
 %%% ------------------------------------------------------------
 \begin{document}
 
-%\MyName{APPENDIX: Quantities}
 %\sepspace
-\input{box/00-0.tex}
+
 
 \newpage
 
 % insert file from different location
-\input{box/36-1.tex}
-\input{box/36-1.tex}
+\input{box/036-1.tex}
+\input{box/036-1.tex}
+\input{box/000-0.tex}
 
 \newpage
 
