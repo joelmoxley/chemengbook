@@ -1,0 +1,47 @@
+\section{Osmotic Pressure}
+\begin{mdframed}
+    \mdfsubtitle{Osmotic Pressure (Box 8-1)} 
+%    \bigskip
+%   \vspace*{\baselineskip}
+    \begin{easylist}
+    
+    & \text{Vant Hoff Formulation (ideal)}
+    && $\osmpress = \conc_{s}\gasconst\Temp $                                                  %'s', 'R' are undeclared symbols. Not indexed. In 'Cs' not certain if '\conc'
+    && \text{Parallel to Ideal Gas Law ($\conc s  = \sfrac{\nummoles}{\vol}$)} \\         %'s' is undeclared symbol. Not indexed. In 'Cs' not certain if '\conc'
+  
+    & \text{Equilibrium Approach}\\    
+    && $\chempot_{w}(\Temp,1\textit{bar}+\osmpress,\disp_{s}) = \chempot_{w}(\Temp,1\textit{bar},\textit{pure})+\gasconst\Temp\ln\surftens_{w}\disp_{w}+\int_{1}^{1+\osmpress}\overline{\vol}_{w}d\p  $ \\  
+    &&& \text{For incompressible}\\
+    &&&& $\ln(\surftens_{w}) \approx -\ln(\disp_{w})-\frac{\osmpress\overline{\vol}_{w}}{\gasconst\Temp}~with~\disp_{w} = 1 - \disp_{s}$\\
+    
+    & \text{Statistical Mechanics Approach}
+    && \text{McMillan-Mayer Theory}
+    &&& \text{Grand Canonical Function as natural variable}\\
+    
+    &&&& $\ln(\gcpf) = \frac{(\p + \osmpress)\uline{\vol}}{\thermcond\Temp} $\\
+    
+    &&& \text{Under dilute solution limit,}\\
+    
+    &&&& $\frac{\osmpress}{\thermcond\Temp} = \dens_{2} + \exergy_{2}{\dens_{2}}^2 + ... $ \\
+    
+    &&&& $\frac{\osmpress}{\conc} = \frac{R\Temp}{\mw} + \frac{\exergy_{2}\nummoles \gasconst\Temp}{(\mw)^2}\conc + ...$ \\
+    
+    &&&&& \text{Graph of ($\sfrac{\osmpress}{\conc}$) v. $\conc$}\\
+    
+    &&&&&& \text{Intercept: $\mw = \frac{\gasconst\Temp}{(\sfrac{\osmpress}{\conc})_{\conc\rightarrow\init}}$} \\
+    
+    &&& \text{Assuming Pairwise additivity}\\
+    
+    &&&& $\exergy_{2} = -2\pi\int_{\init}^{\infty}\bigg(\exp\bigg[\frac{-\big\langle\pot_{12}\big\rangle}{\thermcond\Temp}\bigg]-1\bigg)\pos^2 d\pos$ \\
+    yes
+    &&&& \text{For Hard Sphere Interactions}\\
+
+    &&&&& $\exergy_{2} = \frac{16}{3}\pie {b_{\init}}^3, \exergy_{3} = \frac{5}{8} {\exergy_{2}}^2 $ \\
+    &&& \text{Using a $\iipf\gibbs^{\exfunc}$ function}
+    &&&& $-\overline{\vol}_1\osmpress = \gasconst\Temp\ln\activity_{1}$
+    &&&&& \text{Flory-Huggins (11-66)}\\
+    
+    &&&&& $\frac{\partial\iipf\gibbs^{\exfunc}}{\partial\nummoles_{1}} = \gasconst\Temp\ln\activity_{1}$\\
+    
+    \end{easylist}
+\end{mdframed}

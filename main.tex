@@ -1,10 +1,10 @@
-\documentclass[paper=a4,fontsize=11pt]{scrartcl}	 			% KOMA-article class
-							
+%\documentclass[paper=a4,fontsize=11pt]{scrartcl}	 			% KOMA-article class
+\documentclass{report}							
 %\usepackage[english]{babel}								% English language/hyphenation
 %\usepackage[protrusion=true,expansion=true]{microtype}		% Better typography
 %\documentclass{article}
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath,amsfonts,amsthm}					% Math packages
+\usepackage{amsmath,amsfonts,amsthm,mathtools}					% Math packages
 \usepackage[pdftex]{graphicx}								% Enable pdflatex
 \usepackage[svgnames]{xcolor}							% Colors by their 'svgnames'
 \usepackage{geometry}
@@ -14,8 +14,43 @@
 \usepackage{tabu}
 \usepackage{longtable}
 \usepackage{ulem}
-\usepackage{mdframed}
+%\usepackage{mdframed}
 \usepackage{makeidx}
+\usepackage{xfrac}
+
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{shadows}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{amssymb}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+\newcommand\tab[1][0.5cm]{\hspace*{#1}}
+
+%%%%%PLAYING WITH MDFRAMED%%%
+\mdfsetup{%
+	linecolor=black,%
+	roundcorner=10pt,%
+	middlelinewidth=3pt,%
+	shadow=true,%
+	frametitlefont=\Large\bfseries,%
+	frametitlerule=true,frametitlerulewidth=1pt,
+	frametitlealignment=\centering,	
+	subtitlefont=\Large\bfseries\center,%
+	subtitlebelowline=true,subtitlebelowlinewidth=1pt,
+	subtitleinneraboveskip=-5pt
+}
+\newmdenv[frametitle=Prova]{prova}
+\newmdenv[frametitle=Pluto]{pippo}
+    	\setlength{\baselineskip}{29pt}
+	    	\setlength{\parskip}{9pt}
+
+
+\usepackage[ampersand]{easylist}
+\ListProperties(Hide=100, Hang=true, Progressive=3ex, Style*=,Style2*=--\tab,
+Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6*=$\circ$\tab)
+
 %\usepackage[margin=1in,showframe]{geometry}
 %\frenchspacing									% Better looking spacings after periods
 %\pagestyle{empty}								% No pagenumbers/headers/footers
@@ -23,15 +58,41 @@
 
 %%% Custom sectioning (sectsty package)
 %%% ------------------------------------------------------------
-\usepackage{sectsty}							% Custom sectioning (see below)
+%\usepackage{sectsty}							% Custom sectioning (see below)
 
-\sectionfont{%									% Change font of \section command
-	\usefont{OT1}{phv}{b}{n}%					% bch-b-n: CharterBT-Bold font
-	\sectionrule{0pt}{0pt}{-5pt}{3pt}
-	}
+%\sectionfont{%									% Change font of \section command
+%	\usefont{OT1}{phv}{b}{n}%					% bch-b-n: CharterBT-Bold font
+%	\sectionrule{0pt}{0pt}{-5pt}{3pt}
+%	}
 
 %%% Macros
 %%% ------------------------------------------------------------
+
+%%% CUSTOM SECTIONING
+\makeatletter
+
+\newcommand\subfoursection{\@startsection{paragraph}{4}{\z@}%
+                {3.25ex \@plus1ex \@minus.2ex}%
+                {-1em}%
+                {\normalfont\normalsize\bfseries}}
+\newcommand\subfivesection{\@startsection{subparagraph}{5}{\z@}%
+                {3.25ex \@plus1ex \@minus.2ex}%
+                {-1em}%
+                {\normalfont\normalsize\bfseries}}    
+               
+                
+                
+\makeatother
+\setcounter{secnumdepth}{6} % how many sectioning levels to assign numbers to
+\setcounter{tocdepth}{6}    % how many sectioning levels to show in ToC
+
+
+%%%
+
+
+
+
+
 \newlength{\spacebox}
 \settowidth{\spacebox}{8888888888}				% Box to align text
 \newcommand{\sepspace}{\vspace*{1em}}			% Vertical space macro
@@ -226,11 +287,8 @@
 \newcommand{\idgas}{\index{id $-$ Ideal Gas}id}                                                                                          %'\idgas'defined by benjie
 \newcommand{\satvap}{\index{sat $-$ Saturated Vapor}sat}                                                                                 %'\satvap' defined by benjie
 
-\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
 
-\title{Chemical Engineering Book}
-\author{Joel Moxley}
-\date{April 2016 }
+\title{MIT Course X PhD Qualifying Exam Study Guide}
 \makeindex
 
 %%% ------------------------------------------------------------
@@ -240,43 +298,154 @@
 
 %\sepspace
 \maketitle
- 
+
+\newpage
+
 \tableofcontents
- 
-\section{Introduction}
- 
-This is the first section.
- 
-This is the first section.This is the first section.This is the first section.
-This is the first section.This is the first section.This is the first section.
-This is the first section.This is the first section.This is the first section....
 
-\subsection{This is a subsection}
+\newpage
+ 
+\chapter{Multiscale Analysis}
+\section{Basic Physics (1-1)}
+\input{box/001-1.tex}
+\section{Quantum}
+\section{Single Molecule (7-2 - 7-4)}
+\input{box/007-2.tex}
+\input{box/007-3.tex}
+\input{box/007-4.tex}
+\section{Molecular Ensemble (2-1)}
+\input{box/002-1.tex}
+\section{Continuum}
+\section{Macroscopic Analysis}
+\chapter{Thermodynamics}
+\section{Statistical Mechanics and Calculus}
+\subsection{Ensembles and Averaging (2-2 - 2-5, 3-1)}
+\input{box/002-2.tex}
+\input{box/002-3.tex}
+\input{box/002-4.tex}
+\input{box/002-5.tex}
+\subsection{Applied Statistical Mechanics (4-1 - 6-2)}
+\input{box/006-1.tex}
+\input{box/006-2.tex}
+\subsection{Property Frameworks}
+\subsubsection{Fundamental Surface (13-1 - 13-6)}
+\subsubsection{Legendre Transform (14-3)}
+\subsubsection{EOS (7-1)}
+\input{box/007-1.tex}
+\section{Property Relations}
+\subsection{Models}
+\subsubsection{Volumetric (14-2, 14-41)}
+\subfoursection{Bridgeman (15-1 -18-1)}
+\subsubsection{Non-Volumetric (23-1)}
+\subfoursection{Energy Relationships (14-1)}
+\subsection{Property Relations and Quantities}
+\section{Mixture Properties (34-1)}
+\subsection{Stability and Criteria (19-1 - 19-2)}
+\subsection{Gibbs-Duhem (24-1)}
+\subsection{Microscopic Mixing (8-1 - 9-3)}
+\input{box/008-1.tex}
+\input{box/008-2.tex}
+\subsection{Macroscopic Mixing (25-1)}
+\subsection{Non-Ideal Solutions (26-1 - 26-5)}
+\subsection{Ideal Solutions}
+\section{Phase and Chemical Equilibrium}
+\subsection{Chemical Equilibrium (31-1 - 33-2}
+\subsection{Stability Phase Criteria (19-1 - 19-2, 27-1)}
+\subsection{Macroscopic Behavior}
+\subsubsection{Graphical}
+\subsubsection{Volumetric Analysis}
+\subfoursection{Integral Approach (27-3, 29-1 - 30-2)}
+\subsubsection{Non-Volumetric Analysis}
+\subfoursection{Differential Approach (27-2, 28-1 - 28-4)}
+\subsection{Bulk Properties}
+\section{Pure Components}
+\subsection{Chemical Equilibrium}
+\subsection{Stability and Phase Criteria (19-1 - 19-2)}
+\subsection{Macroscopic Behavior}
+\subsubsection{Graphical}
+\subsubsection{Departure Function (20-1 - 20-2)}
+\subsubsection{Volumetric Analysis (21-1 - 22-1)}
+\subsection{Thermodynamic Properties}
+\section{Balance Equations}
+\subsection{Macroscopic Balances}
+\subsubsection{First Law (10-1 - 10-3, 12-2)}
+\subsubsection{Second Law (11-1 - 11-2)}
+\subsubsection{Availability (12-1)}
+\chapter{Transport}
+\section{General Conservation Equations (35-1 - 35-4)}
+\subsection{Non-Simultaneous}
+\subsubsection{Momentum (38-1 - 38-5)}
+\subfoursection{Turbulent (69-1 -70-3) Laminar}
+\subfivesection{Unidirectional (39-1 - 40-2)}
+\subfivesection{Creeping (41-1 - 41-4)}
+\subfivesection{High Reynolds Number (42-1 - 42-5)}
+\subsubsection{Species and Energy (46-1)}
+\subfoursection{Steady}
+\subfivesection{No Source (47-1 - 47-4, 51-2, 52-1)}
+\subfivesection{Source (51-1)}
+\subfoursection{Pseudo-steady (48-1)}
+\subfoursection{Unsteady}
+\subfivesection{Analytical (49-1)}
+\subfivesection{Numerical}
+\subsection{Simultaneous Systems}
+\subsubsection{Species and Energy (59-1 - 62-2)}
+\subfoursection{Uncoupled}
+\subfoursection{Coupled}
+\subsubsection{Species/Energy and Momentum (58-1)}
+\subfoursection{Forced Convection (53-1 - 55-4)}
+\subfoursection{Natural Convection (56-1 - 57-4)}
+\subsection{Fully-Simultaneous Systems}
+\section{Constitutive Models (68-1 -param est.)}
+\subsection{Momentum (36-2, 36-4)}
+\subsubsection{Newtonian}
+\subsubsection{Bingham}
+\subsubsection{Power-Law}
+\subsection{Species (36-3)}
+\subsubsection{Fick's}
+\subsubsection{Stefan-Maxwell}
+\subsection{Energy (36-1)}
+%\input{box/036-1.tex}
+\section{Source Terms and Body Forces}
+\section{Boundary Conditions}
+\subsection{Momentum (45-1 - 45-2)}
+\subsection{Species (50-1)}
+\subsection{Energy (50-1)}
+\section{Post Processing}
+\subsection{Momentum (44-1 - 44-5)}
+\subsection{Species}
+\subsection{Energy}
+\section{Dimensionless Analysis (37-1)}
+\section{Boundary Layer Analysis (43-1)}
+\chapter{Macroscopic Kinetics (82-1 - 88-3)}
+\chapter{Math (appendix)}
+\section{DAE}
+\subsection{Basic Linear Algebra (75-1 - 76-4)}
+\subsection{Ax=b Solutions}
+\subsection{f(x)=0 Solutions (74-1 - 74-3)}
+\section{ODE (63-1)}
+\subsection{BVP}
+\subsubsection{FFT (66-1 - 67-3, 79-1)}
+\subsubsection{Finite Modeling (80-1 - 80-3)}
+\subsection{IVP (77-1 -78-2 )}
+\section{PDE (64-1 - 65-2)}
+\section{Data Analysis}
+\subsection{Parameter Estimation (81-1 - 81-3)}
+\subsection{Probability and Statistics}
+\subsubsection{Properties of distributions}
+ 
+%\addcontentsline{toc}{section}{Unnumbered Section}
+%\section*{Unnumbered Section}
 
-This is a subsection. This is a subsection. This is a subsection.
-This is a subsection. This is a subsection. This is a subsection.
- 
-\addcontentsline{toc}{section}{Unnumbered Section}
-\section*{Unnumbered Section}
- 
-Unnumbered section0. Unnumbered section0. Unnumbered section0.  
-Unnumbered section0. Unnumbered section0. Unnumbered section0.
-Unnumbered section0. Unnumbered section0. Unnumbered section0...
- 
-\section{Second Section}
- 
-This is the second section. This is the second section. This is the second section. 
-This is the second section. This is the second section. This is the second section. 
-This is the second section. This is the second section. This is the second section. 
-This is the second section. This is the second section. This is the second section...
 
 \newpage
 
 % insert file from different location
 
-\input{box/036-1.tex}
-\input{box/036-1.tex}
+
+
 \input{box/000-0.tex}
+
+
 
 \newpage
 

@@ -1,0 +1,21 @@
+\section{Virial}
+\begin{mdframed}
+    \mdfsubtitle{Virial (Box 7-1)} 
+    \vspace*{\baselineskip}
+    \text{Form}\\
+    
+    ~~ $-$ ~~ $p = \dens\thermcond\Temp + \thermcond\Temp\sum\limits_{n=2}^\infty\virialcoeff(\Temp)\dens^{n} = \dens\thermcond\Temp(1+B_{2}\dens+...)$ \\                         %'p', 'B_{2}' and 'n' are undeclared symbols. Not indexed
+    
+    ~~ $-$ ~~ $B_{2}(\Temp) = -2\pie\nummoles_{\helmholtz}\int_{0}^{\infty}\Big[\exp[-\boltznorm\pot(\pos)]-1\Big]\pos^2d\pos$ \\
+  
+    \tab $\circ$ ~~ \text{Quantifies the two-body interaction} \\
+    \tab \tab $\bullet$ ~~ \text{McMillan-Mayer TM 471}\\
+
+    \tab $\circ$ ~~ \text{Hard sphere: $B_{2} = \frac{2\pie\molecrad^3}{3}$} \\
+    
+    \tab $\circ$ ~~ \text{Square well:$B_{2} = \frac{2\pie\molecrad}{3}\Big[1+(1-exp(\boltznorm\dielec))(R^3-1)\Big] $} \\
+
+    \tab $\circ$ ~~ \text{Lennard-Jones:}\\
+    \tab \tab $B_{2}(\Temp) = -2\pie\nummoles_{\helmholtz}\int_{0}^{\infty}\bigg[\exp\bigg[-\boltznorm\bigg(4\dielec\Big[\Big(\frac{\molecrad}{\pos}\Big)^{12}-\Big(\frac{\molecrad}{\pos}\Big)^6\Big]\bigg)\bigg]-1\bigg]\pos^2d\pos$ \\    
+    
+\end{mdframed}
