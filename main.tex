@@ -7,17 +7,22 @@
 \usepackage{amsmath,amsfonts,amsthm,mathtools}					% Math packages
 \usepackage[pdftex]{graphicx}								% Enable pdflatex
 \usepackage[svgnames]{xcolor}							% Colors by their 'svgnames'
+\usepackage{fancyhdr}
+	\fancypagestyle{fancyplain}
+    \fancyhf{}
+    \fancyhead[LE,RO]{\slshape \rightmark}
+	\fancyhead[LO,RE]{\slshape \leftmark}
+	\fancyfoot[C]{\thepage}
 \usepackage{geometry}
-	\textheight=700px									% Saving trees ;-) 
+%	\textheight=700px									% Saving trees ;-) 
 \usepackage{url}										% Clickable URL's
 \usepackage{wrapfig}									% Wrap text along figures
 \usepackage{tabu}
-\usepackage{longtable}
+%\usepackage{longtable}
 \usepackage{ulem}
 %\usepackage{mdframed}
 \usepackage{makeidx}
 \usepackage{xfrac}
-
 \usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage{tikz}
@@ -70,15 +75,36 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 
 %%% CUSTOM SECTIONING
 \makeatletter
+\renewcommand\section{%
+  \@startsection{section}{1}
+                {\z@}%
+                {-3.5ex \@plus -1ex \@minus -.2ex}%
+                {2.3ex \@plus.2ex}%
+                {\normalfont\Large\bfseries}% 11pt
+}
+\renewcommand\subsection{%
+  \@startsection{subsection}{2}
+                {\z@}%
+                {-3.25ex\@plus -1ex \@minus -.2ex}%
+                {1sp}% No space after subsections
+                {\normalfont\Large\bfseries}% normal size, boldface
+}
+\renewcommand\subsubsection{%
+  \@startsection{subsubsection}{3}
+                {\z@}%
+                {-3.25ex\@plus -1ex \@minus -.2ex}%
+                {1sp}% No space after subsubsections
+                {\normalfont\Large\bfseries}% normal size, medium
+}
 
 \newcommand\subfoursection{\@startsection{paragraph}{4}{\z@}%
                 {3.25ex \@plus1ex \@minus.2ex}%
                 {-1em}%
-                {\normalfont\normalsize\bfseries}}
+                {\normalfont\Large\bfseries}}
 \newcommand\subfivesection{\@startsection{subparagraph}{5}{\z@}%
                 {3.25ex \@plus1ex \@minus.2ex}%
                 {-1em}%
-                {\normalfont\normalsize\bfseries}}    
+                {\normalfont\Large\bfseries}}    
                
                 
                 
@@ -291,15 +317,13 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 
 \title{MIT Course X PhD Qualifying Exam Study Guide}
 \makeindex
-
+\pagestyle{fancy}
 %%% ------------------------------------------------------------
 %%% BEGIN DOCUMENT
 %%% ------------------------------------------------------------
 \begin{document}
-
 %\sepspace
 \maketitle
-
 \newpage
 
 \tableofcontents
@@ -310,7 +334,10 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \section{Basic Physics (1-1)}
 \input{box/001-1.tex}
 \section{Quantum}
-\section{Single Molecule (7-2 - 7-4)}
+\section{Single Molecule (7-2 -- 7-4)}
+% * <fae.nuccio@gmail.com> 2016-04-15T17:28:57.249Z:
+%
+% ^.
 \input{box/007-2.tex}
 \input{box/007-3.tex}
 \input{box/007-4.tex}
