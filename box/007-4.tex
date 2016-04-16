@@ -1,52 +1,52 @@
 
 \begin{mdframed}
     \mdfsubtitle{Potential (Box 7-4)} 
-    \vspace*{\baselineskip}
   
-    ~~\text{Ideal}
+    \begin{easylist}
     
-    \tab $-$ ~~ $\pot(\pos) = 0 $ \\
+    & \text{Ideal}
+    && $\pot(\pos) = 0 $ \\
     
-    \tab $-$ ~~ \text{Parameters: none} \\
+    && \text{Parameters: none} \\
     
-    \text{Hard Sphere}
+    & \text{Hard Sphere}
 
-    \tab $-$ ~~ $\pot(\pos)=\begin{cases}
+    && $\pot(\pos)=\begin{cases}
                     \infty ~~\pos \leq \molecrad\\
-                    0 ~~ \pos > \molecrad\\
+                    ~0 ~~ \pos > \molecrad\\
                 \end{cases}$
 
-    \tab $-$ ~~ \text{Parameters: $\molecrad$} \\
+    && \text{Parameters: $\molecrad$} \\
     
-    \text{Square well}
+    & \text{Square well}
     
-    \tab $-$ ~~ $\pot(\pos)=\begin{cases}
-                    \infty ~~\pos \leq \molecrad\\
-                    -\dielec ~~\molecrad < \pos \leq R\molecrad\\
-                    0 ~~ \pos > R\molecrad\\
+    && $\pot(\pos)=\begin{cases}
+                    ~\infty ~~\pos \leq \molecrad\\
+                    -\dielec ~~\molecrad < \pos \leq \gasconst\molecrad\\
+                    ~~0 ~~ \pos > \gasconst\molecrad\\
                 \end{cases}$
                 
-    \tab $-$ ~~ \text{Parameters: $\molecrad, \dielec, R$} \\
+    && \text{Parameters: $\molecrad, \dielec, \gasconst$} \\
     
-    \text{Lennard-Jones}\\
+    & \text{Lennard-Jones}\\
     
-    \tab $-$ ~~ $\pot(\pos) = 4\dielec\bigg[\Big(\frac{\molecrad}{\pos}\Big)^{12}-\Big(\frac{\molecrad}{\pos}\Big)^6\bigg] $ \\
+    && $\pot(\pos) = 4\dielec\bigg[\bigg(\dfrac{\molecrad}{\pos}\bigg)^{12}-\bigg(\dfrac{\molecrad}{\pos}\bigg)^6\bigg] $ \\
     
-    \tab $-$ ~~ \text{Parameters: $\molecrad, \dielec$} \\
+    && \text{Parameters: $\molecrad, \dielec$} \\
     
-    \text{Kihara}\\
+    & \text{Kihara}\\
     
-    \tab $-$ ~~ $\pot(\pos) = 4\dielec\bigg[\Big(\frac{\molecrad-2\activity}{\pos-2\activity}\Big)^{12}-\Big(\frac{\molecrad-2\activity}{\pos-2\activity}\Big)^6\bigg] $ \\
+    && $\pot(\pos) = 4\dielec\bigg[\bigg(\dfrac{\molecrad-2\activity}{\pos-2\activity}\bigg)^{12}-\bigg(\dfrac{\molecrad-2\activity}{\pos-2\activity}\bigg)^6\bigg] $ \\
     
-    \tab $-$ ~~ \text{Parameters: $\molecrad, \dielec, \activity$} \\
+    && \text{Parameters: $\molecrad, \dielec, \activity$} \\
     
-    \text{Sutherland $(\freq d\work)$}\\
+    & \text{Sutherland $(\freq \mathrm{d}\work)$}\\
     
-    \tab $-$ ~~ $\pot(\pos)=\begin{cases}
-                    \infty ~~ \pos \leq \molecrad\\
-                    -\dielec\Big(\frac{\molecrad}{\pos}\Big)^6 ~~ \pos > \molecrad\\
+    && $\pot(\pos)=\begin{cases}
+                    ~~~~\infty ~~~~~~~ \pos \leq \molecrad\\
+                    -\dielec\bigg(\dfrac{\molecrad}{\pos}\bigg)^6 ~~ \pos > \molecrad\\
                 \end{cases}$
                 
-    \tab $-$ ~~ \text{Parameters: $\molecrad, \dielec$} \\
-    
+    && \text{Parameters: $\molecrad, \dielec$} \\
+    \end{easylist}
 \end{mdframed}

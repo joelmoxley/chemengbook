@@ -131,7 +131,7 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \newcommand{\helmholtz}{\index{A $-$ Helmholtz Energy $[J]$}A}
 \newcommand{\magind}{\index{B $-$ Magnetic Induction $\left[\frac{V s}{m^{2}}\right]$}B}
 \newcommand{\exergy}{\index{B $-$ Exergy $[J]$}B}
-\newcommand{\virialcoeff}{\index{$B_{n}$ $-$ $n^{th}$ Virial Coefficient $\left[\left(\frac{m^{3}}{Kg} \right)^{n}\right]$}B_{n}}
+\newcommand{\virialcoeff}[1]{\index{$B_{n}$ $-$ $n^{th}$ Virial Coefficient $\left[\left(\frac{m^{3}}{Kg} \right)^{n}\right]$}B_{#1}}
 \newcommand{\biot}{\index{Bi $-$ Biot Number $[none]$}Bi}
 \newcommand{\brinkman}{\index{Br $-$ Brinkman Number $[none]$}Br}
 \newcommand{\dragcoeff}{\index{$c_{D}$ $-$ Drag Coefficient $[none]$}c_{D}}
@@ -180,13 +180,15 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \newcommand{\mw}{\index{$M_{W}$ $-$ Molecular Weight $\left[\frac{g}{mol}\right]$}M_{W}}
 \newcommand{\normvec}{\index{$\uline{n}$ $-$ Normal Vector $[none]$}\underline{n}}
 \newcommand{\nummoles}{\index{N $-$ Number of Moles $[none]$}N}
-\newcommand{\massspecflux}{\index{$N_{i}$ $-$ Mass Species Flux of $i$ $\left[\frac{Kg}{m^{2} s}\right]$}N_{i}}
+\newcommand{\massspecflux}[1]{\index{$N_{i}$ $-$ Mass Species Flux of $i$ $\left[\frac{Kg}{m^{2} s}\right]$}N_{#1}}
 \newcommand{\nusselt}{\index{Nu $-$ Nusselt Number $[none]$}Nu}
 \newcommand{\p}{\index{P $-$ Thermodynamic Pressure $[Pa]$}P}
+
+
 \newcommand{\prob}{\index{P $-$ Probability $[none]$}P}
 \newcommand{\peclet}{\index{Pe $-$ Peclet Number $[none]$}Pe}
 \newcommand{\prandtl}{\index{Pr $-$ Prandtl Number $[none]$}Pr}
-\newcommand{\charge}{\index{$q_{i}$ $-$ charge $[Coulombs]$}q_{i}}
+\newcommand{\charge}[1]{\index{$q_{i}$ $-$ charge $[Coulombs]$}q_{#1}}
 \newcommand{\heatflux}{\index{q $-$ heat flux $\left[\frac{W}{m^{2}}\right]$}q}
 \newcommand{\empc}{\index{$q_{elec}$ $-$ Electronic Molecular Partition Coefficient}q_{elec}}
 \newcommand{\impc}{\index{$q_{int}$ $-$ Internal Molecular Partition Coefficient}q_{int}}
@@ -223,7 +225,7 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \newcommand{\work}{\index{W $-$ Work $[J]$}W}
 \newcommand{\disp}{\index{x $-$ Displacement $[m]$}x}                                                       %changed '\height' into '\heightz'. '\height' is a predefined command (by benjie)
 \newcommand{\conjcoor}{\index{$x_{i}$ $-$ $i^{th}$ Conjugate Coordinate}x_{i}}
-\newcommand{\specfrac}{\index{$x_{i}$ $-$ Fraction of species $i$ $[none]$ }x_{i}}
+\newcommand{\specfrac}[1]{\index{$x_{i}$ $-$ Fraction of species $i$ $[none]$ }x_{#1}}
 \newcommand{\heightz}{\index{z $-$  Height $[m]$}z}                                     
 \newcommand{\charges}{\index{$z_{i}$ $-$ Charge of species $i$ $[Coulombs]$}z_{i}}
 \newcommand{\compress}{\index{Z $-$ Compressibility $[none]$}Z}
@@ -265,7 +267,7 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \newcommand{\stresstens}{\index{$\uuline{\sigma}$ $-$ Stress Tensor}\uuline{\sigma}}
 \newcommand{\torque}{\index{$\tau$ $-$ Torque $[N m]$}\tau}
 \newcommand{\shear}{\index{$\tau_{ij}$ $-$ Shear Rate in direction $i$ perpendicular to  $j$ (CHECK FOR ONSISTENCY) $\left[\frac{N}{m^{2}}\right]$}\tau_{ij}}
-\newcommand{\fhmolefrac}{\index{$\phi_{i}$ $-$ Flory-Huggins Mole Fraction of species $i$ $[none]$}\phi_{i}}
+\newcommand{\fhmolefrac}[1]{\index{$\phi_{i}$ $-$ Flory-Huggins Mole Fraction of species $i$ $[none]$}\phi_{#1}}
 \newcommand{\fugcoeff}{\index{$\phi$ $-$ Fugacity Coefficient $[none]$}\phi}
 \newcommand{\eleccoeff}{\index{$\phi$ $-$ Electric Potential}\phi}
 \newcommand{\pot}{\index{$\Phi$ $-$ Potential}\Phi}
@@ -465,8 +467,7 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \subsection{Probability and Statistics}
 \subsubsection{Properties of distributions}
  
-%\addcontentsline{toc}{section}{Unnumbered Section}
-%\section*{Unnumbered Section}
+
 
 
 \newpage
@@ -474,5 +475,9 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \input{box/000-0.tex}
 \newpage
 \printindex
+\newpage
+\input{appendix.tex}
+
+
 
 \end{document}
