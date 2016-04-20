@@ -1,0 +1,47 @@
+\begin{mdframed}
+    \mdfsubtitle{Osmotic Pressure (Box 8-1)} 
+%    \bigskip
+%   \vspace*{\baselineskip}
+    \begin{easylist}
+    
+    & \text{Vant Hoff Formulation (ideal)}
+    && $\osmpress = \conc_{s}\gasconst\Temp $                                             %'s' is an undeclared symbols. Not indexed. In 'Cs' not certain if '\conc'
+    && \text{Parallel to Ideal Gas Law ($\conc s  = \sfrac{\nummoles}{\vol}$)} \\         %'s' is an undeclared symbol. Not indexed. In 'Cs' not certain if '\conc'
+  
+    & \text{Equilibrium Approach}\\    
+    && $\chempot_{w}(\Temp,1\textit{bar}+\osmpress,\specfrac{s}) = \chempot_{w}(\Temp,1\textit{bar},\textit{pure})+\gasconst\Temp\ln\surftens_{w}\specfrac{w}+\int\limits_{1}^{1+\osmpress}\!\overline{\vol}\,_{w}\, \mathrm{d}\p$ \\  %'w','bar', 'pure' are undeclared. Not indexed	
+  
+    &&& \text{For incompressible}\\
+    &&&& $\ln(\surftens_{w}) \approx -\ln(\specfrac{w})-\dfrac{\osmpress\overline{\vol}_{w}}{\gasconst\Temp}~with~\specfrac{w} = 1 - \specfrac{s}$\\
+    
+    & \text{Statistical Mechanics Approach}
+    && \text{McMillan-Mayer Theory}
+    &&& \text{Grand Canonical Function as natural variable}\\
+    
+    &&&& $\ln(\gcpf) = \dfrac{(\p + \osmpress)\uline{\vol}}{\thermcond\Temp} $\\
+    
+    &&& \text{Under dilute solution limit,}\\
+    
+    &&&& $\dfrac{\osmpress}{\thermcond\Temp} = \dens_{2} + \virialcoeff{2}{\dens_{2}}^2 + ... $ \\
+    
+    &&&& $\dfrac{\osmpress}{\conc} = \dfrac{R\Temp}{\mw} + \dfrac{\virialcoeff{2}\nummoles \gasconst\Temp}{(\mw)^2}\conc + ...$ \\
+    
+    &&&&& \text{Graph of ($\sfrac{\osmpress}{\conc}$) v. $\conc$}\\
+    
+    &&&&&& \text{Intercept: $\mw = \dfrac{\gasconst\Temp}{(\sfrac{\osmpress}{\conc})_{\conc\rightarrow\init}}$} \\
+    
+    &&& \text{Assuming Pairwise additivity}\\
+    
+    &&&& $\virialcoeff{2} = -2\pi\int\limits_{\init}^{\infty}\bigg(\exp\bigg[\dfrac{-\big\langle\pot_{12}\big\rangle}{\thermcond\Temp}\bigg]-1\bigg)\pos^2 \mathrm{d}\pos$ \\
+    
+    &&&& \text{For Hard Sphere Interactions}\\
+
+    &&&&& $\virialcoeff{2} = \dfrac{16}{3}\pie {b_{\init}}^3,~\virialcoeff{3} = \dfrac{5}{8} {\virialcoeff{2}}^2 $ \\     %'b_{\init}' is undeclared. 'b' is not indexed
+    &&& \text{Using a $\iipf\gibbs^{\exfunc}$ function}
+    &&&& $-\overline{\vol}_1\osmpress = \gasconst\Temp\ln\activity_{1}$
+    &&&&& \text{Flory-Huggins (11-66)}\\
+    
+    &&&&& $\dfrac{\partial\iipf\gibbs^{\exfunc}}{\partial\massspecflux{1}} = \gasconst\Temp\ln\activity_{1}$\\
+    
+    \end{easylist}
+\end{mdframed}
