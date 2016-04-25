@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 \documentclass{mitqualif}
 \input{quantity_commands.tex}
 
@@ -8,7 +7,7 @@
 Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6*=$\circ$\tab)
 
 %%Custom Commands
-%%added comments
+%%added 
 \newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
 \newcommand\tab[1][0.5cm]{\hspace*{#1}}
 %%Front Matter
@@ -20,335 +19,10 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \foreword{So fare thee well, poor devil of a Sub-Sub, whose commentator I am. Thou belongest to that hopeless, sallow tribe which no wine of this world will ever warm; and for whom even Pale Sherry would be too rosy-strong; but with whom one sometimes loves to sit, and feel poor-devilish, too; and grow convivial upon tears; and say to them bluntly, with full eyes and empty glasses, and in not altogether unpleasant sadness—Give it up, Sub-Subs! For by how much the more pains ye take to please the world, by so much the more shall ye forever go thankless! Would that I could clear out Hampton Court and the Tuileries for ye! But gulp down your tears and hie aloft to the royal-mast with your hearts; for your friends who have gone before are clearing out the seven-storied heavens, and making refugees of long-pampered Gabriel, Michael, and Raphael, against your coming. Here ye strike but splintered hearts together—there, ye shall strike unsplinterable glasses!}
 \makeindex
 
-=======
-%\documentclass[paper=a4,fontsize=11pt]{scrartcl}	 			% KOMA-article class
-\documentclass{report}							
-%\usepackage[english]{babel}								% English language/hyphenation
-%\usepackage[protrusion=true,expansion=true]{microtype}		% Better typography
-%\documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath,amsfonts,amsthm,mathtools}					% Math packages
-\usepackage[pdftex]{graphicx}								% Enable pdflatex
-\usepackage[svgnames]{xcolor}							% Colors by their 'svgnames'
-\usepackage{fancyhdr}
-	\fancypagestyle{fancyplain}
-    \fancyhf{}
-    \fancyhead[LE,RO]{\slshape \rightmark}
-	\fancyhead[LO,RE]{\slshape \leftmark}
-	\fancyfoot[C]{\thepage}
-\usepackage{geometry}
-%	\textheight=700px									% Saving trees ;-) 
-\usepackage{url}										% Clickable URL's
-\usepackage{wrapfig}									% Wrap text along figures
-\usepackage{tabu}
-%\usepackage{longtable}
-\usepackage{ulem}
-%\usepackage{mdframed}
-\usepackage{makeidx}
-\usepackage{xfrac}
-\usepackage{xcolor}
-\usepackage{enumitem}
-\usepackage{tikz}
-\usetikzlibrary{shadows}
-\usepackage[framemethod=tikz]{mdframed}
-\usepackage{amssymb}
-
-\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
-\newcommand\tab[1][0.5cm]{\hspace*{#1}}
-
-%%%%%PLAYING WITH MDFRAMED%%%
-\mdfsetup{%
-	linecolor=black,%
-	roundcorner=10pt,%
-	middlelinewidth=3pt,%
-	shadow=true,%
-	frametitlefont=\Large\bfseries,%
-	frametitlerule=true,frametitlerulewidth=1pt,
-	frametitlealignment=\centering,	
-	subtitlefont=\Large\bfseries\center,%
-	subtitlebelowline=true,subtitlebelowlinewidth=1pt,
-	subtitleinneraboveskip=-5pt
-}
-\newmdenv[frametitle=Prova]{prova}
-\newmdenv[frametitle=Pluto]{pippo}
-    	\setlength{\baselineskip}{29pt}
-	    	\setlength{\parskip}{9pt}
-
-
-\usepackage[ampersand]{easylist}
-\ListProperties(Hide=100, Hang=true, Progressive=3ex, Style*=,Style2*=--\tab,
-Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6*=$\circ$\tab)
-
-%\usepackage[margin=1in,showframe]{geometry}
-%\frenchspacing									% Better looking spacings after periods
-%\pagestyle{empty}								% No pagenumbers/headers/footers
-%\usepackage{bbding}									% Symbols
-
-%%% Custom sectioning (sectsty package)
-%%% ------------------------------------------------------------
-%\usepackage{sectsty}							% Custom sectioning (see below)
-
-%\sectionfont{%									% Change font of \section command
-%	\usefont{OT1}{phv}{b}{n}%					% bch-b-n: CharterBT-Bold font
-%	\sectionrule{0pt}{0pt}{-5pt}{3pt}
-%	}
-
-%%% Macros
-%%% ------------------------------------------------------------
-
-%%% CUSTOM SECTIONING
-\makeatletter
-\renewcommand\section{%
-  \@startsection{section}{1}
-                {\z@}%
-                {-3.5ex \@plus -1ex \@minus -.2ex}%
-                {2.3ex \@plus.2ex}%
-                {\normalfont\Large\bfseries}% 11pt
-}
-\renewcommand\subsection{%
-  \@startsection{subsection}{2}
-                {\z@}%
-                {-3.25ex\@plus -1ex \@minus -.2ex}%
-                {1sp}% No space after subsections
-                {\normalfont\Large\bfseries}% normal size, boldface
-}
-\renewcommand\subsubsection{%
-  \@startsection{subsubsection}{3}
-                {\z@}%
-                {-3.25ex\@plus -1ex \@minus -.2ex}%
-                {1sp}% No space after subsubsections
-                {\normalfont\Large\bfseries}% normal size, medium
-}
-
-\newcommand\subfoursection{\@startsection{paragraph}{4}{\z@}%
-                {3.25ex \@plus1ex \@minus.2ex}%
-                {-1em}%
-                {\normalfont\Large\bfseries}}
-\newcommand\subfivesection{\@startsection{subparagraph}{5}{\z@}%
-                {3.25ex \@plus1ex \@minus.2ex}%
-                {-1em}%
-                {\normalfont\Large\bfseries}}    
-               
-                
-                
-\makeatother
-\setcounter{secnumdepth}{6} % how many sectioning levels to assign numbers to
-\setcounter{tocdepth}{6}    % how many sectioning levels to show in ToC
-
-
-%%%
-
-
-
-
-
-\newlength{\spacebox}
-\settowidth{\spacebox}{8888888888}				% Box to align text
-\newcommand{\sepspace}{\vspace*{1em}}			% Vertical space macro
-
-\newcommand{\MyName}[1]{
-		\Huge \usefont{OT1}{phv}{b}{n}#1 		% Name
-		\par \normalsize \normalfont}
-
-\newcommand{\activity}{\index{a $-$ Activity}a}
-\newcommand{\helmholtz}{\index{A $-$ Helmholtz Energy $[J]$}A}
-\newcommand{\magind}{\index{B $-$ Magnetic Induction $\left[\frac{V s}{m^{2}}\right]$}B}
-\newcommand{\exergy}{\index{B $-$ Exergy $[J]$}B}
-\newcommand{\virialcoeff}[1]{\index{$B_{n}$ $-$ $n^{th}$ Virial Coefficient $\left[\left(\frac{m^{3}}{Kg} \right)^{n}\right]$}B_{#1}}
-\newcommand{\biot}{\index{Bi $-$ Biot Number $[none]$}Bi}
-\newcommand{\brinkman}{\index{Br $-$ Brinkman Number $[none]$}Br}
-\newcommand{\dragcoeff}{\index{$c_{D}$ $-$ Drag Coefficient $[none]$}c_{D}}
-\newcommand{\conc}{\index{C $-$ Concentration $\left[\frac{kg of i}{m^{3}}\right]$}C}
-\newcommand{\cp}{\index{$C_{P}$ $-$ Constant Pressure Heat Capacity $\left[\frac{J}{Kg K}\right]$}C_{P}}
-\newcommand{\cv}{\index{$C_{V}$ $-$ Constant Volume Heat Capacity $\left[\frac{J}{Kg K}\right]$}C_{V}}
-\newcommand{\elecdisplace}{\index{D $-$ Electric Displacement $\left[\frac{Coulombs}{m^{2}}\right]$}D}
-\newcommand{\diff}{\index{$D_{ij}$ $-$ Diffusivity of component $i$ in fluid $j$ $\left[\frac{m^{2}}{s}\right]$}D_{ij}}
-\newcommand{\pdiff}{\index{$D_{i}$ $-$ Pseudobinary diffusivity of $i$ $\left[\frac{m^{2}}{s}\right]$}D_{i}}
-\newcommand{\damkohler}{\index{Da $-$ Damkohler Number $[none]$}Da}
-\newcommand{\eneatom}{\index{$D_{e}$ $-$ Energy of Atomization $\left[\frac{J}{mol}\right]$}D_{e}}
-\newcommand{\mbde}{\index{$D_{0}$ $-$ Measured Bond Dissociation Energy $\left[\frac{J}{mol}\right]$}D_{0}}
-\newcommand{\uv}{\index{$\uline{e}_{i}$ $-$ Unit Vector in direction $i$ $[none]$}\underline{e}_{i}}
-\newcommand{\mcef}{\index{$\uline{e}$ $-$ Multicomponent Energy Flux }\underline{e}}
-\newcommand{\elecfield}{\index{E $-$ Electric Field Strength $\left[\frac{V}{m}\right]$}E}
-\newcommand{\energy}{\index{E $-$ Energy $[J]$}E}
-\newcommand{\fug}{\index{$f$  $-$ Fugacity} f}      %'\widehat{}' cant be indexed. Use '\hat{}' instead.(by benjie)
-\newcommand{\mixfug}{\index{$\hat{f}$ $-$ Mixture Fugacity}\widehat{f}}
-\newcommand{\dforce}{\index{$f_{\uline{e}_{i}}$  $-$ Differential Force in direction of $\uline{e}_{i}$}f_{\underline{e}_{i}}}
-\newcommand{\force}{\index{F $-$ Force $[N]$}F}
-\newcommand{\bodyforce}{\index{$F_{B}$ $-$ Body Force $[N]$}F_{B}}
-\newcommand{\raddist}{\index{g(r) $-$ Radial Distribution Function $[none]$}g(r)}
-\newcommand{\gibbs}{\index{G $-$ Gibbs Energy $[J]$}G}
-\newcommand{\grashof}{\index{Gr $-$  Grashof Number $[none]$}Gr}
-\newcommand{\heattranscoeff}{\index{h $-$ Heat Transfer Coefficient $\left[\frac{W}{m^{2}k}\right]$}h}
-\newcommand{\magfield}{\index{H $-$ Magnetic Field Strength $\left[\frac{A}{m}\right]$}H}
-\newcommand{\surfcurv}{\index{$\mathcal{H}$ $-$ Surface Mean Curvature}\mathcal{H}}
-\newcommand{\enthalpy}{\index{H $-$ Enthalpy $[J]$}H}
-\newcommand{\henry}{\index{$\mathcal{H}_{i}$ $-$ Henry's Law Constant for specie $i$ $\left[\frac{atm}{mol fraction}\right]$}\mathcal{H}_{i}}
-\newcommand{\energysource}{\index{$H_{V}$ $-$ Volumetric Energy Source $\left[\frac{W}{m^{3}}\right]$}H_{V}}
-\newcommand{\currentdensity}{\index{i $-$ Current Density $\left[\frac{A}{m^2}\right]$}i}
-\newcommand{\mominertia}{\index{I $-$ Moment of Inertia $\left[Kg m^{2}\right]$}I}
-\newcommand{\molspecflux}{\index{$J_{i}$ $-$ Molar Diffusive species flux of $i$ $\left[\frac{mol}{s m^{2}}\right]$}J_{i}}
-\newcommand{\thermcond}{\index{k $-$ Thermal Conductivity $\left[\frac{W}{m K}\right]$}k}
-\newcommand{\masstranscoeff}{\index{$k_{c,i}$ $-$ Mass Transfer Coefficient for species $i$ $\left[\frac{mol}{s m^{2}conc.difference}\right]$}k_{c,i}}
-\newcommand{\dilfac}{\index{K $-$ Dilation Factor}K}
-\newcommand{\taylordisp}{\index{K $-$ Taylor Dispersion}K}
-\newcommand{\partcoeff}{\index{$\mathcal{K}_{i}$ $-$  Partition Coefficient $[none]$}\mathcal{K}_{i}}
-\newcommand{\eqconst}{\index{$K_{a}$ $-$ Equilibrium Constant $[varies]$}K_{a}}
-\newcommand{\peqconst}{\index{$K_{P}$ $-$ Pressure Equilibrium Constant Contribution $[varies]$}K_{P}}
-\newcommand{\yeqconst}{\index{$K_{y}$ $-$ Mole Fraction Equilibrium Constant Contribution $[varies]$}K_{y}}
-\newcommand{\acteqconst}{\index{$K_{\gamma}$ $-$ Activity Coefficient Equilibrium Constant Contribution $[varies]$}K_{\gamma}}
-\newcommand{\fugeqconst}{\index{$K_{\phi}$ $-$ Fugacity Coefficient Equilibrium Constant Contribution $[varies]$}K_{\phi}}
-\newcommand{\length}{\index{L $-$ Length Scale $[m]$}L}
-\newcommand{\mass}{\index{m $-$ Mass $[Kg]$}m}
-\newcommand{\mw}{\index{$M_{W}$ $-$ Molecular Weight $\left[\frac{g}{mol}\right]$}M_{W}}
-\newcommand{\normvec}{\index{$\uline{n}$ $-$ Normal Vector $[none]$}\underline{n}}
-\newcommand{\nummoles}{\index{N $-$ Number of Moles $[none]$}N}
-\newcommand{\massspecflux}[1]{\index{$N_{i}$ $-$ Mass Species Flux of $i$ $\left[\frac{Kg}{m^{2} s}\right]$}N_{#1}}
-\newcommand{\nusselt}{\index{Nu $-$ Nusselt Number $[none]$}Nu}
-\newcommand{\p}{\index{P $-$ Thermodynamic Pressure $[Pa]$}P}
-
-
-\newcommand{\prob}{\index{P $-$ Probability $[none]$}P}
-\newcommand{\peclet}{\index{Pe $-$ Peclet Number $[none]$}Pe}
-\newcommand{\prandtl}{\index{Pr $-$ Prandtl Number $[none]$}Pr}
-\newcommand{\charge}[1]{\index{$q_{i}$ $-$ charge $[Coulombs]$}q_{#1}}
-\newcommand{\heatflux}{\index{q $-$ heat flux $\left[\frac{W}{m^{2}}\right]$}q}
-\newcommand{\empc}{\index{$q_{elec}$ $-$ Electronic Molecular Partition Coefficient}q_{elec}}
-\newcommand{\impc}{\index{$q_{int}$ $-$ Internal Molecular Partition Coefficient}q_{int}}
-\newcommand{\nmpc}{\index{$q_{nuc}$ $-$ Nuclear Molecular Partition Coefficient}q_{nuc}}
-\newcommand{\rmpc}{\index{$q_{rot}$ $-$ Rotational Molecular Partition Coefficient}q_{rot}}
-\newcommand{\tmpc}{\index{$q_{trans}$ $-$ Translational Molecular Partition Coefficient}q_{trans}}
-\newcommand{\vmpc}{\index{$q_{vib}$ $-$ Vibrational Molecular Partition Coefficient}q_{vib}}
-\newcommand{\dufour}{\index{$q^{(x)}$ $-$ Dufour Heat Flux}q^{(x)}}
-\newcommand{\heatflow}{\index{Q $-$ Heat Flow $[W]$}Q}
-\newcommand{\ipc}{\index{$Q_{int}$ $-$ Internal Partition Coefficient}Q_{int}}
-\newcommand{\cpc}{\index{$Q_{cl}$ $-$ Classical Partition Coefficient}Q_{cl}}
-\newcommand{\cmpc}{\index{$Q_{cm}$ $-$ Center-of-Mass Partition Coefficient}Q_{cm}}
-\newcommand{\cpf}{\index{$Q_{N}$ $-$ Canonical Partition Function}Q_{N}}
-\newcommand{\pos}{\index{r $-$ Position $[m]$}r}
-\newcommand{\specsource}{\index{$R_{V}$ $-$ Volumetric Species Source $\left[\frac{mol}{s m^{3}}\right]$}R_{V}}
-\newcommand{\rayleigh}{\index{Ra $-$  Rayleigh Number $[none]$}Ra}
-\newcommand{\reynolds}{\index{Re $-$  Reynolds Number $[none]$}Re}
-\newcommand{\entropy}{\index{S $-$ Entropy $\left[\frac{J}{K}\right]$}S}
-\newcommand{\sa}{\index{$S_{A}$ $-$ Surface Area $\left[m^{2}\right]$}S_{A}}
-\newcommand{\stressvec}{\index{$\uline{S}$ $-$ Stress Vector}\underline{S}}
-\newcommand{\schmidt}{\index{Sc $-$ Schmidt Number $[none]$}Sc}
-\newcommand{\sherwood}{\index{Sh $-$ Sherwood Number $[none]$}Sh}
-\newcommand{\strouhal}{\index{Sr $-$  Strouhal Number $[none]$}Sr}
-\newcommand{\timet}{\index{t $-$ Time $[s]$}t}                                                              %'\time' is pre-defined and couldnt be used. Use '\timet' instead (by benjie)
-\newcommand{\Temp}{\index{T $-$ Temperature $[K]$}T}
-\newcommand{\forcepot}{\index{u $-$ Force Potential}u}
-\newcommand{\intenergy}{\index{U $-$ Internal Energy $[J]$}U}
-\newcommand{\uvel}{\index{U $-$ Velocity $\left[\frac{m}{s}\right]$}U}
-\newcommand{\vvel}{\index{v $-$ Velocity $\left[\frac{m}{s}\right]$}v}
-\newcommand{\vol}{\index{V $-$ Volume $\left[m^{3}\right]$}V}
-\newcommand{\freevol}{\index{$V_{f}$ $-$ Free Volume $\left[m^{3}\right]$}V_{f}}
-\newcommand{\vort}{\index{$\uline{w}$ $-$ Vorticity Vector}\underline{w}}
-\newcommand{\vorttens}{\index{$\uuline{w}$ $-$ Vorticity Tensor}\uuline{w}} 
-\newcommand{\work}{\index{W $-$ Work $[J]$}W}
-\newcommand{\disp}{\index{x $-$ Displacement $[m]$}x}                                                       %changed '\height' into '\heightz'. '\height' is a predefined command (by benjie)
-\newcommand{\conjcoor}{\index{$x_{i}$ $-$ $i^{th}$ Conjugate Coordinate}x_{i}}
-\newcommand{\specfrac}[1]{\index{$x_{i}$ $-$ Fraction of species $i$ $[none]$ }x_{#1}}
-\newcommand{\heightz}{\index{z $-$  Height $[m]$}z}                                     
-\newcommand{\charges}{\index{$z_{i}$ $-$ Charge of species $i$ $[Coulombs]$}z_{i}}
-\newcommand{\compress}{\index{Z $-$ Compressibility $[none]$}Z}
-\newcommand{\configint}{\index{$Z^{*}$ $-$ Configurational Integral $[none]$}Z^{*}}
-\newcommand{\tdiff}{\index{$\alpha$  $-$ Thermal Diffusivity $\left[\frac{m^{2}}{s}\right]$}\alpha}
-\newcommand{\boltznorm}{\index{$\beta$ $-$ Boltzmann Normalization $\left[\frac{1}{J}\right]$}\beta}            %'\boltznorm' defined (by benjie)
-\newcommand{\texpcoeff}{\index{$\beta$ $-$ Thermal Expansion Coefficient $\left[\frac{1}{K}\right]$}\beta}
-\newcommand{\sexcoeff}{\index{$\beta_{i}$ $-$ Solute Expansion Coefficient due to species $i$ $\left[\frac{1}{mol}\right]$}\beta_{i}}
-\newcommand{\actcoeff}{\index{$\gamma_{i}$ $-$ Activity Coefficient for species $i$ $[none]$}\gamma_{i}}
-\newcommand{\surftens}{\index{$\gamma$ $-$ Surface Tension, CHANGE SIGMAS $\left[\frac{N}{m}\right]$}\gamma}
-\newcommand{\straintens}{\index{$\uuline{\Gamma}$ $-$ Rate-of-Strain Tensor}\uuline{\Gamma}}
-\newcommand{\blthick}{\index{$\delta$ $-$ Boundary Layer Thickness $[m]$}\delta}
-\newcommand{\iipf}{\index{$\Delta$ $-$ Isobaric/Isothermal Partition Function}\Delta}
-\newcommand{\eddydiff}{\index{$\epsilon_{M},\epsilon_{i},\epsilon_{E}$ $-$ Eddy Diffusivity for Momentum, Species and Energy $\left[\frac{m^{2}}{s}\right]$}\epsilon_{M},\epsilon_{i},\epsilon_{E}}
-\newcommand{\dielec}{\index{$\epsilon$ $-$ Dielectric Constant $\left[\frac{Coulombs^{2}}{J m}\right]$}\epsilon}
-\newcommand{\heateffic}{\index{$\eta$ $-$ heat cycle efficiency $[none]$}\eta}
-\newcommand{\intrinsvisc}{\index{$\eta$ $-$ Intrinsic Viscosity $\left[\frac{m^{3}}{Kg}\right]$}\eta}
-\newcommand{\dimltemp}{\index{$\Theta$ $-$ Dimensionless Concentration or Temperature $[none]$}\Theta}
-\newcommand{\vibrfreqfac}{\index{$\Theta_{\nu}$ $-$ Vibrational Frequency Factor}\Theta_{\nu}}
-\newcommand{\fftcoeff}{\index{$\Theta_{n}$ $-$ $n^{th}$ FFT Coefficients}\Theta_{n}}
-\newcommand{\comeback}{\index{$\kappa$ $-$ COME BACK}\kappa}                                                                            %'\comeback' defined (by benjie)
-\newcommand{\wavel}{\index{$\lambda$ $-$ Wavelength $[m]$}\lambda}
-\newcommand{\latheat}{\index{$\lambda$ $-$ Latent heat $\left[\frac{J}{mol}\right]$}\lambda}
-\newcommand{\debye}{\index{$\lambda$ $-$ Debye Length $[m]$}\lambda}
-\newcommand{\debroglie}{\index{$\Lambda$ $-$ DeBroglie Wavelength $[m]$}\Lambda}
-\newcommand{\chempot}{\index{$\mu$ $-$ Chemical Potential $[J]$}\mu}
-\newcommand{\visc}{\index{$\mu$ $-$ Viscosity $[Pa s]$}\mu}
-\newcommand{\freq}{\index{$\nu$ $-$ Frequency $\left[\frac{1}{s}\right]$}\nu}
-\newcommand{\kinvisc}{\index{$\nu$ $-$ Kinematic Viscosity $\left[\frac{m^{2}}{s}\right]$}\nu}
-\newcommand{\stoich}{\index{$\nu_{ij}$ $-$ Stoichiometric Coefficient for species $i$ in reaction $j$}\nu_{ij}}
-\newcommand{\chargeval}{\index{$\nu_{i}$ $-$ Charge Valency of species $i$}\nu_{i}}
-\newcommand{\conjcoortwo}{\index{$\xi$ $-$ Conjugate Coordinate}\xi}                                                                    %'\conjcoor2' does not work, use '\conjcoortwo' instead (by benjie)    
-\newcommand{\extent}{\index{$\xi$ $-$ Extent of Reaction $[none]$}\xi}
-\newcommand{\gcpf}{\index{$\Xi$ $-$ Grand Canonical Partition Function}\Xi}
-\newcommand{\osmpress}{\index{$\Pi$ $-$ Osmotic Pressure $[Pa]$}\Pi}
-\newcommand{\dens}{\index{$\rho$ $-$ Density $\left[\frac{Kg}{m^{3}}\right]$}\rho}
-\newcommand{\symfac}{\index{$\sigma$ $-$ Symmetry Factor}\sigma}
-\newcommand{\molecrad}{\index{$\sigma$ $-$ Molecular Radius $[A]$}\sigma}
-\newcommand{\stresstens}{\index{$\uuline{\sigma}$ $-$ Stress Tensor}\uuline{\sigma}}
-\newcommand{\torque}{\index{$\tau$ $-$ Torque $[N m]$}\tau}
-\newcommand{\shear}{\index{$\tau_{ij}$ $-$ Shear Rate in direction $i$ perpendicular to  $j$ (CHECK FOR ONSISTENCY) $\left[\frac{N}{m^{2}}\right]$}\tau_{ij}}
-\newcommand{\fhmolefrac}[1]{\index{$\phi_{i}$ $-$ Flory-Huggins Mole Fraction of species $i$ $[none]$}\phi_{#1}}
-\newcommand{\fugcoeff}{\index{$\phi$ $-$ Fugacity Coefficient $[none]$}\phi}
-\newcommand{\eleccoeff}{\index{$\phi$ $-$ Electric Potential}\phi}
-\newcommand{\pot}{\index{$\Phi$ $-$ Potential}\Phi}
-\newcommand{\diss}{\index{$\Phi$ $-$ Dissipation Function}\Phi}
-\newcommand{\potfunc}{\index{$\Phi_{ij}(r)$ $-$ Potential Function}\Phi_{ij}(r)}
-\newcommand{\fftbasis}{\index{$\Phi_{n}$ $-$ FFT Basis Function}\Phi_{n}}
-\newcommand{\fhparam}{\index{$\chi$ $-$ Flory-Huggins Parameter $[none]$}\chi}
-\newcommand{\streamfunc}{\index{$\Psi$ $-$ Stream Function $\left[\frac{m^{2}}{s}\right]$}\Psi}
-\newcommand{\dlesselecpot}{\index{$\Psi$ $-$ Dimensionless Electric Potential $[none]$}\Psi}
-\newcommand{\mpf}{\index{$\omega$ $-$ Microcanonical Partition Function}\omega}                                                         %'\mpf' defined (by benjie)
-\newcommand{\accentfac}{\index{$\omega$ $-$ Accentricity Factor $[none]$}\omega}                                                        %'\accent' is already defined; instead use '\accentfac' (by benjie)
-\newcommand{\elecdegen}{\index{$\omega_{e}$ $-$ Electronic Degeneracy $[none]$}\omega_{e}}
-\newcommand{\mpc}{\index{$\Omega$ $-$ Microcanonical Partition Function}\Omega}
-\newcommand{\combmixfunc}{\index{$\Omega_{mix}$ $-$ Combinatorial Mixing Function $[none]$}\Omega_{mix}}
-\newcommand{\dof}{\index{$\Im$ $-$ Degrees of Freedom $[none]$}\Im}
-\newcommand{\dynpress}{\index{$\wp$ $-$ Dynamic Pressure $[Pa]$}\wp}
-\newcommand{\surfreac}{\index{$\mathcal{R}$ $-$ Surface Reaction Rate}\mathcal{R}}
-\newcommand{\lightspeed}{\index{c $-$ Speed of Light}c}
-\newcommand{\e}{\index{e $-$ Base of Natural Logarithm}e}
-\newcommand{\grav}{\index{g $-$ Gravitational Acceleration}g}
-\newcommand{\faraday}{\index{$\mathcal{F}$ $-$ Faraday's Constant}\mathcal{F}}
-\newcommand{\planck}{\index{h $-$  Planck's Constant}h}
-\newcommand{\av}{\index{$N_{A}$ $-$ Avogadro's number}N_{A}}
-\newcommand{\gasconst}{\index{R $-$ Ideal Gas Constant}R}
-\newcommand{\boltz}{\index{$k_{B}$ $-$ Boltzmann Constant}k_{B}}
-\newcommand{\pie}{\index{$\pi$ $-$ Constant}\pi}                                                                                         %'\pi' is pre-defined and couldnt be used. Use '\pie' instead (by benjie)
-\newcommand{\exscal}{\index{x $-$ Extensive Scalar}x}                                                                                    %'\underline{}' cant be indexed. Use '\uline{}' instead (by benjie)
-\newcommand{\exvecone}{\index{$\uline{x}$ $-$ Extensive Vector}\underline{x}}                                                            %'\exvecone' defined by benjie
-\newcommand{\exvectwo}{\index{$\uuline{x}$ $-$ Extensive Vector}\uuline{x}}                                                              %'\exvectwo' defined by benjie
-\newcommand{\exvecthree}{\index{$\tilde{x}$ $-$ Extensive Vector}\tilde{x}}                                                              %'\exvecthree' defined by benjie
-\newcommand{\matrx}{\index{$\textbf{X}$ $-$ Matrix}\textbf{X}}                                                                           %'\matrx' defined by benjie
-\newcommand{\intscal}{\index{$\hat{x}$ $-$ Intensive Scalar}\widehat{x}}                                                                 %'\widehat{}' cant be indexed. Use '\hat{}' instead.(by benjie)
-\newcommand{\partmol}{\index{$\overline{x}$ $-$ Partial Molar}\overline{x}}                                                              %'\intscal' defined by benjie
-\newcommand{\tderiv}{\index{$\dot{x}$ $-$ Time derivative}\dot{x}}                                                                       %'\partmol' defined by benjie
-\newcommand{\gradop}{\index{$\uline{\nabla}$ $-$ Gradient Operator}\underline{\nabla}}                                                   %'\tderiv' defined by benjie
-\newcommand{\surfgradop}{\index{$\uline{\nabla}_{s}$ $-$ Surface Gradient Operator}\underline{\nabla}_{s}}                               %'\gradop' defined by benjie
-\newcommand{\axbiop}{\index{$E^{4}$ $-$ Axisymmetric Biharmonic Operator}E^{4}}                                                          %'\surfgradop' defined by benjie
-\newcommand{\init}{\index{0 $-$ Initial}0}                                                                                               %'\axbiop' defined by benjie
-\newcommand{\state}{\index{i $-$ State or Level, COMPONENT?}i}                                                                           %'\init' defined by benjie
-\newcommand{\mixfunc}{\index{mix $-$ Mixing Function}mix}                                                                                %'\state' defined by benjie
-\newcommand{\atfunc}{\index{atherm $-$ Athermal Function}atherm}                                                                         %'\mixfunc' defined by benjie
-\newcommand{\bound}{\index{$\sigma$ $-$ boundary}\sigma}                                                                                 %'\atfunc' defined by benjie
-\newcommand{\crit}{\index{c $-$ Critical}c}                                                                                              %'\bound' defined by benjie
-\newcommand{\exfunc}{\index{EX $-$ Excess Function}EX}                                                                                   %'\crit' defined by benjie
-\newcommand{\idgas}{\index{id $-$ Ideal Gas}id}                                                                                          %'\idgas'defined by benjie
-\newcommand{\satvap}{\index{sat $-$ Saturated Vapor}sat}                                                                                 %'\satvap' defined by benjie
-
-
-
-\title{MIT Course X PhD Qualifying Exam Study Guide}
-\makeindex
-\pagestyle{fancy}
->>>>>>> 2ef0273d12b505f77e349489b97c316090ffc3a5
 %%% ------------------------------------------------------------
 %%% BEGIN DOCUMENT
 %%% ------------------------------------------------------------
 \begin{document}
-<<<<<<< HEAD
 \mytitlepage %%Customized titlepage
 \newpage
 
@@ -356,16 +30,6 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \newpage
 
 
-=======
-%\sepspace
-\maketitle
-\newpage
-
-\tableofcontents
-
-\newpage
- 
->>>>>>> 2ef0273d12b505f77e349489b97c316090ffc3a5
 \chapter{Multiscale Analysis}
 \section{Basic Physics (1-1)}
 \input{box/001-1.tex}
@@ -376,13 +40,9 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 % ^.
 \input{box/007-2.tex}
 \input{box/007-3.tex}
-<<<<<<< HEAD
 %\input{box/007-41.tex}
 \input{box/007-4.tex}
 \input{box/007-41.tex}
-=======
-\input{box/007-4.tex}
->>>>>>> 2ef0273d12b505f77e349489b97c316090ffc3a5
 \section{Molecular Ensemble (2-1)}
 \input{box/002-1.tex}
 \section{Continuum}
@@ -507,12 +167,8 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \subsection{Probability and Statistics}
 \subsubsection{Properties of distributions}
  
-<<<<<<< HEAD
 %\addcontentsline{toc}{section}{Unnumbered Section}
 %\section*{Unnumbered Section}
-=======
-
->>>>>>> 2ef0273d12b505f77e349489b97c316090ffc3a5
 
 
 \newpage
@@ -523,9 +179,4 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \newpage
 \input{appendix.tex}
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 2ef0273d12b505f77e349489b97c316090ffc3a5
 \end{document}
