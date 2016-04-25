@@ -1,158 +1,33 @@
-%\documentclass[paper=a4,fontsize=11pt]{scrartcl}	 			% KOMA-article class
-\documentclass{report}							
-%\usepackage[english]{babel}								% English language/hyphenation
-%\usepackage[protrusion=true,expansion=true]{microtype}		% Better typography
-%\documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{amsmath,amsfonts,amsthm,mathtools}					% Math packages
-\usepackage[pdftex]{graphicx}								% Enable pdflatex
-\usepackage[svgnames]{xcolor}	
-\usepackage{hyperref}
-% Colors by their 'svgnames'
-\usepackage{fancyhdr}
-	\fancypagestyle{fancyplain}
-    \fancyhf{}
-    \fancyhead[R]{\slshape \rightmark}
-	\fancyhead[L]{\slshape \leftmark}
-	\fancyfoot[C]{\thepage}
-    \renewcommand{\footrulewidth}{0.4pt}
-	\renewcommand{\headrulewidth}{2pt}
-\usepackage{array}% http://ctan.org/pkg/array—To modify tabular rows and columns
-\newcolumntype{M}{>{\centering}m{\dimexpr.25\linewidth-2\tabcolsep}}%New type of column which is vertically aligned
-\usepackage{geometry}
-\textheight=580pt						
-\footskip=45pt
-\topmargin=-20pt
-% Saving trees ;-) 
-\usepackage{url}										% Clickable URL's
-\usepackage{wrapfig}									% Wrap text along figures
-\usepackage{tabu}
-%\usepackage{longtable}
-\usepackage{ulem}
-%\usepackage{mdframed}
-\usepackage{makeidx}
-\usepackage{xfrac}
-\usepackage{xcolor}
-\usepackage{enumitem}
-\usepackage{pifont}
-\usepackage{tikz}
-\usetikzlibrary{shadows}
-\usepackage[framemethod=tikz]{mdframed}
-\usepackage{amssymb}
+\documentclass{mitqualif}
+\input{quantity_commands.tex}
 
-\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
-\newcommand\tab[1][0.5cm]{\hspace*{#1}}
-
-%%%%%PLAYING WITH MDFRAMED%%%
-\mdfsetup{%
-	linecolor=black,%
-	roundcorner=10pt,%
-	middlelinewidth=3pt,%
-	shadow=true,%
-    innerbottommargin=18pt,%
-	frametitlefont=\Large\bfseries,%
-	frametitlerule=true,frametitlerulewidth=1pt,
-	frametitlealignment=\centering,	
-	subtitlefont=\Large\bfseries\center,%
-	subtitlebelowline=true,subtitlebelowlinewidth=1pt,
-	subtitleinneraboveskip=-5pt
-}
-\usepackage[ampersand]{easylist}
+%%EASYLIST—Remove?
+\RequirePackage[ampersand]{easylist}
 \ListProperties(Hide=100, Hang=true, Progressive=3ex, Style*=,Style2*=--\tab,
 Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6*=$\circ$\tab)
 
-%\usepackage[margin=1in,showframe]{geometry}
-%\frenchspacing									% Better looking spacings after periods
-%\pagestyle{empty}								% No pagenumbers/headers/footers
-%\usepackage{bbding}									% Symbols
-
-%%% Custom sectioning (sectsty package)
-%%% ------------------------------------------------------------
-%\usepackage{sectsty}							% Custom sectioning (see below)
-
-%\sectionfont{%									% Change font of \section command
-%	\usefont{OT1}{phv}{b}{n}%					% bch-b-n: CharterBT-Bold font
-%	\sectionrule{0pt}{0pt}{-5pt}{3pt}
-%	}
-
-%%% Macros
-%%% ------------------------------------------------------------
-
-%%% CUSTOM SECTIONING
-\makeatletter
-\renewcommand\section{%
-  \@startsection{section}{1}
-                {\z@}%
-                {-3.5ex \@plus -1ex \@minus -.2ex}%
-                {2.3ex \@plus.2ex}%
-                {\normalfont\Large\bfseries}% 11pt
-}
-\renewcommand\subsection{%
-  \@startsection{subsection}{2}
-                {\z@}%
-                {-3.25ex\@plus -1ex \@minus -.2ex}%
-                {2.3ex \@plus.2ex}
-                {\normalfont\Large\bfseries}% normal size, boldface
-}
-\renewcommand\subsubsection{%
-  \@startsection{subsubsection}{3}
-                {\z@}%
-                {-3.25ex\@plus -1ex \@minus -.2ex}%
-                {1sp}% No space after subsubsections
-                {\normalfont\Large\bfseries}% normal size, medium
-}
-
-\newcommand\subfoursection{\@startsection{paragraph}{4}{\z@}%
-                {3.25ex \@plus1ex \@minus.2ex}%
-                {-1em}%
-                {\normalfont\Large\bfseries}}
-\newcommand\subfivesection{\@startsection{subparagraph}{5}{\z@}%
-                {3.25ex \@plus1ex \@minus.2ex}%
-                {-1em}%
-                {\normalfont\Large\bfseries}}    
-               
-                
-                
-\makeatother
-\setcounter{secnumdepth}{6} % how many sectioning levels to assign numbers to
-\setcounter{tocdepth}{6}    % how many sectioning levels to show in ToC
-
-
-%%%
-
-
-
-
-
-\newlength{\spacebox}
-\settowidth{\spacebox}{8888888888}				% Box to align text
-\newcommand{\sepspace}{\vspace*{1em}}			% Vertical space macro
-
-\newcommand{\MyName}[1]{
-		\Huge \usefont{OT1}{phv}{b}{n}#1 		% Name
-		\par \normalsize \normalfont}
-
-\input{quantity_commands.tex}
-
-\setlength\extrarowheight{7pt}
-\usepackage{layout}
+%%Custom Commands
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+\newcommand\tab[1][0.5cm]{\hspace*{#1}}
+%%Front Matter
 \title{MIT Course X PhD Qualifying Exam Study Guide}
-\author{}
+\authorone{Joel Moxley}
+\emailone{jfmoxely@gmail.com}
+\authortwo{Hal Arper}
+\emailtwo{halper@che.utexas.edu}
+\foreword{So fare thee well, poor devil of a Sub-Sub, whose commentator I am. Thou belongest to that hopeless, sallow tribe which no wine of this world will ever warm; and for whom even Pale Sherry would be too rosy-strong; but with whom one sometimes loves to sit, and feel poor-devilish, too; and grow convivial upon tears; and say to them bluntly, with full eyes and empty glasses, and in not altogether unpleasant sadness—Give it up, Sub-Subs! For by how much the more pains ye take to please the world, by so much the more shall ye forever go thankless! Would that I could clear out Hampton Court and the Tuileries for ye! But gulp down your tears and hie aloft to the royal-mast with your hearts; for your friends who have gone before are clearing out the seven-storied heavens, and making refugees of long-pampered Gabriel, Michael, and Raphael, against your coming. Here ye strike but splintered hearts together—there, ye shall strike unsplinterable glasses!}
 \makeindex
-\pagestyle{fancy}
+
 %%% ------------------------------------------------------------
 %%% BEGIN DOCUMENT
 %%% ------------------------------------------------------------
 \begin{document}
-%\sepspace
-\maketitle
+\mytitlepage %%Customized titlepage
 \newpage
 
 \tableofcontents
 \newpage
-%\layout
-%\newpage
+
 
 \chapter{Multiscale Analysis}
 \section{Basic Physics (1-1)}

@@ -3,48 +3,49 @@
     
     \begin{easylist}
     
-    & \text{Ideal}
+    & \text{Ideal} \\
+    
     && $\pot(\pos) = 0 $ \\
     
     && \text{Parameters: none} \\
     
-    & \text{Hard Sphere}
+    & \text{Hard Sphere} \\
 
     && $\pot(\pos)=\begin{cases}
                     \infty ~~\pos \leq \molecrad\\
                     ~0 ~~ \pos > \molecrad\\
-                \end{cases}$
+                \end{cases}$ \\
 
     && \text{Parameters: $\molecrad$} \\
     
-    & \text{Square well}
+    & \text{Square well} \\
     
     && $\pot(\pos)=\begin{cases}
                     ~\infty ~~\pos \leq \molecrad\\
                     -\dielec ~~\molecrad < \pos \leq \gasconst\molecrad\\
                     ~~0 ~~ \pos > \gasconst\molecrad\\
-                \end{cases}$
+                \end{cases}$ \\
                 
     && \text{Parameters: $\molecrad, \dielec, \gasconst$} \\
     
-    & \text{Lennard-Jones}\\
+    & \text{Lennard-Jones} \\
     
     && $\pot(\pos) = 4\dielec\bigg[\bigg(\dfrac{\molecrad}{\pos}\bigg)^{12}-\bigg(\dfrac{\molecrad}{\pos}\bigg)^6\bigg] $ \\
     
     && \text{Parameters: $\molecrad, \dielec$} \\
     
-    & \text{Kihara}\\
+    & \text{Kihara} \\
     
     && $\pot(\pos) = 4\dielec\bigg[\bigg(\dfrac{\molecrad-2\activity}{\pos-2\activity}\bigg)^{12}-\bigg(\dfrac{\molecrad-2\activity}{\pos-2\activity}\bigg)^6\bigg] $ \\
     
     && \text{Parameters: $\molecrad, \dielec, \activity$} \\
     
-    & \text{Sutherland $(\freq \mathrm{d}\work)$}\\
+    & \text{Sutherland $(\freq \mathrm{d}\work)$} \\
     
     && $\pot(\pos)=\begin{cases}
                     ~~~~\infty ~~~~~~~ \pos \leq \molecrad\\
                     -\dielec\bigg(\dfrac{\molecrad}{\pos}\bigg)^6 ~~ \pos > \molecrad\\
-                \end{cases}$
+                \end{cases}$ \\
                 
     && \text{Parameters: $\molecrad, \dielec$} \\
     \end{easylist}
