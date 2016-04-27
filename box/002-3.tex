@@ -1,20 +1,25 @@
-\begin{mdframed}
+\begin{bigmdframed}
+
     \mdfsubtitle{Canonical (Box 2-3)} 
     
-    \begin{easylist}
+\begin{listone}
     
-    & \text{Constant: \nummoles, \uline{\vol}, \Temp}\\
+    \item Constant: \nummoles, \uline{\vol}, \Temp
     
-    & \text{Constraint Equations:} $\sum\nolimits n_{i} = \tilde{\nummoles}, \sum\nolimits n_{i}\uline{\energy}_{i} = \uline{\energy}^{total}  $ \\     %'n_{i}' is an unknown symbol, not indexed
+    \item Constraint Equations: $\sum\nolimits n_{i} = \tilde{\nummoles}, \sum\nolimits n_{i}\uline{\energy}_{i} = \uline{\energy}^{total}  $     %'n_{i}' is an unknown symbol, not indexed
     
-    & \text{Partition Function:} \\
+    \item Partition Function:
     
-    && $\cpf \equiv \sum\limits_{\uline{\energy}_{i}} \mpc\exp(-\boltznorm\uline{\energy}_{i}) = \sum\limits_{\uline{\energy}_{i}} \mpf(\uline{\energy}_{i})\exp(-\boltznorm\uline{\energy}_{i}) $ \\
+    \begin{listtwo}
     
-    && $\cpf \equiv \sum\limits_{i} \exp(-\boltznorm\uline{\energy}_{i}) $ \\
+    	\item $\cpf \equiv \sum\limits_{\uline{\energy}_{i}} \mpc\exp(-\boltznorm\uline{\energy}_{i}) = \sum\limits_{\uline{\energy}_{i}} \mpf(\uline{\energy}_{i})\exp(-\boltznorm\uline{\energy}_{i}) $
+    
+    	\item $\cpf \equiv \sum\limits_{i} \exp(-\boltznorm\uline{\energy}_{i}) $
            
-    & \text{Natural Function: $\helmholtz = -\thermcond\Temp\ln\cpf$}
+    \end{listtwo}
+           
+    \item Natural Function: $\helmholtz = -\thermcond\Temp\ln\cpf$
     
-    \end{easylist}
+\end{listone}
     
-\end{mdframed}
+\end{bigmdframed}

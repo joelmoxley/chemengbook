@@ -6,31 +6,33 @@
 %%%%%Basic Packages for inputing and compiling
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
-\RequirePackage{hyperref}									%Active inside references
 \RequirePackage{url}										% Clickable URL's			
 \RequirePackage[pdftex]{graphicx}								% Enable pdflatex
 \RequirePackage{makeidx}									%Creating index
 \RequirePackage{amsmath,amsfonts,amsthm,amssymb,mathtools}
 \RequirePackage{xfrac}							%Nice fractions
 \RequirePackage{enumitem}
+\RequirePackage{etoolbox}
+\RequirePackage{hyperref}									%Active inside references
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%Packages for formatting
 \RequirePackage{fancyhdr} 		%%For cusomized headers, footers
 	\fancypagestyle{fancyplain}
 	\fancyhf{}
+	\fancyheadoffset{\plainheadrulewidth}	%Stretches head rule till the end of text
+	\fancyfootoffset{\plainheadrulewidth}		%Stretches foot rule till the end of text
 	\fancyhead[R]{\slshape \rightmark}
 	\fancyhead[L]{\slshape \leftmark}
 	\fancyfoot[C]{\thepage}
 	\renewcommand{\footrulewidth}{0.4pt}
-	\renewcommand{\headrulewidth}{2pt}
+	\renewcommand{\headrulewidth}{0.4pt}
 \pagestyle{fancy}
 
 \renewcommand{\arraystretch}{1.75} 						%This modifies the height of each row in tables and tabulars
 
-\RequirePackage{geometry}	%% Fine formatting, especially regarding margins
-	\textheight=580pt						
-	\footskip=45pt
+\RequirePackage[a4paper,footskip=45pt]{geometry}	%% Fine formatting, especially regarding margins
+	\textheight=580pt
 	\topmargin=-20pt
 
 \RequirePackage{wrapfig}						% Wrap text along figures
@@ -90,7 +92,7 @@
 	subtitlebelowline=true,subtitlebelowlinewidth=1pt,
 	subtitleinneraboveskip=-5pt
 }
-
+\newenvironment{bigmdframed}[1][24pt]{\begin{mdframed}\setlength{\baselineskip}{#1}}{\end{mdframed}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Custom Sectioning
 \renewcommand\section{%
@@ -111,17 +113,18 @@
   \@startsection{subsubsection}{3}
                 {\z@}%
                 {-3.25ex\@plus -1ex \@minus -.2ex}%
-                {1sp}% No space after subsubsections
+                {2.3ex \@plus.2ex}
                 {\normalfont\Large\bfseries}% normal size, medium
 }
 
 \newcommand\subfoursection{\@startsection{paragraph}{4}{\z@}%
                 {3.25ex \@plus1ex \@minus.2ex}%
-                {-1em}%
+                {2.3ex \@plus.2ex}
                 {\normalfont\Large\bfseries}}
+                
 \newcommand\subfivesection{\@startsection{subparagraph}{5}{\z@}%
                 {3.25ex \@plus1ex \@minus.2ex}%
-                {-1em}%
+                {2.3ex \@plus.2ex}
                 {\normalfont\Large\bfseries}}    
                
 \setcounter{secnumdepth}{6} % how many sectioning levels to assign numbers to
