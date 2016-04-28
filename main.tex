@@ -1,6 +1,16 @@
 \documentclass{mitqualif}
 \input{quantity_commands.tex}
 
+%%New list environments for nice nested lists
+\setlistdepth{6}
+\renewlist{itemize}{itemize}{6}
+\newenvironment{listone}{\begin{itemize}[label=]}{\end{itemize}}
+\newenvironment{listtwo}{\begin{itemize}[label=--]}{\end{itemize}}
+\newenvironment{listthree}{\begin{itemize}[label=$\circ$]}{\end{itemize}}
+\newenvironment{listfour}{\begin{itemize}[label={\rule[.1ex]{.75ex}{.75ex}}]}{\end{itemize}}
+\newenvironment{listfive}{\begin{itemize}[label=$\bullet$]}{\end{itemize}}
+\newenvironment{listsix}{\begin{itemize}[label=$\ast$]}{\end{itemize}}
+
 %%EASYLIST—Remove?
 \RequirePackage[ampersand]{easylist}
 \ListProperties(Hide=100, Hang=true, Progressive=3ex, Style*=,Style2*=--\tab,
@@ -9,14 +19,14 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 %%Custom Commands
 %%added 
 \newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
-\newcommand\tab[1][0.5cm]{\hspace*{#1}}
+\newcommand{\tab}[1][0.5cm]{\hspace*{#1}}
 %%Front Matter
 \title{MIT Course X PhD Qualifying Exam Study Guide}
 \authorone{Joel Moxley}
 \emailone{jfmoxely@gmail.com}
-\authortwo{Hal Arper}
+\authortwo{Hal Alper}
 \emailtwo{halper@che.utexas.edu}
-\foreword{So fare thee well, poor devil of a Sub-Sub, whose commentator I am. Thou belongest to that hopeless, sallow tribe which no wine of this world will ever warm; and for whom even Pale Sherry would be too rosy-strong; but with whom one sometimes loves to sit, and feel poor-devilish, too; and grow convivial upon tears; and say to them bluntly, with full eyes and empty glasses, and in not altogether unpleasant sadness—Give it up, Sub-Subs! For by how much the more pains ye take to please the world, by so much the more shall ye forever go thankless! Would that I could clear out Hampton Court and the Tuileries for ye! But gulp down your tears and hie aloft to the royal-mast with your hearts; for your friends who have gone before are clearing out the seven-storied heavens, and making refugees of long-pampered Gabriel, Michael, and Raphael, against your coming. Here ye strike but splintered hearts together—there, ye shall strike unsplinterable glasses!}
+\foreword{A special thank you to Benjie Flores for his tireless work and attention to detail, and to Filippo A. E. Nuccio for the \LaTeX~formatting magic}
 \makeindex
 
 %%% ------------------------------------------------------------
@@ -35,19 +45,14 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \input{box/001-1.tex}
 \section{Quantum}
 \section{Single Molecule (7-2 -- 7-4)}
-% * <fae.nuccio@gmail.com> 2016-04-15T17:28:57.249Z:
-%
-% ^.
 \input{box/007-2.tex}
 \input{box/007-3.tex}
-%\input{box/007-41.tex}
 \input{box/007-4.tex}
-\input{box/007-41.tex}
 \section{Molecular Ensemble (2-1)}
 \input{box/002-1.tex}
 \section{Continuum}
 \section{Macroscopic Analysis}
-\newpage
+\clearpage
 \chapter{Thermodynamics}
 \section{Statistical Mechanics and Calculus}
 \subsection{Ensembles and Averaging (2-2 - 2-5, 3-1)}

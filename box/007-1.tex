@@ -1,47 +1,43 @@
-<<<<<<< HEAD
-\begin{mdframed}
+\begin{bigmdframed}
+
     \mdfsubtitle{Virial (Box 7-1)}
     
-    \begin{easylist}
+\begin{listone}
     
-    & \text{Form} \\
+    \item Form
     
-    && $p = \dens\thermcond\Temp + \thermcond\Temp\sum\limits_{n=2}^\infty\virialcoeff{n}(\Temp)\dens^{n} = \dens\thermcond\Temp(1+\virialcoeff{2}\dens+...)$     %'p' is undeclared symbol. Not indexed
+    \begin{listtwo}
     
-    && $\virialcoeff{2}(\Temp) = -2\pie\massspecflux{\helmholtz}\int\limits_{0}^{\infty}\Big[\exp[-\boltznorm\pot(\pos)]-1\Big]\pos^2\mathrm{d}\pos$ \\     %'N_{A}' is not declared, so i used '\massspecflux{\helmholtz}'
+    	\item $p = \dens\thermcond\Temp + \thermcond\Temp\sum\limits_{n=2}^\infty\virialcoeff{n}(\Temp)\dens^{n} = \dens\thermcond\Temp(1+\virialcoeff{2}\dens+...)$     %'p' is undeclared symbol. Not indexed
     
-    &&& \text{Quantifies the two-body interaction} \\
+    	\item $\virialcoeff{2}(\Temp) = -2\pie\massspecflux{\helmholtz}\int\limits_{0}^{\infty}\Big[\exp[-\boltznorm\pot(\pos)]-1\Big]\pos^2\mathrm{d}\pos$     %'N_{A}' is not declared, so i used '\massspecflux{\helmholtz}'
     
-    &&&& \text{McMillan-Mayer TM 471} \\
-=======
+    	\begin{listthree}
+    
+    		\item Quantifies the two-body interaction
+            
+            \begin{listfour}
+    
+    			\item McMillan-Mayer TM 471
 
-\begin{mdframed}
-    \mdfsubtitle{Virial (Box 7-1)} 
-   
-    \begin{easylist}
-    
-    & \text{Form}
-    
-    && $p = \dens\thermcond\Temp + \thermcond\Temp\sum\limits_{n=2}^\infty\virialcoeff{n}(\Temp)\dens^{n} = \dens\thermcond\Temp(1+\virialcoeff{2}\dens+...)$                         %'p' is undeclared symbols. Not indexed
-  
-    && $\virialcoeff{2}(\Temp) = -2\pie\massspecflux{\helmholtz}\int\limits_{0}^{\infty}\Big[\exp[-\boltznorm\pot(\pos)]-1\Big]\pos^2\mathrm{d}\pos$ \\ %'N_{A}' is not declared, so i used '\massspecflux{\helmholtz}' 
-  
-    &&& \text{Quantifies the two-body interaction} 
-    &&&& \text{McMillan-Mayer TM 471}\\
->>>>>>> 2ef0273d12b505f77e349489b97c316090ffc3a5
+			\end{listfour}
 
-    &&& \text{Hard sphere: $\virialcoeff{2} = \dfrac{2\pie\molecrad^3}{3}$} \\
+    		\item Hard sphere: $\virialcoeff{2} = \dfrac{2\pie\molecrad^3}{3}$
     
-    &&& \text{Square well: $\virialcoeff{2} = \dfrac{2\pie\molecrad}{3}\Big[1+(1-exp(\boltznorm\dielec))(\gasconst^3-1)\Big] $} \\
+    		\item Square well: $\virialcoeff{2} = \dfrac{2\pie\molecrad}{3}\Big[1+(1-exp(\boltznorm\dielec))(\gasconst^3-1)\Big] $
 
-<<<<<<< HEAD
-    &&& \text{Lennard-Jones:} \\
+    		\item Lennard-Jones:
+            
+            \begin{listfour}
     
-    &&&& $\virialcoeff{2}(\Temp) = -2\pie\massspecflux{\helmholtz}\int\limits_{0}^{\infty}\bigg[\exp\bigg[-\boltznorm\bigg(4\dielec\Big[\Big(\dfrac{\molecrad}{\pos}\Big)^{12}-\Big(\dfrac{\molecrad}{\pos}\Big)^6\Big]\bigg)\bigg]-1\bigg]\pos^2\mathrm{d}\pos$
-=======
-    &&& \text{Lennard-Jones: $\virialcoeff{2}(\Temp) = -2\pie\massspecflux{\helmholtz}\int\limits_{0}^{\infty}\bigg[\exp\bigg[-\boltznorm\bigg(4\dielec\Big[\Big(\dfrac{\molecrad}{\pos}\Big)^{12}-\Big(\dfrac{\molecrad}{\pos}\Big)^6\Big]\bigg)\bigg]-1\bigg]\pos^2\mathrm{d}\pos$} \\    
->>>>>>> 2ef0273d12b505f77e349489b97c316090ffc3a5
+    			\item $\virialcoeff{2}(\Temp) = -2\pie\massspecflux{\helmholtz}\int\limits_{0}^{\infty}\bigg[\exp\bigg[-\boltznorm\bigg(4\dielec\Big[\Big(\dfrac{\molecrad}{\pos}\Big)^{12}-\Big(\dfrac{\molecrad}{\pos}\Big)^6\Big]\bigg)\bigg]-1\bigg]\pos^2\mathrm{d}\pos$
     
-    \end{easylist}
+    		\end{listfour}
     
-\end{mdframed}
+    	\end{listthree}
+    
+    \end{listtwo}
+    
+\end{listone}
+    
+\end{bigmdframed}
