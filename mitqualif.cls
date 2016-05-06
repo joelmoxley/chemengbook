@@ -1,5 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mitqualif}[2011/03/26 Class for MIT Qualifying Exam] %%Provides a class for MIT Qualifying Exam (chemistry)
+\RequirePackage{silence}
+\WarningFilter{imakeidx}{Remember to run (pdf)latex again}
 \LoadClass{report}							
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -8,7 +10,6 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage{url}										% Clickable URL's			
 \RequirePackage[pdftex]{graphicx}								% Enable pdflatex
-\RequirePackage{makeidx}									%Creating index
 \RequirePackage{amsmath,amsfonts,amsthm,amssymb,mathtools}
 \RequirePackage{xfrac}							%Nice fractions
 \RequirePackage{enumitem}
@@ -93,6 +94,21 @@
 	subtitleinneraboveskip=-5pt
 }
 \newenvironment{bigmdframed}[1][24pt]{\begin{mdframed}\setlength{\baselineskip}{#1}}{\end{mdframed}}
+
+\RequirePackage[splitindex,nonewpage]{imakeidx} %For indexes in the boxes
+\newenvironment{mitframe}[2][24pt]
+{
+\let\mygobble\@gobble
+\def\@position{#2}
+\let\@mitindex\index
+\renewcommand{\index}[1]{\@mitindex{##1,}\@mitindex[#2]{##1|mygobble}} %Redefines \index so that it adds an entry both to the general and the local index (need , before ##1 to cope with the Style file)
+\begin{mdframed}\setlength{\baselineskip}{#1}}
+{\bigskip
+\hrule
+\renewenvironment{theindex}{\bigskip\small}{} %Disables the title in frames
+\printindex[\@position]
+\end{mdframed}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Custom Sectioning
 \renewcommand\section{%
@@ -129,7 +145,6 @@
                
 \setcounter{secnumdepth}{6} % how many sectioning levels to assign numbers to
 \setcounter{tocdepth}{6}    % how many sectioning levels to show in ToC
-
 
 
 
