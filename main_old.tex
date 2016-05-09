@@ -1,15 +1,21 @@
 \documentclass{mitqualif}
 \input{quantity_commands.tex}
-\input{indexes.tex}
+%%%%Environments for the index
+\usepackage{indextrial}
+\usepackage{imakeidx}
+\makeindex[name=id11]
+\makeindex[name=id72]
+\makeindex[name=id73]
+\makeindex
 %%New list environments for nice nested lists
 \setlistdepth{6}
 \renewlist{itemize}{itemize}{6}
-\newenvironment{listone}{\begin{itemize}[label=,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
-\newenvironment{listtwo}{\begin{itemize}[label=--,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
-\newenvironment{listthree}{\begin{itemize}[label=$\circ$,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
-\newenvironment{listfour}{\begin{itemize}[label={\rule[.1ex]{.75ex}{.75ex}},labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
-\newenvironment{listfive}{\begin{itemize}[label=$\bullet$,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
-\newenvironment{listsix}{\begin{itemize}[label=$\ast$,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
+\newenvironment{listone}{\begin{itemize}[label=]}{\end{itemize}}
+\newenvironment{listtwo}{\begin{itemize}[label=--]}{\end{itemize}}
+\newenvironment{listthree}{\begin{itemize}[label=$\circ$]}{\end{itemize}}
+\newenvironment{listfour}{\begin{itemize}[label={\rule[.1ex]{.75ex}{.75ex}}]}{\end{itemize}}
+\newenvironment{listfive}{\begin{itemize}[label=$\bullet$]}{\end{itemize}}
+\newenvironment{listsix}{\begin{itemize}[label=$\ast$]}{\end{itemize}}
 
 %%EASYLIST—Remove?
 \RequirePackage[ampersand]{easylist}
@@ -26,7 +32,7 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \emailone{jfmoxely@gmail.com}
 \authortwo{Hal Alper}
 \emailtwo{halper@che.utexas.edu}
-\foreword{A special thank you to Benjie Flores for his tireless work and attention to detail, and to Filippo A. E. Nuccio for the \LaTeX~formatting magic.}
+\foreword{A special thank you to Benjie Flores for his tireless work and attention to detail, and to Filippo A. E. Nuccio for the \LaTeX~formatting magic}
 
 %%% ------------------------------------------------------------
 %%% BEGIN DOCUMENT
@@ -37,6 +43,7 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 
 \tableofcontents
 \newpage
+
 
 \chapter{Multiscale Analysis}
 \section{Basic Physics (1-1)}
@@ -179,6 +186,7 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \input{box/000-0.tex}
 \newpage
 \printindex
+%\printindex[id11]
 \newpage
 \input{appendix.tex}
 
