@@ -1,0 +1,80 @@
+\begin{mdframed}
+
+    \mdfsubtitle{Potential (Box 7-4) NEW} 
+
+	\vspace*{\baselineskip}
+    
+    \indent
+
+	\textbf{Ideal}
+    
+    \begin{itemize}[label={--}]
+	
+    \item $\pot(\pos) = 0 $ 
+    
+    \item Parameters: none
+    
+    \end{itemize}
+    
+	\textsc{Hard Sphere}
+
+	\begin{itemize}[label={--}]
+	
+    \item $\pot(\pos)=\begin{cases}
+                    \infty &\pos \leq \molecrad\\
+                    0 &\pos > \molecrad\\
+                \end{cases}$
+	
+    \item Parameters: $\molecrad$   
+
+	\end{itemize}
+   
+	\textsf{Square well}
+
+	\begin{itemize}[label=\ding{42}]
+	
+    \item $\pot(\pos)=\begin{cases}
+             \infty &\pos \leq \molecrad\\
+             -\dielec &\molecrad < \pos \leq R\molecrad\\
+                    0 & \pos > R\molecrad
+                \end{cases}$
+	
+    \item Parameters: $\molecrad, \dielec, R$
+
+	\end{itemize}
+
+    \textit{Lennard-Jones}
+    
+    \begin{itemize}[label=\ding{46}]
+	
+    \item $\pot(\pos) = 4\dielec\bigg[\Big(\frac{\molecrad}{\pos}\Big)^{12}-\Big(\frac{\molecrad}{\pos}\Big)^6\bigg] $
+	
+    \item Parameters: $\molecrad, \dielec$
+
+	\end{itemize}
+  
+    \texttt{Kihara}
+    
+    \begin{itemize}[label={---}]
+	
+    \item $\pot(\pos) = 4\dielec\bigg[\Big(\frac{\molecrad-2\activity}{\pos-2\activity}\Big)^{12}-\Big(\frac{\molecrad-2\activity}{\pos-2\activity}\Big)^6\bigg] $
+    
+    \item Parameters: $\molecrad, \dielec, \activity$
+
+	\end{itemize}
+
+    
+    {\bfseries\textsc{Sutherland} $(\freq d\work)$}
+    
+	\begin{itemize}[label=\ding{50}]
+    
+	\item $\pot(\pos)=\begin{cases}
+                    \infty & \pos \leq \molecrad\\
+                    -\dielec\left(\frac{\molecrad}{\pos}\right)^6& \pos > \molecrad
+                \end{cases}$
+                
+	\item Parameters: $\molecrad, \dielec$
+    
+	\end{itemize}
+   
+\end{mdframed}
