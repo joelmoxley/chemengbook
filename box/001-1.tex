@@ -1,4 +1,4 @@
-\begin{mitframe}{001-1}
+\begin{mitframe}{001-1} % 20160703MAC
 
     \mdfsubtitle{Physics (Box 1-1)} 
 {	\centering
@@ -13,21 +13,24 @@
         
 Types of work interactions
                 
-$\blthick\work = \force \cdot d\exvecone$
+$\delta\work = \force \cdot \mathrm{d}\gendisp$
         
 \bigskip
         
         %not sure if the delta symbol the boundary layer thickness ('\blthick')? underlined x the extensive vector ('\exvecone')?
         
         % (from joel) this is just a differential (hal double check me)
+        % 20160703MAC: this is just a differential (Tester, p.22, Eq. 3-2)
         
         % i think the exvecone is the right usage (hal double check me)
+        % 20160703MAC: underlined x is a 'general displacement vector' (Tester, p.xvi & p.22)
                 
 \begin{tabular}{ | c | c |  }
         
 	\hline
             
-	Type of work & $\force \cdot \mathrm{d}\exvecone$ \\
+	Type of work & $\force \cdot \mathrm{d}\gendisp$ \\
+    % 20160703MAC: underlined x should be a 'general displacement vector' (Tester, p.xvi & p.22)
             
 	\hline
             
@@ -35,25 +38,47 @@ $\blthick\work = \force \cdot d\exvecone$
             
 	\hline
             
-	Frictional & $\fricforce \cdot \mathrm{d}\exvecone$ \\
+	Frictional & $\fricforce \cdot \mathrm{d}\gendisp$ \\
+    % 20160703MAC: underlined x should be a 'general displacement vector' (Tester, p.xvi & p.22)
             
 	\hline
             
-	Surface Deformation & $\bound \cdot \mathrm{d}\uline{\activity}$ \\
+	Surface Deformation & $\surftens \cdot \mathrm{d}\totalsa$ \\
             
-	\hline                            %not sure if the sigma symbol is the boundary quantity. not sure if 'a' is activity
+	\hline  
+    %not sure if the sigma symbol is the boundary quantity. not sure if 'a' is activity
+    % 20160630MAC: sigma here is surface tension [N/m] and underlined 'a' is total surface area [m^2] (Tester, p.xv & xvii).
             
-	Electrical Charge Transport & $\dielec \cdot \mathrm{d}\uline{\heatflux}$ \\
+	Electrical Charge Transport & $\elecpot \cdot \mathrm{d}\eleccharge$ \\
             
-	\hline                           %not sure what 'q' symbolizes (is it heat flux?).
+	\hline  
+    % 20160706MAC: 'epsilon' here is not '\dielec', it is defined as "electric potential" or "electromotive force"
+    
+    %not sure what 'q' symbolizes (is it heat flux?).
+    % 20160630MAC: 'q' here refers to electric charge (Tester, p.31 & p.xvi)
             
 	Electric Polarization & $\elecfield \cdot \mathrm{d}\uline{\elecdisplace}$ \\
             
 	\hline
             
-	Magnetic Polarization & $\magfield \cdot \mathrm{d}\uline{\magind}$ \\ \hline
+	Magnetic Polarization & $\magfield \cdot \mathrm{d}\magind$ \\ \hline
+    % 20160703MAC: '\magind' units should be changed to [kg/(s^2*A) or tesla] (Tester, p.xv)
             
-	Stress-Strain & $\uline{\vol}_{\init}(\sfrac{\force_{\disp}}{\uline{\activity}})\mathrm{d}\mpc = \uline{\vol}_{\init}(\sfrac{\force_{\disp}}{\uline{\activity}})\sfrac{\mathrm{d}\disp}{\disp_{\init}} $ \\ \hline  %not sure what '\uline{\vol}_{0}' is correct. This symbol is not indexed.
+	Stress-Strain & $\origvol(\sfrac{\force_{\disp}}{\totalsa})\mathrm{d}\linstrain = \origvol(\sfrac{\force_{\disp}}{\totalsa})\sfrac{\mathrm{d}\disp}{\disp_{\init}} $ \\ 
+% * <floresbenjie@gmail.com> 2016-07-11T10:41:57.646Z:
+%
+% > \force_{\disp}
+%
+% ^.
+    
+    \hline  
+    %not sure what '\uline{\vol}_{0}' is correct. This symbol is not indexed.
+    % 20160703MAC: \uline{\vol}_{o}' means 'original volume' (Tester, p.31)
+    % 20160704MAC: i think this should be indexed as one (i.e. '\origvol') just like '\fricforce' or friction force instead of {\vol}_{0}
+    
+    % 20160703MAC: 'omega' is not '\mpc', it means 'one-dimensional strain' or linear strain (Tester, p.xvii & p.31)
+    
+    % 20160703MAC: replace '\activity'. underlined 'a' is total surface area [m^2] (Tester, p.xvii & p.31). this is similar with 'S_A' in the index
             
 \end{tabular}
 

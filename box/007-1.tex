@@ -1,4 +1,4 @@
-\begin{mitframe}{007-1}
+\begin{mitframe}{007-1} % 20160706MAC
 
     \mdfsubtitle{Virial (Box 7-1)}
     
@@ -8,9 +8,14 @@
     
     \begin{listtwo}
     
-    	\item $p = \dens\thermcond\Temp + \thermcond\Temp\sum\limits_{n=2}^\infty\virialcoeff{n}(\Temp)\dens^{n} = \dens\thermcond\Temp(1+\virialcoeff{2}\dens+...)$     %'p' is undeclared symbol. Not indexed
+    	\item $\p = \dens\boltz\Temp + \boltz\Temp\sum\limits_{n=2}^\infty\virialcoeff{n}(\Temp)\dens^{n} = \dens\boltz\Temp(1+\virialcoeff{2}\dens+...)$     %'P' is thermodynamic pressure
+    % 20160703MAC: 'p' here should be capital 'P'
     
-    	\item $\virialcoeff{2}(\Temp) = -2\pie\massspecflux{\helmholtz}\int\limits_{0}^{\infty}\Big[\exp[-\boltznorm\pot(\pos)]-1\Big]\pos^2\mathrm{d}\pos$     %'N_{A}' is not declared, so i used '\massspecflux{\helmholtz}'
+    	\item $\virialcoeff{2}(\Temp) = -2\pie\av\int\limits_{0}^{\infty}\Big[\exp[-\boltznorm\pot(\pos)]-1\Big]\pos^2\mathrm{d}\pos$ 
+	
+    % 20160706MAC: the unit for N_A or '\av' or Avogadro's number is "molecules/mol"
+    
+    % 20160706MAC: unit for B_n or nth virial coefficient should raised to the "n-1" instead of just "n"
     
     	\begin{listthree}
     
@@ -24,13 +29,21 @@
 
     		\item Hard sphere: $\virialcoeff{2} = \dfrac{2\pie\molecrad^3}{3}$
     
-    		\item Square well: $\virialcoeff{2} = \dfrac{2\pie\molecrad}{3}\Big[1+(1-exp(\boltznorm\dielec))(\gasconst^3-1)\Big] $
+    % 20160706MAC: the unit of sigma or '\molecrad' should just be [m] instead of [A]
+    
+    		\item Square well: $\virialcoeff{2} = \dfrac{2\pie\molecrad^3}{3}\Big[1+(1-exp(\boltznorm\welldepth))(\gasconst^3-1)\Big] $
+
+	% 20160706MAC: sigma or '\molecrad' should be raised to 3. '\molecrad^3' instead of just '\molecrad'
+	
+    % 20160706MAC: epsilon is not '\dielec'. it is an energy parameter defined as "well depth" or "energy well depth" with units in [J]
 
     		\item Lennard-Jones:
             
             \begin{listfour}
     
-    			\item $\virialcoeff{2}(\Temp) = -2\pie\massspecflux{\helmholtz}\int\limits_{0}^{\infty}\bigg[\exp\bigg[-\boltznorm\bigg(4\dielec\Big[\Big(\dfrac{\molecrad}{\pos}\Big)^{12}-\Big(\dfrac{\molecrad}{\pos}\Big)^6\Big]\bigg)\bigg]-1\bigg]\pos^2\mathrm{d}\pos$
+    			\item $\virialcoeff{2}(\Temp) = -2\pie\av\int\limits_{0}^{\infty}\bigg[\exp\bigg[-\boltznorm\bigg(4\welldepth\Big[\Big(\dfrac{\molecrad}{\pos}\Big)^{12}-\Big(\dfrac{\molecrad}{\pos}\Big)^6\Big]\bigg)\bigg]-1\bigg]\pos^2\mathrm{d}\pos$
+    
+    % 20160706MAC: epsilon is not '\dielec'. it is an energy parameter defined as "well depth" or "energy well depth" with units in [J]
     
     		\end{listfour}
     

@@ -1,4 +1,4 @@
-\begin{mitframe}{002-3}
+\begin{mitframe}{002-3} % 20160705MAC
 
     \mdfsubtitle{Canonical (Box 2-3)} 
     
@@ -6,7 +6,8 @@
     
     \item Constant: \nummoles, \uline{\vol}, \Temp
     
-    \item Constraint Equations: $\sum\nolimits \molspecies{i} = \totmoles, \sum\nolimits \molspecies{i}\uline{\energy}_{i} = \uline{\energy}^{total}  $     %'n_{i}' is an unknown symbol, changed to '\molspecies'
+    \item Constraint Equations: $\sum\nolimits \molspecies{i} = \totmoles, \sum\nolimits \molspecies{i}\uline{\energy}_{i} = \uline{\energy}^{total}  $     
+    %'n_{i}' is an unknown symbol, changed to '\molspecies'
     
     \item Partition Function:
     
@@ -18,7 +19,11 @@
            
     \end{listtwo}
            
-    \item Natural Function: $\helmholtz = -\thermcond\Temp\ln\cpf$
+    \item Natural Function: $\helmholtz = -\boltz\Temp\ln\cpf$
+    
+    % 20160705MAC: '\helmholtz' should be 'uline{\helmholtz}' meaning "total helmholtz free energy" instead of "specific helmholtz free energy" (Tester, p.xv & p.401, Eq.10-48) See also Box 3-1
+    
+    % 20160630MAC: 'k' is not '\thermcond' it should be replaced by the Boltzmann constant '\boltz'
     
 \end{listone}
     

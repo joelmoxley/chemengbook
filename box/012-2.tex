@@ -1,0 +1,29 @@
+\begin{mitframe}{012-2}
+
+\mdfsubtitle{Ideal Gas Processes (Box 12-2)}
+
+\begin{longtable}{ | p{2cm} | c | c | c | c | c | } 
+ \hline
+     & $\Delta\intenergy$
+    & $\Delta\enthalpy$ 
+    & $\heatflow$ 
+    & $\work$
+    & $\Delta\entropy$
+    \\
+    \hline
+	Isothermal reversible expansion & 0 & 0 & $-\work$ & $-n\gasconst\Temp\ln\bigg(\dfrac{\vol_{2}}{\vol_{1}}\bigg)$ & $n\gasconst\ln\bigg(\dfrac{\vol_{2}}{\vol_{1}}\bigg)$  \\ \hline
+    % benjie: what is 'n'?    
+	
+    Isothermal irreversible free expansion & 0 & 0 & 0 & 0 &  \\ \hline    
+	Isobaric & $\heatflow_{\p}+\work$ & $\heatflow_{\p}$ & $\heatflow_{\p}=\int\cp\mathrm{d}\Temp$  & $-\p(\vol_{2}-\vol_{1})$ & $\int\dfrac{\cp}{\Temp}\mathrm{d}\Temp$  \\ \hline   
+ 	Adiabatic, reversible & & & 0 & & 0 \\ \hline
+	Isochoric & & & & 0 & $\int\dfrac{\cp}{\Temp}\mathrm{d}\Temp$  \\ \hline 
+\end{longtable}
+
+\begin{listone}
+	
+    \item $\p_{1}\vol_{1}^{\gamma}=p_{2}\vol_{2}^{\gamma}$  (ideal, adiabatic)  $\dfrac{\Temp_{2}}{\Temp_{1}}=\bigg(\dfrac{\p_{2}}{\p_{1}}\bigg)^{\sfrac{\gasconst}{\cp}}=\bigg(\dfrac{\vol_{1}}{\vol_{2}}\bigg)^{\sfrac{\cp}{\gasconst}}$ (isentropic, $\cp$=const)
+ % benjie: what is 'gamma'?   
+\end{listone}
+
+\end{mitframe}

@@ -11,6 +11,8 @@
 \newenvironment{listfive}{\begin{itemize}[label=$\bullet$,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
 \newenvironment{listsix}{\begin{itemize}[label=$\ast$,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
 
+\usepackage{longtable}
+
 %%EASYLIST—Remove?
 \RequirePackage[ampersand]{easylist}
 \ListProperties(Hide=100, Hang=true, Progressive=3ex, Style*=,Style2*=--\tab,
@@ -24,9 +26,11 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \title{MIT Course X PhD Qualifying Exam Study Guide}
 \authorone{Joel Moxley}
 \emailone{jfmoxely@gmail.com}
-\authortwo{Hal Alper}
-\emailtwo{halper@che.utexas.edu}
-\foreword{A special thank you to Benjie Flores for his tireless work and attention to detail, and to Filippo A. E. Nuccio for the \LaTeX~formatting magic. }
+\authortwo{Erik Allen}
+\emailtwo{erik.christian.allen@gmail.com}
+\authorthree{Hal Alper}
+\emailthree{halper@che.utexas.edu}
+\foreword{A special thank you to Benjie Flores and Marlon Capuno for his tireless work and attention to detail, and to Filippo A. E. Nuccio for the \LaTeX~formatting magic. }
 
 %%% ------------------------------------------------------------
 %%% BEGIN DOCUMENT
@@ -59,21 +63,36 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \input{box/002-3.tex}
 \input{box/002-4.tex}
 \input{box/002-5.tex}
+\input{box/003-1.tex}
 \clearpage
 \subsection{Applied Statistical Mechanics (4-1 - 6-2)}
+\input{box/004-1.tex}
+\input{box/004-2.tex}
+\input{box/005-1.tex}
 \input{box/006-1.tex}
 \input{box/006-2.tex}
 \subsection{Property Frameworks}
 \subsubsection{Fundamental Surface (13-1 - 13-6)}
+\input{box/013-1.tex}
+\input{box/013-2.tex}
+\input{box/013-3.tex}
+\input{box/013-4.tex}
+\input{box/013-5.tex}
+\input{box/013-6.tex}
 \subsubsection{Legendre Transform (14-3)}
+\input{box/014-3.tex}
 \subsubsection{EOS (7-1)}
 \input{box/007-1.tex}
 \section{Property Relations}
 \subsection{Models}
-\subsubsection{Volumetric (14-2, 14-41)}
+\subsubsection{Volumetric (14-2, 14-4)}
+\input{box/014-2.tex}
+\input{box/014-4.tex}
 \subfoursection{Bridgeman (15-1 -18-1)}
 \subsubsection{Non-Volumetric (23-1)}
+\input{box/023-1.tex}
 \subfoursection{Energy Relationships (14-1)}
+\input{box/014-1.tex}
 \subsection{Property Relations and Quantities}
 \section{Mixture Properties (34-1)}
 \subsection{Stability and Criteria (19-1 - 19-2)}
@@ -81,7 +100,9 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \subsection{Microscopic Mixing (8-1 - 9-3)}
 \input{box/008-1.tex}
 \input{box/008-2.tex}
+\input{box/009-1.tex}
 \subsection{Macroscopic Mixing (25-1)}
+\input{box/025-1.tex}
 \subsection{Non-Ideal Solutions (26-1 - 26-5)}
 \subsection{Ideal Solutions}
 \section{Phase and Chemical Equilibrium}
@@ -93,6 +114,8 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \subfoursection{Integral Approach (27-3, 29-1 - 30-2)}
 \subsubsection{Non-Volumetric Analysis}
 \subfoursection{Differential Approach (27-2, 28-1 - 28-4)}
+\input{box/028-3.tex}
+\input{box/028-4.tex}
 \subsection{Bulk Properties}
 \section{Pure Components}
 \subsection{Chemical Equilibrium}
@@ -105,6 +128,7 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \section{Balance Equations}
 \subsection{Macroscopic Balances}
 \subsubsection{First Law (10-1 - 10-3, 12-2)}
+\input{box/012-2.tex}
 \subsubsection{Second Law (11-1 - 11-2)}
 \subsubsection{Availability (12-1)}
 \newpage
@@ -141,7 +165,7 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \subsubsection{Fick's}
 \subsubsection{Stefan-Maxwell}
 \subsection{Energy (36-1)}
-%\input{box/036-1.tex}
+\input{box/036-1.tex} 
 \section{Source Terms and Body Forces}
 \section{Boundary Conditions}
 \subsection{Momentum (45-1 - 45-2)}
@@ -152,6 +176,7 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \subsection{Species}
 \subsection{Energy}
 \section{Dimensionless Analysis (37-1)}
+\input{box/037-1.tex}
 \section{Boundary Layer Analysis (43-1)}
 \newpage
 \chapter{Macroscopic Kinetics (82-1 - 88-3)}
@@ -182,7 +207,7 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \newpage
 \printindex
 \newpage
-\input{appendix.tex}
+%\input{appendix.tex}
 
 \end{document}
 %add comment

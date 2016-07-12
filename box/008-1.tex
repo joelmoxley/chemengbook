@@ -1,4 +1,4 @@
-\begin{mitframe}{008-1}
+\begin{mitframe}{008-1} % 20160707MAC
 
     \mdfsubtitle{Osmotic Pressure (Box 8-1)} 
 
@@ -10,6 +10,11 @@
 		
         \item $\osmpress = \conc_{s}\gasconst\Temp $
 	    	\item Parallel to Ideal Gas Law ($\conc s  = \sfrac{\nummoles}{\vol}$)
+            
+		% 20160707MAC: check units of '\conc' [kg of i/m^3], why is there 'i' here? this should be [mol/m^3] since 'N' is specifically mentioned
+        % 20160707MAC: unit for 'N' should be [mol] instead of [none]
+        
+        % 20160707MAC: '\conc s' should also be '\conc_{s}'
 	
     \end{listtwo}
 	
@@ -18,6 +23,10 @@
     \begin{listtwo}
     
 		\item $\chempot_{w}(\Temp,1\textit{bar}+\osmpress,\specfrac{s}) = \chempot_{w}(\Temp,1\textit{bar},\textit{pure})+\gasconst\Temp\ln\surftens_{w}\specfrac{w}+\int\limits_{1}^{1+\osmpress}\!\overline{\vol}\,_{w}\, \mathrm{d}\p$
+        
+        % 20160707MAC: 'y_w' or '\surftens' is "activity coefficient" and 'x_w' or '\specfrac' is "mole fraction" (Tester, p.xvi)
+        
+        % 20160707MAC: '\overline{\vol}' should be specifically defined as "partial molar volume"
 		
         \begin{listthree}
         
@@ -25,6 +34,8 @@
             
 			\begin{listfour}
 					\item $\ln(\surftens_{w}) \approx -\ln(\specfrac{w})-\dfrac{\osmpress\overline{\vol}_{w}}{\gasconst\Temp}~with~\specfrac{w} = 1 - \specfrac{s}$
+
+		% 20160707MAC: '\overline{\vol}' should be specifically defined as "partial molar volume"
     			
             \end{listfour}
             
@@ -45,6 +56,8 @@
 			\begin{listfour}
 				
                 \item $\ln(\gcpf) = \dfrac{(\p + \osmpress)\uline{\vol}}{\thermcond\Temp} $
+		
+        % 20160707MAC: '\uline{\vol}' should be specifically defined as "total volume" [m^3]
                 
     		\end{listfour}
             
@@ -53,8 +66,12 @@
                 
 				\item $\dfrac{\osmpress}{\thermcond\Temp} = \dens_{2} + \virialcoeff{2}{\dens_{2}}^2 + \hdots $
                 
-				\item $\dfrac{\osmpress}{\conc} = \dfrac{R\Temp}{\mw} + \dfrac{\virialcoeff{2}\nummoles \gasconst\Temp}{(\mw)^2}\conc + ...$
+		% 20160707MAC: '\dens_{i}' can be more specifically defined as "solute number density" [mol/m^3]
                 
+				\item $\dfrac{\osmpress}{\conc} = \dfrac{R\Temp}{\mw} + \dfrac{\virialcoeff{2}\nummoles \gasconst\Temp}{(\mw)^2}\conc + ...$
+
+		% 20160707MAC: '\conc' here is similar with '\conc_{s}' i.e. solute concentration
+
 				\begin{listfive}
                 
 					\item Graph of ($\sfrac{\osmpress}{\conc}$) v. $\conc$
@@ -80,6 +97,9 @@
                 \begin{listfive}
 					
                     \item $\virialcoeff{2} = \dfrac{16}{3}\pie {b_{\init}}^3,~\virialcoeff{3} = \dfrac{5}{8} {\virialcoeff{2}}^2 $
+		
+        % 20160707MAC: 'b' is undeclared
+        % 20160707MAC: 'b_{\init}' is the real "molecular radius", 'sigma' or '\molecrad' should be changed to "collision diameter" (Tester, p.474) Need discussion on this
                     
 				\end{listfive}
                 
@@ -87,14 +107,22 @@
             
 			\item Using a $\iipf\gibbs^{\exfunc}$ function
             
+		% 20160707MAC: '\gibbs' should be specifically defined as "specific Gibbs free energy"
+        
+        % 20160711MAC: '\exfunc' can be more properly defined as "excess property"
+            
 			\begin{listfour}
             
 				\item $-\overline{\vol}_1\osmpress = \gasconst\Temp\ln\activityi{1}$
-                
+
+		% 20160707MAC: '\overline{\vol}' should be specifically defined as "partial molar volume"
+        
 				\begin{listfive}
                 
 					\item Flory-Huggins (11-66)
 					\item $\dfrac{\partial\iipf\gibbs^{\exfunc}}{\partial\molesi{1}} = \gasconst\Temp\ln\activityi{1}$
+                    
+		% 20160707MAC: 'activitityi' should be defined as "activity of component i"
                     
 				\end{listfive}
                 
