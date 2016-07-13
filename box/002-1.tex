@@ -1,4 +1,4 @@
-\begin{mitframe}{002-1}
+\begin{mitframe}{002-1} % 20160705MAC
 
     \mdfsubtitle{Statistical Mechanics (Box 2-1)} 
     
@@ -28,9 +28,18 @@
     
     \end{listtwo}
     
-    \item $\boltznorm = \dfrac{1}{\thermcond\Temp},~\big\langle\exergy\big\rangle = \sum\nolimits\prob{i}\virialcoeff{i},~\ln\nummoles!\approx \nummoles\ln\nummoles - \nummoles,~\prob{i} = \dfrac{\exp(-\boltznorm\uline{\energy}_{\state})}{\sum\nolimits\exp(-\boltznorm\uline{\energy}_{\state})}$
+    \item $\boltznorm = \dfrac{1}{\boltz\Temp},~\big\langle\exergy\big\rangle = \sum\nolimits\prob{i}\virialcoeff{i},~\ln\nummoles!\approx \nummoles\ln\nummoles - \nummoles,~\prob{i} = \dfrac{\exp(-\boltznorm\uline{\energy}_{\state})}{\sum\nolimits\exp(-\boltznorm\uline{\energy}_{\state})}$
  %comment   
  % go pit rho
+ 
+	% 20160705MAC: 'B' is not '\exergy', it is "any observable property such as energy and pressure" while '<B>' means the ensemble average of observable property 'B'. 'B' should be declared as a new quantity. (Tester, p.394, Eq.10-10 cf. Eq.10-17 & Eq.10-22)
+    
+    % 20160705MAC: 'B_i' is not '\virialcoeff', it is the instantaneous value of any observable property B in their respective energy states E_i
+ 
+ % 20160630MAC: 'k' is not '\thermcond' it should be replaced by the Boltzmann constant '\boltz'
+ 
+ 	% 20160704MAC: '\prob{i}'s complete definition is 'Probability distribution of energy states' instead of just 'probability' (Tester, p.xvi & p.394, Eq.10-10)
+ 
 \end{listone}
      
 \end{mitframe}

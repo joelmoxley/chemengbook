@@ -8,17 +8,17 @@
 %%%%%Basic Packages for inputing and compiling
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
-\RequirePackage{url}										% Clickable URL's			
-\RequirePackage[pdftex]{graphicx}								% Enable pdflatex
+\RequirePackage{url}									% Clickable URL's			
+\RequirePackage[pdftex]{graphicx}						% Enable pdflatex
 \RequirePackage{amsmath,amsfonts,amsthm,amssymb,mathtools}
-\RequirePackage{xfrac}							%Nice fractions
+\RequirePackage{xfrac}									%Nice fractions
 \RequirePackage{enumitem}
 \RequirePackage{etoolbox}
-\RequirePackage{hyperref}									%Active inside references
+\RequirePackage{hyperref}								%Active inside references
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%Packages for formatting
-\RequirePackage{fancyhdr} 		%%For cusomized headers, footers
+\RequirePackage{fancyhdr} 		%%For customized headers, footers
 	\fancypagestyle{fancyplain}
 	\fancyhf{}
 	\fancyheadoffset{\plainheadrulewidth}	%Stretches head rule till the end of text
@@ -30,11 +30,12 @@
 	\renewcommand{\headrulewidth}{0.4pt}
 \pagestyle{fancy}
 
-\renewcommand{\arraystretch}{1.75} 						%This modifies the height of each row in tables and tabulars
+\renewcommand{\arraystretch}{1.75} 			%This modifies the height of each row in tables and tabulars
 
 \RequirePackage[a4paper,footskip=45pt]{geometry}	%% Fine formatting, especially regarding margins
 	\textheight=580pt
 	\topmargin=-20pt
+    
 
 \RequirePackage{wrapfig}						% Wrap text along figures
 \RequirePackage{tabu}							%Refined tabulars
@@ -47,10 +48,14 @@
 \@ifundefined{@authorone}{}{\@authorone}
 \newcommand{\authortwo}[1]{\def\@authortwo{#1}}
 \@ifundefined{@authortwo}{}{\@authortwo}
+\newcommand{\authorthree}[1]{\def\@authorthree{#1}}
+\@ifundefined{@authorthree}{}{\@authorthree}
 \newcommand{\emailone}[1]{\def\@emailone{#1}}
 \@ifundefined{@emailone}{}{\@emailone}
 \newcommand{\emailtwo}[1]{\def\@emailtwo{#1}}
 \@ifundefined{@emailtwo}{}{\@emailtwo}
+\newcommand{\emailthree}[1]{\def\@emailthree{#1}}
+\@ifundefined{@emailthree}{}{\@emailthree}
 \newcommand{\foreword}[1]{\def\@foreword{#1}}
 \@ifundefined{@foreword}{}{\@foreword}
 \newcommand{\mytitlepage}{%
@@ -65,9 +70,9 @@
 
 		\large
 		\vspace{2cm}
-		\begin{tabular}{ccc}
-		\@authorone&\kern 3cm&\@authortwo\\
-		\@emailone&&\@emailtwo\\
+		\begin{tabular}{c c c}
+		\@authorone&\@authortwo&\@authorthree\\
+		\@emailone&\@emailtwo&\@emailthree\\
 		\end{tabular}
 		\end{center}
 

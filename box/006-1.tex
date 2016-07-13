@@ -1,4 +1,4 @@
-\begin{mitframe}{006-1}
+\begin{mitframe}{006-1} % 20160706MAC
 
     \mdfsubtitle{Classical Approach (Box 6-1)} 
     
@@ -6,11 +6,17 @@
     
     \item Criteria: $\sfrac{\iipf\energy}{\thermcond\Temp} \ll 1$
     
+    % 20160702MAC: 'k' is not '\thermcond' it should be replaced by the Boltzmann constant '\boltz' (Tester p.392)
+    
     \item $ \cpc = \ipc\cmpc = \ipc \heatflow_{trans} \compress = \dfrac{\compress\ipc}{\debroglie^{3N}\nummoles!},$ ~classical partition coefficient 
+    
+    % 20160702MAC: '\compress' or 'Z' here should be changed to '\configint' or 'Z*'
     
     \begin{listtwo}
     
     	\item $\debroglie \equiv \bigg(\dfrac{\planck^2}{2\pie\mass\thermcond\Temp}\bigg)^{\sfrac{1}{2}},$ ~thermal DeBroglie wavelength
+        
+	% 20160702MAC: 'k' is not '\thermcond' it should be replaced by the Boltzmann constant '\boltz'
   
     	\item $\ipc = \dfrac{{\impc}^{\nummoles}}{\nummoles!} ,$ ~internal partition coefficient
         
@@ -21,6 +27,12 @@
     	\end{listthree}
     
     	\item $\configint \equiv \int...\int\exp\bigg[-\dfrac{\pot(\uline{\pos}^{\nummoles})}{\thermcond\Temp}\bigg]\mathrm{d}\uline{\pos}^{\nummoles} ,$ ~configurational integral
+    
+    % 20160702MAC: 'k' is not '\thermcond' it should be replaced by the Boltzmann constant '\boltz'
+    
+    % 20160705MAC: 'phi' or potential can be more specifically defined as "Intermolecular potential energy" instead of just "potential" (Tester, p.xvii)
+    
+    % 20160706MAC: '\uline{\pos}^{\nummoles}' or r^N can be separately indexed and defined as "Configuration space vector for N particles or molecules" (Tester, p.xvi)
     
     \end{listtwo}
     

@@ -4,86 +4,108 @@
 
 E.g. quantities that were used in the equation but not mentioned in the index \\
 
-\begin{tabular} { | c | c | c | c | } 
+\begin{longtable} { | c | c | c | c | p{6cm} | } 
  \hline
-    entry & box number
+    entry & box number & page number
     & undeclared quantities/s 
     & comments \\
  \hline 
-  	 1 & 7-1 & p &  not declared \\ \hline
-     2 & 8-1 & w &  not declared \\ \hline
-     3 & 8-1 & s &  not declared \\ \hline
-     4 & 8-1 & $b_{\init}$ &  not declared \\ \hline
- 	 5 & 8-2 & n &  not declared \\ \hline
+ 	 1 & 1-1 & <7> & $\gendisp$ &  general displacement vector (we created a new quantity) \\ \hline
+     2 & 1-1 & <7> & $\totalsa$ &  total surface area (we created a new quantity) \\ \hline
+     3 & 1-1 & <7> & $\eleccharge$ &  electric charge (we created a new quantity) \\ \hline
+     4 & 1-1 & <7> & $\elecpot$ &  electric charge (we created a new quantity) \\ \hline
+     5 & 1-1 & <7> & $\origvol$ &  original volume (we created a new quantity) \\ \hline
+     6 & 1-1 & <7> & $\linstrain$ &  one-dimensional strain or linear strain (we created a new quantity) \\ \hline
+  	 3 & 7-1 & <19> & $\epsilon$ &  electric potential or electromotive force? (we created a new quantity) \\ \hline
+     2 & 8-1 & <20> & w &  refers to the solvent (doesnt have to be indexed) \\ \hline
+     3 & 8-1 & <20> & s &  refers to the solute (doesnt have to be indexed)\\ \hline
+     4 & 8-1 & <21> & $b_{\init}$ &  not declared \\ \hline
+ 	 5 & 8-2 & <23> & n &  not declared \\ \hline
  
-\end{tabular}
+\end{longtable}
 
 \subsection{Uncertain Quantities}
 
 E.g. quantities that were used in the equation but have similar symbols or a combination of other quantities in the index. This quantities might result in conflicting units \\
 
-\begin{tabular} { | c | c | c | p{5cm} | } 
+\begin{longtable} { | c | c | c | c | p{6cm} | } 
  \hline
-    entry & box number
+    entry & box number & page number
     & uncertain quantities/s 
     & comments \\
  \hline
  %\endhead
-	1 & 1-1 & $\bound$ & is this 'surface deformation resistance force/surface tension'? but we have another symbol for surface tension $\surftens$ \\ \hline
-	2 & 1-1 & $\force_{\disp}$ & is this a combination of 'force' and 'displacement', or new quantity? \\ \hline
-	3 & 6-1 &  $\pot(\uline{\pos}^{\nummoles})$ & 'potential' + 'position' + 'number of moles' are all 	indexed quantities. Do we make a combination of these? Or is this a different quantity? units? \\ \hline
-	4 & 6-1 & $\heatflow_{trans}$ & is this 'heat flow'? \\ \hline
-	5 & 6-2 & $\uline{\vol}_{\fug}$  & is this 'volume' + 'fugacity'? \\ \hline
-	6 & 7-1 & $\massspecflux{\helmholtz}$ & is this 'mass species flux of i' + 'Helmholtz energy'? \\ \hline 
-	7 & 7-1 & $\pot(\pos)$ & is this 'potential' + 'position'? \\ \hline
-	8 & 7-1 & $\molecrad$ & is this 'molecular radius'? \\ \hline
-	9 & 7-2 & $\forcepot_{d-d}, \forcepot_{att}, \forcepot_{rep}$ & 'force potential'? \\ \hline
-	10 & 7-2 & $\dielec_{dipole}, \dielec_{att}, \dielec_{rep}$ & 'dielectric'? \\ \hline
-	11 & 7-3 & $\molecrad_{ij}$ & 'molecular radius'? \\ \hline
-	12 & 7-3 & $\dielec_{ij}$ & 'dielectric constant'? \\ \hline
-	13 & 7-4 & $\molecrad$ & 'molecular radius'? \\ \hline
-	14 & 7-4 & $\gasconst$ & 'ideal gas constant'? \\ \hline
-	15 & 7-4 & $\pot(\pos)$ & 'potential' + 'position'? \\ \hline
-	16 & 8-1 & $\conc_{s}, \conc s$ & concentration? \\ \hline
-	17 & 8-1 & $\specfrac{s}, \specfrac{w}$ & 'fraction of species i'? \\ \hline
-    18 & 8-1 & $\chempot_{w}$ & 'chemical potential'? \\ \hline
-    19 & 8-1 & $\surftens_{w}$ & 'surface tension'? \\ \hline
-    20 & 8-1 & $\overline{\vol}_{w}, \uline{\vol}$ & 'volume'? \\ \hline
-    21 & 8-1 & $\pot_{12}$ & 'potential'? \\ \hline
-    22 & 8-2 & $\chempot_{i}$ & 'chemical potential'? \\ \hline
-    23 & 8-2 & $\specfrac{i}$ & 'fraction of species i'? \\ \hline
- 	24 & 8-2 & $N_{1}, N_{2}$ & 'mass species flux of i' or 'moles of i'? \\ \hline
+	1 & 1-1 & <7> & $\surftens$ or $\gamma$ & which symbol to use for surface tension?\\ \hline
+	1 & 1-1 & <7> & $\magind$ or B & which symbol to use for magnetic induction?\\ \hline
+	2 & 1-1 & <7> & $\force_{\disp}$ & is this a combination of 'force' and 'displacement', or new quantity? \\ \hline
+	3 & 6-1 & <17> &  $\pot(\uline{\pos}^{\nummoles})$ & 'potential' + 'position' + 'number of moles' are all 	indexed quantities. Do we make a combination of these? Or is this a different quantity? units? \\ \hline
+	4 & 6-1 & <17> & $\heatflow_{trans}$ & is this 'heat flow'? \\ \hline
+	5 & 6-2 & <18> & $\uline{\vol}_{\fug}$  & is this 'volume' + 'fugacity'? \\ \hline
+	7 & 7-1 & <19> & $\pot(\pos)$ & is this 'potential' + 'position' or a new quantity? \\ \hline
+    8 & 7-1 & <19> & $\boltz$ or k & which symbol should we use for Boltzmann constant? \\ \hline
+	9 & 7-2 & <8> & $\forcepot_{d-d}, \forcepot_{att}, \forcepot_{rep}$ & 'force potential'? \\ \hline
+	10 & 7-2 & <9> & $\dielec_{dipole}, \dielec_{att}, \dielec_{rep}$ & 'dielectric'? \\ \hline
+	11 & 7-3 & <9> & $\molecrad_{ij}$ & 'molecular radius'? \\ \hline
+	12 & 7-3 & <9> & $\dielec_{ij}$ & 'dielectric constant'? \\ \hline
+	13 & 7-4 & <10> & $\molecrad$ & 'molecular radius'? \\ \hline
+	14 & 7-4 & <10> & $\gasconst$ & 'ideal gas constant'? \\ \hline
+	15 & 7-4 & <10> & $\pot(\pos)$ & 'potential' + 'position'? \\ \hline
+	16 & 8-1 & <20> & $\conc_{s}, \conc s$ & concentration? \\ \hline
+	17 & 8-1 & <21> & $\specfrac{s}, \specfrac{w}$ & 'fraction of species i'? \\ \hline
+    18 & 8-1 & <21> & $\chempot_{w}$ & 'chemical potential'? \\ \hline
+    19 & 8-1 & <21> & $\surftens_{w}$ & 'surface tension'? \\ \hline
+    20 & 8-1 & <21> & $\overline{\vol}_{w}, \uline{\vol}$ & 'volume'? \\ \hline
+    21 & 8-1 & <21> & $\pot_{12}$ & 'potential'? \\ \hline
+    22 & 8-2 & <21> & $\chempot_{i}$ & 'chemical potential'? \\ \hline
+    23 & 8-2 & <21> & $\specfrac{i}$ & 'fraction of species i'? \\ \hline
+ 	24 & 8-2 & <23> & $N_{1}, N_{2}$ & 'mass species flux of i' or 'moles of i'? \\ \hline
 
-\end{tabular}
+\end{longtable}
 
 \subsection{Missing Units}
 
 E.g. quantities that were mentioned or not mentioned in the index that lack units and needs to be checked for confirmation \\
 
-\begin{tabular} { | c | c | c | c | } 
+\begin{longtable} { | c | c | c | c | c | }
  \hline
- 	entry & box number
+ 	entry & box number & page number
     & missing unit/s 
     & comments\\
      \hline
  %\endhead
-	0 & <insert box number> & <insert quantity> & cant find an example yet \\ \hline
-\hline
+	0 & <insert box number> & <insert page> & <insert quantity> & cant find an example yet \\ \hline
 
-\end{tabular}
+\end{longtable}
 
 \subsection{Unit Inconsistency}
 
 E.g. quantities that have conflicting units \\ 
 
-\begin{tabular} { | c | c | c | c | } 
+\begin{longtable} { | c | c | c | c | c | } 
  \hline
-    entry & box number
+    entry & box number & page number
     & undeclared units/s 
     & comments \\
  \hline
  %\endhead
-	0 & <insert box number> & <insert quantity> & no examples yet \\ \hline
+	0 & <insert box number> & <insert page> & <insert quantity> & no examples yet \\ \hline
 
 
-\end{tabular}
+\end{longtable}
+
+\subsection{Wrong/Missing Equations}
+
+E.g. whole or parts of an equation that seems to be missing or incorrectly stated \\ 
+
+\begin{longtable} { | c | c | c | c | p{6cm} | } 
+ \hline
+    entry & box number & page number
+    & undeclared units/s 
+    & comments \\
+ \hline
+ %\endhead
+	1 & 7-1 & <19> & McMillian-Mayer TM471 (line 4) & is this an equation that we need to enter? if so, which equation should we put?  \\ \hline
+	1 & 7-1 & <19> & $\dfrac{2\pie\molecrad^3}{3}$ or $\dfrac{2\pie\molecrad}{3}$ (line 6)& in the square well equation, should the molecular radius $\molecrad$ raised to 3? \\ \hline
+    1 & 7-2 & <8> & $\dfrac{2\pie\molecrad^3}{3}$ or $\dfrac{2\pie\molecrad}{3}$ (line 6)& in the square well equation, should the molecular radius $\molecrad$ raised to 3? \\ \hline
+
+\end{longtable}
