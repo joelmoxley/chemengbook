@@ -4,13 +4,17 @@
     
 \begin{listone}
         
-    \item 
-        
-    \item 
-         
-    \item 
+    \item $y^{(k)}=y^{(\init)}-\sum\limits_{\state=1}^{k}\conjcoortwo_{\state}\mathrm{d}\conjcoor$
     
-    \item 
+    %benjie: not sure about y^{(k)}
+        
+	\item $\mathrm{d}y^{(k)}=-\sum\limits_{\state=1}^{k}\conjcoor\mathrm{d}\conjcoortwo_{\state}+\sum\limits_{\state=k+1}^{m}\conjcoortwo_{\state}\mathrm{d}\conjcoor$ 
+         
+    %benjie: not sure if 'm' , also with 'k'    
+         
+	\item $\bigg(\dfrac{\partial y^{(k)}}{\partial\conjcoortwo_{\state}}\bigg)_{\conjcoortwo_{\state},...,[\conjcoortwo_{\state}],x_{k+1},...,x_{m}}=-\conjcoor$
+    
+	\item $\bigg(\dfrac{\partial y^{(k)}}{\partial\conjcoor}\bigg)_{\conjcoortwo_{\state},...,\conjcoortwo_{k},x_{k+1},...,[x_{\state}],...,x_{m}}=\conjcoortwo_{\state}$
         
 \end{listone}			
 

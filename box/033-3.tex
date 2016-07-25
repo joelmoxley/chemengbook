@@ -1,0 +1,42 @@
+\begin{mitframe}{033-3}
+
+	\mdfsubtitle{(Box 33-3)}
+    
+ \begin{listone}
+    
+    \item $C\leftrightarrow aA+bB$ stoichiometric feed
+	%benjie: C, aA, bB
+
+ 	\item
+    \begin{tabular}{|c|c|}
+    \hline
+    C & $1-\extent$\\ \hline
+    A & $a\extent$\\ \hline
+    B & $b\extent$ \\ \hline
+    $\nummoles_{\Temp}$ & $1+(a+b-1)\extent$ \\ \hline
+    \end{tabular} 
+    %benjie: C, A, B, a, b, \extent
+    
+    \item $\eqconst = \dfrac{\big(\hat{\fugcoeff}_{A}\big)^{a}\big(\hat{\fugcoeff}_{B}\big)^{b}}{\big(\hat{\fugcoeff}_{C}\big)^{1}}\p^{a+b-1}\dfrac{(b\extent)^{b}(a\extent)^{a}}{(1-\extent)}(1+(a+b-1)\extent)^{1-a-b}$
+	%benjie: \fugcoeff, B, b, A, a, \extent
+    
+    \item $a=b=1:~\eqconst=\p\dfrac{\extent^{2}}{1-\extent^{2}},~\extent=\Bigg(\dfrac{\eqconst}{1+\eqconst}\Bigg)^{\sfrac{1}{2}}$
+    %benjie: \extent, a, b
+    
+    \item $aA+bB \leftrightarrow  C$       
+    
+	\item $\eqconst = \dfrac{\big(\hat{\fugcoeff}_{C}\big)^{1}}{\big(\hat{\fugcoeff}_{A}\big)^{a}\big(\hat{\fugcoeff}_{B}\big)^{b}}\p^{1-a-b}\dfrac{(1-\extent)}{(b\extent)^{b}(a\extent)^{a}}(1+(1-a-b)\extent)^{a+b-1}$
+	%benjie: \fugcoeff, B, b, A, a, \extent
+    
+    \item $a=b=1:~ \eqconst=\dfrac{1}{\p}\dfrac{2\extent-\extent^{2}}{(1-\extent)^{2}},~\extent=1-\Bigg(\dfrac{1}{1+\p\eqconst}\Bigg)^{\sfrac{1}{2}}~\dfrac{\mathrm{d}\extent}{\mathrm{d}\Temp}=\dfrac{(2\extent-\extent^{2})(1-\extent^{2})\iipf\enthalpy_{rxn}^{\init}}{2(1-\extent)\gasconst\Temp^{2}}$
+    %benjie: a, b, \extent, iipf, {rxn}
+    
+    \item $a=\dfrac{1}{2},~b=\dfrac{3}{2}~M=\dfrac{2\extent-\extent^{2}}{(1-\extent)^{2}},~\extent=1-\Bigg(\dfrac{1-M}{1+M}\Bigg)^{\sfrac{1}{2}}$
+    %Benjie: a, b, M
+    
+    \item $M=\dfrac{\sqrt{27}}{4}\p\eqconst$
+    %Benjie: M
+
+	\end{listone}    
+
+\end{mitframe}

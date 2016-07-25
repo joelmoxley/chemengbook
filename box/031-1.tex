@@ -1,0 +1,94 @@
+\begin{mitframe}{031-1}
+
+    \mdfsubtitle{Chemical Equilibria (Box 31-1)} 
+    
+\begin{listone}
+        
+    \item Equilibrium criteria
+    
+	\begin{listtwo}
+
+		\item $\sum\chempot_{\state}\vvel_{\state} = 0$
+    
+    \end{listtwo}
+    
+    \item Standard States
+    
+	\begin{listtwo}
+
+		\item Vapor
+        
+        \begin{listthree}
+       
+        \item Pure, ideal gas at 1 bar
+
+		\end{listthree}        
+        
+        \item Liquid
+
+        \begin{listthree}
+        
+        	\item Pure liquid at vapor pressure
+
+		\end{listthree}
+                
+        \item Solid
+        
+        \begin{listthree}
+        
+        	\item Most stable at temperature, usually at vapor pressure
+
+		\end{listthree}
+    
+    \end{listtwo}    
+   
+    \item Equilibrium constant
+    
+	\begin{listtwo}
+
+		\item Vapor phase
+        
+        \begin{listthree}
+        
+        	\item $\eqconst \equiv \prod\limits_{j=1}^{n'}\Bigg(\dfrac{\widehat{\fug}_{j}}{{\fug_{j}}^{\init}}\Bigg)^{\vvel_{j}}=~exp\Bigg(\dfrac{-\iipf{\gibbs_{rx}}^{\init}}{\gasconst\Temp}\Bigg)=\fugeqconst\yeqconst\peqconst=\Bigg(\prod\limits_{j=1}^{n'}{\fugcoeff_{j}}^{\vvel_{j}}\Bigg)\Bigg(\prod\limits_{j=1}^{n'}{y_{j}}^{\vvel_{j}}\Bigg)\p^{\vvel}=\prod\limits_{j=1}^{n'}(\heatflux_{\state})^{\vvel_{j}}$
+            %benjie: not sure about 'n', 'j', 'exp', '\vvel_{j}' ,\iipf for delta, \gibbs_{rx}, {y_{j}}^{\vvel_{j}}, '\heatflux_{\state}'
+            \begin{listfour}
+            
+            	\item Ideal gas/Ideal mixture: $\eqconst = \Bigg( \prod\limits_{j=1}^{n'}{y_{j}}^{\vvel_{j}}\Bigg)\p^{\vvel}$
+
+			\end{listfour}
+
+		\end{listthree}        
+        
+        \item Condense phase / Solid
+
+        \begin{listthree}
+        
+        	\item $\eqconst \equiv \prod\limits_{j=1}^{n'}\Bigg(\dfrac{\widehat{\fug}_{j}}{{\fug_{j}}^{\init}}\Bigg)^{\vvel_{j}}=~exp\Bigg(\dfrac{-\iipf{\gibbs_{rx}}^{\init}}{\gasconst\Temp}\Bigg)=\acteqconst K_{x}=\Bigg(\prod\limits_{j=1}^{n'}{\gamma_{j}}^{\vvel_{j}}\Bigg)\Bigg(\prod\limits_{j=1}^{n'}{x_{j}}^{\vvel_{j}}\Bigg)=\prod\limits_{j=1}^{n'}(\heatflux_{\state})^{\vvel_{j}}$
+            %benjie: not sure with 'K_{x}', '\gamma_{j}', '\heatflux_{\state}'
+            
+            \begin{listfour}
+            
+            	\item $\iipf\gibbs_{\fug,(l)}^{\init}=\iipf\gibbs_{\fug,ideal vapor}^{\init}+\int\limits_{1bar}^{\p_{vp}}\vol^{\vol}\mathrm{d}\p+\int\limits_{\p_{vp}}^{\p}\vol^{L}\mathrm{d}\p$
+                %benjie: not sure with '(l)', \p_{vp}, 'L'
+                
+                \item $\dfrac{\widehat{\fug}_{j}}{{\fug_{j}}^{\init}}=\dfrac{\fug_{j}}{{\fug_{j}}^{\init}} \gamma_{j} x_{j}$
+                %benjie: not sure with }\gamma_{j} x_{j}
+                
+                \item $\gasconst\Temp\ln\Bigg(\dfrac{\fug_{j}}{{\fug_{j}}^{\init}}\Bigg)=\int\limits_{\p_{vp}}^{\p}\uline{\vol}_{j}\mathrm{d}\p$
+                %benjie: not sure with \p_{vp}
+                
+                \item Ideal solution / Low pressure: $\eqconst = \Bigg(\prod\limits_{j=1}^{n'}{x_{j}}^{\vvel_{j}}\Bigg)$
+                
+                %benjie: not sure with 'x_{j}'
+                
+
+			\end{listfour}                        
+
+		\end{listthree}                        
+    
+    \end{listtwo}     
+    
+\end{listone}			
+
+\end{mitframe}

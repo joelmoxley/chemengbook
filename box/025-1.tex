@@ -3,26 +3,31 @@
     \mdfsubtitle{Mixing Properties/Delta G mixing (Box 25-1)} 
     
 \begin{listone}
-        
-    \item Mixture Properties: $...insert equation here...$
-        
-    \item Partial molar property: $...insert equation here...$
+          \item Mixture Properties:$B=\vol,\enthalpy,\gibbs,\entropy,\helmholtz,\intenergy...$
+    %benjie: not sure of 'B'      
+                
+\item Partial molar property: $\overline{B{i}}=\bigg(\dfrac{\partial\uline{B}}{\partial\nummoles_{i}}\bigg)_{\Temp,\p,\nummoles_{j},[i]}=B-\sum\limits_{j \neq i}\specfrac{j}\bigg(\dfrac{\partial B}{\partial\specfrac{j}}\bigg)_{\Temp,\p,\specfrac[j,i]}$
+	%benjie: not sure of 'B' 
+          
+         %for B without subscript just use B, for B with subscript use \virialcoeff{subscript}
          
-    \item Partial mixing properites: $...insert equation here...$
-
-    \item $...insert equation here...$
+         
+    \item Partial mixing properties: $\overline{\iipf{B}{i}}=\bigg(\dfrac{\partial\uline{B}}{\partial\nummoles{i}}\bigg)_{\Temp,\p,\nummoles{j}[i]}=B_{mix}-\sum\limits_{j\neq i}\specfrac{j}\bigg(\dfrac{\partial{B}_{mix}}{\partial\specfrac{j}}\bigg)_{\Temp,\p,\specfrac[j,i]} $
     
-    \item $...$ is minimum required work of separation
+    \item $\iipf{B}_{mix}=-\sum\limits_{j=1}\specfrac{j}\big(\overline{B}_j-\overline{B}_j+\big)$
+    
+    \item $\iipf\gibbs_{mix}$ is minimum required work of separation
         
     \item Ideal
 
-	\item $...insert equation here...$
+	\item $\iipf\entropy_{mix} ^{\mominertia\elecdisplace}(\Temp,\p_{\mass})=-\gasconst\sum\nolimits\specfrac{i}\ln\specfrac{i}$
+    % not sure of ID
     
-    \item $...insert equation here...$
+    \item $\iipf\enthalpy_{mix}^{\mominertia\elecdisplace}(\Temp,\p_{\mass})=0=>\iipf\enthalpy_{mix}=\iipf\enthalpy^{\energy\disp}$  when ideal reference
+     
+          \item $\iipf\gibbs_{mix}^{\mominertia\elecdisplace}(\Temp,\p_{\mass})=\gasconst\Temp\sum\nolimits\specfrac{i}ln\specfrac{i}$
     
-    \item $...insert equation here...$
-    
-    \item $...insert equation here...$
+    \item $\iipf\vol_{mix}^{\mominertia\elecdisplace}=0$
                    
 \end{listone}			
 

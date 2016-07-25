@@ -1,4 +1,4 @@
-\begin{mitframe}{004-1}
+\begin{mitframe}{004-1} % 20160714MAC
 
     \mdfsubtitle{(Box 4-1)} 
     
@@ -9,6 +9,7 @@
     \item $\uline{\helmholtz} = -\nummoles\boltz\Temp\ln\Bigg[\bigg(\dfrac{2\pie\mass\boltz\Temp}{\planck^{2}}\bigg)^{\sfrac{3}{2}}\dfrac{\uline{\vol}}{\nummoles}e\Bigg]$
     
     %Benjie: Not sure about  'e'
+    % 20160714MAC: 'e' here is the constant "e" which is the base of the natural logarithm (Tester, Eq.10-68)
     
     \item $\uline{\intenergy}=\dfrac{3}{2}\nummoles\boltz\Temp$
     
@@ -19,36 +20,49 @@
     \item $\uline{\entropy}=\nummoles\boltz\ln\Bigg[\bigg(\dfrac{2\pie\mass\boltz\Temp}{\planck^{2}}\bigg)^{\sfrac{3}{2}}\dfrac{\uline{\vol}}{\nummoles}e^{\sfrac{5}{2}}\Bigg]$
     
     %Benjie: Not sure about  'e'
+    % 20160714MAC: 'e' here is the constant "e" which is the base of the natural logarithm (Tester, Eq.10-69)
     
     \item $\uline{\enthalpy}=\uline{\intenergy}+\p\uline{\vol}=\uline{\intenergy}+n\boltz\Temp,\tab \uline{\gibbs}=\uline{\helmholtz}+\p\uline{\vol}=\uline{\helmholtz}+n\boltz\Temp$
     
     %Benjie: Not sure about 'n'
+    % 20160714MAC: 'n' here is 'N' or "\nummoles" from the equation PV = NkT
     
     \item Diatomic ideal gas 
    
    	\item $\dfrac{\helmholtz}{\boltz\Temp}=-\ln\Bigg[\bigg(\dfrac{2\pie\mass\boltz\Temp}{\planck^{2}}\bigg)^{\sfrac{3}{2}}\dfrac{\uline{\vol}}{\nummoles}e\Bigg]-\ln\Bigg[\dfrac{8\pie^{2}\mominertia\boltz\Temp}{\molecrad\planck^{2}}\Bigg]+\sum\limits_{i=1}^{3\nummoles_{atoms}-5}\Bigg[\dfrac{\vibrfreqfac}{2\Temp}+\ln(1-e^{-\sfrac{\vibrfreqfac}{\Temp}})\Bigg]-\dfrac{\eneatom}{\boltz\Temp}-\ln\elecdegen$
     
     %Benjie: not sure about 'e', '\molecrad' for sigma, '\mominertia' for I, atoms, 
+    % 20160714MAC: 'e' here is the constant "e" which is the base of the natural logarithm
+    % 20160714MAC: sigma here is not '\molecrad', it is called "symmetry number", value is '1' for hetero-, '2' for homonuclear diatomic molecules
+    
     \item $\dfrac{\intenergy}{\boltz\Temp}=\dfrac{3}{2}+\dfrac{2}{2}+\sum\limits_{i=1}^{3\nummoles_{atoms}-5}\Bigg[\dfrac{\vibrfreqfac}{2\Temp}+\dfrac{\sfrac{\vibrfreqfac}{\Temp}}{e^{\sfrac{\vibrfreqfac}{\Temp}}-1}\Bigg]-\dfrac{\eneatom}{\boltz\Temp}$
     
     %Benjie: Not sure about 'e'
+    % 20160714MAC: 'e' here is the constant "e" which is the base of the natural logarithm
     
     \item $\dfrac{\cv}{\boltz}=\dfrac{3}{2}+\dfrac{2}{2}+\sum\limits_{i=1}^{3\nummoles_{atoms}-5}\Bigg[\bigg(\dfrac{\vibrfreqfac}{\Temp}\bigg)^{2}\dfrac{e^{\sfrac{\vibrfreqfac}{\Temp}}}{(e^{\sfrac{\vibrfreqfac}{\Temp}}-1)^{2}}\Bigg]$
            
     %Benjie: Not sure about 'e'
+    % 20160714MAC: 'e' here is the constant "e" which is the base of the natural logarithm
     
     \item $\dfrac{\entropy}{\boltz}=\ln\Bigg[\bigg(\dfrac{2\pie\mass\boltz\Temp}{\planck^{2}}\bigg)^{\sfrac{3}{2}}\dfrac{\uline{\vol}}{\nummoles}e^{\sfrac{5}{2}}\Bigg]+\ln\Bigg[\dfrac{8\pie^{2}\mominertia\boltz\Temp}{\molecrad\planck^{2}}\Bigg]+\sum\limits_{i=1}^{3\nummoles_{atoms}-5}\Bigg[\dfrac{\sfrac{\vibrfreqfac}{\Temp}}{e^{\sfrac{\vibrfreqfac}{\Temp}}-1}-\ln(1-e^{-\sfrac{\vibrfreqfac}{\Temp}})\Bigg]+\ln\elecdegen$          
     %Benjie: not sure about 'e', '\molecrad' for sigma, '\mominertia' for I, atoms, 
+    % 20160714MAC: 'e' here is the constant "e" which is the base of the natural logarithm
+    % 20160714MAC: sigma here is not '\molecrad', it is called "symmetry number", value is '1' for hetero-, '2' for homonuclear diatomic molecules]
+    % 20160714MAC: '\mominertia' is correct for 'I'
             
     \item $\uline{\enthalpy}=\uline{\intenergy}+\p\uline{\vol}=\uline{\intenergy}+n\boltz\Temp,\tab \uline{\gibbs}=\uline{\helmholtz}+\p\uline{\vol}=\uline{\helmholtz}+n\boltz\Temp$
     
-    %Benjie: Not sure about 'n'                
+    %Benjie: Not sure about 'n'  
+    % 20160714MAC: 'n' here is 'N' or "\nummoles" from the equation PV = NkT
             
     \item Non-linear Polyatomic ideal gas 
        
    	\item $\dfrac{\helmholtz}{\boltz\Temp}=-\ln\Bigg[\bigg(\dfrac{2\pie\mass\boltz\Temp}{\planck^{2}}\bigg)^{\sfrac{3}{2}}\dfrac{\uline{\vol}}{\nummoles}e\Bigg]-\ln\Bigg[\dfrac{\pie^{\sfrac{1}{2}}}{\molecrad}\bigg(\dfrac{\Temp^{3}}{\dimltemp_{A}\dimltemp_{B}\dimltemp_{C}}\bigg)^{\sfrac{1}{2}}\Bigg]+\sum\limits_{i=1}^{3\nummoles_{atoms}-6}\Bigg[\dfrac{\vibrfreqfac}{2\Temp}+\ln(1-e^{-\sfrac{\vibrfreqfac}{\Temp}})\Bigg]-\dfrac{\eneatom}{\boltz\Temp}-\ln\elecdegen$
     
     %Benjie: not sure about "\dimltemp" for theta A, theta B, theta C
+    % 20160714MAC: '\dimltemp' seems right for theta
+    
     
     \item $\dfrac{\intenergy}{\boltz\Temp}=\dfrac{3}{2}+\dfrac{3}{2}+\sum\limits_{i=1}^{3\nummoles_{atoms}-6}\Bigg[\dfrac{\vibrfreqfac}{2\Temp}+\dfrac{\sfrac{\vibrfreqfac}{\Temp}}{e^{\sfrac{\vibrfreqfac}{\Temp}}-1}\Bigg]-\dfrac{\eneatom}{\boltz\Temp}$
     
@@ -56,10 +70,14 @@
     
     \item $\dfrac{\entropy}{\boltz}=\ln\Bigg[\bigg(\dfrac{2\pie\mass\boltz\Temp}{\planck^{2}}\bigg)^{\sfrac{3}{2}}\dfrac{\uline{\vol}}{\nummoles}e^{\sfrac{5}{2}}\Bigg]+\ln\Bigg[\dfrac{\pie^{\sfrac{1}{2}}e^{\sfrac{3}{2}}}{\molecrad}\bigg(\dfrac{\Temp^{3}}{\dimltemp_{A}\dimltemp_{B}\dimltemp_{C}}\bigg)^{\sfrac{1}{2}}\Bigg]+\sum\limits_{i=1}^{3\nummoles_{atoms}-6}\Bigg[\dfrac{\sfrac{\vibrfreqfac}{\Temp}}{e^{\sfrac{\vibrfreqfac}{\Temp}}-1}-\ln(1-e^{-\sfrac{\vibrfreqfac}{\Temp}})\Bigg]+\ln\elecdegen$          
     %Benjie: not sure about 'e', '\molecrad' for sigma, '\mominertia' for I, atoms, 
+    % 20160714MAC: 'e' here is the constant "e" which is the base of the natural logarithm
+    % 20160714MAC: sigma is not '\molecrad', it is called "symmetry number"
+    % 20160714MAC: '\mominertia' is correct for 'I'
 
     \item $\uline{\enthalpy}=\uline{\intenergy}+\p\uline{\vol}=\uline{\intenergy}+n\boltz\Temp,\tab \uline{\gibbs}=\uline{\helmholtz}+\p\uline{\vol}=\uline{\helmholtz}+n\boltz\Temp$
     
     %Benjie: Not sure about 'n'
+    % 20160714MAC: 'n' here is 'N' or "\nummoles" from the equation PV = NkT
     
     
 \end{listone}			
