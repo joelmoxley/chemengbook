@@ -1,0 +1,37 @@
+\begin{mitframe}{020-1} 
+
+    \mdfsubtitle{Departure Functions for Pure Systems (Box 20-1)} 
+    
+	\begin{listone}
+	
+    \item Real behavior can be obtained by integrating at constant temperature to an attenuated state $\p \rightarrow 0 ~\text{or}~ \dens \rightarrow 0$, carrying out the process at the attenuated state, and integrating at constant temperature to the final state. The departure function should account for the phase changes by splitting up the integral.
+    %benjie: \dens
+    
+    \item $\virialcoeff{2}-\virialcoeff{1}=(\virialcoeff{2}-\virialcoeff{2}^{\init})+(\virialcoeff{2}^{\init}-\virialcoeff{1}^{\init})-(\virialcoeff{1}-\virialcoeff{1}^{\init})$
+    %benjie: \virialcoeff{} 
+    
+    \item General attenuated state properties
+    
+    \begin{listtwo}
+
+		\item $\virialcoeff{2}^{\init}(\Temp_{2},\p_{2})-\virialcoeff{1}^{\init}(\Temp_{1},\p_{1})=\int\limits_{\Temp_{1}}^{\Temp_{2}}\left.\Bigg(\dfrac{\partial\virialcoeff{}^{\init}}{\partial\Temp}\Bigg)\right|_{\p}\mathrm{d}\Temp+\int\limits_{\p_{1}}^{\p_{2}}\left.\Bigg(\dfrac{\partial\virialcoeff{}^{\init}}{\partial\p}\Bigg)\right|_{\Temp}\mathrm{d}\p$
+        %Benjie: \virialcoeff, \virialcoeff{}^{\init}
+        
+        \item $\virialcoeff{2}^{\init}(\Temp_{2},\vol_{2})-\virialcoeff{1}^{\init}(\Temp_{1},\vol_{1})=\int\limits_{\Temp_{1}}^{\Temp_{2}}\left.\Bigg(\dfrac{\partial\virialcoeff{}^{\init}}{\partial\Temp}\Bigg)\right|_{\vol}\mathrm{d}\Temp+\int\limits_{\vol_{1}}^{\vol_{2}}\left.\Bigg(\dfrac{\partial\virialcoeff{}^{\init}}{\partial\vol}\Bigg)\right|_{\Temp}\mathrm{d}\vol$
+        %Benjie: \virialcoeff
+
+	\end{listtwo}    
+    
+    \item Common attenuated state properties
+    
+    \begin{listtwo}
+
+		\item $\intenergy_{2}^{\init}(\Temp_{2},\p_{2})-\intenergy_{1}^{\init}(\Temp_{1},\p_{1})=\intenergy_{2}^{\init}(\Temp_{2},\vol_{2})-\intenergy_{1}^{\init}(\Temp_{1},\vol_{1})=\int\limits_{\Temp_{1}}^{\Temp_{2}}\bigg({\cp}^{\init}-\gasconst\bigg)\mathrm{d}\Temp$
+        
+        \item $\enthalpy_{2}^{\init}(\Temp_{2},\p_{2})-\enthalpy_{1}^{\init}(\Temp_{1},\p_{1})=\enthalpy_{2}^{\init}(\Temp_{2},\vol_{2})-\enthalpy_{1}^{\init}(\Temp_{1},\vol_{1})=\int\limits_{\Temp_{1}}^{\Temp_{2}}{\cp}^{\init}\mathrm{d}\Temp$
+
+	\end{listtwo}    
+    
+	\end{listone}			
+
+\end{mitframe}

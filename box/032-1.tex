@@ -1,0 +1,40 @@
+\begin{mitframe}{032-1}
+
+	\mdfsubtitle{(Box 32-1)}
+
+\begin{listone}
+
+	\item Chemical reaction effects on thermodynamics properties
+    
+    \begin{listtwo}
+
+		\item $\uline{\exergy}=\extent\iipf{\exergy_{rx}}^{\init}+\exergy^{\init}$
+        
+        \item $\iipf\uline{\enthalpy}=\extent\iipf{\uline{\enthalpy}_{rx}}^{\init}+\iipf\uline{\enthalpy}^{\exfunc}$
+        %benjie: \iipf, {rx}, \extent
+        
+        \item $\iipf\uline{\entropy}=\extent\iipf{\uline{\entropy}_{rx}}^{\init}+\iipf\uline{\entropy}^{\exfunc}-\gasconst\nummoles_{\Temp}\sum\specfrac{i}(\extent)\ln(\specfrac{i}(\extent))$
+        %benjie: \iipf, {rx}, \nummmoles_{\Temp}, \specfrac, \extent
+        
+        \item $\iipf\uline{\gibbs}=\extent\iipf{\uline{\gibbs}_{rx}}^{\init}+\gasconst\Temp\nummoles_{\Temp}\sum\specfrac{i}(\extent)\ln(\actcoeff)+\gasconst\Temp\nummoles_{\Temp}\sum\specfrac{i}(\extent)\ln(\specfrac{i}(\extent))$
+         %benjie: \iipf, {rx}, \nummmoles_{\Temp}, \specfrac, \extent, \actcoeff
+
+	\end{listtwo}
+    
+    \item First law with reaction
+        
+    \begin{listtwo}
+
+		\item $0 = \dot{n}\int\limits_{\Temp_{\init}}^{\Temp}\iipf\cp\mathrm{d}\Temp+\dot{\heatflow}+\dot{\work_{\entropy}}-\extent\iipf\enthalpy_{\gasconst}^{\init}(\Temp)$
+        %benjie: \iipf, \extent, \gasconst
+        
+        \item adiabatic, rigid turbine
+
+	\end{listtwo}   
+    
+    \item $\work_{\entropy}=\iipf\uline{\enthalpy}=\dot{n}\int\limits_{\Temp_{\init}}^{\Temp}\iipf\cp\mathrm{d}\Temp+\iipf\extent\iipf\enthalpy_{rxn}^{\init}(\Temp)$
+	%benjie: not sure with \iipf, \extent, {rxn}, \dot{n}
+    
+\end{listone}
+
+\end{mitframe}

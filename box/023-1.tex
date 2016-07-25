@@ -4,41 +4,42 @@
     
 \begin{listone}
         
-    \item ...insert equation here...
-        
-    \item ...insert equation here...
-         
+    \item $\p=\gasconst\Temp\dens(1+\virialcoeff\dens)$
+    
+    \item$\compress= 1+\virialcoeff\dens$
+    
     \item Statistical Mechanics
     
     \begin{listtwo}
 		
-        \item ...insert equation here...
-	
+        \item $\virialcoeff{2}(\Temp)=-2\pi\av\int\limits_{0}^{\infty}\big[exp\bigg[\boltznorm\pot\big(\pos\big)\bigg]-1\big]\pos^2\mathrm{d}\pos$
+     
     \end{listtwo}
     
     \item Corresponding states Theorem
 
     \begin{listtwo}
 		
-        \item ...insert equation here...
-	
+    \item $\virialcoeff=\bigg(\virialcoeff{\init}+\mpc\virialcoeff{1}\bigg)\dfrac{\accentfac\Temp_{c}}{\p_{c}}$
+    
+    %not sure about 'c'
+          	
     \end{listtwo}
     
     \item Mixing Rules
     
     \begin{listtwo}
 		
-        \item ...insert equation here...
-	
-    	\item Binary
+    \item $\virialcoeff{\mixfunc} =\sum\sum\specfrac{i}\specfrac{j}\virialcoeff{ij}$
+        
+   	\item Binary
         
         \begin{listthree}
 		
-            \item ...insert equation here...
-
-			\item ...insert equation here...
+           \item$\virialcoeff{\mixfunc} =\disp_{1}^{2}\virialcoeff{11}+2\disp_{1}\disp_{2}\virialcoeff{12}+\disp_{2}^{2}\virialcoeff{22}$
+			\item $\virialcoeff{12}$  from microscopic mixing rule
                 
-    	\end{listthree}
+   	\end{listthree}
 		    
     \end{listtwo}    
     
@@ -46,17 +47,26 @@
 
     \begin{listtwo}
 		
-        \item ...insert equation here...
+       \item $\ln\eleccoeff= \int\limits_{0}^{\infty}(\compress-1)$
+       %\dfrac{\mathrm{d}\p}{\p}=\dfrac{B\p}}{\gasconst\Temp}$
         
-        \item ...insert equation here...
+% not sure about B        
+        
+        \item $\ln\big(\hat{\fhmolefrac{i}}\big)=\bigg(2\bigg(\sum\limits_{j} y_{i}-\virialcoeff{ij}\bigg)-\virialcoeff{\mixfunc}\bigg)\dfrac{\p}{\gasconst\Temp}$
+        
+       
+              
+        %not sure of y%
+               
         
         \item Binary
         
         \begin{listthree}
 		
-        	\item ...insert equation here...
-            
-            \item ...insert equation here...
+        	\item  $\ln\hat{\eleccoeff_{1}}=\big[2y_{1}+\virialcoeff{11}+2y_{2}\virialcoeff{12}-\virialcoeff{\mixfunc}\big]\dfrac{\p}{\gasconst\Temp}$
+               
+          \item $\ln\hat{\eleccoeff_{2}}= \bigg[2y_{1}\virialcoeff{12}+2y_{2}\virialcoeff{22}-\virialcoeff{\mixfunc}\bigg]\dfrac{\p}{\gasconst\Temp}$
+          
 	
     	\end{listthree}
 	

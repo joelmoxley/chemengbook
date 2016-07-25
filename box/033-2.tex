@@ -1,0 +1,36 @@
+\begin{mitframe}{033-2}
+
+	\mdfsubtitle{(Box 33-2)}
+  
+    \begin{listone}
+    
+    \item $aA\leftrightarrow bB$ stoichiometric feed
+	%benjie: aA, bB
+
+ 	\item
+    \begin{tabular}{|c|c|}
+    \hline
+    A & $a(1-\extent)$\\ \hline
+    B & $b\extent$ \\ \hline
+    $\nummoles_{\Temp}$ & $a+(b-a)\extent$ \\ \hline
+    \end{tabular} 
+    %benjie: a, b, \extent
+    
+    \item $\eqconst = \dfrac{\big(\hat{\fugcoeff}_{B}\big)^{b}}{\big(\hat{\fugcoeff}_{A}\big)^{a}}\p^{b-a}\dfrac{(b\extent)^{b}}{(a(1-\extent))^{a}}(a+(b-a)\extent)^{a-b}$
+	%benjie: \fugcoeff, B, b, A, a, \extent
+    
+    \item $a=b=1:~\eqconst=\dfrac{\extent}{1-\extent},~\extent=\dfrac{\eqconst}{1+\eqconst},~\dfrac{\mathrm{d}\extent}{\mathrm{d}\Temp}=\dfrac{\extent(1-\extent)\iipf\enthalpy^{\init}_{rxn}}{\gasconst\Temp^2}$
+    %benjie: \extent, \iipf, a, b, rxn
+    
+    \item $a=1,~b=2:~\eqconst=\dfrac{4\extent^{2}\p}{1-\extent^{2}},~\extent=\Bigg(\dfrac{\eqconst}{4\p+\eqconst}\Bigg)^{\sfrac{1}{2}}~\dfrac{\mathrm{d}\extent}{\mathrm{d}\Temp}=\dfrac{\extent(1-\extent^{2})\iipf\enthalpy^{\init}_{rxn}}{2\gasconst\Temp^{2}}$
+    %benjie: a, b, \iipf, \extent, rxn
+    
+    \item $a=2,~b=1:~\eqconst=\dfrac{(1-\extent^{2})}{4\p(\extent)^{2}}$
+    %benjie: a, b, \extent
+	
+    \item $\extent=1-\Bigg(\dfrac{1}{1+4\p\eqconst}\Bigg)^{\sfrac{1}{2}}~\dfrac{\mathrm{d}\extent}{\mathrm{d}\Temp}=-\dfrac{\extent(1-\extent^{2})\iipf\enthalpy^{\init}_{rxn}}{2\gasconst\Temp^{2}}$
+    %benjie: \extent, rxn
+
+	\end{listone}
+
+\end{mitframe}

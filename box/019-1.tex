@@ -1,0 +1,58 @@
+\begin{mitframe}{019-1} 
+
+    \mdfsubtitle{Stability Criteria (Box 19-1)} 
+  
+ 	\begin{listone}
+        
+    \item $\blthick^2 \uline{\intenergy} \geq 0$
+    %benjie: not sure '\blthick'
+    
+    \item $\blthick^2 \uline{\entropy} \geq 0$
+    %benjie: not sure '\blthick'
+    
+    \item $\mass=n+2$
+	%benjie: not sure with '\mass' and 'n'
+
+    \item $y_{(\mass -1)(\mass -1)}^{(\mass -2)} \geq 0 , = 0$ at spinodal
+        
+    \item come back to this to make table of behavior at binodal, spinodal, and critical point.
+    
+\end{listone}	
+  
+\begin{longtable}{ | c | c | } 
+ \hline
+ 	%row 1
+ 	$ y_{22}^{(1)} > 0$ & $ y_{33}^{(2)} > 0$\\ \hline 
+    %benjie: not sure with 'y'
+    
+    %row 2        
+    $ \uline{\helmholtz}_{\uline{\vol} \uline{\vol}} = -\bigg(\dfrac{\partial\p}{\partial\uline{\vol}}\bigg)_{\Temp,\nummoles}$ & $ \uline{\gibbs}_{\exergy\exergy} = -\bigg(\dfrac{\partial\chempot_{\exergy}}{\partial\nummoles_{\exergy}}\bigg)_{\Temp,\p,\nummoles_{\conc}}$ \\ \hline 
+    %benjie: not sure with '\chempot_{\exergy}' and '\nummoles_{\exergy}'
+    
+    %row 3    
+    $ \uline{\helmholtz}_{\nummoles\nummoles} = \bigg(\dfrac{\partial\chempot}{\partial\nummoles}\bigg)_{\Temp,\uline{\vol}}$ & $ \uline{\helmholtz}_{\uline{\vol} \uline{\vol}}^{\prime} = -\bigg(\dfrac{\partial\p}{\partial\uline{\vol}}\bigg)_{\Temp,\chempot_{\exergy},\nummoles_{\conc}}$ \\ \hline 
+    %benjie: not sure with '\chempot_{\exergy}' and '\chempot'
+    
+    %row 4
+    $\uline{\enthalpy}_{\uline{\entropy} \uline{\entropy}} = \bigg(\dfrac{\partial\Temp}{\partial\uline{\entropy}}\bigg)_{\p,\nummoles}$ & $\uline{\helmholtz}_{\conc\conc}^{\prime} = \bigg(\dfrac{\partial\chempot_{\conc}}{\partial\nummoles_{\conc}}\bigg)_{\Temp,\chempot_{\exergy},\uline{\vol}}$ \\ \hline
+    %benjie: not sure '\conc', '\chempot_{\conc}','\nummoles_{\conc}' 
+    
+    %row 5
+    $\uline{\enthalpy}_{\nummoles\nummoles} = \bigg(\dfrac{\partial\chempot}{\partial\nummoles}\bigg)_{\p,\uline{\entropy}}$ & $\uline{\enthalpy}_{\uline{\entropy} \uline{\entropy}}^{\prime} = \bigg(\dfrac{\partial\Temp}{\partial\uline{\entropy}}\bigg)_{\p,\chempot_{\exergy},\nummoles_{\conc}}$\\ \hline   
+    %benjie: not sure '\chempot_{\exergy}'
+    
+    %row 6
+    $\uline{\intenergy}_{\uline{\entropy} \uline{\entropy}}^{\prime} =\bigg(\dfrac{\partial\Temp}{\partial\uline{\entropy}}\bigg)_{\chempot,\uline{\vol}} > 0$ & $\uline{\enthalpy}_{\conc\conc}^{\prime} = \bigg(\dfrac{\partial\chempot_{\conc}}{\partial\nummoles_{\conc}}\bigg)_{\Temp,\chempot_{\exergy},\uline{\entropy}}$  \\ \hline   
+    %benjie: not sure with '\chempot_{\conc}'
+    
+    %row 7
+    $\uline{\intenergy}_{\uline{\vol} \uline{\vol}}^{\prime} = -\bigg(\dfrac{\partial\p}{\partial\uline{\vol}}\bigg)_{\chempot,\uline{\entropy}}$ & $\uline{\intenergy}_{\uline{\entropy} \uline{\entropy}}^{\prime\prime} = \bigg(\dfrac{\partial\Temp}{\partial\uline{\entropy}}\bigg)_{\chempot_{\exergy},\chempot_{\conc},\uline{\vol}}$ \\ \hline   
+    %benjie: not sure with '\chempot_{\exergy}', '\chempot_{\conc}'   
+    
+    %row 8
+     & $\uline{\intenergy}_{\uline{\vol} \uline{\vol}}^{\prime\prime} = -\bigg(\dfrac{\partial\p}{\partial\uline{\vol}}\bigg)_{\chempot_{\exergy},\chempot_{\conc},\uline{\entropy}}$ \\ \hline   
+    %benjie: not sure with '\chempot_{\exergy}', '\chempot_{\conc}'   
+ 
+\end{longtable}		
+
+\end{mitframe}

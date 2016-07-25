@@ -1,0 +1,56 @@
+\begin{mitframe}{028-1}
+
+	\mdfsubtitle{Differential Approach Expansion (No EOS) (Box 28-1)} 
+    
+    \begin{listone}
+
+		\item $\mathrm{d}\ln{\hat{\fug}_{\state}}^{\tdiff}=\mathrm{d}\ln{\hat{\fug}_{\state}}^{\texpcoeff}$
+	%benjie: \tdiff for alpha, \texpcoeff for beta
+    
+    	\begin{listtwo}
+	
+    		\item ${\hat{\fug}_{\state}}^{\tdiff}={\hat{\fug}_{\state}}^{\tdiff}(\Temp, \p, \conjcoor)$
+	%benjie: \tdiff, \conjcoor            
+            
+            \item Activity-fugacity model: ${\hat{\fug}_{\state}}^{\tdiff}=\actcoeff\conjcoor{\fug_{\state}}^{\tdiff}$
+	%benjie: \actcoeff , \tdiff
+	
+		\end{listtwo}
+	
+    \item Expansion: $\mathrm{d}\ln{\hat{\fug}_{\state}}^{\tdiff}=\mathrm{d}\ln\actcoeff+\mathrm{d}\ln\conjcoor+\mathrm{d}\ln{\fug_{\state}}^{\tdiff}$
+    
+    	\begin{listtwo}
+
+			\item Common Derivatives
+            
+            \begin{listthree}
+			
+            	\item $\dfrac{\mathrm{d}\ln{{\fug}_{\state}}^{\tdiff}}{\mathrm{d}\Temp}=-\dfrac{{\overline{\enthalpy}_{\state}}^{\tdiff}-{\enthalpy_{\state}}^{\init}}{\gasconst\Temp^{2}}$
+        %benjie: {\enthalpy_{\state}}^{\init}                                      
+            
+            	\item $\dfrac{\mathrm{d}\ln{{\fug}_{\state}}^{\tdiff}}{\mathrm{d}\p}=\dfrac{{\overline{\vol}_{\state}}^{\tdiff}}{\gasconst\Temp}$
+            
+            	\item $\dfrac{\mathrm{d}\ln\actcoeff}{\mathrm{d}\Temp}=-\dfrac{\iipf{\enthalpy_{\state}}^{\exfunc}}{\gasconst\Temp^{2}}$
+            
+            	\item $\dfrac{\mathrm{d}\ln\actcoeff}{\mathrm{d}\p}=\dfrac{\iipf{\vol_{\state}}^{\exfunc}}{\gasconst\Temp}$
+            
+           		\item $\dfrac{\mathrm{d}\ln\actcoeff}{\mathrm{d}\conjcoor}$ Model Specific
+            
+            	\begin{listfour}
+
+					\item See Activity-Gex relationship box on Deviations page
+
+				\end{listfour}
+
+			\end{listthree}
+
+		\end{listtwo}
+        
+        \item ${\hat{\fug}_{\state}}^{\tdiff}={\fug_{\state}}^{\tdiff}\conjcoor\actcoeff\Rightarrow\mathrm{d}\ln{\hat{\fug}_{\state}}^{\tdiff}=\mathrm{d}\ln{\fug_{\state}}^{\tdiff}+\mathrm{d}\ln\conjcoor+\mathrm{d}\ln\actcoeff$
+        
+        \item $\mathrm{d}\ln{\hat{\fug}_{\state}}^{\tdiff}=-\dfrac{{\overline{\enthalpy}_{\state}}^{\tdiff}-{\enthalpy_{\state}}^{\init}}{\gasconst\Temp^{2}}\mathrm{d}\Temp+\dfrac{{\overline{\vol}_{\state}}^{\tdiff}}{\gasconst\Temp}\mathrm{d}\p+\dfrac{1}{\conjcoor}\mathrm{d}\conjcoor-\dfrac{\iipf{\enthalpy_{\state}}^{\exfunc}}{\gasconst\Temp^{2}}\mathrm{d}\Temp+\dfrac{\iipf{\vol_{\state}}^{\exfunc}}{\gasconst\Temp}\mathrm{d}\p+\dfrac{\mathrm{d}\ln\actcoeff}{\mathrm{d}\conjcoor}\mathrm{d}\conjcoor$
+    
+    \end{listone}    
+
+
+\end{mitframe}

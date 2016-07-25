@@ -1,0 +1,18 @@
+\begin{mitframe}{020-2} 
+
+    \mdfsubtitle{Departure Function Forms(Box 20-2)} 
+    
+	\begin{listone}
+
+	\item $\dfrac{\intenergy-\intenergy^{\init}}{\gasconst\Temp}=\int\limits_{\infty}^{\vol}\Bigg[\Temp\Bigg(\dfrac{\partial\p}{\partial\Temp}\Bigg)_{\vol}-\p\Bigg]\mathrm{d}\vol=-\int\limits_{\infty}^{\dens}\Temp\Bigg(\dfrac{\partial\compress}{\partial\Temp}\Bigg)_{\dens}\dfrac{\mathrm{d}\dens}{\dens}$
+    %benjie: \dens, \compress
+    
+    \item $\dfrac{\enthalpy-\enthalpy^{\init}}{\gasconst\Temp}=\int\limits_{0}^{\dens}-\Temp\Bigg(\dfrac{\partial\compress}{\partial\Temp}\Bigg)_{\dens}\dfrac{\partial\dens}{\dens}+\compress-1=-\int\limits_{0}^{\p}\Temp\Bigg(\dfrac{\partial\compress}{\partial\Temp}\Bigg)_{\p}\dfrac{\mathrm{d}\p}{\p}$
+    %benjie: \dens, \compress
+    
+    \item $\dfrac{\gibbs-\gibbs^{\init}}{\gasconst\Temp}=\int\limits_{0}^{\dens}\dfrac{(\compress-1)}{\dens}\mathrm{d}\dens+\compress-1-\ln\compress=\int\limits_{0}^{\p}(\compress-1)\dfrac{\mathrm{d}\p}{\p}=\ln\fugcoeff$
+    %benjie: \dens, \compress, \fugcoeff
+
+	\end{listone}			
+
+\end{mitframe}

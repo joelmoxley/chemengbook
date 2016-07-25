@@ -4,19 +4,23 @@
     
 \begin{listone}
         
-    \item 
+    \item $\uline{\gibbs}_{\Temp\Temp} = \bigg(\dfrac{\partial\uline{\entropy}}{\partial\Temp}\bigg)_{\p,\nummoles}\Rightarrow\text{Constant pressure heat capacity: }\cp\equiv\Temp\bigg(\dfrac{\partial\entropy}{\partial\Temp}\bigg)_{\p}$
         
-    \item 
-         
-    \item 
+    \item $\uline{\gibbs}_{\p\p} = \bigg(\dfrac{\partial\uline{\vol}}{\partial\p}\bigg)_{\Temp,\nummoles}\Rightarrow\text{Isothermal compressibility: }\comeback_{\Temp}\equiv-\dfrac{1}{\vol}\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}$
     
-    \item 
+    %benjie: not sure of \comeback, quantity is not yet defined
+         
+    \item $\uline{\gibbs}_{\Temp\p} = \bigg(\dfrac{\partial\uline{\vol}}{\partial\Temp}\bigg)_{\p,\nummoles}\Rightarrow\text{Coefficient of thermal expansion: }\tdiff_{\p} \equiv-\dfrac{1}{\vol}\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}$
+    
+    %benjie: not sure of \tdiff_{\p}
+    
+    \item Generalized EOS
     
     \begin{listtwo}
 		
-        \item
+        \item $\mathrm{d}\vol=\tdiff_{\p}\vol\mathrm{d}\Temp-\comeback_{\Temp}\vol\mathrm{d}\p$
         
-        \item
+        \item $\vol = \vol^{\init}+\int\limits_{\Temp^{\init}}^{\Temp}\big(\tdiff_{\p}\vol\big)_{\p^{\init}}\mathrm{d}\Temp-\int\limits_{\p^{\init}}^{\p}\big(\comeback_{\Temp}\vol\big)_{\Temp}\mathrm{d}\p$
         
 	\end{listtwo}
 
