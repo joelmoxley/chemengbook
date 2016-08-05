@@ -1,29 +1,55 @@
-\begin{mitframe}{021-1}
+\begin{lscapemitframe}[-3pt]{021-1}
+\mdfsubtitle{(Box 21-1)}
 
-	\mdfsubtitle{(Box 21-1)} 
-	
-    \begin{tabular}{| c | c | c | c |}
-    \hline
-    %row 1
- 	 & \textbf{\textit{P-explicit EOS (intensive)}} & $\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$\\ \hline
-    %row 2     
- 	 \textbf{\textit{IG EOS}} & $\p=\dfrac{\gasconst\Temp}{\vol}$ & $\dfrac{\gasconst}{\vol}$ & $-\dfrac{\gasconst\Temp}{\vol^{2}}$ \\ \hline
-    %row 3     
- 	 \textbf{\textit{vdW EOS}} & \begin{tabular}{@{}c@{}}$\p=\dfrac{\gasconst\Temp}{\vol-b}-\dfrac{a}{\vol^{2}}$ \\ $\Rightarrow a=\dfrac{27{\gasconst}^{2}{\Temp_{c}}^{2}}{64\p_{c}},~b=\dfrac{\gasconst\Temp_{c}}{8\p_{c}}$ \end{tabular} & $\dfrac{\gasconst}{\vol-b}$ &$-\dfrac{\gasconst\Temp}{(\vol-b)^{2}}+\dfrac{2a}{\vol^{3}}$ \\ \hline
-     %benjie: "b", "a", \Temp_{c}, \p_{c}     
-     
-    %row 4     
-     \textbf{\textit{RK EOS}} & \begin{tabular}{@{}c@{}}$\p=\dfrac{\gasconst\Temp}{\vol-b}-\dfrac{a}{\sqrt{\Temp}\vol(\vol+b)}$ \\ $\Rightarrow a=\dfrac{0.42748{\gasconst}^{2}{\Temp_{c}}^{2.5}}{\p_{c}},~b=\dfrac{0.08664\gasconst\Temp_{c}}{\p_{c}}$ \end{tabular} & $\dfrac{\gasconst}{\vol-b}+\dfrac{a}{2\Temp^{3/2}\vol(\vol+b)}$ & $-\dfrac{\gasconst\Temp}{(\vol-b)^{2}}+\dfrac{a(2\vol+b)}{\sqrt{\Temp}[\vol(\vol+b)]^{2}}$ \\ \hline
-     %benjie: "b", "a", \Temp_{c}, \p_{c}
-     
-    %row 5
-     \textbf{\textit{RKS EOS}} & \begin{tabular}{@{}c@{}}$\p=\dfrac{\gasconst\Temp}{\vol-b}-\dfrac{a}{\vol(\vol+b)}$ \\ $\Rightarrow a=\dfrac{0.42748{\gasconst}^{2}{\Temp_{c}}^{2}}{\p_{c}}\bigg(1+\thermcond\bigg(1-\sqrt{\Temp_{r}}\bigg)\bigg)^{2}$ \\ $\Rightarrow \thermcond=0.48508+1.55171\mpf-0.15613{\mpf}^{2}$ \\ $\Rightarrow b=\dfrac{0.08664\gasconst\Temp_{c}}{\p_{c}}$ \end{tabular} & $\dots$ & $-\dfrac{\gasconst\Temp}{(\vol-b)^{2}}+\dfrac{a(2\vol-b)}{[\vol(\vol-b)]^{2}}$ \\ \hline
-     %benjie: "b", "a",\Temp_{c}, \p_{c}, \thermcond for k, \Temp_{r}, \mpf for omega    
-     
-    %row 6     
-     \textbf{\textit{R EOS}} & \begin{tabular}{@{}c@{}}$\p=\dfrac{\gasconst\Temp}{\vol-b}-\dfrac{a}{\vol(\vol+b)+b(\vol-b)}$ \\ $\Rightarrow a=\dfrac{0.45724{\gasconst}^{2}{\Temp_{c}}^{2}}{\p_{c}}\bigg(1+\comeback\bigg(1-\sqrt{\Temp_{r}}\bigg)\bigg)^{2}$ \\ $\Rightarrow \comeback=0.37464+1.54226\mpf-0.26992{\mpf}^{2}$ \\ $\Rightarrow b=\dfrac{0.07780\gasconst\Temp_{c}}{\p_{c}}$ \end{tabular} & $\dots$ & $-\dfrac{\gasconst\Temp}{(\vol-b)^{2}}+\dfrac{2a(\vol+b)}{[\vol(\vol+b)+b(\vol-b)]^{2}}$ \\ \hline
-     %benjie: "b", "a", \comeback for kappa sign          
-     
-	\end{tabular}
+\begin{tabularx}%
+	{\textwidth}%
+    {| >{\collectcell\mitalign}m{0.05\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}|}% 
+ \hline%
+ 
+%row 1
+&%
+\textbf{\textit{P-explicit EOS (intensive)}} &%
+\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol} &%
+\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}\\ \hline
 
-\end{mitframe}
+%row 2     
+\textbf{\textit{IG EOS}} &%
+\p=\dfrac{\gasconst\Temp}{\vol} &%
+\dfrac{\gasconst}{\vol} &%
+-\dfrac{\gasconst\Temp}{\vol^{2}} \\ \hline
+
+%row 3     
+\textbf{\textit{vdW EOS}} &%
+{ \p&=\dfrac{\gasconst\Temp}{\vol-b}-\dfrac{a}{\vol^{2}} \\ \Rightarrow& a=\dfrac{27{\gasconst}^{2}{\Temp_{c}}^{2}}{64\p_{c}},~b=\dfrac{\gasconst\Temp_{c}}{8\p_{c}} } &%
+\dfrac{\gasconst}{\vol-b} &%
+-\dfrac{\gasconst\Temp}{(\vol-b)^{2}}+\dfrac{2a}{\vol^{3}} \\ \hline
+%benjie: "b", "a", \Temp_{c}, \p_{c}     
+     
+%row 4     
+\textbf{\textit{RK EOS}} &%
+{ \p&=\dfrac{\gasconst\Temp}{\vol-b}-\dfrac{a}{\sqrt{\Temp}\vol(\vol+b)} \\ \Rightarrow& a=\dfrac{0.42748{\gasconst}^{2}{\Temp_{c}}^{2.5}}{\p_{c}},~b=\dfrac{0.08664\gasconst\Temp_{c}}{\p_{c}} } &%
+\dfrac{\gasconst}{\vol-b}+\dfrac{a}{2\Temp^{3/2}\vol(\vol+b)} &%
+-\dfrac{\gasconst\Temp}{(\vol-b)^{2}}+\dfrac{a(2\vol+b)}{\sqrt{\Temp}[\vol(\vol+b)]^{2}} \\ \hline
+%benjie: "b", "a", \Temp_{c}, \p_{c}
+     
+%row 5
+\textbf{\textit{RKS EOS}} &%
+{ \p&=\dfrac{\gasconst\Temp}{\vol-b}-\dfrac{a}{\vol(\vol+b)} \\ \Rightarrow& a=\dfrac{0.42748{\gasconst}^{2}{\Temp_{c}}^{2}}{\p_{c}}\bigg(1+\thermcond\bigg(1-\sqrt{\Temp_{r}}\bigg)\bigg)^{2} \\ &\Rightarrow \thermcond=0.48508+1.55171\mpf-0.15613{\mpf}^{2} \\ \Rightarrow& b=\dfrac{0.08664\gasconst\Temp_{c}}{\p_{c}} } &%
+\dots &%
+-\dfrac{\gasconst\Temp}{(\vol-b)^{2}}+\dfrac{a(2\vol-b)}{[\vol(\vol-b)]^{2}} \\ \hline
+%benjie: "b", "a",\Temp_{c}, \p_{c}, \thermcond for k, \Temp_{r}, \mpf for omega    
+     
+%row 6     
+\textbf{\textit{R EOS}} &%
+{ \p&=\dfrac{\gasconst\Temp}{\vol-b}-\dfrac{a}{\vol(\vol+b)+b(\vol-b)} \\ \Rightarrow& a=\dfrac{0.45724{\gasconst}^{2}{\Temp_{c}}^{2}}{\p_{c}}\bigg(1+\comeback\bigg(1-\sqrt{\Temp_{r}}\bigg)\bigg)^{2} \\ &\Rightarrow \comeback=0.37464+1.54226\mpf-0.26992{\mpf}^{2} \\ \Rightarrow& b=\dfrac{0.07780\gasconst\Temp_{c}}{\p_{c}} } &%
+\dots &%
+ -\dfrac{\gasconst\Temp}{(\vol-b)^{2}}+\dfrac{2a(\vol+b)}{[\vol(\vol+b)+b(\vol-b)]^{2}}  \\ \hline
+%benjie: "b", "a", \comeback for kappa sign        
+ 
+ 
+\end{tabularx}
+\end{lscapemitframe}

@@ -1,0 +1,53 @@
+\begin{mitframe}{018-1}
+
+	\mdfsubtitle{(Box 18-1)} 
+    
+    \begin{longtable}{ | c | c | c | c | c | } 
+ \hline
+
+% Row 1
+\multirow{7}{*}{\begin{sideways}Constant Helmholtz Energy\end{sideways}} & $(\partial\p)_{\helmholtz}=-(\partial\helmholtz)_{\p}$ & $-\p\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}+\entropy\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $-\p\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}+\entropy\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $\bigg[\entropy+\p\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}\bigg]$ \\ \cline{2-5}
+
+% Row 2
+& $(\partial\Temp)_{\helmholtz}=-(\partial\helmholtz)_{\Temp}$ & $-\p$ & $-\p$ & $-\p\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}$ \\ \cline{2-5}
+
+% Row 3
+& $(\partial\vol)_{\helmholtz}=-(\partial\helmholtz)_{\vol}$ & $\entropy$ & $\entropy$ & $\entropy\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}$ \\ \cline{2-5}
+
+% Row 4
+& $(\partial\entropy)_{\helmholtz}=-(\partial\helmholtz)_{\entropy}$ & $-\p\bigg[\dfrac{\cp}{\Temp}+\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2}\bigg/\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}\bigg]+\entropy\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $-\p\dfrac{\cv}{\Temp}+\entropy\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $-\dfrac{\p}{\Temp}\bigg[\cp\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}+\Temp\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}^{2}\bigg]-\entropy\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}$ \\ \cline{2-5}
+
+% Row 5
+& $(\partial\intenergy)_{\helmholtz}=-(\partial\helmholtz)_{\intenergy}$ & $-\p\bigg[\cp+\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2}\bigg/\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}+\entropy\bigg]+\entropy\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $\p\big[\cv+\entropy\big]+\entropy\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $\p\bigg[\cp\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}+\Temp\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}^{2}\bigg]+\entropy\bigg[\Temp\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}+\p\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}\bigg]$ \\ \cline{2-5}
+
+% Row 6
+& $(\partial\enthalpy)_{\helmholtz}=-(\partial\helmholtz)_{\enthalpy}$ & $-\p\bigg[\cp+\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2}\bigg/\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}\bigg]+\big[\entropy\Temp-\p\vol\big]\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}+\entropy\vol\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $-\p\cv+\big[\entropy\Temp-\p\vol\big]\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}+\entropy\vol\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $\bigg[\entropy+\p\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}\bigg]\bigg[\vol-\Temp\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}\bigg]-\p\cp\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}$ \\ \cline{2-5}
+
+% Row 7
+& $(\partial\gibbs)_{\helmholtz}=-(\partial\helmholtz)_{\gibbs}$ & $\entropy\bigg[\p+\vol\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}\bigg]-\p\vol\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $\entropy\bigg[\p+\vol\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}\bigg]-\p\vol\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $\entropy\bigg[\vol+\p\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}\bigg]+\p\vol\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}$ \\ \hline \hline
+
+% Row 8  
+\multirow{7}{*}{\begin{sideways}Constant Gibbs Energy\end{sideways}} & $(\partial\p)_{\gibbs}=-(\partial\gibbs)_{\p}$ & $\entropy\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $\entropy\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $\entropy$ \\ \cline{2-5}
+
+% Row 9
+& $(\partial\Temp)_{\gibbs}=-(\partial\gibbs)_{\Temp}$ & $\vol\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $\vol\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $\vol$ \\ \cline{2-5}
+
+% Row 10
+& $(\partial\vol)_{\gibbs}=-(\partial\gibbs)_{\vol}$ & $\entropy-\vol\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $\entropy-\vol\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $\bigg[\vol\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}+\entropy\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}\bigg]$ \\ \cline{2-5}
+
+% Row 11
+& $(\partial\entropy)_{\gibbs}=-(\partial\gibbs)_{\entropy}$ & $\dfrac{\vol}{\Temp}\bigg[\cp\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}\bigg]+\entropy\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$  & $\dfrac{\vol}{\Temp}\bigg[\cv\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}-\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2}\bigg]+\entropy\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $\dfrac{\vol}{\Temp}\cp-\entropy\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}$ \\ \cline{2-5}
+
+% Row 12
+& $(\partial\intenergy)_{\gibbs}=-(\partial\gibbs)_{\intenergy}$ & $-\p\entropy+\big[\p\vol+\entropy\Temp\big]\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}+\vol\cp\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $-\p\entropy+\big[\p\vol+\entropy\Temp\big]\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}+\vol\cv\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}-\vol\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2}$ & $\vol\bigg[\cp-\p\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}\bigg]-\entropy\bigg[\Temp\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}+\p\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}\bigg]$ \\ \cline{2-5}
+
+% Row 13
+& $(\partial\enthalpy)_{\gibbs}=-(\partial\gibbs)_{\enthalpy}$ & $\vol\big[\cp+\entropy\big]\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}+\entropy\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $\vol\bigg[\cv-\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2}\bigg/\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}+\entropy\bigg]\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}+\entropy\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $\vol\big[\cp+\entropy\big]-\Temp\entropy\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}$\\ \cline{2-5}
+
+% Row 14
+& $(\partial\helmholtz)_{\gibbs}=-(\partial\gibbs)_{\helmholtz}$ & $-\entropy\bigg[\p+\vol\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}\bigg]+\p\vol\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $-\entropy\bigg[\p+\vol\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}\bigg]+\p\vol\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $-\entropy\bigg[\vol+\p\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}\bigg]-\p\vol\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}$ \\ \hline 
+	
+\end{longtable}
+
+
+\end{mitframe}

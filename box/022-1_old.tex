@@ -1,0 +1,42 @@
+\begin{mitframe}{022-1}
+
+	\mdfsubtitle{(Box 22-1)} 
+    
+
+
+	\begin{tabular}{| c | c | c |}
+    \hline
+    %row 1
+ 	 & \textbf{\textit{P-explicit EOS (extensive)}} & $\bigg(\dfrac{\partial\p}{\partial\nummoles_{\state}}\bigg)_{\Temp,\uline{\vol},\nummoles_{j},[\state]}$ \\ \hline
+     
+    %row 2     
+ 	 \textbf{\textit{IG EOS}} & $\p=\dfrac{\nummoles\gasconst\Temp}{\uline{\vol}}$ & $\dfrac{\gasconst\Temp}{\uline{\vol}}$ \\ \hline
+  
+     
+    %row 3     
+ 	 \textbf{\textit{vdW EOS}} & \begin{tabular}{@{}c@{}}$\p=\dfrac{\nummoles\gasconst\Temp}{\uline{\vol}-\nummoles b_{\mass}}-\dfrac{\nummoles^{2}\activity_{\mass}}{\uline{\vol}^{2}}$ \\ $\Rightarrow \activity_{\state}=\dfrac{27{\gasconst}^{2}{\Temp_{c}}^{2}}{64\p_{c}},~b_{\state}=\dfrac{\gasconst\Temp_{c}}{8\p_{c}}$ \end{tabular} & $\dfrac{\gasconst\Temp}{\uline{\vol}-\nummoles b_{\mass}}+\dfrac{\nummoles\gasconst\Temp}{(\uline{\vol}-\nummoles b_{\mass})^{2}}\Bigg(\dfrac{\partial(\nummoles b_{\mass})}{\partial\nummoles_{\state}}\Bigg)-\dfrac{1}{\uline{\vol}^{2}}\Bigg(\dfrac{\partial(\nummoles^{2}\activity_{\mass})}{\partial\nummoles_{\state}}\Bigg)$ \\ \hline
+     %benjie: "b", "a", \Temp_{c}, \p_{c} 
+     %benjie: \mass for m, b_{\mass}, \activity for a
+
+     
+    %row 4     
+     \textbf{\textit{RK EOS}} & \begin{tabular}{@{}c@{}}$\p=\dfrac{\nummoles\gasconst\Temp}{\uline{\vol}-\nummoles b_{\mass}}-\dfrac{\nummoles^{2}\activity_{\mass}}{\sqrt{\Temp}\uline{\vol}(\uline{\vol}+\nummoles b_{\mass})}$ \\ $\Rightarrow \activity_{\state}=\dfrac{0.42748{\gasconst}^{2}{\Temp_{c}}^{2.5}}{\p_{c}},~b_{\state}=\dfrac{0.08664\gasconst\Temp_{c}}{\p_{c}}$ \end{tabular}  & $\dfrac{\gasconst\Temp}{\uline{\vol}-\nummoles b_{\mass}}+\Bigg(\dfrac{\nummoles\gasconst\Temp}{(\uline{\vol}-\nummoles b_{\mass})^{2}}+\dfrac{\nummoles^{2}\activity_{\mass}}{\sqrt{\Temp}\uline{\vol}(\uline{\vol}+\nummoles b_{\mass})^{2}}\Bigg)\Bigg(\dfrac{\partial(\nummoles b_{\mass})}{\partial\nummoles_{\state}}\Bigg)-\dfrac{1}{\sqrt{\Temp}\uline{\vol}(\uline{\vol}+\nummoles b_{\mass})}\Bigg(\dfrac{\partial(\nummoles^{2}\activity_{\mass})}{\partial\nummoles_{\state}}\Bigg)$ \\ \hline
+     %benjie: "b", "a", \Temp_{c}, \p_{c}
+     %benjie: \mass for m, b_{\mass}, \activity for a 
+     
+    %row 5
+     \textbf{\textit{RKS EOS}} & \begin{tabular}{@{}c@{}}$\p=\dfrac{\nummoles\gasconst\Temp}{\uline{\vol}-\nummoles b_{\mass}}-\dfrac{\nummoles^{2}\activity_{\mass}}{\uline{\vol}(\uline{\vol}+\nummoles b_{\mass})}$ \\ $\Rightarrow \activity_{\state}=\dfrac{0.42748{\gasconst}^{2}{\Temp_{c}}^{2}}{\p_{c}}\bigg(1+\thermcond_{\state}\bigg(1-\sqrt{\Temp_{r}}\bigg)\bigg)^{2}$ \\ $\Rightarrow \thermcond_{\state}=0.48508+1.55171\mpf-0.15613{\mpf}^{2}$ \\ $\Rightarrow b_{\state}=\dfrac{0.08664\gasconst\Temp_{c}}{\p_{c}}$ \end{tabular} & $\dfrac{\gasconst\Temp}{\uline{\vol}-\nummoles b_{\mass}}+\Bigg(\dfrac{\nummoles\gasconst\Temp}{(\uline{\vol}-\nummoles b_{\mass})^{2}}+\dfrac{\nummoles^{2}\activity_{\mass}}{\uline{\vol}(\uline{\vol}+\nummoles b_{\mass})^{2}}\Bigg)\Bigg(\dfrac{\partial(\nummoles b_{\mass})}{\partial\nummoles_{\state}}\Bigg)-\dfrac{1}{\uline{\vol}(\uline{\vol}+\nummoles b_{\mass})}\Bigg(\dfrac{\partial(\nummoles^{2}\activity_{\mass})}{\partial\nummoles_{\state}}\Bigg)$  \\ \hline
+     %benjie: "b", "a",\Temp_{c}, \p_{c}, \thermcond for k, \Temp_{r}, \mpf for omega    
+     %benjie: \mass for m, b_{\mass}, \activity for a     
+     
+    %row 6     
+     \textbf{\textit{R EOS}} & \begin{tabular}{@{}c@{}}$\p=\dfrac{\nummoles\gasconst\Temp}{\uline{\vol}-\nummoles b_{\mass}}-\dfrac{\nummoles^{2}\activity_{\mass}}{\uline{\vol}(\uline{\vol}+\nummoles b_{\mass})+\nummoles b_{\mass}(\uline{\vol}-\nummoles b_{\mass})}$ \\ $\Rightarrow \activity_{\state}=\dfrac{0.45724{\gasconst}^{2}{\Temp_{c}}^{2}}{\p_{c}}\bigg(1+\comeback_{\state}\bigg(1-\sqrt{\Temp_{r}}\bigg)\bigg)^{2}$ \\ $\Rightarrow \comeback_{\state}=0.37464+1.54226\mpf-0.26992{\mpf}^{2}$ \\ $\Rightarrow b_{\state}=\dfrac{0.07780\gasconst\Temp_{c}}{\p_{c}}$ \end{tabular} & \begin{tabular}{@{}c@{}} Common Mixing Rules \\ $b_{\mass}=\sum y_{\state} b_{\state} \Leftrightarrow \nummoles b_{\mass} = \sum\nummoles_{\state} b_{\state}$ \\ $-\tab\dfrac{\partial(\nummoles b_{\mass})}{\partial\nummoles_{\state}}= b_{\state}$ \\ $\activity_{\mass}=\sum\sum y_{\state} y_{j} \activity_{ij}~\text{where}~\activity_{ij}=(1-\blthick_{ij})\sqrt{\activity_{\state}\activity_{j}}$ \\ $-\tab\blthick_{ij}=0$ \\ $\bullet~\dfrac{\partial(\nummoles^{2}\activity_{\mass})}{\partial\nummoles_{\state}}=2\sqrt{\activity_{\state}}\bigg(\sum\nummoles_{j}\sqrt{\activity_{j}}\bigg)$ \end{tabular}  \\ \hline
+     %benjie: "b", "a", \comeback for kappa sign     
+     %benjie: y_{\state}, b_{i}, b_{\mass}, b_{\state}, y_{j}, \activity_{ij}, \blthick_{ij} for delta, \activity_{\mass}
+     
+	\end{tabular}
+
+%	\item One use includes fugacity determination from EOS
+    
+
+\end{mitframe}

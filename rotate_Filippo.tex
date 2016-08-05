@@ -1,0 +1,44 @@
+\documentclass{mitqualif}
+\input{quantity_commands.tex}
+\input{indexes.tex}
+%%New list environments for nice nested lists
+\setlistdepth{6}
+\renewlist{itemize}{itemize}{6}
+\newenvironment{listone}{\begin{itemize}[label=,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
+\newenvironment{listtwo}{\begin{itemize}[label=--,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
+\newenvironment{listthree}{\begin{itemize}[label=$\circ$,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
+\newenvironment{listfour}{\begin{itemize}[label={\rule[.1ex]{.75ex}{.75ex}},labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
+\newenvironment{listfive}{\begin{itemize}[label=$\bullet$,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
+\newenvironment{listsix}{\begin{itemize}[label=$\ast$,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
+
+%%EASYLIST—Remove?
+\RequirePackage[ampersand]{easylist}
+\ListProperties(Hide=100, Hang=true, Progressive=3ex, Style*=,Style2*=--\tab,
+Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6*=$\circ$\tab)
+
+%%Custom Commands
+%%added 
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+\newcommand{\tab}[1][0.5cm]{\hspace*{#1}}
+%%Front Matter
+\title{Mathematical Foundations of Chemical Engineering}
+\authorone{Joel Moxley}
+\emailone{jfmoxley@gmail.com}
+\authortwo{Erik Allen}
+\emailtwo{erik.christian.allen@gmail.com}
+\authorthree{Hal Alper}
+\emailthree{halper@che.utexas.edu}
+\foreword{A special thank you to Benjie Flores for his tireless work transcribing the manuscript, Marlon Capuno for his focus and attention to detail in double checking every single equation for accuracy and unit consistency, and to Filippo A. E. Nuccio for the \LaTeX~formatting magic. }
+
+%%% ------------------------------------------------------------
+%%% BEGIN DOCUMENT
+%%% ------------------------------------------------------------
+\begin{document}
+\mytitlepage 
+\newpage
+\tableofcontents
+\newpage
+\input{box/002-5.tex}
+\input{box/003-1_F.tex}
+\printindex
+\end{document}

@@ -1,0 +1,57 @@
+\begin{mitframe}{041-2}
+
+				\mdfsubtitle{Spherical Stream Function Solutions (Box 41-2)}
+\begin{listone}
+
+\item NSE ND: $\dfrac{\reynolds}{\strouhal}\dfrac{\partial\uline{\tilde{\vvel}}}{\partial\tilde{t}}=-\tilde{\gradop}\uline{\tilde{\dynpress}}+\tilde{\gradop}^2\uline{\tilde{\vvel}}$
+			
+            \begin{listtwo}
+            \item Pseudosteady, $\sfrac{\reynolds}{\strouhal}=\sfrac{\Temp_{\vvel}}{\Temp_1}=0$
+            \item Times enters as parameter
+            \end{listtwo}
+
+\item Creeping Flow NSE Stream: $\energy^4\streamfunc=0$
+\item Boundary conditions: no slip, no penetration $\vvel_{\pos}, \vvel_{\theta}$
+
+%not sure \theta
+
+\item Convert boundary conditions to $\streamfunc(\pos, \theta)$ with integration
+
+				\begin{listtwo}
+                
+                \item $\vvel_{\pos}=\dfrac{1}{\pos^2\sin\theta}\dfrac{\partial\streamfunc}{\partial\theta}, \vvel_{\theta}=-\dfrac{1}{\pos\sin\theta}\dfrac{\partial\streamfunc}{\partial\pos}$
+
+\end{listtwo}
+
+\item Generalized Spherical Stream Function Solution
+
+				\begin{listtwo}
+                
+                \item $\streamfunc(\pos, n)=\sum\nolimits_{n=1}^{\infty}\bigg[\helmholtz_{n}\pos^{n+3}+\virialcoeff{n}\pos^{n+1}+\conc_{n}\pos^{2-n}\elecdisplace_{n}\pos^{-n}\bigg]\heatflow_{n}(\intrinsvisc)$
+                			\begin{listthree}
+                            
+                            \item $n =\cos\theta$
+                            
+                            \item $\heatflow_0(\theta)=1+\cos\theta$
+                            
+                            \item $\heatflow_1(\theta)=-\dfrac{1}{2}\sin^2\theta$
+                            
+                            			\begin{listfour}
+                                        \item uniform flow past sphere -Ex. 7.4-2, Deen p. 302
+                                        \end{listfour}
+                                
+                                \item $\heatflow_2(\theta)=-\dfrac{1}{2}\sin^2\theta\cos\theta$
+                                
+                                		\begin{listfour}
+                                        \item axisym extensional flow -Ex.74-3, Deen p.306
+                                        \end{listfour}
+								
+                               \end{listthree}
+                
+                \item  Match eigenfunction to boundary condition at $\streamfunc(\infty,\theta)$
+                
+                \end{listtwo}
+                
+\item Convert streamline function to $\vvel_{\pos}, \vvel_{\theta}$ by differentiating $\streamfunc$
+\end{listone}
+\end{mitframe}

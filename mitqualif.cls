@@ -38,7 +38,13 @@
     
 
 \RequirePackage{wrapfig}						% Wrap text along figures
-\RequirePackage{tabu}							%Refined tabulars
+\RequirePackage{tabu}
+\RequirePackage{array}
+\RequirePackage[verb]{collcell}
+\RequirePackage{longtable}
+\RequirePackage{ltablex}
+\RequirePackage{lscape}
+%Refined tabulars
 \RequirePackage{ulem}							%Improved emphasize 
 
 
@@ -98,7 +104,7 @@
 	subtitlebelowline=true,subtitlebelowlinewidth=1pt,
 	subtitleinneraboveskip=-5pt
 }
-\newenvironment{bigmdframed}[1][24pt]{\begin{mdframed}\setlength{\baselineskip}{#1}}{\end{mdframed}}
+
 
 \RequirePackage[splitindex,nonewpage]{imakeidx} %For indexes in the boxes
 \newenvironment{mitframe}[2][24pt]
@@ -112,8 +118,41 @@
 \hrule
 \renewenvironment{theindex}{\bigskip\small}{} %Disables the title in frames
 \printindex[\@position]
-\end{mdframed}}
+\end{mdframed}
+}
 
+% \newenvironment{lscapemitframe}[2]
+% {
+% \let\mygobble\@gobble
+% \def\@position{#2}
+% \let\@mitindex\index
+% \renewcommand{\index}[1]{\@mitindex{##1,}\@mitindex[#2]{##1|mygobble}} %Redefines \index so that it adds an entry both to the general and the local index (need , before ##1 to cope with the Style file)
+% \begin{mdframed}\setlength{\baselineskip}{#1}}
+% {\bigskip
+% \hrule
+% \renewenvironment{theindex}{\bigskip\small}{} %Disables the title in frames
+% \printindex[\@position]
+% \end{mdframed}
+% }
+
+%%%%%%%And now for wider tables to be landscape
+\newcommand\mitalign[1]{\begin{align*}#1\end{align*}}
+\newenvironment{lscapemitframe}[2][\f@size pt]{
+\setlength{\belowdisplayskip}{#1}
+\setlength{\abovedisplayskip}{#1}
+\let\mygobble\@gobble
+\def\@position{#2}
+\let\@mitindex\index
+\renewcommand{\index}[1]{\@mitindex{##1,}\@mitindex[#2]{##1|mygobble}} %Redefines \index so that it adds an entry both to the general and the local index (need , before ##1 to cope with the Style file)
+\begin{landscape}
+\begin{mdframed}}
+{\bigskip
+\hrule
+\renewenvironment{theindex}{\bigskip\small}{} %Disables the title in frames
+\printindex[\@position]
+\end{mdframed}
+\end{landscape}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Custom Sectioning
 \renewcommand\section{%
