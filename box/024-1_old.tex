@@ -1,0 +1,37 @@
+\begin{mitframe}{024-1}
+
+	\mdfsubtitle{Gibbs-Duhem Relationships (Box 24-1)} 
+ 
+  \begin{tabular}{| c | c | c | c |}
+    \hline
+    %row 1
+ 	 &  &  & \text{Binary, Constant T and P} \\ \hline
+     
+    %row 2     
+ 	From F.E. &  & \begin{tabular}{@{}c@{}} $y^{(n+2)}=y^{(0)}-\sum\limits_{i=1}^{n+2}\extent_{\state}\heightz_{\state}=0\Rightarrow y^{(n+2)}=\uline{\intenergy}-\Temp\uline{\entropy}+\p\uline{\vol}-\sum\limits_{i=1}^{n}\chempot_{\state}\nummoles_{\state}=0$ \\ $\mathrm{d}y^{(n+2)}=-\sum\limits_{i=1}^{n+2}\heightz_{\state}\mathrm{d}\extent_{\state}=0\Rightarrow \mathrm{d}y^{(n+2)}=-\uline{\entropy}\mathrm{d}\Temp+\uline{\vol}\mathrm{d}\p-\sum\limits_{i=1}^{n}\nummoles_{\state}\mathrm{d}\chempot_{\state}=0$ \end{tabular} & $\nummoles_{1}\mathrm{d}\chempot_{1}+\nummoles_{2}\mathrm{d}\chempot_{2}=0$ \\ \hline
+     %benjie: \chempot for mu, \extent, \heightz, y, 
+     
+    %row 3     
+ 	Mixtures & General Property  & $\sum\limits_{i=1}^{n}\specfrac{\state}\mathrm{d}\virialcoeff{\state}=\Bigg(\dfrac{\partial\uline{\virialcoeff{}}}{\partial\Temp}\Bigg)_{\p,\specfrac{}}\mathrm{d}\Temp+\Bigg(\dfrac{\partial\uline{\virialcoeff{}}}{\partial\p}\Bigg)_{\Temp,\specfrac{}}\mathrm{d}\p$ & \begin{tabular}{@{}c@{}} $\specfrac{1}\mathrm{d}\virialcoeff{1}+\specfrac{2}\mathrm{d}\virialcoeff{2}=0$ \\ $\specfrac{1}\Bigg(\dfrac{\partial\overline{\virialcoeff{1}}}{\partial\specfrac{1}}\Bigg)+\specfrac{2}\Bigg(\dfrac{\partial\overline{\virialcoeff{2}}}{\partial\specfrac{2}}\Bigg)=0$ \end{tabular} \\ \hline
+     %benjie: \specfrac{} for x, \virialcoeff{} for B or is it exergy 
+     
+    %row 4     
+ 	 & Mixing Properties  & $\sum\limits_{i=1}^{n}\specfrac{\state}\mathrm{d}\big(\overline{\iipf\virialcoeff{\state}}\big)=\Bigg(\dfrac{\partial\big(\iipf\virialcoeff{\mixfunc}\big)}{\partial\Temp}\Bigg)_{\p,\specfrac{}}\mathrm{d}\Temp+\Bigg(\dfrac{\partial\big(\iipf\virialcoeff{\mixfunc}\big)}{\partial\p}\Bigg)_{\Temp,\specfrac{}}\mathrm{d}\p$ & \begin{tabular}{@{}c@{}} $\specfrac{1}\mathrm{d}\big(\overline{\iipf\virialcoeff{1}}\big)+\specfrac{2}\mathrm{d}\big(\overline{\iipf\virialcoeff{2}}\big)=0$ \\ $\specfrac{1}\dfrac{\partial\big(\overline{\iipf\virialcoeff{1}}\big)}{\partial\specfrac{1}}+\specfrac{2}\dfrac{\partial\big(\overline{\iipf\virialcoeff{2}}\big)}{\partial\specfrac{2}}=0$ \end{tabular} \\ \hline
+     %benjie: \specfrac{} for x, \virialcoeff{} for B or is it exergy , \iipf for delta
+     
+    %row 5
+ 	 & Fugacity  & \begin{tabular}{@{}c@{}} $\sum\specfrac{\state}\mathrm{d}\ln\hat{\fug}_{\state}=-\Bigg(\dfrac{\enthalpy-\sum\specfrac{\state}{\enthalpy_{\state}}^{\init}}{\gasconst\Temp^{2}}\Bigg)_{\p, \specfrac{}}\mathrm{d}\Temp+\Bigg(\dfrac{\vol}{\gasconst\Temp}\Bigg)_{\Temp,\specfrac{}}\mathrm{d}\p$ \\ $\sum\specfrac{\state}\mathrm{d}\ln\hat{\fug}_{\state}=-\sum\Bigg(\dfrac{\specfrac{\state}\bigg(\overline{\enthalpy}_{\state}-{\enthalpy_{\state}}^{\init}\bigg)}{\gasconst\Temp^{2}}\Bigg)_{\p, \specfrac{}}\mathrm{d}\Temp+\sum\Bigg(\dfrac{\specfrac{\state}\overline{\vol}_{\state}}{\overline{\gasconst\Temp}}\Bigg)_{\Temp,\specfrac{}}\mathrm{d}\p$ \end{tabular} & \begin{tabular}{@{}c@{}} $\specfrac{1}\mathrm{d}\ln\hat{\fug}_{1}+\specfrac{2}\mathrm{d}\ln\hat{\fug}_{2}=0$ \\ \text{see other stuff} \end{tabular} \\ \hline
+     %benjie:  \specfrac{} for x, \virialcoeff{} for B, \fug,\virialcoeff{} for B or is it exergy  
+     
+    %row 6     
+ 	 & Activity &  $\sum\specfrac{\state}\mathrm{d}\Bigg(\dfrac{{\overline{\iipf\gibbs}_{\state}}^{\exfunc}}{\gasconst\Temp}\Bigg)=\sum\specfrac{\state}\mathrm{d}\ln\actcoeff=-\Bigg(\dfrac{\iipf\enthalpy_{\mixfunc}}{\gasconst\Temp^{2}}\Bigg)\mathrm{d}\Temp+\Bigg(\dfrac{\iipf\vol_{\mixfunc}}{\gasconst\Temp}\Bigg)_{\Temp,\nummoles_{\state}}\mathrm{d}\p$   & \begin{tabular}{@{}c@{}} $\specfrac{1}\mathrm{d}\Bigg(\dfrac{{\overline{\iipf\gibbs}_{1}}^{\exfunc}}{\gasconst\Temp}\Bigg)+\specfrac{2}\mathrm{d}\Bigg(\dfrac{{\overline{\iipf\gibbs}_{2}}^{\exfunc}}{\gasconst\Temp}\Bigg)=0$ \\ $\specfrac{1}\mathrm{d}\ln\gamma_{1}+\specfrac{2}\mathrm{d}\ln\gamma_{2}=0$ \end{tabular} \\ \hline
+     %benjie: \iipf, \specfrac, \gamma for gamma? , \actcoeff for gamma    
+     
+    %row 7     
+ 	 & Consistency  &  & \begin{tabular}{@{}c@{}} $\int\limits_{0}^{1}\ln\Bigg(\dfrac{\gamma_{1}}{\gamma_{2}}\Bigg)\mathrm{d}\specfrac{1}=0$ \\ $\dfrac{\partial\ln\gamma_{2}}{\partial\specfrac{1}}=-\dfrac{\specfrac{1}}{\specfrac{2}}\dfrac{\partial\ln\gamma_{1}}{\partial\specfrac{1}}$ \end{tabular} \\ \hline
+     %benjie: \gamma for gamma
+     
+	\end{tabular}
+    
+    
+\end{mitframe}

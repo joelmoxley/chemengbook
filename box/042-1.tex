@@ -1,0 +1,41 @@
+\begin{mitframe}{042-1}]
+
+		\mdfsubtitle{High Reynolds Flow (Box 42-1)}
+        
+\begin{listone}
+
+\item NSE ND: $\dfrac{1}{\strouhal}\dfrac{\partial\uline{\tilde{\vvel}}}{\partial\tilde{t}}+\uline{\tilde{\vvel}}\cdot\uline{\tilde{\nabla}\tilde{\vvel}}=-\tilde{\gradop}\uline{\tilde{\dynpress}}+\dfrac{1}{\reynolds}\tilde{\nabla}^2\uline{\tilde{\vvel}}$
+\item $\Temp_{\conc}=\dfrac{\length}{\uvel}, \prod=\uvel^2\dens, \strouhal\rightarrow{1}$
+			\begin{listtwo}
+            \item Bulk $\reynolds>> 1$
+            \end{listtwo}
+\item Inviscid Region
+			\begin{listtwo}
+            \item Rotational: $\vort\neq{0}$
+            				\begin{listthree}
+                            \item Full NSE, scaling and FFT	                          					  \item $\iipf\bigg(\dfrac{\vvel^2}{2}+\dfrac{\p}{\dens}+\grav\heattranscoeff\bigg)=0$
+                            \end{listthree}
+            \item Irrotational: $\vort\neq{0}$
+            				\begin{listthree}
+                            \item $\nabla^2\streamfunc=0$ (Planar), $\energy^2\streamfunc=0$(Axisym)
+                            
+                            			\begin{listfour}
+                                        \item $\nabla\bigg(\dfrac{\vvel^2}{2}+\dfrac{\p}{\dens}+\grav\heattranscoeff\bigg)=0$
+                                        \end{listfour}
+\item Boundary Layer
+			\begin{listtwo}
+            \item $\vvel_{\disp}\dfrac{\partial\vvel_{\disp}}{\partial\disp}+\dfrac{\partial\vvel_{\disp}}{\partial{y}}-\forcepot\dfrac{\mathrm{d}\forcepot}{\mathrm{d}\disp}=\vvel\dfrac{\partial\vvel_{\disp}}{\partial{y}^2}$
+            
+            			\begin{listthree}
+                        \item $\forcepot(\disp)=\frac{lim}{y\rightarrow0},\vvel_{\disp}(\disp,y)$, bulk $\uvel$ soln
+                        \item $\dfrac{\partial\uline{\vvel_{\disp}}}{\partial\disp}+\dfrac{\partial\vvel_y}{\partial{y}}=0$
+                        \item asym match: $\dfrac{\mathrm{d}\dynpress}{\mathrm{d}\disp}-\forcepot\dfrac{\mathrm{d}\forcepot}{\mathrm{d}\disp}$ (0 for constant $\uvel$)
+                        
+                        \end{listthree}            
+            \end{listtwo}
+
+                            \end{listthree}
+            
+            \end{listtwo}
+\end{listone}
+\end{mitframe}

@@ -1,0 +1,44 @@
+\begin{mitframe}{003-1} % 20160714MAC
+
+\mdfsubtitle{(Box 3-1)}
+
+\begin{longtable}{ | p{1cm} | c | c | c | c | } 
+ \hline
+    Ensem ble & Microcanonical & Canonical & Grand Canonical 
+    & Isothermal/Isobaric    
+    \\ \hline
+    
+    Condi tions & $\nummoles, \uline{\vol}, \uline{\energy}$ & $\nummoles, \uline{\vol}, \Temp$ & $\chempot, \uline{\vol}, \Temp$ & $\nummoles, \p, \Temp$ \\ \hline
+  
+%Benjie: Not sure of "\chempot" for mu
+
+	 & $\mathrm{d}\uline{\entropy}=\dfrac{1}{\Temp}\mathrm{d}\uline{\energy}+\dfrac{\p}{\Temp}\mathrm{d}\uline{\vol}+\dfrac{\chempot}{\Temp}\mathrm{d}\nummoles$ & $\mathrm{d}\uline{\helmholtz}=-\uline{\entropy}\mathrm{d}\Temp-\p\mathrm{d}\uline{\vol}+\chempot\mathrm{d}\nummoles$ & $\mathrm{d}(\p\uline{\vol})=\uline{\entropy}\mathrm{d}\Temp+\p\mathrm{d}\uline{\vol}+\nummoles\mathrm{d}\chempot$ & $\mathrm{d}\uline{\gibbs}=-\uline{\entropy}\mathrm{d}\Temp+\uline{\vol}\mathrm{d}\p+\chempot\mathrm{d}\nummoles$  \\ \hline
+     
+	Natural Function & $\uline{\entropy}=\boltz\ln\mpc$ & $\uline{\helmholtz}=-\boltz\Temp\ln\cpf$ & $\p\uline{\vol}=\boltz\Temp\ln\gcpf$ & $\uline{\gibbs}=-\boltz\Temp\ln\iipf$ \\ \hline
+    
+    $\p$ & $\boltz\Temp\bigg(\dfrac{\partial\ln\mpc}{\partial\uline{\vol}}\bigg)_{\nummoles,\uline{\energy}}$ &  $\boltz\Temp\bigg(\dfrac{\partial\ln\cpf}{\partial\uline{\vol}}\bigg)_{\Temp}$ & $\dfrac{\boltz\Temp\ln\gcpf}{\uline{\vol}}$ & N/A \\ \hline
+    % 20160714MAC: P x Canonical (row "P", column Canonical), subscript should include 'N' or '\nummoles' i.e. "_{\Temp}" should be changed to "_{{\Temp},{\nummoles}}" (Tester, p.401, Eq.10-49)   
+    
+    $\uline{\entropy}$ & $\boltz\ln\mpc$ & $\boltz\Temp\bigg(\dfrac{\partial\ln\cpf}{\partial\Temp}\bigg)_{\vol}+\boltz\Temp\ln\cpf$ & $\boltz\ln\gcpf+\boltz\Temp\bigg(\dfrac{\partial\ln\gcpf}{\partial\Temp}\bigg)_{\uline{\vol},\chempot}$ & $\boltz\ln\iipf+\boltz\Temp\bigg(\dfrac{\partial\ln\iipf}{\partial\Temp}\bigg)_{\nummoles,\p}$ \\ \hline
+    % 20160714MAC: Under Canonical, subscript 'V' should be underlined i.e. '_{\vol}' should be changed to '\uline{\vol}' similar to the subscript of Grand Canonical (Tester, p.400, Eq.10-44)
+    
+	$\uline{\energy}=\uline{\intenergy}$ & N/A & $\boltz\Temp^{2}\bigg(\dfrac{\partial\ln\cpf}{\partial\Temp}\bigg)_{\uline{\vol}}$ & $\sum\nolimits\chempot_{\state}\nummoles_{\state}+\boltz\Temp^{2}\bigg(\dfrac{\partial\ln\gcpf}{\partial\Temp}\bigg)_{\uline{\vol},\chempot}$ & $\boltz\Temp^{2}\bigg(\dfrac{\partial\ln\iipf}{\partial\Temp}\bigg)_{\nummoles,\p}+\p\boltz\Temp\bigg(\dfrac{\partial\ln\iipf}{\partial\nummoles}\bigg)_{\Temp,\p}$ \\ \hline   
+    % 20160714MAC: Under Canonical, subscript should include 'N' or '\nummoles' i.e. "_{uline{\vol}}" should be changed to "_{uline{\vol},{\nummoles}}" (Tester, Eq.10-49)  
+    
+    $\uline{\enthalpy}$ & $\uline{\energy}+\vol\boltz\Temp\bigg(\dfrac{\partial\ln\mpc}{\partial\uline{\vol}}\bigg)_{\nummoles,\uline{\energy}}$ & $\boltz\Temp^{2}\bigg(\dfrac{\partial\ln\cpf}{\partial\Temp}\bigg)_{\uline{\vol}}+\uline{\vol}\bigg[\boltz\Temp\bigg(\dfrac{\partial\ln\cpf}{\partial\uline{\vol}}\bigg)_{\Temp}\bigg]$ & $\sum\nolimits\chempot_{\state}\nummoles_{\state}+\Temp\bigg[\boltz\ln\gcpf+\boltz\Temp\bigg(\dfrac{\partial\ln\gcpf}{\partial\Temp}\bigg)_{\uline{\vol},\chempot}\bigg]$ & $\boltz\Temp^{2}\bigg(\dfrac{\partial\ln\iipf}{\partial\Temp}\bigg)_{\nummoles,\p}$ \\ \hline 
+    
+    $\uline{\helmholtz}$ & $\uline{\energy}-\Temp\boltz\ln\mpc$ & $-\boltz\Temp\ln\cpf$ & $\sum\nolimits\chempot_{\state}\nummoles_{\state}-\boltz\Temp\ln\gcpf$ & $-\boltz\Temp\ln\iipf+\p\boltz\Temp\bigg(\dfrac{\partial\ln\iipf}{\partial\nummoles}\bigg)_{\Temp,\p}$\\ \hline
+    
+    $\uline{\gibbs}$ & $\uline{\energy}+\vol\boltz\Temp\bigg(\dfrac{\partial\ln\mpc}{\partial\uline{\vol}}\bigg)_{\nummoles,\uline{\energy}}-\Temp\boltz\ln\mpc$ & $-\boltz\Temp\ln\cpf+\uline{\vol}\bigg[\boltz\Temp\bigg(\dfrac{\partial\ln\cpf}{\partial\uline{\vol}}\bigg)_{\Temp}\bigg]$ & $\sum\nolimits \chempot_{\state}\nummoles_{\state}$ & $-\boltz\Temp\ln\iipf$ \\ \hline
+    
+    $\chempot$ & $\boltz\Temp\bigg(\dfrac{\partial\ln\mpc}{\partial\nummoles}\bigg)_{\uline{\vol},\uline{\energy}}$ & $-\boltz\Temp\bigg(\dfrac{\partial\ln\cpf}{\partial\nummoles}\bigg)_{\uline{\vol},\Temp}$ & N/A & $-\boltz\Temp\bigg(\dfrac{\partial\ln\iipf}{\partial\p}\bigg)_{\Temp,\nummoles}$ \\ \hline
+    
+ 	$\nummoles$ & N/A & N/A & $\boltz\Temp\bigg(\dfrac{\partial\ln\gcpf}{\partial\chempot_{\state}}\bigg)_{\Temp,\uline{\vol}}$ & N/A \\ \hline
+    
+    $\uline{\vol}$ & N/A & N/A & N/A & $-\boltz\Temp\bigg(\dfrac{\partial\ln\iipf}{\partial\nummoles}\bigg)_{\Temp,\p}$ \\ \hline	
+    
+\end{longtable}
+
+
+%$\masstranscoeff$
+\end{mitframe}

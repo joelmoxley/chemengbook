@@ -1,0 +1,66 @@
+\begin{mitframe}{069-4}
+		\mdfsubtitle{Reynolds-Average General Conservation Equations (Box 69-4)}
+
+\begin{listone}
+
+\item Continuity Equations
+	   \begin{listtwo}
+       
+       \item $\nabla\cdot\vvel=0$
+       \item $\nabla\cdot\forcepot=0$
+  
+		\end{listtwo}
+
+\item Momentum Conservation Equation
+
+			\begin{listtwo}
+          
+            \item $\dens\dfrac{\elecdisplace\langle\uline{\vvel}\rangle}{\elecdisplace{t}}=-\nabla\langle\uline{\dynpress\rangle}+\nabla\cdot\bigg(\langle\uuline{\torque}\rangle+\uuline{\torque}^*\bigg)$
+							
+                            \begin{listthree}
+                            
+                            \item $\uuline{\torque}^*\equiv-\dens\langle\uline{\forcepot}\uline{\forcepot}\rangle$
+                            
+                            \end{listthree}
+		
+				\end{listtwo}
+
+\item Energy Conversion Equation
+
+			\begin{listtwo}
+            \item $\dens\hat{\cp}\dfrac{\elecdisplace\langle\uline\Temp\rangle}{\elecdisplace{t}}=-\nabla\cdot\bigg(\langle\uline{\heatflux}\rangle+\uline{\heatflux}^*\bigg)+\chempot\langle\uline\diss\rangle$
+            
+            		\begin{listthree}
+                    
+                    \item $\uline{\heatflux}^*\equiv\dens\hat{\cp}\langle\uline{\uvel}\theta\rangle$
+                   
+               \end{listthree}
+
+				\end{listtwo}
+
+\item Species Conservation Equation
+
+					\begin{listtwo}
+                                     
+                    \item $\dfrac{\elecdisplace\langle\uline{\conc}_{\state}\rangle}{\elecdisplace{t}}=-\nabla\cdot\bigg(\langle\uline{\molspecflux}\rangle+\uline{\molspecflux}^*\bigg)+\langle\gasconst_{\vvel\state}\rangle$
+                    
+               
+                    \item$\uline{\molspecflux}^*\equiv\langle\uline{\chempot}\specfrac{i}\rangle$
+                    \item $\langle\gasconst_{\vvel\state}\rangle$
+                    
+                    			\begin{listfour}
+                                \item $1^{st}$ Order
+                                				\begin{listfive}
+                                               \item $\langle\gasconst_{\vvel\state}\rangle=-\thermcond\langle\conc_{\state}\rangle$
+                                               \end{listfive}
+                                      \item $2^{nd}$ Order
+
+												\begin{listfive}
+                                               \item $\langle\specsource\rangle=-\thermcond\bigg(\langle\conc_{\state}\rangle^2+\langle\specfrac{i}\rangle\bigg)$
+                                                
+												\end{listfive}
+\end{listfour}
+\end{listtwo}
+\end{listone}
+
+\end{mitframe}

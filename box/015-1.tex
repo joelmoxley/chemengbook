@@ -1,26 +1,112 @@
-\begin{mitframe}{015-1} 
- 
+\begin{lscapemitframe}[-5pt]{015-1}
 \mdfsubtitle{(Box 15-1)}
 
-\begin{longtable}{ | c | c | c | c | c | } 
- \hline
+\begin{tabularx}%
+	{\textwidth}%
+    {| >{\collectcell\mitalign}m{0.025\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}|}% 
+ \hline%
  
-\multirow{7}{*}{\begin{sideways}Constant Volume\end{sideways}} & $(\partial\p)_{\vol}=-(\partial\vol)_{\p}$ & $\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $-\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}$ \\ \cline{2-5}
-& $(\partial\Temp)_{\vol}=-(\partial\vol)_{\Temp}$ & 1 & 1 & $\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}$ \\ \cline{2-5}
-& $(\partial\entropy)_{\vol}=-(\partial\vol)_{\entropy}$ & $\dfrac{\cp}{\Temp}+{\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2}}\bigg/{\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}}$ & $\dfrac{\cv}{\Temp}$ & $\dfrac{1}{\Temp}\bigg[\cp\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}+\Temp\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}^{2}\bigg]$ \\ \cline{2-5}
-& $(\partial\intenergy)_{\vol}=-(\partial\vol)_{\intenergy}$ & $\cp+{\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2}}\bigg/{\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}}$ & $\cv$ & $\cp\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}+\Temp\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}^{2}$ \\ \cline{2-5}
-& $(\partial\enthalpy)_{\vol}=-(\partial\vol)_{\enthalpy}$ & $\cp+{\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2}}\bigg/{\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}}+\vol\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $\cv+\vol\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $\cp\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}+\Temp\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}^{2}-\vol\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}$ \\ \cline{2-5}
-& $(\partial\helmholtz)_{\vol}=-(\partial\vol)_{\helmholtz}$ & $-\entropy$ & $-\entropy$ & $-\entropy\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}$ \\ \cline{2-5}
-& $(\partial\gibbs)_{\vol}=-(\partial\vol)_{\gibbs}$ & $-\entropy+\vol\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $-\entropy+\vol\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $-\bigg[\vol\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}+\entropy\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}\bigg]$ \\ \hline \hline
-  
-\multirow{7}{*}{\begin{sideways}Constant Pressure\end{sideways}} & $(\partial\vol)_{\p}=-(\partial\p)_{\vol}$ & $-\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $-\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $-\bigg(\dfrac{\partial\vol}{\partial\vol}\bigg)_{\p}$ \\ \cline{2-5}
-& $(\partial\Temp)_{\p}=-(\partial\p)_{\Temp}$ & $\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & 1 \\ \cline{2-5}
-& $(\partial\entropy)_{\p}=-(\partial\p)_{\entropy}$ & $\dfrac{\cp}{\Temp}\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $\dfrac{\cv}{\Temp}\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}-\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2}$ & $\dfrac{\cp}{\Temp}$ \\ \cline{2-5}
-& $(\partial\intenergy)_{\p}=-(\partial\p)_{\intenergy}$ & $\cp\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}+\p\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\Temp}$ & $\cv\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\vol}-\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2}+\p\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}$ & $\cp -\p\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}$ \\ \cline{2-5}
-& $(\partial\enthalpy)_{\p}=-(\partial\p)_{\enthalpy}$ & $\cp\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $\cv\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}-\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2}$ & $\cp$ \\ \cline{2-5}
-& $(\partial\helmholtz)_{\p}=-(\partial\p)_{\helmholtz}$ & $\p\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}-\entropy\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $\p\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}-\entropy\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $-\bigg[\entropy+\p\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}\bigg]$ \\ \cline{2-5}
-& $(\partial\gibbs)_{\p}=-(\partial\p)_{\gibbs}$ & $-\entropy\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $-\entropy\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}$ & $-\entropy$ \\ \hline 
-	
-\end{longtable}
+%Row 1
+\multirow{7}{*}{\begin{sideways}Constant Volume\end{sideways}} &%
+(\partial\p)_{\vol}=-(\partial\vol)_{\p} &%
+\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol} &%
+\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol} &% 
+-\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p} \\ \cline{2-5}
 
-\end{mitframe}
+%Row 2
+&% 
+(\partial\Temp)_{\vol}=-(\partial\vol)_{\Temp} &%
+1 &%
+1 &%
+\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp} \\ \cline{2-5}
+
+%Row 3
+&%
+(\partial\entropy)_{\vol}=-(\partial\vol)_{\entropy} &%
+\dfrac{\cp}{\Temp}+{\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2}}\bigg/{\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}} &%
+\dfrac{\cv}{\Temp} &%
+\dfrac{1}{\Temp}\Bigg[\cp\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}+\Temp\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}^{2}\Bigg] \\ \cline{2-5}
+
+%Row 4
+&%
+(\partial\intenergy)_{\vol}=-(\partial\vol)_{\intenergy} &%
+\cp+{\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2}}\bigg/{\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}} &%
+\cv &%
+\cp\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}+\Temp\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}^{2} \\ \cline{2-5}
+
+%Row 5
+&% 
+(\partial\enthalpy)_{\vol}=-(\partial\vol)_{\enthalpy} &%
+{ \cp&+ \\ &\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2} \bigg/{\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}}+\\ &\vol\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol} } &%
+\cv+\vol\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol} &%
+{ \cp&\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}+ \\ &\Temp\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}^{2}-\vol\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p} } \\ \cline{2-5}
+
+%Row 6
+&%
+(\partial\helmholtz)_{\vol}=-(\partial\vol)_{\helmholtz} &%
+-\entropy &%
+-\entropy &%
+-\entropy\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp} \\ \cline{2-5}
+
+%Row 7
+&% 
+(\partial\gibbs)_{\vol}=-(\partial\vol)_{\gibbs} &%
+-\entropy+\vol\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol} &%
+-\entropy+\vol\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol} &%
+-\Bigg[\vol\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}+\entropy\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}\Bigg] \\ \hline \hline
+
+%Row 8
+ \multirow{7}{*}{\begin{sideways}Constant Pressure\end{sideways}} &%
+ (\partial\vol)_{\p}=-(\partial\p)_{\vol} &%
+ -\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol} &%
+ -\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol} &%
+ -\bigg(\dfrac{\partial\vol}{\partial\vol}\bigg)_{\p} \\ \cline{2-5}
+ 
+%Row 9 
+&%
+(\partial\Temp)_{\p}=-(\partial\p)_{\Temp} &%
+\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp} &%
+\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp} &%
+1 \\ \cline{2-5}
+
+%Row 10
+&%
+(\partial\entropy)_{\p}=-(\partial\p)_{\entropy} &%
+\dfrac{\cp}{\Temp}\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp} &%
+\dfrac{\cv}{\Temp}\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}-\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2} &%
+\dfrac{\cp}{\Temp} \\ \cline{2-5}
+
+%Row 11
+&%
+(\partial\intenergy)_{\p}=-(\partial\p)_{\intenergy} &%
+\cp\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp}+\p\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\Temp} &%
+{ \cv&\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\vol}-\\ &\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2}+  &\p\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol} } &%
+\cp -\p\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p} \\ \cline{2-5}
+
+%Row 12
+&%
+(\partial\enthalpy)_{\p}=-(\partial\p)_{\enthalpy} &%
+\cp\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp} &%
+\cv\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}-\Temp\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}^{2} &%
+\cp \\ \cline{2-5}
+
+%Row 13
+&% 
+(\partial\helmholtz)_{\p}=-(\partial\p)_{\helmholtz} &%
+\p\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}-\entropy\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp} &%
+\p\bigg(\dfrac{\partial\p}{\partial\Temp}\bigg)_{\vol}-\entropy\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp} &%
+-\bigg[\entropy+\p\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}\bigg] \\ \cline{2-5}
+
+%Row 14
+&%
+(\partial\gibbs)_{\p}=-(\partial\p)_{\gibbs} &%
+-\entropy\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp} &%
+-\entropy\bigg(\dfrac{\partial\p}{\partial\vol}\bigg)_{\Temp} &%
+-\entropy \\ \hline  
+
+\end{tabularx}
+\end{lscapemitframe}

@@ -1,0 +1,38 @@
+\begin{mitframe}{041-4}
+
+				\mdfsubtitle{Cylindrical /Cartesian Stream Function Solutions (Box 41-4)}
+                
+\begin{listone}
+\item NSE ND: $\dfrac{\reynolds}{\strouhal}\dfrac{\partial\uline{\tilde{\vvel}}}{\partial\tilde{t}}=-\tilde{\gradop}\uline{\tilde{\dynpress}}+\tilde{\nabla}^2\uline{\tilde{\vvel}}$
+
+				\begin{listtwo}
+                \item Pseudosteady, $\sfrac{\reynolds}{\strouhal}=\sfrac{\Temp_{\vol}}{\Temp_1}=0$
+                \item Time enters as parameter
+                \end{listtwo}
+                
+\item Creeping Flow NSE Stream: $\energy^4\streamfunc=0$
+\item Boundary conditions: no slips, no penetration $\vvel_{\pos}, \vvel_{\theta}$
+% not sure of "\theta"
+\item Cylindrical: Convert boundary conditions to $\streamfunc(\pos,\theta)$ with integration
+
+				\begin{listtwo}
+                \item $\vvel_{\pos}=\dfrac{1}{\pos}\dfrac{\partial\streamfunc}{\partial\theta}, \vvel_{\pos}=-\dfrac{\partial\streamfunc}{\partial\pos}$
+                
+                			\begin{listthree}
+                            \item Assume form  $\streamfunc=\pos\fug(\theta)=>\fug+2\fug"+\fug""=0$
+                            \item Flow Near Corner, Ex. 7.4-1, Deen p. 300
+                            
+                            \end{listthree}
+                \end{listtwo}
+\item Cartesian: Convert boundary conditions to $\streamfunc(\disp, y)$ with integration
+
+				\begin{listtwo}
+                \item $\vvel_{\disp}=\dfrac{\partial\streamfunc}{\partial{y}}, \vvel_y=-\dfrac{\partial\streamfunc}{\partial\disp}$
+                \item Cartesian: $\nabla^4\streamfunc=\dfrac{\partial^4\streamfunc}{\partial\disp^4}+2\dfrac{\partial64\streamfunc}{\partial\disp^2\partial{y}^2}+\dfrac{\partial^4\streamfunc}{\partial{y}^4}$
+                			\begin{listthree}
+                            \item Assume form $\streamfunc=\pos", n=0,2,4$(Middleman p.269)
+                            \end{listthree}
+                \end{listtwo}
+\item Apply boundary conditions and differentiate to velocities
+\end{listone}
+\end{mitframe}
