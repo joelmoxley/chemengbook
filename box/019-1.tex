@@ -1,4 +1,4 @@
-\begin{mitframe}{019-1} 
+\begin{mitframe}{019-1} %20160907MAC
 
     \mdfsubtitle{Stability Criteria (Box 19-1)} 
   
@@ -6,14 +6,21 @@
         
     \item $\blthick^2 \uline{\intenergy} \geq 0$
     %benjie: not sure '\blthick'
+    %20160907MAC: delta is not "\blthick" but a "small, virtual change in external parameter"
     
-    \item $\blthick^2 \uline{\entropy} \geq 0$
+    \item $\blthick^2 \uline{\entropy} \leq 0$
     %benjie: not sure '\blthick'
+    %20160907MAC: delta is not "\blthick" but a "small, virtual change in external parameter"
+    %20160907MAC: changed \geq into \leq
     
     \item $\mass=n+2$
 	%benjie: not sure with '\mass' and 'n'
+    %20160907MAC: "m" is not "\mass" but the "number of extensive parameters"
+    %20160907MAC: "n" is the "number of independent or extensive parameters"
 
     \item $y_{(\mass -1)(\mass -1)}^{(\mass -2)} \geq 0 , = 0$ at spinodal
+    %20160907MAC: "m" is not "\mass" but the "number of extensive parameters"
+    %20160907MAC: "y" can be generally defined as "Legendre transform"
         
     \item come back to this to make table of behavior at binodal, spinodal, and critical point.
     
@@ -24,34 +31,42 @@
  	%row 1
  	$ y_{22}^{(1)} > 0$ & $ y_{33}^{(2)} > 0$\\ \hline 
     %benjie: not sure with 'y'
+    %20160907MAC: "y" can be generally defined as "Legendre transform"
     
     %row 2        
     $ \uline{\helmholtz}_{\uline{\vol} \uline{\vol}} = -\bigg(\dfrac{\partial\p}{\partial\uline{\vol}}\bigg)_{\Temp,\nummoles}$ & $ \uline{\gibbs}_{\exergy\exergy} = -\bigg(\dfrac{\partial\chempot_{\exergy}}{\partial\nummoles_{\exergy}}\bigg)_{\Temp,\p,\nummoles_{\conc}}$ \\ \hline 
     %benjie: not sure with '\chempot_{\exergy}' and '\nummoles_{\exergy}'
+    %20160907MAC: "B" is not "\exergy", "C" is not "\conc", "B" and "C" can be defined as "general intensive property or parameter"
     
     %row 3    
     $ \uline{\helmholtz}_{\nummoles\nummoles} = \bigg(\dfrac{\partial\chempot}{\partial\nummoles}\bigg)_{\Temp,\uline{\vol}}$ & $ \uline{\helmholtz}_{\uline{\vol} \uline{\vol}}^{\prime} = -\bigg(\dfrac{\partial\p}{\partial\uline{\vol}}\bigg)_{\Temp,\chempot_{\exergy},\nummoles_{\conc}}$ \\ \hline 
     %benjie: not sure with '\chempot_{\exergy}' and '\chempot'
+    %20160907MAC: "B" is not "\exergy", "C" is not "\conc", "B" and "C" can be defined as "general intensive property or parameter"
     
     %row 4
     $\uline{\enthalpy}_{\uline{\entropy} \uline{\entropy}} = \bigg(\dfrac{\partial\Temp}{\partial\uline{\entropy}}\bigg)_{\p,\nummoles}$ & $\uline{\helmholtz}_{\conc\conc}^{\prime} = \bigg(\dfrac{\partial\chempot_{\conc}}{\partial\nummoles_{\conc}}\bigg)_{\Temp,\chempot_{\exergy},\uline{\vol}}$ \\ \hline
     %benjie: not sure '\conc', '\chempot_{\conc}','\nummoles_{\conc}' 
+    %20160907MAC: "B" is not "\exergy", "C" is not "\conc", "B" and "C" can be defined as "general intensive property or parameter"
     
     %row 5
     $\uline{\enthalpy}_{\nummoles\nummoles} = \bigg(\dfrac{\partial\chempot}{\partial\nummoles}\bigg)_{\p,\uline{\entropy}}$ & $\uline{\enthalpy}_{\uline{\entropy} \uline{\entropy}}^{\prime} = \bigg(\dfrac{\partial\Temp}{\partial\uline{\entropy}}\bigg)_{\p,\chempot_{\exergy},\nummoles_{\conc}}$\\ \hline   
     %benjie: not sure '\chempot_{\exergy}'
+    %20160907MAC: "B" is not "\exergy", "C" is not "\conc", "B" and "C" can be defined as "general intensive property or parameter"
     
     %row 6
     $\uline{\intenergy}_{\uline{\entropy} \uline{\entropy}}^{\prime} =\bigg(\dfrac{\partial\Temp}{\partial\uline{\entropy}}\bigg)_{\chempot,\uline{\vol}} > 0$ & $\uline{\enthalpy}_{\conc\conc}^{\prime} = \bigg(\dfrac{\partial\chempot_{\conc}}{\partial\nummoles_{\conc}}\bigg)_{\Temp,\chempot_{\exergy},\uline{\entropy}}$  \\ \hline   
     %benjie: not sure with '\chempot_{\conc}'
+    %20160907MAC: "B" is not "\exergy", "C" is not "\conc", "B" and "C" can be defined as "general intensive property or parameter"
     
     %row 7
     $\uline{\intenergy}_{\uline{\vol} \uline{\vol}}^{\prime} = -\bigg(\dfrac{\partial\p}{\partial\uline{\vol}}\bigg)_{\chempot,\uline{\entropy}}$ & $\uline{\intenergy}_{\uline{\entropy} \uline{\entropy}}^{\prime\prime} = \bigg(\dfrac{\partial\Temp}{\partial\uline{\entropy}}\bigg)_{\chempot_{\exergy},\chempot_{\conc},\uline{\vol}}$ \\ \hline   
     %benjie: not sure with '\chempot_{\exergy}', '\chempot_{\conc}'   
+    %20160907MAC: "B" is not "\exergy", "C" is not "\conc", "B" and "C" can be defined as "general intensive property or parameter"
     
     %row 8
      & $\uline{\intenergy}_{\uline{\vol} \uline{\vol}}^{\prime\prime} = -\bigg(\dfrac{\partial\p}{\partial\uline{\vol}}\bigg)_{\chempot_{\exergy},\chempot_{\conc},\uline{\entropy}}$ \\ \hline   
-    %benjie: not sure with '\chempot_{\exergy}', '\chempot_{\conc}'   
+    %benjie: not sure with '\chempot_{\exergy}', '\chempot_{\conc}'  
+    %20160907MAC: "B" is not "\exergy", "C" is not "\conc", "B" and "C" can be defined as "general intensive property or parameter"
  
 \end{longtable}		
 

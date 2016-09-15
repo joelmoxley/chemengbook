@@ -3,18 +3,18 @@
 				\mdfsubtitle{Generic Solution (Box 40-2)}
                 
 \begin{listone}
-\item NSE: $0=-\uline{\gradop}\uline{\gradop}+\chempot\gradop^2\uline{\vvel}$
+\item NSE: $0=-\gradop\uline{\dynpress}+\chempot\gradop^2\uline{\vvel}$
 
 			\begin{listtwo}
             \item Integrate NSE twice along flow direction with constant unidirectional $\uline{\gradop}\uline{\dynpress}$
             
             \item Apply no slip boundary condition
             
-            \item Integrate $\heatflow$ expression for unidirectional $\uline{\gradop}\uline{\dynpress}(\heatflow)$
+            \item Integrate $\heatflux$ expression for unidirectional $\gradop\uline{\dynpress}(\heatflux)$
             
-            \item Integrate $\uline{\gradop}\uline{\dynpress}(\heatflow)$ along flow direction to find $\uline{\dynpress}(\heatflow)$
+            \item Integrate $\gradop\uline{\dynpress}(\heatflux)$ along flow direction to find $\uline{\dynpress}(\heatflux)$
             
-            \item use known $\iipf\uline{\dynpress}(\heatflow)$ to find $\heatflow$
+            \item use known $\iipf\uline{\dynpress}(\heatflux)$ to find $\heatflux$
             
             \item Integrate continuity to find non-unidirectional component of velocity
             

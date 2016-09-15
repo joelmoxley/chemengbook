@@ -1,0 +1,20 @@
+\begin{mitframe}{074-3}
+	\mdfsubtitle{Basic Neswton-Raphson Method $\uline{\fug}\big(\uline{\disp}\big)=0$ (Box 74-3)}
+ \begin{listone}
+	\item Taylor Series Expansion:
+    	\begin{listtwo}
+        	\item $\uline{\fug}\big(\disp\big)\approx\uline{\fug}\big(\uline{\disp}^{\init}\big)+J\big|_{\uline{\disp}^{\init}}\big(\uline{\disp}-\uline{\disp}^{\init}\big)+\ldots$
+            \item $J=\begin{bmatrix}\dfrac{\partial\fug_1}{\partial\disp_1} & \dfrac{\partial\fug_1}{\partial\disp_2}& \ldots\\ \dfrac{\partial\fug_2}{\partial\disp_1}& \dfrac{\partial\fug_2}{\partial\disp_2}&\ldots\\   \vdots & \vdots &\ddots  \end{bmatrix}$
+        \end{listtwo}
+	\item Iterations to find root:
+    	\begin{listtwo}
+    		\item $\disp^{[\state]}=\disp^{[\state-1]}+\iipf\disp^{[\state-1]}$
+            \item $\iipf\disp^{[\state-1]}=-\dfrac{\uline{\fug}\big(\uline{\disp}^{[\state-1]\big)}}{J|_{\disp^{\state-1}}}$
+            \end{listtwo}
+    \item Error at each step
+    		\begin{listtwo}
+            	\item $\uline{\varepsilon}_{\state-1}=\uline{\hat{\disp}}-\uline{\disp}^{[\state-1]}$
+                \item $\uline{\varepsilon}_{\state}=-\uline{\varepsilon_{\state-1}}^2\dfrac{\enthalpy(\uline{\disp}^{[\state-1]})}{2J(\uline{\disp}^{[\state-1]})}$
+            \end{listtwo}
+\end{listone}   
+\end{mitframe}

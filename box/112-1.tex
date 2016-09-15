@@ -1,0 +1,41 @@
+\begin{mitframe}{112-1}
+	\mdfsubtitle{Balances (Box 112-1)}
+\begin{listone}
+	\item External transport
+    \begin{listtwo}
+    	\item $\thermcond_{\state}\big(\lightspeed_{bulk}-\lightspeed_*\big)$ or $\thermcond_{\grav}\big(p_{bulk}-p_*\big)$
+% not sure "n"
+\begin{listthree}
+        	\item external mass transfer rate
+            \item $\lightspeed_*,p_*$ refers to concentration on other side of balance \\
+            (e.g., $\lightspeed_{surf}, \lightspeed_{eq})$
+            \item may need to add surface area for bubbles and particles \\ (e.g., $\thermcond_{\state}\activity$ for bubble)
+        \end{listthree}
+    \end{listtwo}
+	\item Internal transport
+    	\begin{listtwo}
+        	\item $\elecdisplace\nabla^2\conc$
+            \begin{listthree}
+            	\item pure internal diffusion resistance
+                \item yields Thiele modulus when equated with kinetic rate
+            \end{listthree}
+        \item $\elecdisplace\nabla^2\conc-\forcepot\gradop\conc$
+        	\begin{listthree}
+            	\item dispersion model rate
+                \item equate with kinetic rate
+            \end{listthree}
+        \end{listtwo}
+\item Kinetics
+	\begin{listtwo}
+    	\item $-\pos_{\helmholtz}<=>\thermcond\conc^n$
+        \item $\intrinsvisc\thermcond\conc^n$
+        \begin{listthree}
+        	\item effective reaction term with internal resistance
+            \item equate with surface concentration
+            \item may need to add volume or surface area term
+         \end{listthree}
+    \end{listtwo}
+\item $-\pos_{\helmholtz}=\mass\intrinsvisc\thermcond\lightspeed_{\entropy}=\thermcond_{\lightspeed}\activity_{\lightspeed}\mass(\lightspeed_b-\lightspeed_{\entropy})=\thermcond_{\state}\activity_{bubble}(\lightspeed_{\state}-\lightspeed_b)$
+% not sure of "b"
+\end{listone}    
+\end{mitframe}

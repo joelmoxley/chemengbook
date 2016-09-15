@@ -1,0 +1,24 @@
+\begin{mitframe}{107-1}
+	\mdfsubtitle{Residence Time Distribution (Box 107-1)}
+\begin{listone}
+	\item $\energy(\timet)\mathrm{d}\timet,\energy(\timet)=\dfrac{c(\timet)}{\int_{\init}^{\infty}c(\timet)\mathrm{d}\timet}$
+    	\begin{listtwo}
+        	\item probability that a particle entering at $\timet=0$ will exit at $\timet=\timet$
+            \item normalized $\int_{\init}^{\infty}\energy(\timet)\mathrm{d}\timet=1$
+            \item derived properties
+            	\begin{listthree}
+                	\item probability of leaving reactor $\timet<\Temp:\p_{\timet<\Temp}=\int_{\init}^{\Temp}\energy(\timet)\mathrm{d}\timet$
+                    \item mean residence time: $\torque=\int_{\init}^{\infty}\timet\energy(\timet)\mathrm{d}\timet$
+                    \item variance $\molecrad^2=\int_{\init}^{\infty}\timet^2\energy(\timet)\mathrm{d}\timet$
+                \end{listthree}
+        \end{listtwo}
+	\item Ideal RTDs
+    	\begin{listtwo}
+        	\item PFR: $\energy(\timet)=\blthick(\timet-\torque)$     CSTR: $\energy(\timet)=\dfrac{1}{\torque}exp\bigg(-\dfrac{\timet}{\torque}\bigg)$
+            \item Arbitrary: $c_{out}(\timet)=\int_{\init}^{\infty}{c}_{in}(\timet-\disp)\energy(\disp)\mathrm{d}\disp$
+            \begin{listthree}
+            	\item Convolution integral to determine RTD from input and output concentration data
+            \end{listthree}
+        \end{listtwo}
+\end{listone}    
+\end{mitframe}

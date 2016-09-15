@@ -1,0 +1,33 @@
+\begin{mitframe}{078-2}
+		\mdfsubtitle{Higher Order Methods (Box 78-2)}
+\begin{listone}
+	\item Implicit Trapezoidal (Implicit Second Order Runge-Kutta)
+    \begin{listtwo}
+    	\item $\uline{\disp}=\uline{\disp}_{(\mass+1)}+(\iipf\timet)\dfrac{1}{2}\big[\uline{\fug}\big(\uline{\disp}_{(\mass)}\big)\big]+O\big(\iipf\timet^3\big)$
+        \item $\iipf\uline{\disp}_{(\mass)}=\big(\iipf\timet\big)\lfloor{2}\uline{\fug}\big(\disp_{(\mass)}\big)+\uline{\fug}\big(\iipf\uline{\disp}_{(\mass)}\big)\rfloor$
+		\item Overall Stability
+        	\begin{listthree}
+            	\item $\bigg|\dfrac{1+\dfrac{1}{2}(\iipf\timet)\wavel_{\state}}{1-\dfrac{1}{2}(\iipf\timet)\wavel_{\state}}\bigg|<1$
+            \end{listthree}
+        \item Maximum timestep
+			\begin{listthree}
+            	\item None, always stable for $\wavel_{\state}\leq{0}$
+            \end{listthree}
+    \end{listtwo}
+    \item Explicit Second Order Runge-Kutta
+    	\begin{listtwo}
+        	\item $\uline{\disp}_{(\mass+1)}=\uline{\disp}_{(\mass)}+\uline{\thermcond}_{(2)}+O\big(\iipf\timet^3\big)$
+            \begin{listthree}
+            	\item $\uline{\thermcond}_{2}=(\iipf\timet)\uline{\fug}\big(\uline{\disp}_{(\mass)}+\dfrac{1}{2}\uline{\thermcond}_{(1)}\big)$
+                \item $\uline{\thermcond}_{(1)}=(\iipf\timet)\uline{\fug}(\uline{\disp}_{(\mass)}\big)$
+            \end{listthree}
+            \item Overall Stability
+            	\begin{listthree}
+                	\item $1+(\iipf\timet)\wavel_{\state}<{1}$
+                \end{listthree}
+            \item Maximum timestep
+            	\item $(\iipf\timet)_{max}=\dfrac{2}{|\wavel_{\state}|}$
+                
+        \end{listtwo}
+\end{listone}        
+\end{mitframe}

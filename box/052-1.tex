@@ -1,0 +1,30 @@
+\begin{mitframe}{052-1}
+			\mdfsubtitle {Taylor Dispersion  (Box 52-1)}
+\begin{listone}
+\item $\dfrac{\partial\overline{\conc}}{\partial{t}}=\dilfac\dfrac{\partial^2\overline\conc}{\partial{z}^2}, \overline{
+\conc}=\dfrac{1}{\helmholtz}\int\limits_{\helmholtz}\conc\mathrm{d}\helmholtz$
+\item Approach
+		\begin{listtwo}
+        		\item Fully-developed laminar flow
+                \item No $\eleccoeff$ dependence
+                \item dilute
+                \item $\dfrac{\partial{c}}{\partial{t}}+(\vvel(\pos)-\forcepot)\dfrac{\partial{c}}{\partial\configint}=\elecdisplace\bigg[\dfrac{1}{\pos}\bigg(\pos\dfrac{\partial {c}}{\partial\pos}\bigg)+\dfrac{\partial^2{c}}{\partial{z}^2}\bigg]$
+                
+                \item convective $>>$diffusion
+                \item quasisteady state $\dfrac{\partial{c}}{\partial{c}}\approx0$
+               % not sure "c"
+               \item long times $\dfrac{\partial{c}}{\partial\configint}=\dfrac{\partial\overline{c}}{\partial\configint}$
+                \item $\conc=\dfrac{1}{\pi\gasconst^2}\int\limits_{0}^{\pos}(2\pi\pos)\conc\mathrm{d}\pos$
+                \item $\uvel\bigg[1-2\bigg(\dfrac{\pos}{\gasconst}\bigg)^2\bigg]\dfrac{\partial\overline{c}}{\partial\configint}=\elecdisplace\Big[\dfrac{1}{\pos}\Big(\pos\dfrac{\partial{c}}{\partial\pos}\Big)+\dfrac{\partial^2{c}}{\partial{z}^2}\Big]$\item $\dfrac{\partial\overline{c}}{\partial{t}}\bigg|_{\pos=\gasconst}=0$
+                \item $c\rightarrow0$ as$|\configint|\rightarrow\infty$
+                \item Integrate equation w.r.t.r
+                
+                \item $\dfrac{\partial\overline{c}}{\partial{t}}+\uvel\dfrac{\partial{c}}{\partial{z}}+\taylordisp\dfrac{\partial^2\overline{c}}{\partial{z}^2}$
+                
+                \item $\taylordisp=\elecdisplace+\dfrac{\uvel\gasconst^2}{48\elecdisplace}$
+             
+       
+        \end{listtwo}
+\end{listone}
+
+\end{mitframe}

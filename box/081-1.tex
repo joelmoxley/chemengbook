@@ -1,0 +1,22 @@
+\begin{mitframe}{081-1}
+		\mdfsubtitle{Parameter Estimation (Box 81-1)}
+ \begin{listone}
+		\item $y=\texpcoeff_{\init}+\texpcoeff_1\fug_1(\disp)+\texpcoeff_2\fug_2(\disp)+\ldots +\texpcoeff_{\thermcond}\fug_{\thermcond}(\disp)$
+        \item $\uline{\disp}=X\uline{\texpcoeff}+\uline{\varepsilon}$
+        % not sure of "y", "X", and "\varepsilon"
+       		\begin{listtwo}
+            	\item $\begin{bmatrix} y_1 \\  y_2 \\ \vdots\\ y_n \end{bmatrix}=\begin{bmatrix}1 & \fug_1(\disp_1)  & \fug_2(\disp_1)& \cdots& \fug_{\thermcond}(\disp_1) \\ 1 & \fug_1 (\disp_2)& \fug_2(\disp_2)& \cdots & \fug_{\thermcond}(\disp_2) \\ \vdots & \vdots &  \vdots &\ddots & \vdots \\ 1& \fug_1(\disp_n) & \fug_2(x_n)& \cdots &\fug_{\thermcond}(\disp_n) \end{bmatrix}\begin{bmatrix} \texpcoeff_{\init} \\ \vdots \\ \texpcoeff_{\thermcond}\end{bmatrix}+\begin{bmatrix}\varepsilon_1\\ \varepsilon_2\\ \vdots \\ \varepsilon_n\end{bmatrix}$
+                
+                % not sure of"n"
+              \begin{listthree}
+              	\item $\uline{y}$= observation vector for the $n$ experiments
+                \item $X$ =design matrix
+                \item $\uline{\texpcoeff}$ parameter vector for the $\thermcond$ parameters
+                	\begin{listfour}
+                    	\item for well-designed experiment, $\thermcond\leq{n}$
+                    \end{listfour}
+                \item $\uline{\varepsilon}$ = residual vector for the $n$
+experiments              \end{listthree}  
+            \end{listtwo}
+\end{listone}       
+\end{mitframe}

@@ -1,0 +1,45 @@
+\begin{mitframe}{066-2}
+	\mdfsubtitle{Eigenvalue Problem (Box 66-2)}
+ \begin{listone}
+	\item General EVP; $\length(\pot)=-\wavel^2\pot$
+    \begin{listtwo}
+    	\item General Sturm-Liouville Problem
+        	\begin{listthree}
+           		\item $\length=\dfrac{1}{w}\bigg[\dfrac{\mathrm{d}}{\mathrm{d}}\disp\bigg(p\dfrac{\mathrm{d}}{\mathrm{d}\disp}\bigg)+\heatflux\bigg]$ 
+            % not sure of "w" & "p"
+            \end{listthree}
+    	\end{listtwo}  
+    \item Subject to BCs
+    \item Pick basis coordinate in finite direction, giving preference to direction with more homogeneous BCs
+    \item General solution 
+    	\begin{listtwo}
+        	\item Cartesian
+            	\begin{listthree}
+                	\item $\pot=\activity\sin\wavel\disp+b\cos\wavel\disp$
+                \end{listthree}
+            \item Cylindrical
+            		\begin{listthree}
+            	\item $\pot=\activity\sin\wavel\theta+b\wavel\theta$
+                \item $\pot=\activity{J_{\init}}\big(\wavel\pos\big)+bY_{\init}\big(\wavel\pos\big)$
+            		\end{listthree}
+            \item Spherical
+            	\begin{listthree}
+                	\item $\pot=\activity\dfrac{\sin\wavel\pos}{\pos}+b\dfrac{\cos\wavel\pos}{\pos}$
+                    \item $\pot=\sum\activity_{\state}\p_{\state}(\intrinsvisc), \intrinsvisc\equiv\conc\theta$
+                \end{listthree}
+        \end{listtwo}
+    \item Use homogenous boundary conditions to set up coefficient matrix
+    \begin{listtwo}
+    	\item Two-dimensional, not Lengendre Polynomial
+        	\begin{listthree}
+            	\item $\begin{bmatrix}\_&\_ \\ \_ &\_ \end{bmatrix} \begin{bmatrix} \activity\\ b \end{bmatrix}=\begin{bmatrix}
+                0  \\0 \end{bmatrix}$       % not sure of "b"       
+            \end{listthree}
+            \item Set determinant of coefficient matrix to zero to find $\wavel_n$
+        	\begin{listthree}
+        \item det$\begin{bmatrix}\_ &\_\\ \_&\_ \end{bmatrix}=0$      
+        	\end{listthree}
+        \item Find general solution in terms of series index $n$
+    \end{listtwo}
+\end{listone}   
+\end{mitframe}

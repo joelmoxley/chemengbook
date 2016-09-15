@@ -1,0 +1,20 @@
+\begin{mitframe}{074-1}
+	\mdfsubtitle{Basic Newton Method, $\fug(\disp)$ (Box 74-1)}
+\begin{listone}
+\item Taylor Series Expansion
+	\begin{listtwo}
+    	\item $\fug\big(\disp\big)\approx\fug\big(\disp^{\init}\big)+\dfrac{\mathrm{d}\fug}{\mathrm{d}\disp}\bigg|_{\disp}\big(\disp-\disp^{\init}\big)+\ldots$
+    \end{listtwo}
+\item Iterations for find root
+	\begin{listtwo}
+    	\item $\disp^{[\state]}=\disp^{[\state-1]}+\iipf\disp^{[\state-1]}$
+        \item $\iipf\disp^{[\state-1]}=-\dfrac{\fug\big(\disp^{[\state-1]}\big)}{\dfrac{\mathrm{d}
+        \fug}{\mathrm{d}\disp}\bigg|_{\disp^{[\state-1]}}}$       
+    \end{listtwo}
+\item Error at each step
+		\begin{listtwo}
+        	\item $\varepsilon_{\state_1}=\hat{\disp}-\disp^{[\state-1]}$
+            \item $\varepsilon_{\state}=-\varepsilon_{\state-1}^2\dfrac{\fug"(\disp^{[\state-1]})}{2\fug'(\disp^{[\state-1]})}$
+        \end{listtwo}
+\end{listone}    
+\end{mitframe}

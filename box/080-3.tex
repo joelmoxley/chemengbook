@@ -1,0 +1,42 @@
+\begin{mitframe}{080-3}
+		\mdfsubtitle{Generalized BVP for Finite Differences (Box 80-3)}
+        
+\begin{listone}
+	\item $\dfrac{\partial\eleccoeff}{\partial\timet}+\uline{\vvel}\cdot\gradop\eleccoeff-\Gamma\nabla^2\eleccoeff-\entropy\eleccoeff=0$
+
+	\item Expanded for two variables: $a\dfrac{\partial^2\eleccoeff}{\partial\timet}+b\dfrac{\partial^2\eleccoeff}{\partial\timet\partial\heightz}+c\dfrac{\partial^2\eleccoeff}{\partial{\heightz}^2}+\fug\bigg(\timet,\heightz,\eleccoeff,\dfrac{\partial\eleccoeff}{\partial\timet},\dfrac{\partial\eleccoeff}{\partial{\heightz}}\bigg)=0$
+\end{listone}     
+
+\begin{center}
+\begin{tabular}
+{| >{\centering\arraybackslash}m{2.3cm} | >{\centering\arraybackslash}m{2cm} |>{\centering\arraybackslash}m{2.5cm} |>{\centering\arraybackslash}m{3cm} |}
+\hline 
+ 
+%Row 1
+Equation Type &%
+Condition &%
+Examples &%
+Information travel\\ \hline
+
+%Row 2
+Hyperbolic &%
+$b^2-4ac>0$ &%
+convection &%
+downstream direction\\ \hline
+
+%Row 3
+Elliptic &%
+$b^2-4ac<0$ &%
+diffusion &%
+all directions\\ \hline
+
+%Row 4
+Parabolic &%
+$b^2-4ac=0$ &%
+time dependent diffusion &%
+all directions after $\timet = {\timet}\prime$\\ \hline    
+ 
+\end{tabular}
+\end{center}
+
+\end{mitframe}

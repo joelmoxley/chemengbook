@@ -1,0 +1,28 @@
+\begin{mitframe}{064-1}
+	\mdfsubtitle{Similarity (Box 64-1)}
+\begin{listone}
+	\item $\dfrac{\partial\dimltemp}{\partial\timet}=\tdiff\dfrac{\partial^2\dimltemp}{\partial\disp^2}$
+    \item Define $\intrinsvisc\equiv\disp/\grav(\timet)$
+    \item Solve as $\dfrac{\mathrm{d}^2\dimltemp}{\mathrm{d}\intrinsvisc^2}+\intrinsvisc\bigg(\dfrac{\grav\grav'}{\tdiff}\bigg)\dfrac{\mathrm{d}\dimltemp}{\mathrm{d}\intrinsvisc}=0$ where $\grav'\equiv\dfrac{\mathrm{d}\grav}{\mathrm{d}\timet}$
+    \item Set $\grav\grav'=2\tdiff, \grav=2\sqrt{\tdiff\timet}$
+    \item $\dfrac{\mathrm{d}^2\dimltemp}{\mathrm{d}\intrinsvisc^2}+2\intrinsvisc\dfrac{\mathrm{d}\dimltemp}{\mathrm{d}\intrinsvisc}=0$
+    \item Solution:
+    	\begin{listtwo}
+   			\item $\dfrac{\mathrm{d}\dimltemp}{\mathrm{d}\intrinsvisc}=\e^{-\intrinsvisc^2}$
+            \item $\dimltemp(\intrinsvisc)=1-\dfrac{2}{\sqrt{\pi}}\int\limits_{\init}^{\intrinsvisc}\e^{-\entropy^2}\mathrm{d}s=1-erf{\intrinsvisc}$
+            % not sure: "erf" & "s" 
+        \end{listtwo}
+       \item Employ boundary conditions:
+       \begin{listtwo}
+       		\item $\dimltemp(\disp,0)=0,\dimltemp(0,\timet)=1, \dimltemp(\infty,\timet)=0$
+            	\begin{listthree}
+                	\item $\dimltemp=1-erf(\intrinsvisc)=erfc(\intrinsvisc)$
+                \end{listthree}
+            \item $\dimltemp(\disp,0)=0, \dimltemp(0,\timet)=0, \dimltemp(\infty,\timet)=1$
+       	\begin{listthree}
+        	\item $\dimltemp=erf(\intrinsvisc)$
+            
+        \end{listthree}
+       \end{listtwo}
+\end{listone}    
+\end{mitframe}

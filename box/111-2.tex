@@ -1,0 +1,55 @@
+\begin{mitframe}{111-2}
+	\mdfsubtitle{(Box 111-2)}
+    \begin{listone}
+    	\item Interfacial Balances 
+        \begin{listtwo}
+			\item tangential velocity or "no slip"
+            \begin{listthree}
+				\item $\uline{\vvel}_{\timet}|_{\helmholtz}=\uline{\vvel}_{\timet}|_{\exergy}$
+			\end{listthree}            
+          \item normal velocity
+            \begin{listthree}
+            	\item $\uline{\vvel}_n=0$ solid, inert surface        
+            \end{listthree}
+          \item stress, neglecting interfacial tension $\uline{\entropy}(\uline{n})|_{\helmholtz}=\uline{\entropy}(\uline{n})|_{\exergy}$
+          % not sure of "n"
+          \begin{listthree}
+          	\item normal component $\torque_{nn}|_{\helmholtz}-\p_{\helmholtz}=\torque_{nn}|_{\exergy}-\p_{\exergy}$
+            	\begin{listfour}
+                	\item no flow, $\p_{\helmholtz}=\p_{\exergy}$
+                    \item $\torque_{nn}=0$ at solid surface
+                \begin{listthree}
+                		\item tangential component $\torque_{nn}|_{\helmholtz}=\torque_{n\timet}|_{\exergy}$
+                	\begin{listfour}
+                    		\item for liquid in liquid gas , shear free
+                    \end{listfour}
+                \end{listthree}
+                \end{listfour}
+          \end{listthree}
+            \item momentum balance on interface
+            	\begin{listthree}
+                	\item $\uline{n}\big(\uuline{\molecrad}(\uline{n})\big|_{\exergy}-\uuline{\molecrad}(\uline{n})\big|_{\helmholtz}\big)+\gradop_{\entropy}\gamma+2\enthalpy\uline{n}\gamma$
+                    \item $\gamma_{\helmholtz\exergy}=\gamma_{\helmholtz}+\gamma_{\exergy}-\work_{\helmholtz\exergy}$ (Dupre Equation)-Surface free \\energy/ unit area
+                    %not sure of "\gamma" for "\surftens"
+                    	\begin{listfour}
+                        	\item mean curvature
+                            	\begin{listfive}
+                                	\item $\enthalpy=0$ (flat)
+                                    \item $\enthalpy=-\sfrac{1}{2}\gasconst$ (cylinder)
+                                    \item $\enthalpy=\sfrac{1}{\gasconst}$ (sphere)
+                                    \item $\enthalpy=\dfrac{1}{2}\bigg[\bigg(\dfrac{\partial\force}{\partial\disp}\bigg)^2+1\bigg]^{\sfrac{3}{2}}\dfrac{\partial^2\force}{\partial\disp^2}$
+                                \end{listfive}
+                        \end{listfour}
+                \end{listthree}
+			\item normal component
+            	\begin{listthree}
+                	\item no flow $\p_{\state}-\p_{\init}=-2\enthalpy\gamma$
+                \end{listthree}
+        	\item shear component
+            	\begin{listthree}
+                	\item zero for no flow
+                    \item if we have gradients insurface tension, then there is flow
+                \end{listthree}
+        \end{listtwo}
+    \end{listone}
+\end{mitframe}

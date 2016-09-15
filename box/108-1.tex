@@ -1,0 +1,20 @@
+\begin{mitframe}{108-1}
+	\mdfsubtitle{Dispersion model solutions (Box 108-1)}
+ \begin {listone}
+ \item Open Vessel Dispersion model(ex. PFR)   
+ 	\begin{listtwo}
+		\item $\torque=\dfrac{\length}{\forcepot}\bigg(1+\dfrac{2}{\peclet}\bigg) with \energy(\theta)=\sqrt{\dfrac{\peclet}{4\pi}}exp\Bigg(-\dfrac{\peclet(1-\theta)^2}{4}\Bigg)$
+        \item D'less variance, $\dfrac{\molecrad^2}{\torque^2}=\dfrac{2}{\peclet}$
+        \item Estimation method: $\molecrad_{out}^2-\molecrad_{in}^2=\dfrac{2(\torque_{out}-\torque_{in})^2}{4}$
+	\end{listtwo}
+	\item Closed Vessel Dispersion model (ex. PBR)
+    	\begin{listtwo}
+        	\item $\torque=\dfrac{\length}{\forcepot}$ with     variance, $\molecrad^2=\bigg(\dfrac{\length}{\forcepot}\bigg)^2\bigg[\dfrac{2}{\peclet}-\dfrac{2}{\peclet^2}\big(1-exp(-\peclet)\big)\bigg]$
+            \item First order kinetics and small deviations from plug flow (large $\peclet$
+            	\begin{listthree}
+                	\item $\dfrac{\lightspeed_{\helmholtz}}{\lightspeed_{\helmholtz\init}}=exp\bigg[-\thermcond\torque+(\thermcond\torque)^2\dfrac{\elecdisplace}{\forcepot\length}\bigg]=exp\bigg[-\damkohler+\dfrac{\damkohler^2}{\peclet}\bigg]$
+                    \item $\dfrac{\lightspeed-{\helmholtz}}{\lightspeed_{\helmholtz\init}}=exp[PFR solution + deviation]$                    
+                \end{listthree}
+        \end{listtwo}
+\end{listone}
+\end{mitframe}

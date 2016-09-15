@@ -1,0 +1,28 @@
+\begin{mitframe}{107-2}
+	\mdfsubtitle{RTD Models (Box 107-2)}
+ \begin{listone}
+	\item $\theta=\dfrac{\timet}{\torque}$
+    \item Tnaks in series
+    	\begin{listtwo}
+        	\item $\energy(\theta)=\dfrac{\nummoles^{\nummoles}\theta^{\nummoles-1}exp(-\nummoles\theta)}{(\nummoles-1)!}$
+            % not sure of \theta
+            \item D'less variance: $\dfrac{\molecrad^2}{\torque^2}=\dfrac{1}{\nummoles}$
+            \item Estimation method: $\molecrad_{out}^2-\molecrad_{in}^2=\dfrac{(\torque_{out}-\torque_{in})^2}{\nummoles}$
+			\end{listtwo}
+    \item General dispersion model
+    \item $0=\dfrac{1}{\peclet}\dfrac{\mathrm{d}^2y}{\mathrm{d}\extent^2}-\dfrac{\mathrm{d}y}{\mathrm{d}\extent}\damkohler{y}$
+    % not sure pf "y"
+		\begin{listtwo}
+        	\item $\peclet\equiv\dfrac{\overline{\uvel}\length}{\elecdisplace}, \elecdisplace=\pdiff+\dfrac{1}{48}\dfrac{\overline{\uvel}^2\gasconst^2}{\pdiff}$
+            \item Damckwertz Boundary conditions
+            	\begin{listthree}
+                	\item $1-y|_{\extent=\init}=-\dfrac{1}{\peclet}\dfrac{\mathrm{d}y}{\mathrm{d}\extent}\bigg|_{\extent=\init}$, material transport balance
+                    \item $\dfrac{\mathrm{d}y}{\mathrm{d}\extent}\bigg|_{\extent=1}=0$, no reaction outside reactor
+                \end{listthree}
+        \end{listtwo}
+\item Exact solution:
+\item $y(1)=\dfrac{c_{\helmholtz}}{c_{\helmholtz_{\init}}}\dfrac{4\texpcoeff{exp}\bigg[\dfrac{\peclet}{2}\bigg]}{(1+\texpcoeff)^2{exp}\bigg[\dfrac{\peclet}{2}\texpcoeff\bigg]-(1-\texpcoeff)^2{exp}\bigg[\dfrac{\peclet}{2\texpcoeff}\bigg]}$
+% not sure of "c" & "exp"
+\item $\texpcoeff=\bigg[1+\dfrac{4\damkohler}{\peclet}\bigg]^{\sfrac{1}{2}}$
+\end{listone}
+\end{mitframe}

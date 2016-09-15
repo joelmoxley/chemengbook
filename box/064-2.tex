@@ -1,0 +1,23 @@
+\begin{mitframe}{064-2}
+		\mdfsubtitle{Gamma Function (Box 64-2)}
+ \begin{listone}
+	\item $\activity{y}\dfrac{\partial\dimltemp}{\partial\disp}=\tdiff\dfrac{\partial^2\dimltemp}{\partial{y}^2}$
+    % not sure of "y"
+    \item Define $\intrinsvisc\equiv{y}\bigg(\dfrac{\activity}{9\tdiff\disp}\bigg)^{\sfrac{1}{3}}$
+    \item Solve as $\dfrac{\mathrm{d}^2\dimltemp}{\mathrm{d}\intrinsvisc^2}+3\intrinsvisc^2\dfrac{\mathrm{d}\dimltemp}{\mathrm{d}\intrinsvisc}=0$
+    \item Boundary conditions
+    	\begin{listthree}
+        	\item $\dimltemp(\infty)=0$ from $\disp=0 $ and $y\rightarrow\infty$
+            \item $\dimltemp(1)=1$ from $y=0$
+        \end{listthree}
+    \item $\dfrac{\mathrm{d}p}{\mathrm{d}\intrinsvisc}+3\intrinsvisc^2p=0$ with $p=\dfrac{\mathrm{d}\dimltemp}{\mathrm{d}\intrinsvisc}$
+    % not sure "p"
+    \item $\intrinsvisc^3=-\ln{p}+\ln{p_{\init}}$
+   \item Rearranging
+   \item $\e^{\intrinsvisc^3}=\dfrac{1}{\p_{\init}}\dfrac{\mathrm{d}\dimltemp}{\mathrm{d}\intrinsvisc}$
+    \item Solution
+    \item $\dimltemp(\intrinsvisc)=\dfrac{\int_{1}^{\infty}\e^{-\intrinsvisc^{3}}\mathrm{d}\intrinsvisc}{\int_{\init}^{\infty}\e^{-\intrinsvisc^3}\mathrm{d}\intrinsvisc}=\dfrac{\int_{1}^{\infty}\e^{-\intrinsvisc^{3}}\mathrm{d}\intrinsvisc}{\Gamma\big(\small{\dfrac{4}{3}}\big)}$
+    \item where $\Gamma(\disp)=\int_{\init}^{\infty}s^{\disp-1}\e^{-s}\mathrm{d}s$
+    
+\end{listone}       
+\end{mitframe}

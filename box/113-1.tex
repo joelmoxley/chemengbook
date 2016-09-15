@@ -1,0 +1,68 @@
+\begin{lscapemitframe}[-3pt]{113-1}
+\mdfsubtitle{(Box 113-1)}
+
+\begin{tabularx}%
+	{\textwidth}%
+    {| >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}|}% 
+ \hline%
+ 
+%row 1
+\text{LHS} & \text{RHS} & \text{Example} & \text{Notes} & { &\text{Dimensionless} \\ &\text{Analysis} } \\ \hline
+     
+%row 2     
+\elecdisplace\nabla^2\conc &%
+\thermcond\conc^{n} &%
+{ &\text{Pure diffusion and reaction:} \\ &\text{spherical catalyst particle} \\ &\text{with high Bi (no external} \\ &\text{resistance)} } &% 
+{ &\text{yields Thiele modulus and} \\ &\text{traditional effectiveness factor} } &% 
+{ &\biot>>1 \\ &\damkohler\sim{1} }\\ \hline
+
+%row 3     
+\elecdisplace\nabla^2\conc &%
+\intrinsvisc(1-\dielec)\thermcond\conc^n &%
+{ &\text{Internal and external diffusion} \\ &\text{limitations, moderate Bi} \\ &\text{(film on catalyst particle)} } &% 
+ &%
+{ &\biot\sim{1} \\ &\damkohler\sim{1} } \\ \hline
+
+%row 4     
+\elecdisplace\nabla^2\conc-\forcepot\gradop\conc &%
+\thermcond\conc^{n} &%
+\text{Pure homogeneous dispersion model} &%
+{ &\text{Solve with dispersion} \\ &\text{model approximations} } &%
+\text{Any} \\ \hline
+
+%row 5
+\elecdisplace\nabla^2\conc-\forcepot\gradop\conc &%
+\intrinsvisc(1-\dielec)\thermcond\conc^{n}   &%
+{ &\text{Dispersion model with internal} \\ &\text{resistance (high Bi), i.e., particles} }&%
+ &%
+{ &\biot>>1 \\ &\damkohler\sim{1} } \\ \hline
+
+%row 6     
+\thermcond_{g}(p_{bulk}-p_{*}) &%
+\thermcond\conc^{n} &%
+\text{Gas/Liquid Systems} &%
+{ &\text{Hatta Number same as Thiele} \\ &\text{modulus. Form of flux:} \\ &\av=\dfrac{p_{A,bulk}}{\dfrac{1}{\thermcond_{gas}}+\dfrac{\enthalpy_{henry}}{\force_{A}\thermcond_{liq}}}} &%
+\text{Any} \\ \hline
+%benjie: \av, A, \thermcond
+
+%row 7     
+\thermcond_{l}(c_{bulk}-c_{*}) &%
+\intrinsvisc(1-\dielec)\thermcond\conc^{n} &%
+\text{S/L/G System} &%
+{ &\text{Transfer from gas bubble} \\ &\text{to catalyst particle, all} \\ &\text{transport fluxes equal} }&%
+\text{Any} \\ \hline
+
+%row 8     
+\thermcond_{l}(c_{bulk}-c_{*}) &%
+\elecdisplace\nabla^2\conc-\forcepot\gradop\conc &%
+{ &\text{Heterogeneous model (external} \\ &\text{resistance low Bi)} }&%
+{ &\text{Solve to find concentration} \\ &\text{at a surface} }&%
+Bi<<1 \\ \hline
+
+ 
+\end{tabularx}
+\end{lscapemitframe}

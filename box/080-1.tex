@@ -1,0 +1,30 @@
+\begin{mitframe}{080-1}
+	\mdfsubtitle {Derivatives and Boundary Conditions (Box 80-1)}
+ \begin{listone}
+\item First Order
+	\begin{listtwo}
+		\item Central: $\dfrac{\mathrm{d}}{\mathrm{d}z}\bigg|_{z_j}=\dfrac{\eleccoeff(Z_j+\iipf{z})-\eleccoeff(z_j-\iipf{z})}{2(\iipf{z})}+O\big((\iipf{z}^2)\big)$
+        % not sure "z" & "O"
+        \item Left /Upwind: $\dfrac{\mathrm{d}\eleccoeff}{\mathrm{d}Z}\bigg|_{z_j}=\dfrac{\eleccoeff(z_j)-\eleccoeff(z_j-\iipf{z}))}{\iipf{z}}+(\iipf{z})$
+        \item Right/Downwind: $\dfrac{\mathrm{d}\eleccoeff}{\mathrm{d}z}\bigg|_{z_j}=\dfrac{\eleccoeff(z_j+\iipf{z})-\eleccoeff(z_j)}{\iipf{z}}+O(\iipf{z})$
+\end{listtwo}
+\item Second Order
+	\begin{listtwo}
+    	\item Central: $\dfrac{\mathrm{d^2}\eleccoeff}{\mathrm{d}z}\bigg|_{z_j}=\dfrac{\eleccoeff(z_j+\iipf{z})-2\eleccoeff(z_j)+\eleccoeff(z_j-\iipf{z})}{(\iipf{z}^2)}+O(\iipf{z})$
+    \end{listtwo}
+	\item Boundary conditions
+    	\begin{listtwo}
+        	\item Dirichlet
+            	\begin{listthree}
+                	\item $\eleccoeff(z_{boundary})=\forcepot$
+                \end{listthree}
+            \item Neumann
+        \end{listtwo}
+\item Boundary conditions
+		\begin{listtwo}
+        	\item $\dfrac{\mathrm{d}\eleccoeff}{\mathrm{d}z}\bigg|_{z_j}=0=\dfrac{-3\eleccoeff(z_j)+4\eleccoeff(z_j+\iipf{z})-\eleccoeff(z_j+2\iipf{z})}{2(\iipf{z})}O\big((\iipf{z})^2\big)$
+            \item $\dfrac{\mathrm{d}\eleccoeff}{\mathrm{d}z}\bigg|_{z_j}=0=\dfrac{\eleccoeff(z_J+\iipf{z})-\eleccoeff(z_j)}{\iipf{z}}+O(\iipf{z})$
+            
+        \end{listtwo}
+\end{listone}   
+\end{mitframe}

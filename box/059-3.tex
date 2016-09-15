@@ -1,0 +1,29 @@
+\begin{mitframe}{059-3}
+		\mdfsubtitle{Simultaneous Interfacial Balances (Box 59-3)}
+ \begin{listone}
+\item Generalized Interfacial Balance
+			\begin{listtwo}
+            	\item $\bigg[\bigg(\mcef-\uline{\vvel}_{\state}+\sum\limits_{\state=1}^{n}\conc_{\state}\overline{\henry}\bigg)_{\exergy}-\bigg(\mcef-\uline{\vvel}_{\state}\sum\limits_{\state-1}^{n}\conc_{\state}\overline{\henry}\bigg)_{\helmholtz}\bigg]\cdot\normvec_{\state}=0$
+                
+                
+              \end{listtwo}
+\item Stationary Interface
+			\begin{listtwo}
+            		\item $\mcef|_{\exergy}=\mcef|_{\helmholtz}$ across normal
+                    \item Phase change, $phase \tdiff\rightarrow phase\exergy$
+                    	\begin{listthree}
+                        		\item $\big(-\thermcond\gradop\Temp\big)^{\tdiff}=\big(-\thermcond\gradop\Temp\big)^{\exergy}+\sum\limits_{\state=1}^n\uline{\massspecflux{i}}\overline{\wavel}_{\state}^{\tdiff\rightarrow\exergy}$
+                        \end{listthree}
+                   \item Heterogeneous Reaction
+                   		\begin{listthree}
+                        \item $\big(-\thermcond\gradop\Temp\big)^{\tdiff}=\big(-\thermcond\gradop\Temp\big){\exergy}+\sum\limits_{\state=1}^{n}\uline{\massspecflux{i}}\dfrac{\overline{\henry}}{\zeta_{\state}}$
+                        \item $\big(-\thermcond\gradop\Temp\big)^{\tdiff}=\big(-\thermcond\gradop\Temp\big)^{\exergy}+\massspecflux{i}\dfrac{\iipf\enthalpy_{\pos\disp{n}}}{\zeta_{\state}}$ (binary)
+                        \begin{listfour}
+                        	\item $ reaching phase \exergy$
+                            \item $catalyst  phase  \tdiff$
+                            
+                        \end{listfour}
+                     \end{listthree}
+            \end{listtwo}
+\end{listone}
+\end{mitframe}

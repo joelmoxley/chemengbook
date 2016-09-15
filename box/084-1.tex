@@ -1,0 +1,48 @@
+\begin{lscapemitframe}[-7pt]{084-1}
+	\mdfsubtitle{(Box 84-1)}
+
+\begin{tabularx}%
+	{\textwidth}%
+    {| >{\collectcell\mitalign}m{0.05\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell} |}% 
+ \hline%
+ 
+% row 1
+{&\text{Reactor} \\ &\text{Type}} &%
+\text{Mole Form} &%
+\text{Conversion} &%
+\text{Time} &%
+-\pos_{\activity}=\thermcond\conc_{\helmholtz}~\text{results} &%
+-\pos_{\activity}=\thermcond{\conc_{\helmholtz}}^{2}~\text{results} \\ \hline
+
+%row 2
+\text{Batch} &%
+\dfrac{\mathrm{d}\nummoles_{j}}{\mathrm{d}\timet}=\pos_{j}\vol &%
+{ &\nummoles_{\helmholtz,\init}\dfrac{\mathrm{d}X}{\mathrm{d}\timet}=-\pos_{\helmholtz}\vol~, \\ &\timet= \\ &~\nummoles_{\helmholtz\init}\int\limits_{X_{start}}^{X_{finish}}\dfrac{\mathrm{d}X}{-\pos_{\helmholtz}\vol} } &%
+{ \timet&= \\ &\nummoles_{\helmholtz\init}\int\limits_{X_{start}}^{X_{finish}}\dfrac{\mathrm{d}X}{-\pos_{\helmholtz}\vol} } &%
+\timet=\dfrac{1}{\thermcond}\ln\dfrac{1}{1-X} &%
+\timet=\dfrac{X}{\thermcond\conc_{\helmholtz\init}(1-X)} \\ \hline
+
+%row3
+\text{CSTR} &%
+\vol=\dfrac{\force_{j\init}-\force_{j}}{-\pos_{j}} &%
+{ \vol&= \\ &\dfrac{\force_{\helmholtz\init}(X_{out}-X_{in})}{-\pos_{\helmholtz,out}} } &%
+{&\torque=\dfrac{\vol}{\dot{\vol}}=\dfrac{\conc_{j\init}-\conc_{j}}{-\pos_{j}} \\ &\torque=\dfrac{\conc_{\helmholtz\init}(X_{out}-X_{in})}{-\pos_{\helmholtz,out}} } &%
+{ &\torque=\dfrac{X}{\thermcond(1-X)} \\ &X=\dfrac{\damkohler}{1+\damkohler} } &%
+{ \torque&=\dfrac{X}{\thermcond\conc_{\helmholtz\init}(1-X)^2} \\ X&= \\ &\dfrac{(1+2\damkohler)-\sqrt{1+4\damkohler}}{2\damkohler} }  \\ \hline
+ 
+%row 4 
+\text{PFR} &%
+\dfrac{\mathrm{d}\force_{j}}{\mathrm{d}\vol}=\pos_{j} &%
+{ &\force_{\helmholtz\init}\dfrac{\mathrm{d}X}{\mathrm{d}\vol}=-\pos_{\helmholtz}~, \\ &\vol=\force_{\helmholtz\init}\int\limits_{X_{in}}^{X_{out}}\dfrac{\mathrm{d}X}{-\pos_{\helmholtz}} } &%
+\torque=\conc_{\helmholtz\init}\int\limits_{X_{start}}^{X_{finish}}\dfrac{\mathrm{d}X}{-\pos_{\helmholtz}} &%
+{ \vol&= \\ &\dfrac{\force_{\helmholtz\init}}{\thermcond\conc_{\helmholtz\init}}\int\limits_{0}^{X}\dfrac{(1+\dielec X)}{(1-X)}\mathrm{d}X } &%
+{ \vol&= \\ &\dfrac{\force_{\helmholtz\init}}{\thermcond{\conc_{\helmholtz\init}}^2}\int\limits_{0}^{X}\dfrac{(1+\dielec X)^2}{(1-X)^2}\mathrm{d}X } \\ \hline
+
+\end{tabularx}
+
+\end{lscapemitframe}

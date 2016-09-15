@@ -1,4 +1,4 @@
-\begin{mitframe}{014-3}
+\begin{mitframe}{014-3} % 20160811MAC
 
     \mdfsubtitle{Legendre Transforms (Box 14-3)} 
     
@@ -12,9 +12,13 @@
          
     %benjie: not sure if 'm' , also with 'k'    
          
-	\item $\bigg(\dfrac{\partial y^{(k)}}{\partial\conjcoortwo_{\state}}\bigg)_{\conjcoortwo_{\state},...,[\conjcoortwo_{\state}],x_{k+1},...,x_{m}}=-\conjcoor$
+	\item $\bigg(\dfrac{\partial y^{(k)}}{\partial\conjcoortwo_{\state}}\bigg)_{\conjcoortwo_{1},...,[\conjcoortwo_{\state}],...,\conjcoortwo_{k},x_{k+1},...,x_{m}}=-\conjcoor$
     
-	\item $\bigg(\dfrac{\partial y^{(k)}}{\partial\conjcoor}\bigg)_{\conjcoortwo_{\state},...,\conjcoortwo_{k},x_{k+1},...,[x_{\state}],...,x_{m}}=\conjcoortwo_{\state}$
+    % 20160811MAC: Second "\conjcoortwo_{\state}" should be \conjcoortwo_{1}" with additional elements (i.e. ksi_1,...,[ksi_i],...,ksi_k,x_k+1,...,x_m) [Tester,p.146] <resolved>
+    
+	\item $\bigg(\dfrac{\partial y^{(k)}}{\partial\conjcoor}\bigg)_{\conjcoortwo_{1},...,\conjcoortwo_{k},x_{k+1},...,[x_{\state}],...,x_{m}}=\conjcoortwo_{\state}$
+    
+    % 20160811MAC: "\conjcoortwo_{\state}" should be "\conjcoortwo_{1}"  (i.e. ksi_1,...,ksi_k,...) [Tester,p.147] <resolved>
         
 \end{listone}			
 

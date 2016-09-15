@@ -1,0 +1,46 @@
+\begin{mitframe}{071-1}
+	\mdfsubtitle{Evaporator (Box 71-1)}
+\begin{listone}
+	\item First law open system
+    	\begin{listtwo}
+        	\item $\mathrm{d}\uline{\energy}=\blthick\heatflow_{\molecrad}+\blthick\work_{\molecrad}+\sum\limits_{IN}\Bigg[\enthalpy_{in}+\grav\cdot{z}_{in}+\dfrac{\vvel_{in}^2}{2}\Bigg]\blthick{n}_{in}-\sum\limits_{out}\Bigg[\enthalpy_{out}+\grav\cdot{z}_{out}+\dfrac{\vvel_{out}^2}{2}\Bigg]\blthick{n}_{out}$
+         % not sure "n"
+         \item No work, or potential or kinetic effects
+         	\begin{listthree}
+            \item $\mathrm{d}\uline{\energy}=\blthick
+            \heatflow_{\molecrad}+\enthalpy_{in}\blthick{n}_{in}-\enthalpy_{out}\blthick{n}_{out}$
+            	\begin{listfour}
+                	\item total differential with constant $\cv$
+                    \item $\mathrm{d}\uline{\energy}=\big(\uvel_{ref}+\cv\big(\Temp-\Temp_{ref}\big)\big)\mathrm{d}\nummoles=\blthick\heatflow+\enthalpy_{in}\blthick{n}_{in}-\enthalpy_{out}\blthick{n}_{out}$
+                       \end{listfour}
+            	\item Steady State
+                	\begin{listfour}
+                    \item $\heatflow=\big(\iipf\enthalpy\big){n}$
+                    \end{listfour}
+            	\item Non Steady $\mathrm{d}\uvel$, constant $\Temp, \p, \forcepot_{\state}$
+            	\begin{listfour}
+                	\item $\iipf\uline{\uvel}=+\Temp\iipf\stressvec-\p\iipf\uline{\vol}+\sum\nolimits\chempot_{\state}\iipf\nummoles_{\state}$
+                    	\begin{listfive}
+                        	\item use mixing properties
+                        \end{listfive}
+                \end{listfour}
+            \end{listthree}
+        	\item Components leaving
+            	\begin{listthree}
+                	\item $\mathrm{d}\nummoles_{\state}=\partcoeff\specfrac{i}{n}$
+                \end{listthree}
+        \end{listtwo}
+\item Flux in Cartesian for Mass Transfer Limited Evaporation
+	\begin{listtwo}
+    	\item Constant flux: $\dfrac{\mathrm{d}\nummoles}{\mathrm{d}z}=0$
+        \item Diffusion of $\helmholtz$ in stagnant $\exergy$
+        	\begin{listthree}
+            \item $\uline{\nummoles}_{\helmholtz}=\dfrac{-\conc\elecdisplace_{\helmholtz\exergy}}{1-\specfrac{A}}\nabla\specfrac{A}$
+            	\begin{listfour}
+                	\item Use constantflux to evaluate gradient of $\disp$ and plug in
+                    \item $\uline{\nummoles}_{\helmholtz}=\dfrac{\conc\elecdisplace_{\helmholtz\exergy}}{\length}ln\bigg(\dfrac{1-\specfrac{A}(\length)}{1-\specfrac{A}(0)}=\dfrac{\mathrm{d}\sfrac{\pdiff\vol}{\mw}}{\mathrm{d}t}$
+                \end{listfour}
+            \end{listthree}
+    \end{listtwo}
+\end{listone}    
+\end{mitframe}

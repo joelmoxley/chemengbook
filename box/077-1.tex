@@ -1,0 +1,33 @@
+\begin{mitframe}{077-1}
+	\mdfsubtitle{Initial Value Problems (Box 77-1)}
+\begin{listone}
+	\item General formulation
+    \begin{listtwo}
+    	\item $M(\uline{\disp},\timet)\uline{\dot{\disp}}=\fug(\uline{\disp},\uline{\theta})$
+        % not sure of "M"
+        \begin{listthree}
+        	\item $\uline{\disp}=\textnormal{ state vector}$
+            	\begin{listfour}
+                	\item implicit time dependence
+                    	\begin{listfive}
+                          \item $\uline{{\disp}^{\Temp}}=\big[\disp_1\ldots\disp_{\nummoles}]$
+                          \end{listfive}
+                	\item explicit time dependence
+                    	\begin{listfive}
+                        	\item $\uline{\disp}^{\Temp}=\Big[\disp_1\ldots\disp_{\nummoles}\dfrac{\mathrm{d}\disp_1}{\mathrm{d}\timet}\ldots\dfrac{\mathrm{d}\disp_{\nummoles}}{\mathrm{d}\timet}\timet\big]$
+                        \end{listfive}
+                \end{listfour}
+        	\item $\uline{\theta}=\textnormal{parameter vector}$
+            \item $M(\uline{\disp},\timet)=\textnormal{mass matrix}$
+            	\begin{listfour}
+                	\item $M(\uline{\disp,\timet})=\mominertia$ for regular ODE
+                    \item non-time dependent system constraint
+                \end{listfour}
+        \end{listthree}
+    	\item Stiff system
+        	\begin{listthree}
+            	\item $\dilfac\rightarrow\infty$, use implicit solver
+            \end{listthree}
+    \end{listtwo}
+\end{listone}    
+\end{mitframe}

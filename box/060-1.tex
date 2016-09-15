@@ -1,0 +1,48 @@
+\begin{mitframe}{060-1}
+	\mdfsubtitle{Multicomponent Species Fluxes (Box 60-1)}
+\begin{listone}
+	\item $\uline\nummoles_{\state}=\conc_{\state}\uline{\vvel}^{(M)}+\uline{\molspecflux}^{(M)}$
+    % not sure of "M"
+    \item A-B Binary
+    	\begin{listtwo}
+        	\item No flux of $\exergy$ (e.g., from solid surface, stagnant fluid)
+            	\begin{listthree}
+                	\item $\uline{\nummoles}_{\helmholtz}=\dfrac{-\conc\elecdisplace_{\helmholtz\exergy}}{1-\disp_{\helmholtz}}\nabla\disp_{\helmholtz}$
+                    \item $\uline{\nummoles}_{\exergy}=0$
+                \end{listthree}
+                \item Equimolar counterdiffusion
+                \begin{listthree}
+                \item $\uline{\nummoles}_{\helmholtz}=-\conc\elecdisplace_{\helmholtz\exergy}\nabla\disp_{\helmholtz}$
+                \item $\uline{\nummoles}=-\uline{\nummoles}_{\helmholtz}$
+                \end{listthree}
+                \item Surface Reaction
+                \begin{listthree}
+                	\item $\uline{\nummoles}_{\helmholtz}=-\conc\elecdisplace_{\helmholtz\exergy}\nabla\disp_{\helmholtz}+\disp_{\helmholtz}\big(\uline{\nummoles}_{\helmholtz}+\uline{\nummoles}_{\exergy}\big)$
+                    \item $\vvel_{\helmholtz}\uline{\nummoles}_{\helmholtz}=\vvel_{\helmholtz}\uline{\nummoles}_{\exergy}$
+                    \item Steady State
+                    	\begin{listfour}
+                        	\item $\uline{\nummoles}_{\helmholtz}=\dfrac{-\conc\elecdisplace_{\helmholtz\exergy}}{1-\big|\dfrac{\vvel_{\exergy}}{\vvel_{\helmholtz}}\big|\disp_{\helmholtz}}\nabla\disp_{\helmholtz}$
+                            
+                        \end{listfour}
+                \end{listthree}
+        	\item Fick's Law arises when $\disp_{\helmholtz}\rightarrow{0}$
+            
+        \end{listtwo}
+\item Diffusion in a Three-Component Stagnant System
+		\begin{listtwo}
+        	\item $\dfrac{\mathrm{d}\nummoles_{\state, z}}{\mathrm{d}z}=0, \nummoles_{2.\torque}=0,\nummoles_{3,\torque}=0$
+            \item Applying Stefan-Maxwell
+            	\begin{listthree}
+                \item $\dfrac{\mathrm{d}\disp_2}{\mathrm{d}z}=\dfrac{\nummoles_{1,z}}{\conc\elecdisplace_{12}},\dfrac{\mathrm{d}\disp_3}{\mathrm{d}z}=\dfrac{\nummoles_{1,z}}{\conc\elecdisplace_{13}}$
+                
+                \item Integrating
+                	\begin{listfour}
+                    	\item $\dfrac{\disp-2}{\disp_2|_{\length}}=exp\bigg(-\dfrac{\nummoles_{1,z}}{c\elecdisplace_{13}}\bigg)$
+                        \item $\dfrac{\disp-3}{\disp_3\big|_{\length}}=exp\bigg(-\dfrac{\nummoles{1,z}}{c\elecdisplace_{13}}\bigg)$
+                    \end{listfour}
+                \end{listthree}
+        	\item $\specfrac{i}=1-\disp_2|_{\length}exp\bigg(-\dfrac{\nummoles_{1,z}}{c\elecdisplace_{12}}\bigg)-\disp_3|_{\length}exp\bigg(-\dfrac{\nummoles_{1,z}}{c\elecdisplace_{13}}\bigg)$
+            
+        \end{listtwo}
+\end{listone}    
+\end{mitframe}

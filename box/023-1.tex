@@ -1,12 +1,12 @@
-\begin{mitframe}{023-1}
+\begin{mitframe}{023-1} %20160906MAC
 
     \mdfsubtitle{Truncated Virial (Box 23-1)} 
     
 \begin{listone}
         
-    \item $\p=\gasconst\Temp\dens(1+\virialcoeff\dens)$
+    \item $\p=\gasconst\Temp\dens(1+\virialcoeff \dens)$
     
-    \item$\compress= 1+\virialcoeff\dens$
+    \item$\compress= 1+\virialcoeff \dens$
     
     \item Statistical Mechanics
     
@@ -20,9 +20,12 @@
 
     \begin{listtwo}
 		
-    \item $\virialcoeff=\bigg(\virialcoeff{\init}+\mpc\virialcoeff{1}\bigg)\dfrac{\accentfac\Temp_{c}}{\p_{c}}$
+    \item $\virialcoeff=\bigg(\virialcoeff{\init}+\accentfac\virialcoeff{1}\bigg)\dfrac{\gasconst\Temp_{c}}{\p_{c}}$
     
     %not sure about 'c'
+    %20160906MAC: T_c means critical temperature (TM 562)
+    
+    %20160906MAC: "\accentfac" is not 'accentricity factor' but "acentric factor"
           	
     \end{listtwo}
     
@@ -50,14 +53,12 @@
        \item $\ln\eleccoeff= \int\limits_{0}^{\infty}(\compress-1)$
        %\dfrac{\mathrm{d}\p}{\p}=\dfrac{B\p}}{\gasconst\Temp}$
         
-% not sure about B        
+	% not sure about B
+	%20160906MAC: B is the second virial coefficient (TM 419)
         
         \item $\ln\big(\hat{\fhmolefrac{i}}\big)=\bigg(2\bigg(\sum\limits_{j} y_{i}-\virialcoeff{ij}\bigg)-\virialcoeff{\mixfunc}\bigg)\dfrac{\p}{\gasconst\Temp}$
-        
-       
-              
-        %not sure of y%
-               
+     %not sure of y%
+     %20160906MAC: 'y_i' is "vapor mole fraction of component i". with this, 'x_i' should also be specifically defined as "liquid mole fraction of component i" (need Joel to verify if 'y' is actually vapor mole fraction. can't find actual reference on this equation)
         
         \item Binary
         

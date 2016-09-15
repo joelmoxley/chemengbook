@@ -1,0 +1,21 @@
+\begin{mitframe}{086-2}
+
+		\mdfsubtitle{CSTR (Box 86-2)}
+        
+\begin{listone}
+
+	\item Adiabatic
+	\item $\sum\nolimits\dimltemp_{\state}\cp,_{mean}(\Temp-\Temp_{\state\init})=-X\lfloor\iipf\enthalpy_{rxn}\big|_{\Temp_{ref}}+\iipf\cp\big(\Temp-\Temp_{ref}\big)\rfloor$
+%benjie: not sure with '\cp,_{mean}'		
+        \begin{listtwo}
+			\item $X_{\energy\exergy}=\dfrac{\cp,_{mean}(\Temp-\Temp_0)}{-\iipf\enthalpy\big|_{\Temp_{ref}}}$ adiabatic conversion
+		    \item $\Temp=\Temp_{\init}-\dfrac{\iipf\enthalpy\big|_{\Temp_{ref}}}{\cp,_{mean}}$
+        \end{listtwo}
+
+	\item With Heat Exchanger
+	\item $\dot{\heatflow}=\uvel\helmholtz(\Temp_{\helmholtz}-\Temp)$
+	\item $\sum\nolimits\dimltemp_{\state}\cp,_{mean}(\Temp-\Temp_{\state\init})=\dfrac{\uvel\helmholtz(\Temp_{\helmholtz}-\Temp)}{\force_{\helmholtz{0}}}-X\bigg[\iipf\enthalpy_{rxn}\big|_{\Temp_{ref}}+\iipf\cp(\Temp-\Temp_{ref})\bigg]$
+
+\end{listone}        
+
+\end{mitframe}

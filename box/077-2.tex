@@ -1,0 +1,21 @@
+\begin{mitframe}{077-2}
+	\mdfsubtitle{Dynamic MATLAB Program (Box 77-2)}
+    
+\begin{listone}
+	\item $\big\{$ 
+    \item $\textit{Param}=[\ldots];~\%\textnormal{ set parameters}$
+    \item $\disp\_0=[\ldots];~\%\textnormal{initial state vector (IC's)}$
+	\item $[\timet,\disp]=\textit{ode15s}[@\textit{xdotcalc},[0~\timet\_\textit{end}],\disp\_0, options, Param];$
+    \item $\big\}$
+%not sure of \textit{ode15s}, @\textit{xdotcalc}    
+    
+	\item $\big\{$
+    \item $\textit{function}[\textit{xdot}]=\textit{xdotcal}(t,x, Param);$ 
+	\item $\textit{xdot}(1)=\dfrac{\mathrm{d}\disp_1}{\mathrm{d}\timet};$
+	\item $\textit{xdot}(2) =\dfrac{\mathrm{d}\disp_2}{\mathrm{d}\timet};$
+	\item $\ldots$
+    \item return
+    \item $\big\}$
+
+\end{listone}    
+\end{mitframe}

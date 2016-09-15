@@ -1,0 +1,37 @@
+\begin{mitframe}{121-1}
+		\mdfsubtitle{Multiple Ligand Binding Thermodynamics (Box 121-1)}
+\begin{listone}
+	\item Multiligand binding, for $\state^{th}$ ligand
+    \item Miscroscopic equilibrium constant
+    		\begin{listtwo}
+            	\item $\dilfac_{\state}=\dfrac{\binom{n}{\state-1}}{\binom{n}{\state}}\dilfac$
+                \begin{listthree}
+                	\item $\dilfac$ => mascropic equilibrium constant, same for all binding events
+                    \item $\binom{n}{\state}=\dfrac{n!}{(n-\state)!\state!}$
+                \end{listthree}            
+            \end{listtwo}
+	\item Interaction between sites
+    		\begin{listtwo}
+            	\item $\iipf\gibbs_{\state}=\gasconst\Temp\ln\partcoeff-\gasconst\Temp\ln\dfrac{\binom{n}{\state-1}}{\binom{n}{\state}}$
+                \item $\iipf\gibbs_{\mominertia_{\state{j}}}=\iipf\gibbs_{\state}-\iipf\gibbs_j$
+            	\begin{listthree}
+                	\item $\iipf\gibbs_{\mominertia_{ij}}=0$ for independent, noncooperative binding sites
+                    \item $\iipf\gibbs_{\mominertia_{ij}}\neq{0}$ for interacting sites
+                    \begin{listfour}
+                    	\item binding of j subsequent to i
+                        	\begin{listfive}
+                            	\item $\iipf\iipf\gibbs_j=-\gasconst\Temp\ln\dilfac_{\forcepot}^{j}\neq\iipf\gibbs_j$
+                                \item $\dilfac_{\forcepot}^j$ is unimolecular equilibrium constant
+                            \end{listfive}
+                    \end{listfour}
+                	\item Effective concentrations
+                \end{listthree}    
+            	\item $\p_{\helmholtz}-\p_{\exergy}+\length_{\helmholtz}-\length_{\exergy}\xrightleftharpoons{{\dilfac_{\activity}}^{\helmholtz}}\begin{matrix}\p_{\helmholtz}&--&\p_{\exergy}\\ | & &  \\ \length_{\helmholtz}&--&\length_{\exergy}\\ \end{matrix}\xrightleftharpoons{{\dilfac_{\forcepot}}^{\exergy}}\begin{matrix}\p_{\helmholtz}&--&\p_{\exergy}\\ | & & | \\ \length_{\helmholtz}&--&\length_{\exergy}\\ \end{matrix}$  
+                %\begin{displaymath}\xymatrix {A \ar@{--}[r]&B\\ C \ar@{--}[r]& D}\end{displaymath}
+                \begin{listthree}
+                	\item Can also have alternate route  with B binding first
+                    \item $\dilfac_{\forcepot}^{\exergy}=\dilfac_{\activity}^{\exergy}[\exergy]_{eff}~~\forcepot$ for unimolecular reaction
+                \end{listthree}             
+            \end{listtwo}
+\end{listone}
+\end{mitframe}

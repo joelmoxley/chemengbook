@@ -1,0 +1,31 @@
+\begin{mitframe}{051-1}
+			\mdfsubtitle{Point Source (Box 51-1)}
+\begin{listone}
+\item Instantaneous Source at $\disp=\disp', t=t'$
+
+		\begin{listtwo}
+        	\item $\dfrac{\partial\dimltemp}{\partial{t}}=\tdiff\gradop^2\dimltemp$
+            \item $\mominertia\conc:\dimltemp(\uline{\pos}\neq\uline{\pos}',t')=0$
+            \item $\exergy\conc:\dimltemp(\uline{\pos}=\pm\infty,t)=0$
+            \item $\exergy\conc:\mass=\int\limits_{\surfreac^3}\dimltemp(\uline{\pos},t)\mathrm{d}\vol$
+            
+            \item n-dimensional solution: $\dimltemp(\uline{\pos},t)=\dfrac{\mass\e^{\sfrac{-|\uline{\pos}-\uline{\pos'}|^2}{4\tdiff(t-t')}}}{2^n[\pi\tdiff(t-t')]^{\sfrac{n}{2}}}$
+            
+         \end{listtwo}
+Continous Source at $\disp=\disp'$ starting at $t=t'$
+			% not sure "t"
+			\begin{listtwo}
+            		\item $\dfrac{\partial\dimltemp}{\partial{t}}=\tdiff\gradop^2\dimltemp$
+                    \item $\mominertia\conc:\dimltemp(\uline{\pos}\neq\uline{\pos'},t')=0$
+                    \item $\exergy\conc:\dimltemp(\uline{\pos}=\pm\infty,t)=0$
+                    \item $\exergy\conc: \dot{\mass}(t')$= release rate
+                    \item n-dimensional solution: $\dimltemp(\uline{\pos},t)=\int\limits_0^t\dfrac{\dot{\mass}\e^{\sfrac{-|\uline{\pos}-\uline{\pos}}|^2{4\infty(t-t')}}}{2^n[\pi\tdiff(t-t')]\sfrac{n}{2}}\mathrm{d}t'=\helmholtz\cdot\e\pos\fug{c}\bigg(\dfrac{|\uline{\pos}-\uline{\pos'}|}{2"\pi(\tdiff{t})^{\sfrac{1}{2}}}\bigg)$
+                    		% not sure "n"
+                            \begin{listthree}
+                                		\item $\helmholtz$=steady state solution from conservation
+                                        \item spherical, $\pos'=0: \helmholtz=\fug\bigg(\dfrac{1}{\pos}\bigg)=\dfrac{\dot{\mass}}{4\pi\tdiff\pos}$
+                                \end{listthree}
+            
+            \end{listtwo}
+\end{listone}           
+\end{mitframe}

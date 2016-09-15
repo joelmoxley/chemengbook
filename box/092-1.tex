@@ -1,0 +1,73 @@
+\begin{lscapemitframe}[-7pt]{092-1}
+	\mdfsubtitle{Molecular Partition Functions (Box 92-1)}
+
+\begin{tabularx}%
+	{\textwidth}%
+    {| >{\collectcell\mitalign}m{0.05\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell} |}% 
+ \hline%
+ 
+% row 1
+~&%
+\tmpc &%
+\rmpc &%
+\vmpc &%
+\empc &%
+\nmpc \\ \hline
+
+%row 2
+\text{Linear} &%
+\widehat{\vol}\bigg(\dfrac{2\pie\mass\boltz\Temp}{\planck^{2}}\bigg)^{n_{trans}/2} &%
+\dfrac{1}{\molecrad}\bigg(\dfrac{8\pie^{2}\mominertia\boltz\Temp}{\planck^{2}}\bigg) &%
+{ &\prod\limits_{i=1}^{n_{vib}}\Bigg[1- \\ &\exp\bigg(\dfrac{-\planck\vvel_{\state}}{\boltz\Temp}\bigg)\Bigg]^{-1} }&%
+{ &\exp\Bigg(\dfrac{1}{\boltz\Temp}\bigg(\elecfield_{\init}+ \\ &\sum\limits_{i=1}^{n_{vib}}\dfrac{1}{2}\planck\vvel_{\state}\bigg)\Bigg) } &%
+~\\ \hline
+
+%row 3
+\text{Nonlinear} &%
+~ &%
+{ &\dfrac{\pie^{1/2}}{\molecrad}\bigg(\dfrac{8\pie^{2}\mominertia\boltz\Temp}{\planck^{2}}\bigg)^{3/2}\times \\ &\big(\mominertia_{A}\mominertia_{B}\mominertia_{C}\big)^{1/2} } &%
+~ &%
+~ &%
+~ \\ \hline
+ 
+%row 4 
+{ &\text{Order of} \\ &\text{Magnitude} \\ &\text{Per DOF} } &%
+{10}^{8}~cm^{-1} &%
+{10} &%
+{1} &%
+~ &%
+~ \\ \hline
+
+%row 5 
+{ &\text{Temperature} \\ &\text{Dependence} \\ &\text{per DOF} } &%
+\Temp^{1/2} &%
+\Temp^{1/2} &%
+\Temp^{0}~\text{to}~\Temp^{1} &%
+~  &%
+~  \\ \hline
+ 
+%row 6 
+\text{Linear DOF} &%
+{3} &%
+{2} &%
+{3}\nummoles-{5} &%
+{1} &%
+~ \\ \hline
+ 
+%row 7 
+{ &\text{Nonlinear} \\ &\text{DOF} } &%
+{3} &%
+{3} &%
+{3}\nummoles-{6} &%
+{1} &%
+~ \\ \hline
+ 
+ 
+\end{tabularx}
+
+\end{lscapemitframe}

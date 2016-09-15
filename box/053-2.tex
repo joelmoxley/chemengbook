@@ -1,0 +1,22 @@
+\begin{mitframe}{053-2}
+		\mdfsubtitle{Transfer Parameters (Box 53-2)}
+\begin{listone}
+\item $\length=2\gasconst$ for cylindrical/spherical
+\item Energy: $\nusselt\equiv\dfrac{\heattranscoeff\length}{\thermcond}\sim\dfrac{\length}{\blthick{(z)}}\geq{1}$
+		\begin{listtwo}
+        	\item $\heattranscoeff=\dfrac{-\thermcond\big(\sfrac{\partial\Temp}{\partial{n}}\big)_{surface}}{\Temp_{bulk}-\Temp_{surface}}=\dfrac{-\thermcond\big(\sfrac{\partial\dimltemp}{\partial{n}}\big)_{surface}}{\iipf\dimltemp}$
+            \item local $\nusselt=\dfrac{-\big(\sfrac{\partial\dimltemp}{\partial{n}})}{\iipf
+            \dimltemp}$
+            \item average $\overline{\nusselt}=\dfrac{\oint\nusselt(\uline{\pos})\mathrm{d}\uline{\pos}}{\oint\mathrm{d}\uline{\pos}}$
+            
+        \end{listtwo}
+\item Mass: $\sherwood_{\state}=\dfrac{\thermcond_{\lightspeed,\state}\length}{\pdiff}\sim\dfrac{\length}{\blthick(z)}\geq{1}$
+\item $\thermcond_{c, \state}=\dfrac{-\pdiff\big(\sfrac{\partial\conc_{\state}}{\partial{n}}\big)}{\conc_{\state,bulk}-\conc_{\state,surface}}=\dfrac{-\pdiff\big(\sfrac{\partial\dimltemp}{\partial{n}}\big)_{surface}}{\iipf\dimltemp}$
+
+% not sure "c" 
+
+\item local $\sherwood_{\state}=\dfrac{-\big(\sfrac{\partial\dimltemp}{\partial\tilde{n}}\big)_{surface}}{\iipf\dimltemp}$
+\item average $\overline{\sherwood}_{\state}=\dfrac{\oint\sherwood_{\state(\uline{\pos})\mathrm{d}\uline{\pos}}}{\oint\mathrm{d}\pos}$
+
+\end{listone}        
+\end{mitframe}

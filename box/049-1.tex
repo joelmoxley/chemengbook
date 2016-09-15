@@ -1,0 +1,40 @@
+\begin{mitframe}{049-1}
+	\mdfsubtitle{Non Steady State, No Convection, Times Explicit Problems (Box 49-1)}
+\begin{listone}
+	\item One-Dimensional
+    	\begin{listtwo}
+        	\item Similarity, One-Dimensional Catesian $\dfrac{\partial\dimltemp}{\partial{t}}=\tdiff\dfrac{\partial^2\dimltemp}{\partial\disp^2}$
+            	\begin{listthree}
+                	\item Penetration regions, short contact times, point sources solutions
+                    \item Two Dirichlet boundary conditions
+                    	\begin{listfour}
+                        	\item Semi-infinite domain
+                        \end{listfour}
+                	\item Similarity Solution
+                    	\begin{listfour}
+                        	\item $\dimltemp(\disp,0)=0, \dimltemp(0,t)=1, \dimltemp(\infty,t)=0$
+                            \begin{listfive}
+                           		\item $\dimltemp=1-\e\pos\fug(\intrinsvisc)=\e\pos\fug{c}(\intrinsvisc)$
+                                
+                            \end{listfive}
+                            \item $\dimltemp(\disp,0)=0, \dimltemp(0,t)=0, \dimltemp(\infty,{t})=1$
+                            	\begin{listfive}
+                                	\item $\dimltemp=\e\pos\fug(\intrinsvisc)$
+                                    
+                                \end{listfive}
+                        \end{listfour}
+                \end{listthree}
+       	\item Non-Similarity Solutions Methods
+        \begin{listthree}
+        	\item Finite domains with no BC restriction
+            \begin{listthree}
+            	\item FFT solutions
+            \end{listthree}
+           \end{listthree}
+       \end{listtwo}
+\item Multidimensional
+	\begin{listtwo}
+    		\item FFT solution
+    \end{listtwo}
+\end{listone}
+\end{mitframe}

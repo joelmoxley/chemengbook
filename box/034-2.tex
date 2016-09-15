@@ -1,4 +1,4 @@
-\begin{mitframe}{034-2}
+\begin{mitframe}{034-2} %20160907MAC
 
     \mdfsubtitle{Shorthand Vector Notation (Box 34-2)}
  	
@@ -6,23 +6,32 @@
  
     	\item $\left|\iipf\uuline{\exergy}\right|=        
         \begin{bmatrix}
-    	\exergy^{1} & \specfrac{1}^1 & \dots & \specfrac{n}^1 \\
+    	\exergy^{(1)} & \specfrac{1}^{(1)} & \dots & \specfrac{n}^{(1)} \\
     	\vdots & \vdots & \ddots & \vdots \\
-        \exergy^{\pie} & \specfrac{1}^{\pie} & \dots & \specfrac{n}^{\pie} \\
-        0 & \chargeval^{1} & \dots & \nu_{n}^1 \\
+        \exergy^{\pie} & \specfrac{1}^{(\pie)} & \dots & \specfrac{n}^{(\pie)} \\
+        0 & \chargeval^{(1)} & \dots & \nu_{n}^{(1)} \\
     	\vdots & \vdots & \ddots & \vdots \\
-   	 	0 & \chargeval^{\pos} & \dots & \nu_{n}^{\pos} \\
+   	 	0 & \chargeval^{(\pos)} & \dots & \nu_{n}^{(\pos)} \\
 		\end{bmatrix}
 		$
+        %20160907MAC: uppercase delta is not "\iipf" but a "finite change in state or property" or a "small, virtual change in external parameter"
+        %20160907MAC: "B" is not "\exergy" but a "generalized variable"
+        %20160907MAC: "r" is not "\pos" but "number of independent reactions" (see 34-1)
+        %20160907MAC: "pi" is not "\pie" but "number of phases" (see 34-1)
+        %20160907MAC: "v_i" is not "\chargeval" but "stoichiometric coefficient of component i" or just "stoichiometric coefficient" (TM 828)
+        %20160907MAC: "n" could be defined as "number of independent or extensive parameters"
         
         %benjie: not sure \specfrac, \nu_{n}
+        %20160907MAC: \specfrac is correct
+        %20160907MAC: "\nu" should also be "stoichiometric coefficient"
         
         \item $\left.\dfrac{\mathrm{d}\p}{\mathrm{d}\Temp}\right|_{\dof=1} = \dfrac{\left|\iipf\uuline{\enthalpy}\right|}{\Temp\left|\iipf\uuline{\vol}\right|}$ 
         %benjie: \iipf
+        %20160907MAC: uppercase delta is not "\iipf" but a "finite change in state or property" or a "small, virtual change in external parameter"
         
         \item $\left.\dfrac{\mathrm{d}\Temp}{\mathrm{d}\specfrac{i}}\right|_{\dof=1}$ see TM 843
         %benjie: not sure \specfrac
-       
+        %20160907MAC: \specfrac is correct
         
 \end{listone}        
         

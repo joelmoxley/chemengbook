@@ -1,0 +1,61 @@
+\begin{mitframe}{061-1}
+		\mdfsubtitle{Electrolyte Transport(Box 61-1)}
+\begin{listone}
+\item Basic physic
+		\begin{listtwo}
+			\item Nerst-Planck Equation: $\uline{\massspecflux{i}}=\conc_{\state}\uline{\vvel}-\pdiff\bigg[\gradop\conc_{\state}+z_{\state}\conc_{\state}\bigg(\dfrac{\force}{\gasconst\Temp}\bigg)\gradop\eleccoeff\bigg]$
+            % not sure of "z_{i}",  \charge both for "z_i & q_i  
+          \begin{listthree}
+          		\item Constitutive model
+                \item Analogue of Fick for dilute pseudobinary
+                \item $\force$=Faraday's constant=0.9625E4 C/mol
+                \item $\streamfunc\equiv\dfrac{\eleccoeff}{\sfrac{\gasconst\Temp}{\force}}$
+                          \end{listthree}  
+		\item Current density: $\uline{\currentdensity}=\force\sum\nolimits{z}_{\state}\uline{\massspecflux{i}}$
+        		\begin{listthree}
+                	\item $\uline{\currentdensity}=\force\uline{\vvel}\sum\nolimits{z}_{\state}\conc_{\state}-\force\sum\nolimits{z}_{\state}\pdiff\nabla\conc_{\state}-\dfrac{\force^2}{\gasconst\Temp}\gradop\eleccoeff\sum\nolimits{z}_{\state}^3\pdiff\conc_{\state}$
+                    
+                 		\begin{listfour}
+                        		\item Component current density(no force convection)
+                                		\begin{listfive}
+                                        		\item $\uline{\currentdensity}={z}_{\state}\dfrac{\force}{\gasconst\Temp}\pdiff\conc_{\state}\bigg[\gasconst\Temp\dfrac{\mathrm{d}ln\conc_{\state}}{\mathrm{d}\disp}+z_{\state}\force\dfrac{\mathrm{d}\eleccoeff}{\mathrm{d}\disp}\bigg]$
+                                               \end{listfive}
+                                  \item plugging in Nernst-Planck
+                                  \item electroneutral, no concentration gradient
+                                      		 \begin{listfive}
+                                             		\item $\uline{\currentdensity}-\dfrac{\force^2}{\gasconst\Temp}\gradop\eleccoeff\sum\nolimits{z}_{\state}\pdiff\conc_{\state}=\dilfac{e}\gradop\eleccoeff$
+                                               \end{listfive}
+                        		\item electroneutral with concentration gradient
+                                				\begin{listfive}
+                                                		\item $\gradop\eleccoeff=\dfrac{\uline{\currentdensity}}{\dilfac_{\e}}-\dfrac{\force}{\dilfac_{\e}}\sum\nolimits{z}_{\state}\pdiff\gradop\conc_{\state}$
+                                                        
+                                                \end{listfive}
+                        \end{listfour}   
+                \end{listthree}
+        \item Electric field
+        		\begin{listthree}
+                		\item $\elecfield=-\gradop\eleccoeff$
+                \end{listthree}
+        	\item Charge Surface
+        		\begin{listthree}
+                		\item $\nabla^2\eleccoeff=\dfrac{\eleccoeff}{\wavel^2}$
+                        \begin{listfour}
+                        		\item Characteristic Debye Length $\wavel\equiv\bigg(\dfrac{\force^2}{\varepsilon\gasconst\Temp}\sum\nolimits{z}_{\state}\conc_{\state}\bigg)^{-\sfrac{1}{2}}$
+                                
+                                \item For $\length>>\wavel$
+                                	\begin{listfive}
+                                    	\item Local electroneutrality (not in electric field )
+                                        \end{listfive}
+                                        
+                                        \item $\peclet=0=\force\sum\nolimits{z}_{\state}\conc-{\state}$
+                                        
+                  \end{listfour}
+                  \end{listthree}
+        \item Salt electroneutrality
+        		\begin{listthree}
+                		\item $0=\sum\nolimits{z}_{\state}\vvel_{\state}$
+                \end{listthree}
+                
+        \end{listtwo}
+\end{listone}
+\end{mitframe}

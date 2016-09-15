@@ -1,0 +1,26 @@
+\begin{mitframe}{106-1}
+	\mdfsubtitle{Kinetics with Internal Mass Transfer Effects (Box 106-1)}
+\begin{listone}
+	\item $0=\elecdisplace_{eff}\nabla^2\conc+\specsource$
+    	\begin{listtwo}
+        	\item $\elecdisplace_{eff}\dfrac{\elecdisplace_{\helmholtz\exergy}\eleccoeff_{cat}\molecrad}{\torque}$
+            	\begin{listthree}
+                	\item binary diffusivity (order $10^5$ gas, $10^{-8}$ liquid), porosity ($\sim0.4$), constriction factor ($\sim0.8$), tortuosity ($\sim3$)
+                \end{listthree}
+        \item $\pos"=\thermcond(\conc_{\helmholtz})^n$
+        % not sure of "n"
+        	\begin{listthree}
+            	\item $\specsource=\dens_{cat}\entropy_{\helmholtz}\lfloor\thermcond(\conc_{\helmholtz})^n\rfloor$
+               \end{listthree}
+        \end{listtwo}
+\item $\eleccoeff=\length_{char}\sqrt{\dfrac{n+1}{2}\dfrac{\thermcond(\conc_{\helmholtz\entropy})^{n-1}\dens_{cat}\entropy_{\helmholtz}}{\elecdisplace_{eff}}}$
+		\begin{listtwo}
+        	\item $\length_{char}=\dfrac{\vol}{\entropy_{\helmholtz}}$
+            \begin{listthree}
+            	\item Slab: $\length_{char}=\length$
+                \item Cylinder: $\length_{char}=\dfrac{\gasconst}{2}$
+                \item Sphere: $\length_{char}=\dfrac{\gasconst}{3}$
+            \end{listthree}
+        \end{listtwo}
+\end{listone}    
+\end{mitframe}

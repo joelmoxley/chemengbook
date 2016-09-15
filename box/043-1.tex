@@ -1,0 +1,45 @@
+\begin{mitframe}{043-1}
+		\mdfsubtitle{Boundary Layer Region (Box 43-1)}
+\begin{listone}
+		\item Boundary Layer (non-dimensionalized)
+			
+            \begin{listtwo}
+            \item $\tilde{\vvel}_{\disp}\dfrac{\partial\tilde{\vvel_{\disp}}}{\partial\tilde{\disp}}+\hat{\vvel}_y\dfrac{\partial\tilde{\vvel}_{\disp}}{\partial\tilde{y}_{\disp}}-\tilde{\forcepot}\dfrac{\mathrm{d}\tilde{\forcepot}}{\mathrm{d}\tilde{\disp}}=\vvel\dfrac{\partial\tilde{\vvel}}{\partial\hat{y}^2}$
+            \item $\dfrac{\partial\tilde{\vvel}-{\disp}}{\partial\tilde{\disp}}+\dfrac{\partial\hat{\vvel}_{y}}{\partial\hat{y}}=0$
+            
+            		\begin{listthree}
+                    		\item $\hat{\vvel}_y=\tilde{\vvel}_y\reynolds^{\sfrac{1}{2}}$
+                            \item $\hat{y}=\tilde{y}\reynolds^{\sfrac{1}{2}}$
+                            \item $\tilde{\forcepot}(\tilde{\disp})=\frac{lim}{\hat{y}\rightarrow\infty}\tilde{\vvel_{\disp}}(\tilde{\disp, \tilde{y}})$, bulk $\uvel$ soln
+                                               
+                    \end{listthree}
+            \item $\tilde{\blthick}=\sfrac{\blthick}{\length}$
+                        \end{listtwo}
+\item Boundary Conditions
+		\begin{listtwo}
+        		\item $\tilde{\vvel}_{\disp}(\hat{y}=0)=0$
+                \item $\frac{lim}{\hat{y}\rightarrow\infty}\tilde{\vvel}_{\disp}=\frac{lim}{\hat{y}\rightarrow{0}}\tilde{\vvel}_{\disp}^{outer}$
+                      
+        \end{listtwo}
+\item Complete solution
+        \begin{listtwo}
+        		\item $\vvel_{\disp}=\vvel_{\disp}^{outer}+\vvel_{\disp}^{inner}-\frac{lim}{y\rightarrow{0}}\tilde{\vvel}_{\disp}^{outer}$
+        \end{listtwo}
+\item Results from Scaling Arguments
+		\begin{listtwo}
+        		\item from $\disp$ components
+        			\begin{listthree}
+           				 \item$\tilde{\blthick}\sim\reynolds^{-\sfrac{1}{2}}, \dfrac{\partial\tilde{\dynpress}}{\partial\tilde{\disp}}\sim{1}$
+             			   \item neglect $\dfrac{\partial^2\tilde{\vvel}_{\disp}}{\partial\tilde{\disp}^2}
+                $
+        			\end{listthree}
+       \item from y-component  
+       				\begin{listthree}
+                    		\item $\dfrac{\partial\tilde{\dynpress}}{\partial\tilde{y}}\sim\blthick$, neglect $\dfrac{\partial^2\tilde{\vvel}_{\disp}}{\partial\tilde{\disp}}\sim{1}$
+                            
+                    \end{listthree}
+        \end{listtwo}
+\item BL Shear Stress
+\item $\torque_0(\disp)=\dens\uvel^2\thermcond\reynolds_{\disp}^{-\sfrac{1}{2}},\thermcond=0.332,_{\reynolds_{\disp}=\dfrac{\uvel\disp}{\vvel}}$
+\end{listone}
+\end{mitframe}

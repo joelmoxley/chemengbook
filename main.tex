@@ -5,7 +5,7 @@
 \setlistdepth{6}
 \renewlist{itemize}{itemize}{6}
 \newenvironment{listone}{\begin{itemize}[label=,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
-\newenvironment{listtwo}{\begin{itemize}[label=--,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
+\newenvironment{listtwo}{\begin{itemize}[label=$\blacksquare$,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
 \newenvironment{listthree}{\begin{itemize}[label=$\circ$,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
 \newenvironment{listfour}{\begin{itemize}[label={\rule[.1ex]{.75ex}{.75ex}},labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
 \newenvironment{listfive}{\begin{itemize}[label=$\bullet$,labelindent=0pt,labelwidth=0pt,labelsep=\fontdimen2\font,itemindent=!]}{\end{itemize}}
@@ -91,7 +91,7 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \subsubsection{Volumetric (14-2, 14-4)}
 \input{box/014-2.tex}
 \input{box/014-4.tex}
-\subfoursection{Bridgeman (15-1 - 18-1)}
+\subfoursection{Bridgman Tables (15-1 - 18-1)}
 \input{box/015-1.tex}
 \input{box/016-1.tex}
 \input{box/017-1.tex}
@@ -188,6 +188,7 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \input{box/035-2.tex}
 \input{box/035-3.tex}
 \input{box/035-4.tex}
+\input{box/073-1.tex}
 \subsection{Non-Simultaneous}
 \subsubsection{Momentum (38-1 - 38-5)}
 \input{box/038-1.tex}
@@ -200,9 +201,16 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \input{box/069-2.tex}
 \input{box/069-3.tex}
 \input{box/069-4.tex}
+\input{box/069-5.tex}
 \input{box/070-1.tex}
 \input{box/070-2.tex}
 \input{box/070-3.tex}
+\input{box/071-1.tex}
+\input{box/071-2.tex}
+\input{box/072-1.tex}
+\input{box/072-2.tex}
+\input{box/072-3.tex}
+\input{box/072-4.tex}
 \subfivesection{Unidirectional (39-1 - 40-2)}
 \input{box/039-1.tex}
 \input{box/039-2.tex}
@@ -226,27 +234,68 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \input{box/042-4.tex}
 \input{box/042-5.tex}
 \subsubsection{Species and Energy (46-1)}
+\input{box/046-1.tex}
 \subfoursection{Steady}
 \subfivesection{No Source (47-1 - 47-4, 51-2, 52-1)}
+\input{box/047-1.tex}
+\input{box/047-2.tex}
+\input{box/047-3.tex}
+\input{box/047-4.tex}
+\input{box/051-2.tex}
+\input{box/052-1.tex}
 \subfivesection{Source (51-1)}
+\input{box/051-1.tex}
 \subfoursection{Pseudo-steady (48-1)}
+\input{box/048-1.tex}
 \subfoursection{Unsteady}
 \subfivesection{Analytical (49-1)}
+\input{box/049-1.tex}
 \subfivesection{Numerical}
 \subsection{Simultaneous Systems}
 \subsubsection{Species and Energy (59-1 - 62-2)}
+\input{box/059-1.tex}
+\input{box/059-2.tex}
+\input{box/059-3.tex}
+\input{box/060-1.tex}
+\input{box/061-1.tex}
+\input{box/061-2.tex}
+\input{box/061-3.tex}
+\input{box/062-1.tex}
+\input{box/062-2.tex}
 \subfoursection{Uncoupled}
 \subfoursection{Coupled}
 \subsubsection{Species/Energy and Momentum (58-1)}
+\input{box/058-1.tex}
 \subfoursection{Forced Convection (53-1 - 55-4)}
+\input{box/053-1.tex}
+\input{box/053-2.tex}
+\input{box/054-1.tex}
+\input{box/054-2.tex}
+\input{box/054-3.tex}
+\input{box/054-4.tex}
+\input{box/055-1.tex}
+\input{box/055-2.tex}
+\input{box/055-3.tex}
+\input{box/055-4.tex}
+\input{box/056-1.tex}
+\input{box/056-2.tex}
+\input{box/056-3.tex}
+\input{box/057-1.tex}
+\input{box/057-2.tex}
+\input{box/057-3.tex}
+\input{box/057-4.tex}
 \subfoursection{Natural Convection (56-1 - 57-4)}
 \subsection{Fully-Simultaneous Systems}
 \section{Constitutive Models (68-1 -param est.)}
+\input{box/068-1.tex}
 \subsection{Momentum (36-2, 36-4)}
+\input{box/036-2.tex}
+\input{box/036-4.tex}
 \subsubsection{Newtonian}
 \subsubsection{Bingham}
 \subsubsection{Power-Law}
 \subsection{Species (36-3)}
+\input{box/036-3.tex}
 \subsubsection{Fick's}
 \subsubsection{Stefan-Maxwell}
 \subsection{Energy (36-1)}
@@ -254,31 +303,186 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \section{Source Terms and Body Forces}
 \section{Boundary Conditions}
 \subsection{Momentum (45-1 - 45-2)}
+\input{box/045-1}
+\input{box/045-2}
 \subsection{Species (50-1)}
+\input{box/050-1}
 \subsection{Energy (50-1)}
+\input{box/050-1}
+\input{box/050-2}
 \section{Post Processing}
 \subsection{Momentum (44-1 - 44-5)}
+\input{box/044-1.tex}
+\input{box/044-2.tex}
+\input{box/044-3.tex}
+\input{box/044-4.tex}
+\input{box/044-5.tex}
 \subsection{Species}
 \subsection{Energy}
 \section{Dimensionless Analysis (37-1)}
 \input{box/037-1.tex}
 \section{Boundary Layer Analysis (43-1)}
+\input{box/043-1.tex}
+\section{Unit Ops  }
 \newpage
 \chapter{Kinetics (82-1 - 95-1)}
+\input{box/082-1.tex}
+\input{box/083-1.tex}
+\input{box/083-2.tex}
+\input{box/083-3.tex}
+\input{box/083-4.tex}
+\input{box/083-5.tex}
+\input{box/084-1.tex}
+\input{box/085-1.tex}
+\input{box/086-1.tex}
+\input{box/086-2.tex}
+\input{box/086-3.tex}
+\input{box/086-4.tex}
+\input{box/087-1.tex}
+\input{box/087-2.tex}
+\input{box/087-3.tex}
+\input{box/087-4.tex}
+\input{box/087-5.tex}
+\input{box/087-6.tex}
+\input{box/088-1.tex}
+\input{box/088-2.tex}
+\input{box/088-3.tex}
+\input{box/089-1.tex}
+\input{box/089-2.tex}
+\input{box/090-1.tex}
+\input{box/090-2.tex}
+\input{box/090-3.tex}
+\input{box/090-4.tex}
+\input{box/091-1.tex}
+\input{box/091-2.tex}
+\input{box/091-3.tex}
+\input{box/092-1.tex}
+\input{box/092-2.tex}
+\input{box/092-3.tex}
+\input{box/092-4.tex}
+\input{box/093-1.tex}
+\input{box/093-2.tex}
+\input{box/093-3.tex}
+\input{box/094-1.tex}
+\input{box/094-2.tex}
+\input{box/094-3.tex}
+\input{box/094-4.tex}
+\input{box/095-1.tex}
+\input{box/096-1.tex}
+\input{box/096-2.tex}
+\input{box/096-3.tex}
+\input{box/097-1.tex}
+\input{box/097-2.tex}
+\input{box/097-3.tex}
+\input{box/098-1.tex}
+\input{box/098-2.tex}
+\input{box/099-1.tex}
+\input{box/099-2.tex}
+\input{box/100-1.tex}
+\input{box/100-2.tex}
+\input{box/100-3.tex}
+\input{box/100-4.tex}
+\input{box/100-5.tex}
+\input{box/101-1.tex}
+\input{box/101-2.tex}
+\input{box/101-3.tex}
+\input{box/102-1.tex}
+\input{box/103-1.tex}
+\input{box/104-1.tex}
+\input{box/104-2.tex}
+\input{box/104-3.tex}
+\input{box/105-1.tex}
+\input{box/105-2.tex}
+\input{box/106-1.tex}
+\input{box/106-2.tex}
+\input{box/106-3.tex}
+\input{box/106-4.tex}
+\input{box/106-5.tex}
+\input{box/106-6.tex}
+\input{box/106-7.tex}
+\input{box/107-1.tex}
+\input{box/107-2.tex}
+\input{box/108-1.tex}
+\input{box/109-1.tex}
+\input{box/109-2.tex}
+\input{box/109-3.tex}
+\input{box/109-4.tex}
+\input{box/110-1.tex}
+\input{box/111-1.tex}
+\input{box/111-2.tex}
+\input{box/112-1.tex}
+\input{box/113-1.tex}
+\input{box/114-1.tex}
+\input{box/114-2.tex}
+\input{box/114-3.tex}
+\input{box/115-1.tex}
+\input{box/117-1.tex}
+\input{box/117-2.tex}
+\input{box/117-3.tex}
+\input{box/118-1.tex}
+\input{box/118-2.tex}
+\input{box/119-1.tex}
+\input{box/120-1.tex}
+\input{box/120-2.tex}
+\input{box/120-3.tex}
+\input{box/120-4.tex}
+\input{box/121-1.tex}
+\input{box/121-2.tex}
+\input{box/121-3.tex}
+\input{box/122-1.tex}
+\input{box/122-2.tex}
+\input{box/122-3.tex}
+\input{box/123-1.tex}
+\input{box/123-2.tex}
+\input{box/123-3.tex}
+\input{box/123-4.tex}
+\input{box/123-5.tex}
 \newpage
 \chapter{Math (appendix)}
 \section{DAE}
 \subsection{Basic Linear Algebra (75-1 - 76-4)}
+\input{box/075-1.tex}
+\input{box/075-2.tex}
+\input{box/075-3.tex}
+\input{box/076-1.tex}
+\input{box/076-2.tex}
+\input{box/076-3.tex}
+\input{box/076-4.tex}
 \subsection{Ax=b Solutions}
 \subsection{f(x)=0 Solutions (74-1 - 74-3)}
+\input{box/074-1.tex}
+\input{box/074-2.tex}
+\input{box/074-3.tex}
 \section{ODE (63-1)}
+\input{box/063-1.tex}
 \subsection{BVP}
 \subsubsection{FFT (66-1 - 67-3, 79-1)}
+\input{box/066-1.tex}
+\input{box/066-2.tex}
+\input{box/067-1.tex}
+\input{box/067-2.tex}
+\input{box/067-3.tex}
+\input{box/079-1.tex}
 \subsubsection{Finite Modeling (80-1 - 80-3)}
-\subsection{IVP (77-1 -78-2 )}
+\input{box/080-1.tex}
+\input{box/080-2.tex}
+\input{box/080-3.tex}
+\subsection{IVP (77-1 - 78-2)}
+\input{box/077-1.tex}
+\input{box/077-2.tex}
+\input{box/077-3.tex}
+\input{box/078-1.tex}
+\input{box/078-2.tex}
 \section{PDE (64-1 - 65-2)}
+\input{box/064-1.tex}
+\input{box/064-2.tex}
+\input{box/065-1.tex}
+\input{box/065-2.tex}
 \section{Data Analysis}
 \subsection{Parameter Estimation (81-1 - 81-3)}
+\input{box/081-1}
+\input{box/081-2}
+\input{box/081-3}
 \subsection{Probability and Statistics}
 \subsubsection{Properties of distributions}
  
@@ -293,5 +497,4 @@ Style3*=$\circ$\tab,Style4*=\tiny$\blacksquare$\tab,Style5*=$\bullet$\tab,Style6
 \printindex
 \newpage
 %\input{appendix.tex}
-
 \end{document}

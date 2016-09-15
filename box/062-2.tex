@@ -1,0 +1,25 @@
+\begin{mitframe}{062-2}
+  \mdfsubtitle{Flux in Membrane (Trans-membrane Potential) (Box 62-2)}
+  	\begin{listone}
+    		\item
+    	\begin{listtwo}
+    	\item $\dfrac{\partial\conc_{\state}}{\partial{t}}=-\dfrac{\partial\nummoles_{\state}}{\partial\disp}$
+        \item For steady state, $\dfrac{\partial\nummoles_{\state}}{\partial\disp}=0$
+        \item $\uline{\state}_{\state}=z_{\state}\dfrac{\force}{\gasconst\Temp}\elecdisplace_{\state}\conc_{\state}\bigg[\gasconst\Temp\dfrac{\mathrm{d}ln\conc_{\state}}{\mathrm{d}\disp}+z_{\state}\force\dfrac{\mathrm{d}\eleccoeff}{\mathrm{d}\disp}\bigg]$
+        \item $\uline{\state}_{\state}\int\dfrac{\mathrm{d}\disp}{z_{\state}^2\dfrac{\force^2}{z_{\state}\gasconst\Temp}\elecdisplace_{\state}\conc_{\state}}=\bigg[\dfrac{\gasconst\Temp}{z_{\state\force}}\int\dfrac{\mathrm{d}ln\conc_{\state}}{\mathrm{d}\disp}\int\dfrac{\mathrm{d}\eleccoeff}{\mathrm{d}\disp}\bigg]$
+        	\begin{listthree}
+            	\item Follows form of $\uline{\state}_{\state}\gasconst_{\state}=\nabla\vol-\energy_{\state}$
+            \end{listthree}
+  		\end{listtwo}
+  \item Diffusion Potential (across membranes)
+  		\begin{listtwo}
+			\item $\uline{\state}_{\state}=z_{\state}\force\elecdisplace_{\state}\conc_{\state}\bigg[\dfrac{\mathrm{d}ln\conc_{\state}}{\mathrm{d}\disp}+\dfrac{z_{\state}\force}{\gasconst\Temp}\dfrac{\mathrm{d}\eleccoeff}{\mathrm{d}\disp}\bigg]$
+            \begin{listthree}
+            	\item $\uline{\state}_{\state}=z_{\state}\force\elecdisplace_{\state}\conc_{\state}\dfrac{\mathrm{d}}{\mathrm{d}\disp}\bigg[
+                \conc_{\state}exp\bigg(\dfrac{\conc_{\state}\force\eleccoeff}{\gasconst\Temp}\bigg)\bigg]exp\bigg(\dfrac{-z_{\state}\force\eleccoeff}{\gasconst\Temp}\force\bigg)$
+                \item Integrate over domain
+            \end{listthree}
+\end{listtwo}
+  \end{listone}
+
+\end{mitframe}
