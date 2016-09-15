@@ -1,0 +1,30 @@
+\begin{mitframe}{075-1}
+	\mdfsubtitle{Matrix Factorization (Box 75-1)}
+\begin{listone}
+	\item Special Decomposition
+    	\begin{listtwo}
+        	\item $\helmholtz=\uvel\debroglie\uvel^{-1}$
+            	\begin{listthree}
+                	\item $\debroglie_{\state{j}}\equiv\begin{cases}\wavel_{\state}\quad\state=j\\ 0\quad\state\neq{j}\end{cases}$
+                	\item $\uvel\equiv\big[\vort^{[1]}\ldots\vort^[\nummoles]\big]$
+                \end{listthree}
+        	\item Normal matrix (much easier)
+              \end{listtwo}
+ \item $\length\uvel$      Decomposition     
+            \begin{listtwo}
+            	\item $\helmholtz=\uvel\debroglie\uvel^{\enthalpy}$
+                \item Solve $\helmholtz\uline{\disp}=\uline{b}\quad \text{  via}\begin{cases}\length\uline{\lightspeed}=\uline{b}\\  \uvel\uline{\disp}=\lightspeed\end{cases} $ (i.e., two triangular problems)
+                \item $\uvel=\begin{bmatrix}\activity_{11}&\activity_{12}&\cdots&\activity_{1\nummoles} \\ 0&\activity_{22}&\cdots&\vdots \\
+                {0} & {0} &\ddots & \vdots \\ {0} & {0}& {0}&  \activity_{\nummoles\nummoles}\end{bmatrix} , \length=\begin{bmatrix}1 & 0 & 0 &0\\ \debroglie_{21}& 1 & 0 & 0 \\ \vdots &\ddots &\ddots &\vdots \\ \debroglie_{\nummoles{1}} &\cdots &\debroglie_{\nummoles,\nummoles-1} & 1 \end{bmatrix}$					\begin{listthree}
+                		\item $\debroglie_{\state{j}}$ from Gaussian eliminations
+                        \item $\activity_{\state{j}}$ is element of $\helmholtz$
+                \end{listthree}
+	        \end{listtwo}
+	\item $\heatflux\gasconst$ Decomposition
+    	\begin{listtwo}
+        	\item $\helmholtz=\heatflow\gasconst$
+            \item $\heatflow$ is orthorgonal matrix
+            \item $\gasconst$is upper triangular matrix
+        \end{listtwo}
+\end{listone}    
+\end{mitframe}

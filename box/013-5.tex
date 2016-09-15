@@ -5,7 +5,7 @@
 
 \begin{longtable}{ | c | c | c | } 
  \hline
- 	$ y^{(n+2)}= \init$& $\conjcoor$ & $\conjcoortwo_{\state}$ \\ \hline
+ 	$ y^{(n+2)}= 0$& $\conjcoor$ & $\conjcoortwo_{\state}$ \\ \hline
 	Reversible heat flow & $\Temp$ & $-\uline{\entropy}$ \\ \hline 
 	Pressure-volume work & $-\p$ & $-\uline{\vol}$  \\ \hline
  	Mass flow enthalpy/entropy& $\chempot_{\state}$ & $-\nummoles_{\state}$ \\ \hline   
@@ -14,7 +14,10 @@
  
  %benjie: not sure of  y^{(n+2)}=\init, \conjcoor, \conjcoortwo_{\state}, \chempot_{\state}, \surtens, \gendisp_{\state}
  % 20160715MAC: y^(n+2) is the nth+2 Legendre transform, also I don't think zero should be represented as '\init' here
+ % 20160907MAC: changed \init to actual zero "0"
+ 
  % 20160715MAC: '\conjcoor' and 'conjcoortwo' seem okay (Tester,p.143)
+ 
  % 20160715MAC: '\chempot', '\surtens', '\gendisp' are correct
  
  
@@ -26,7 +29,9 @@
         
     \item Maxwell Relationships:
         
-    \item $\init = -\uline{\entropy}\mathrm{d}\Temp + \uline{\vol}\mathrm{d}\p - \sum\nolimits\nummoles_{\state}\mathrm{d}\chempot_{\state}$
+    \item $0 = -\uline{\entropy}\mathrm{d}\Temp + \uline{\vol}\mathrm{d}\p - \sum\nolimits\nummoles_{\state}\mathrm{d}\chempot_{\state}$
+    % 20160907MAC: changed \init to actual zero "0"
+    
 
     
 \end{listone}			

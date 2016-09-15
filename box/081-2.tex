@@ -1,0 +1,35 @@
+\begin{mitframe}{081-2}
+		\mdfsubtitle {Solution Method: $X^{\Temp}\uline{y}=X^{\Temp}X\uline{\exergy}$ (Box 81-2)}
+	\begin{listone}
+    	\item $X^{\Temp}X$ well conditioned (i.e., not singular)
+        % not sure of "X"
+        	\begin{listtwo}
+            	\item $\uline{\texpcoeff}=(X^{\Temp}X)^{-1}X^{\Temp}\uline{y}$
+            \end{listtwo}
+        \item $X^{\Temp}X$ ill conditioned (i.e., singular)
+        	\begin{listtwo}
+            	\item $\heatflow\gasconst$ factorization method
+                	\begin{listthree}
+                    	\item $X^{\thermcond}X=\heatflow\gasconst$
+                        	\begin{listfour}
+                            	\item $\heatflow$ is orthogonal matrix
+                                \item $\gasconst$ is upper triangular matrix
+                            \end{listfour}
+                        \item $\gasconst\uline{\texpcoeff}=\heatflow^{\Temp}X^{\Temp}\uline{y}$
+                        % not sure of "y"
+                        \begin{listfour}
+                        	\item Solve by back substitution
+                        \end{listfour}
+                    \end{listthree}
+                \item $\entropy\vol\elecdisplace$ factorization method
+                \begin{listthree}
+                	\item $X^{\Temp}=\vol\debroglie\vol^{\Temp}$
+                	\begin{listfour}
+                    	\item $\vol$ is orthogonal matrix of eigenvectors
+                        \item $\debroglie$ is the diagonal matrix of eigenvalues
+                    \end{listfour}
+                    \item $\uline{\texpcoeff}=(\vol\debroglie^{-1}\vol^{\Temp})X^{\Temp}\uline{y}$
+           		\end{listthree}
+           \end{listtwo}
+    \end{listone}
+\end{mitframe}

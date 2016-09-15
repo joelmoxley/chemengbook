@@ -1,0 +1,33 @@
+\begin{mitframe}{119-1}
+	\mdfsubtitle{Phamacokinetics (Box 119-1)}
+\begin{listone}
+	\item Two compartment model
+    \item $\cp=\helmholtz{exp}(-\tdiff\timet)+\exergy{exp}(-\texpcoeff\timet)$
+    \item Single compartment simplication
+    \item $\elecdisplace_{TOT}=\cp\vol_{\p}+\conc_{\Temp}\vol_{\Temp}$
+    	\begin{listtwo}
+        	\item Clearance
+            	\begin{listthree}
+                	\item $\dfrac{\mathrm{d}\elecdisplace_{TOT}}{\mathrm{d}\timet}=-\thermcond\cp\vol_{\p}$
+                \end{listthree}
+        	\item Rate constant determination for initial IV bolus
+            	\begin{listthree}
+                  \item $\thermcond=\dfrac{\elecdisplace_{\init}}{\vol_{\p}\int_{\init}^{\infty}\cp\mathrm{d}\timet}=\dfrac{\elecdisplace_{\init}}{\vol_{\p}(\helmholtz\uvel\conc)}$
+                  \item $\vol_{\p}$ measured
+                \end{listthree}
+        \item Effective volume, $\vol_{\elecdisplace}$. from mass balance
+        		\begin{listthree}
+                	\item $\vol_{\elecdisplace}=\dfrac{\cp\vol_{\p}+\conc_{\state}\vol_{\state}}{\cp}$
+                    \item Pseudosteady state
+                    		\begin{listfour}
+                            \item $\vol_{\elecdisplace}=\vol_{\p}\bigg(1+\dfrac{\thermcond_{\p\rightarrow\timet}}{\thermcond_{\timet-\p}}\bigg)$
+                            \end{listfour}
+                \end{listthree}
+        \item Dynamics
+        		\begin{listthree}
+                	\item $\dfrac{\mathrm{d}\elecdisplace}{\mathrm{d}\timet}=\gasconst-\thermcond\elecdisplace$
+                    \item $\elecdisplace=\cp\vol_{\elecdisplace}$, ie drug in body
+                \end{listthree}
+        \end{listtwo}
+\end{listone}
+\end{mitframe}

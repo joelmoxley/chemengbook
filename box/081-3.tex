@@ -1,0 +1,65 @@
+\begin{mitframe}{081-3}
+		\mdfsubtitle{Statistical Analysis of Solution (Box 81-3)}
+        
+\begin{listone}
+	\item Define statistical properties
+	\begin{listtwo}
+    	\item $\energy(\varepsilon_{\state})$ = Expectation Value after many experiments
+        \item Variance = sum of squares of residuals
+        	\begin{listthree}
+            	\item $var(\varepsilon_{\state})\equiv\energy\lfloor(\varepsilon_{\state}-\energy(\varepsilon_{\state}))^2\rfloor$
+       		 \end{listthree}
+      \item  Covariance = correlation of residuals 
+     	\begin{listthree}
+            	\item cov$(\varepsilon_{\state}. \varepsilon_j)\equiv\energy\lfloor(\varepsilon_{\state}-\energy(\varepsilon_{\state}))(\varepsilon_j-\energy(\varepsilon_j))\rfloor$
+                % not sure of "j"
+           \end{listthree}
+    \end{listtwo}
+    \item Gauss-Markov Assumptions
+    	\begin{listtwo}
+        	\item Random error in measurement: $\energy(\varepsilon_{\state})=0$
+            \item Define variance as: $var (\varepsilon_{\state})=\molecrad_{\state}^2$
+            \item Uncorrelated errors in measurements: $cov(\varepsilon_{\state}, \varepsilon_j)=\molecrad_{\state}^2\blthick_{\state{j}}$
+            \end{listtwo}
+	\item $s^2=\dfrac{1}{d.o.f.}\bigg[\sum\limits_{i=1}^{n}(y_{\state}-\hat{y}_{\state})^2\bigg]$
+    % not sure of "s", 'y" & "d.o.f"
+    		\begin{listtwo}
+    \item $d.o.f.\equiv\begin{cases}n-k-1~~~\textit{with}~\boltznorm_{\init}\\n-k~~~~~\textit{without}~\boltznorm_{\init}\end{cases}$
+    \item $\hat{y_{\state}}=\boltznorm_{\init}+\boltznorm_1\fug_1(\specfrac{i})+\boltznorm_2\fug_2(\specfrac{i})+\ldots+\boltznorm_{\thermcond}\fug_{\thermcond}(\specfrac{i})$		\begin{listthree}
+    		\item model prediction of $y_{\state}$
+    \end{listthree}
+    \end{listtwo}
+    \item $s_{\boltznorm_j}^2=s^2\uline{\e}^{[j+1]}\cdot(X^{\Temp}X)^{-1}\uline{\e}^{[j+1]}=s^2\bigg[\sum\limits_{\state=1}^{n}\big(\fug_j(\specfrac{i})\big)^2\bigg]^{-1}$
+    % not sure of "X"
+\end{listone}
+
+\begin{center}
+\begin{tabular}
+{| >{\centering\arraybackslash}m{4cm} |>{\centering\arraybackslash}m{4cm} |}
+\hline 
+ 
+%Row 1
+small $n~(<30)$ &%
+large $n~(>30)$\\ \hline
+
+%Row 2
+$\text{Pr}(\timet)=\dfrac{1}{s\sqrt{2\pie}}\e^{-\timet^{2}/2}$ &%
+$\text{Pr}(\textit{z})=\dfrac{1}{\sqrt{2\pie}}\e^{-\textit{z}^{2}/2}$\\ \hline
+
+%Row 3
+$\timet\equiv\dfrac{b_{j}-\boltznorm_{j}}{\big(s/\sqrt{\nummoles}\big)}$ &%
+$\textit{z}\equiv\dfrac{b_{j}-\boltznorm_{j}}{\molecrad_{b_{j}}}$\\ \hline
+
+%Row 4
+$\boltznorm_{j}=b_{j}\pm\timet_{\tdiff/2}s_{b_{j}}$ &%
+$\boltznorm_{j}=b_{j}\pm\textit{z}_{\tdiff/2}\molecrad_{b_{j}}$\\ \hline  
+
+%Row 5
+\multicolumn{2}{|c|}{$b_{j}$ is the j-th (of k) calculated parameter in $\uline{\boltznorm}$ } \\ \hline
+
+%Row 6
+\multicolumn{2}{|c|}{$\boltznorm_{j}$ is the true j-th (of k) parameter in $\uline{\boltznorm}$ } \\ \hline
+
+\end{tabular}
+\end{center}
+\end{mitframe}

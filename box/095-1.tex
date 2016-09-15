@@ -1,0 +1,30 @@
+\begin{mitframe}{095-1}
+	\mdfsubtitle{Chemical Equilibria (Box 95-1)}
+ \begin{listone}
+	\item $reactants ^{\underrightarrow{\thermcond_{forward}}}_{\overleftarrow{\thermcond_{reverse}}}products$
+    \item  $\eqconst\equiv\prod\limits_{j=1}^{n'}\bigg(\dfrac{\mixfug_j}{\fug_j^{\init}}\bigg)=exp\bigg(\dfrac{-\iipf\gibbs{rx}^{\init}}{\gasconst\Temp})$
+    %not sure of 'j', "n'"_"rx"
+    	\begin{listtwo}
+        	\item Ideal solution at equilibrium
+            	\begin{listthree}
+                	\item $\dilfac_{eq}=exp\bigg(\dfrac{-\helmholtz\gibbs^{\init}_{rx}}{\gasconst\Temp}\bigg)=\bigg(\prod\limits_{j=1}^{n'}\conc_j^{\vvel_j}\bigg)$
+                    \end{listthree}
+        	\item Thermodynamic consistency of rate laws
+            	\begin{listthree}
+                	\item At equilibrium when $pos_{forward}=\pos_{reverse}$, rate must simplify to yield\\
+                    $\dilfac_{eq}=\dfrac{\thermcond_{forward}}{\thermcond_{reverse}}$ from the law of mass action
+                    \item Typical result
+                    \begin{listfour}
+                    	\item $-\force_{\helmholtz}=-(\pos_{forward}-\pos_{reverse})=\thermcond_{\helmholtz}\bigg[\fug(reactants)-\dfrac{\fug(produtcs)}{\thermcond_{eq}}\bigg]$
+                        	\begin{listfive}
+                            	\item For thermodynamic consistency at equilibrium
+                                \begin{listsix}
+                                	\item $\dfrac{\fug(products)}{\fug(reactants)}$ must equal $\dilfac_{eq}$
+                                \end{listsix}
+                            \end{listfive}
+                    \end{listfour}
+                \end{listthree}
+        	\item Gibbs-Helmholtz: $\dfrac{\mathrm{d}ln\dilfac}{\mathrm{d}\Temp}=\dfrac{\energy}{\gasconst\Temp^2}$
+        \end{listtwo}
+\end{listone}
+\end{mitframe}

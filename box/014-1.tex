@@ -1,18 +1,24 @@
-\begin{mitframe}{014-1}
+\begin{mitframe}{014-1} %20160906MAC
 
     \mdfsubtitle{Measurable Properties from Gibbs Energy Derivatives (Box 14-1)} 
     
 \begin{listone}
         
-    \item $\uline{\gibbs}_{\Temp\Temp} = \bigg(\dfrac{\partial\uline{\entropy}}{\partial\Temp}\bigg)_{\p,\nummoles}\Rightarrow\text{Constant pressure heat capacity: }\cp\equiv\Temp\bigg(\dfrac{\partial\entropy}{\partial\Temp}\bigg)_{\p}$
+    \item $\uline{\gibbs}_{\Temp\Temp} = -\bigg(\dfrac{\partial\uline{\entropy}}{\partial\Temp}\bigg)_{\p,\nummoles}\Rightarrow\text{Constant pressure heat capacity: }\cp\equiv\Temp\bigg(\dfrac{\partial\entropy}{\partial\Temp}\bigg)_{\p}$
+    
+    %20160905MAC added negative sign to G_tt
         
     \item $\uline{\gibbs}_{\p\p} = \bigg(\dfrac{\partial\uline{\vol}}{\partial\p}\bigg)_{\Temp,\nummoles}\Rightarrow\text{Isothermal compressibility: }\comeback_{\Temp}\equiv-\dfrac{1}{\vol}\bigg(\dfrac{\partial\vol}{\partial\p}\bigg)_{\Temp}$
     
     %benjie: not sure of \comeback, quantity is not yet defined
+    %20160906MAC: 'kappa_T' is "isothermal compressibility" as defined in the table. Unit is [1/Pa or 1/bar] (TM 238). Define as new quantity.
          
-    \item $\uline{\gibbs}_{\Temp\p} = \bigg(\dfrac{\partial\uline{\vol}}{\partial\Temp}\bigg)_{\p,\nummoles}\Rightarrow\text{Coefficient of thermal expansion: }\tdiff_{\p} \equiv-\dfrac{1}{\vol}\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}$
+    \item $\uline{\gibbs}_{\Temp\p} = \bigg(\dfrac{\partial\uline{\vol}}{\partial\Temp}\bigg)_{\p,\nummoles}\Rightarrow\text{Coefficient of thermal expansion: }\tdiff_{\p} \equiv \dfrac{1}{\vol}\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}$
+    
+    %20160905MAC removed negative sign from alpha_p
     
     %benjie: not sure of \tdiff_{\p}
+    %20160906MAC: 'alpha_p' is "coefficient of thermal expansion" as defined in the table. Unit is [1/K] (TM 238). Define as new quantity.
     
     \item Generalized EOS
     

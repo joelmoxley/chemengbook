@@ -1,0 +1,34 @@
+\begin{mitframe}{036-2}
+	\mdfsubtitle{Momentum Constitutive Equations (Result for $\vol_{\disp(y)}$) (Box 36-2)}
+\begin{listone}
+	\item Find value of $\Gamma$ from dissipation functions (Table 5-10, Deen p.231)
+    \item For $\uline{all}$ incompressible fluids, $\uuline{\torque}=2\straintens\chempot$
+    \item Newtonian ($\chempot$ not function of shear)
+    	\begin{listtwo}
+    		\item $~~\chempot=\dfrac{\uuline{\torque}}{2\straintens}=>\torque_{\disp{y}}=-\chempot\dfrac{\partial\vvel_{\disp}}{\partial{y}}$
+		\end{listtwo}
+\item Generalized Newtonian $(\chempot\big(\Gamma\big)\big)$
+\item => Bingham
+		\begin{listtwo}
+        	\item $~~\chempot=\bigg\{^{\infty\tab for~ \torque\geq\torque_0}_{\chempot_0+\dfrac{\torque_0}{2\straintens}\tab for~ \torque\geq\torque_0}$
+            \begin{listthree}
+            		\item $\torque_{\disp{y}}=\Bigg\{^{\infty\tab for~ \torque<\torque_0}_{-\chempot_0\dfrac{\partial\vvel_{\disp}}{\partial{y}}-\torque_0 \tab for~\torque\geq\torque_0}$
+                    
+            \end{listthree}
+        \end{listtwo}
+\item => Power-Law
+		\begin{listtwo}
+        	\item $~~\chempot=\mass\big(2\straintens\big)^{n-1}=>\torque=\mass\big(2\straintens\big)^n$
+            	\begin{listthree}
+                	\item $\torque_{\disp{y}}=-\mass\bigg(\dfrac{\partial\vvel_{\disp}}{\partial{y}}\bigg)^n$
+              % not sure of "n"
+              \end{listthree}
+          \end{listtwo}     
+          
+	\item Use values of $\torque$ in Cauchy Momentum balance
+        	\begin{listtwo}
+            	\item Tables 5-1, 5-2, 5-3 p. 222 (Deen)
+            \end{listtwo}
+       
+\end{listone}    
+\end{mitframe}

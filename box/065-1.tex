@@ -1,0 +1,21 @@
+\begin{mitframe}{065-1}
+	\mdfsubtitle{Regular Pertubation Solution(Box 65-1)}
+ \begin{listone}
+	\item Small parameter $\varepsilon$
+ not multiplying leading order term in differential equation 
+ 	\item Make problem dimensionless
+    \item Expand $\dimltemp$ as power series
+    	\begin{listtwo}
+        	\item $\dimltemp(\intrinsvisc)=\sum\limits_{n=0}^{\infty}\dimltemp_{\init}+(\intrinsvisc)\varepsilon^{n}-\dimltemp_{\init}+\dimltemp_{1\varepsilon}+O(\varepsilon^{2})$
+            %not sure of "n"
+        \end{listtwo}
+    \item Substitute series into differential equation and all boundary conditions
+  	\item Solve series problem
+    	\begin{listtwo}
+        	\item $O(1)$ problem using $\varepsilon^{\init}$ terms from converted ODE and BCs
+            %not sure of "O"
+            \item $O(\varepsilon)$ problem using $\varepsilon^1$ terms from converted ODE and BCs
+        \end{listtwo}
+    \item Combine solutions to form trunscated series
+ \end{listone}   
+\end{mitframe}

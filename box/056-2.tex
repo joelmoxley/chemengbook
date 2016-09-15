@@ -1,0 +1,23 @@
+\begin{mitframe}{056-2}
+	\mdfsubtitle{Boussineq Approximation (Box 56-2)}
+    
+\begin{listone}
+		\item Bouyancy negligible when $\texpcoeff\iipf\Temp<<1$
+        \item Boussineq approximations:
+        	\begin{listtwo}
+            	\item $ \dens(\Temp)$only in gravity term
+                \item Linearize
+                	\begin{listthree}
+                    	\item $\dens(\Temp,\conc_{\state})\approx\dens(\Temp_{0},\conc_{\state,\theta})+\bigg(\dfrac{\partial\dens}{\partial\Temp}\bigg)(\Temp-\Temp_{0})+\bigg(\dfrac{\partial\dens}{\partial\conc_{\state}}\bigg)(\conc_{\state}-\conc_{\state.0})$
+                        \item $\dens(\Temp,\conc_{\state})\approx\dens\big((1+\texpcoeff(\Temp-\Temp_{0})+\sexcoeff(\conc-{\state}-\conc_{\state,0})\big)$
+                    \end{listthree}
+            \end{listtwo}
+\item Newtonian with Boussinesq:
+		\begin{listtwo}
+        		\item $\gradop\cdot\uline{\vvel}=0$
+                \item$\dfrac{\elecdisplace\uline{\vvel}}{\elecdisplace{t}}=\dfrac{-\gradop\dynpress}{\dens_{0}}-\uline{\grav}\big[\dens\texpcoeff\big(\Temp-\Temp_{0}\big)+\sexcoeff\big(\conc_{\state}-\conc_{\state,0}\big)\big]+\vvel\nabla^2\uline{\vvel}$
+                \item $\dfrac{\elecdisplace\Temp}{\elecdisplace{t}}=\iipf\nabla^2\Temp+\uuline{\torque}:\gradop\uline{\vvel}$
+                \item $\dfrac{\elecdisplace\conc_{\state}}{\elecdisplace{t}}=\pdiff\nabla^2\conc_{\state}$
+        \end{listtwo}
+\end{listone}
+\end{mitframe}

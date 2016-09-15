@@ -112,7 +112,7 @@
 \let\mygobble\@gobble
 \def\@position{#2}
 \let\@mitindex\index
-\renewcommand{\index}[1]{\@mitindex{##1,}\@mitindex[#2]{##1|mygobble}} %Redefines \index so that it adds an entry both to the general and the local index (need , before ##1 to cope with the Style file)
+\renewcommand{\index}[1]{\@mitindex{##1}\@mitindex[#2]{##1|mygobble}} %Redefines \index so that it adds an entry both to the general and the local index (need , before ##1 to cope with the Style file)
 \begin{mdframed}\setlength{\baselineskip}{#1}}
 {\bigskip
 \hrule
@@ -143,7 +143,7 @@
 \let\mygobble\@gobble
 \def\@position{#2}
 \let\@mitindex\index
-\renewcommand{\index}[1]{\@mitindex{##1,}\@mitindex[#2]{##1|mygobble}} %Redefines \index so that it adds an entry both to the general and the local index (need , before ##1 to cope with the Style file)
+\renewcommand{\index}[1]{\@mitindex{##1}\@mitindex[#2]{##1|mygobble}} %Redefines \index so that it adds an entry both to the general and the local index (need , before ##1 to cope with the Style file)
 \begin{landscape}
 \begin{mdframed}}
 {\bigskip

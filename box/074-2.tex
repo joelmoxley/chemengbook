@@ -1,0 +1,23 @@
+\begin{mitframe}{074-2}
+	\mdfsubtitle{Generalized Reduced Step Method (Box 74-2)}
+\begin{listone}
+	\item Geral Iteration Form
+    	\begin{listtwo}
+        	\item $\exergy^{\state-1}\iipf\uline{\disp}^{[\state-1]}=-\uline{\fug}\big(\uline{\disp}^{[\state-1]}\big)$
+            \begin{listthree}
+            	\item with $\exergy^{[\state-1]}\approx{J}\big(\disp^{\thermcond}\big)$
+                % not sure of "J"
+            \end{listthree}
+        \end{listtwo}
+    \item Weak Line Search Construct
+    	\begin{listtwo}
+        	\item $\uline{\disp}^{[\state]}=\uline{\disp}^{[\state-1]}+\lambda_{[\state-1]}\iipf\uline{\disp}^{[\state-1]}$
+            \item Choose $\lambda_{[\state-1]}$
+        		\begin{listthree}
+                	\item Want $\big\|\uline{\fug}\big(\uline{\disp}^{[\state-1]}+\lambda_{[\state-1]}\iipf\uline{\disp}^{[\state-1]}\big)\big\|<\big\|\uline{\fug}\big(\uline{\disp}^{[\state-1]}\big)\big\|$
+                    \item Search $\lambda_{[\state-1]}=2^{-\mass}$ for $\mass$ =0, 1,2,3,...
+                \end{listthree}
+        	\item Method produces either zero or function minima
+        \end{listtwo}
+\end{listone}    
+\end{mitframe}

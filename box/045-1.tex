@@ -1,0 +1,70 @@
+\begin{mitframe}{045-1}
+
+	\mdfsubtitle{Boundary Conditions (Box 45-1)}
+\begin{listone}
+\item  Boundary Condition
+	\begin{listtwo}
+ 		\item Velocity-Related (Surfaces A, B)
+    		\begin{listthree}
+        		\item No Slip Condition (Tangential Velocity)
+            		\begin{listfour}
+                    	\item $\uline{\vvel}_t|_{\helmholtz}=\uline{\vvel}_t|_{\exergy}$
+                     \end{listfour}
+              \item Penetration (Normal Velocity)
+                  		\begin{listfour}
+                                		\item No Penetration
+                                        		\begin{listfive}
+                                                		\item $\uline{\vvel}_{n}|_{\helmholtz}=0$
+                                                \end{listfive}
+                                	\item Penetration
+                                    		\begin{listfive}
+                                            		\item $\heatflux=\uline{\vvel}_{n}|_{\helmholtz}\int\nolimits\mathrm{d}\entropy$
+                                                    \item $\uline{\vvel}|_{\helmholtz}=\vvel$  (ex. 6.6-2. p. 274 (Deen))
+                                                
+                                            \end{listfive}	
+                               \end{listfour}
+                    \end{listthree}
+							\item Force/Stress Balances
+					\begin{listthree}
+        					\item $\stressvec(\normvec)|_{\helmholtz}=\stressvec(\normvec)|_{\exergy}$
+            				\item normal component $\torque_{nn}|_{\helmholtz}-\p_{\helmholtz}=\torque_{nn}|_{\exergy}-\p_{\exergy}$ 								\begin{listfour}
+            \item no flow, $\p_{\helmholtz}=\p_{\exergy}$
+            \item $\torque_{nn}=0$ at solid surface
+            				\end{listfour}
+       		\item tangential component $\torque_{nt}|_{\helmholtz}=\torque_{nt}|_{\exergy}$
+       						\begin{listfour}
+                				\item for liquid in liquid-gas, shear free
+                			\end{listfour}
+        	\end{listthree}
+\item Surface Tension Driven Flow
+			\begin{listthree}
+        		\item Stress Balance
+        			\begin{listfour}
+                		\item $\torque_{nt}|_{\exergy}=\torque_{nt}|_{\helmholtz}+\pos\gradop_{s}\gamma=0$
+                        		% not sure of "\gamma"
+                    	      \begin{listfive}
+                                		\item Gradients in surface tension yield motion
+                                \end{listfive}
+                                \end{listfour}
+                            \end{listthree}
+                \item At interface
+                				\begin{listfour}
+                                		\item $\p+\p_{0}-\chempot\torque_{\pos\pos}+\dfrac{2\gamma}{\gasconst}$ (bubble growth)
+                                       \item $\iipf\p=\dens\grav\heattranscoeff+\dfrac{\gamma\cos\theta}{\magfield}$ (submerged capillary action)                                     
+                                       \item $\force_{\molecrad}=\molecrad^*$ (Wetted-Perimeter)
+                                       \begin{listfive}
+                                       			\item For Capillary, $\force_{\molecrad}=\molecrad\pi\elecdisplace_{c}$
+                                                \item Adhesion force towards surface
+                                       \end{listfive}
+                            \end{listfour}
+                 \item Geometrical
+				\begin{listthree}
+        		\item Symmetry
+               			\begin{listfour}
+                    	\item $\bigg(\dfrac{\partial\vvel}{\partial\specfrac{i}}\bigg)|_{centerline}=0$
+                        		\end{listfour}
+                    \end{listthree}
+             \end{listtwo}
+\end{listone}
+
+\end{mitframe}

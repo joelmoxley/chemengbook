@@ -1,0 +1,31 @@
+\begin{mitframe}{036-3}
+		\mdfsubtitle{Specied Constitutive Equations (Box 36-3)}
+\begin{listone}
+	\item Molar flux, relative to coordinate system:
+    \item $\uline{\nummoles}_{\state}^{(M)}=\conc_{\state}\uline{\vvel}^{(M)}+\uline{\molspecflux}^{(M)}$
+    	\begin{listtwo}
+        	\item $\uline{\nummoles}_{\state}=0$ for stagnant, nodiffusing species
+        \end{listtwo}
+\item Molar flux. relative to molar average velocity:
+\item $\uline{\molspecflux}^{(M)}=-\conc\elecdisplace\gradop\specfrac{i}$
+
+\item Fick's: $\uline{\molspecflux}_{\state}^{(M)}=-\pdiff\gradop\conc_{\state}$
+	\begin{listtwo}
+    	\item Constant density/concentration
+        \item Binary or pseudobinary /dilute
+        	\begin{listthree}
+            	\item no diffusional interactions
+            \end{listthree}
+    \end{listtwo}
+\item Stefan-Maxwell: $\gradop\specfrac{i}=\sum\limits_{j=1, j\neq{1}}^{n}\dfrac{1}{\conc\diff}\big(\specfrac{i}\uline{\nummoles_{j}}-\specfrac{j}\uline{\nummoles_{\state}}\big)$
+
+		\begin{listtwo}
+        	\item low gas density
+            \item no pressure or temperature diffusional effects
+            \item binary diffusivities used
+            \item n-1 independent equations
+            \item multicomponent gases
+            \item variable concentration
+        \end{listtwo}
+\end{listone}        
+\end{mitframe}

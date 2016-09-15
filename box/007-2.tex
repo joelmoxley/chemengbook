@@ -8,16 +8,17 @@
     
       \item $\force = -\dfrac{\mathrm{d}\forcepot}{\mathrm{d}\pos}$
       
-      % 20160707MAC: F = -du/dr, sign should be negative.
-      % 20160707MAC: 'u' here should be 'phi' or the intermolecular potential.
+      % 20160707MAC: F = -du/dr, sign should be negative. <resolved>
+      % 20160707MAC: 'u' here should be 'phi' or the intermolecular potential. <resolved>
 
       \item Coulombic interaction: $\forcepot \sim \dfrac{\charge{i} \charge{j}}{\pos}$
 
-      \item Dipole-Dipole: $\forcepot_{d-d} \sim \dfrac{-\dielec_{dipole}}{\pos^6\thermcond\Temp}$
+      \item Dipole-Dipole: $\forcepot_{d-d} \sim \dfrac{-\dielec_{dipole}}{\pos^6\boltz\Temp}$
       
-      % 20160707MAC: 'k' is not '\thermcond', it is the Boltzmann constant
+      % 20160707MAC: 'k' is not '\thermcond', it is the Boltzmann constant <resolved>
       
       % 20160707MAC: all 'epsilon' are not '\dielec' nor 'energy well depth' but just coefficients that depend on the identity of the molecules (e.g. "coefficient of dipole-dipole", "coefficient of dispersion-attraction", "coefficient of repulsion"). Some references descride as just constants.
+      % epsilon should be defined as particle potential energy in Joules [J] <>unresolved<>
 
       \item Dispersion-Attraction: $\forcepot_{att} \sim \dfrac{-\dielec_{att}}{\pos^6}$
 

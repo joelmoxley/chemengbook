@@ -1,0 +1,62 @@
+\begin{mitframe}{111-1}
+		\mdfsubtitle{Boundary Condition (Box 111-1)}
+ \begin{listone}
+	\item General Boundary Conditions
+    	\begin{listtwo}
+        \item $\dimltemp=\fug(\uline{\pos}_{\entropy})$, Dirichlet
+             	\begin{listthree}
+            	\item $\dimltemp=0$, specified concentration of quantity at boundary
+        	\end{listthree}
+          	\item $\uline{n}\cdot\gradop\dimltemp=\grav(\uline{\pos}_{\entropy})$, Neumann
+            \begin{listthree}
+            	\item $\dimltemp'=0$, no flux at boundary
+             \end{listthree}   
+             \item $\uline{n}\cdot\gradop\dimltemp=\grav(\uline{\pos}_{\entropy})\heattranscoeff_{\init}(\uline{\pos}_{\entropy})$, Robin
+               \begin{listthree}
+               		\item $\dimltemp'+\helmholtz\dimltemp=0$, boundary convection
+               \end{listthree}
+          \end{listtwo}
+	\item Boundary Equilibrium
+    		\begin{listtwo}
+            	\item $\Temp|_1=\Temp|_2$
+                \item $\conc_{\state}|_1=\dilfac_{\state}\conc_{\state}|_2$
+                \begin{listthree}
+                	\item gas-liquid =>$\dilfac$ from Henry's Law
+                    \item liquid-liquid => $\dilfac$ from relative species solubilities
+                \end{listthree}         
+            \end{listtwo}
+	\item Boundary Flux Equilibrium
+    		\begin{listtwo}
+            	\item $\heatflux_n|_2-\heatflux_n|_1=\enthalpy_{\entropy}$
+                \item $\molspecflux,_n|_2-\molspecflux,_n|_1=\gasconst_{\entropy_{\state}}$
+            \end{listtwo}
+\item Convection  Boundary
+		\begin{listtwo}
+        	\item $\heatflux_n|_2=\heattranscoeff\big(\Temp|_2-\Temp|_{bulk}\big)$
+            	\begin{listthree}
+                	\item $\heatflux_n|_2-\thermcond\big(\uline{n}\cdot\gradop\Temp\big)$, Fourier's Law
+                    \item Radiative energy transfer
+                    	\begin{listfour}
+                        	\item $\heattranscoeff_{rad}=\molecrad_{\entropy\exergy}\force_{13}\big(\Temp_1^2+\Temp_b^2\big)(\Temp_1+\Temp_b)$
+                            \item Deen p.43
+                        \end{listfour}
+                \end{listthree}
+        	\item $\molspecflux,_n|_2=\thermcond_{\conc_{\state}}\big(\conc_{\state}|_2-\conc_{\state}|_{bulk}\big)$
+            	\begin{listthree}
+                	\item $\molspecflux,_n|_2=-\pdiff(\uline{n}\cdot\gradop\conc_{\state})$, Fick's Law
+                \end{listthree} 
+        \end{listtwo}
+	\item Phase change at interface (Energy only)
+    	\begin{listtwo}
+        	\item $\heatflux_n|_1-\heatflux_n|_2=\hat{\wavel}\dens_{\state}(\vvel_n|_1-\vvel_{1n})=\hat{\wavel}\dens_2\big(\vvel_n|_2-|vvel_{1n}\big)$
+            	\begin{listthree}
+                	\item $\hat{\wavel}=\hat{\enthalpy}_2-\hat{\enthalpy}_1$=latent heat per unit mass
+                \end{listthree}
+        \end{listtwo}
+	\item Symmetry
+    		\begin{listtwo}
+            	\item $\heatflux_n=0$
+                \item $\molspecflux,_n=0$
+            \end{listtwo}
+\end{listone}  	     
+\end{mitframe}

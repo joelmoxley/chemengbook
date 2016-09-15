@@ -1,0 +1,25 @@
+\begin{mitframe}{120-3}
+		\mdfsubtitle{Single Ligand Binding Kinetics (Box 120-3)}
+ \begin{listone}
+	\item Single ligand binding: $\p+\length\xrightleftharpoons[\thermcond_{off}]{\thermcond_{on}}\conc$
+    	\begin{listtwo}
+        	\item Fractional saturation, $Y\equiv\dfrac{[\conc]}{[\conc]+[\p]}$
+            \item General case (using mat. Bal and def. of $\dilfac\mathrm{d}$)
+            % not sure of "Y"
+            \begin{listthree}
+            	\item $Y=\dfrac{[\length]}{[\length]+\dilfac_{\elecdisplace}}=\dfrac{[\length]_{\init}-Y[\p]_{\init}}{\big([\length]_{\init}-Y[\p]_{\init}+\dilfac_{\elecdisplace}}$
+                \item Solving for Y...(quadratic equation)
+                \item $[\p]_{\init}Y^2-\big(\dilfac_{\elecdisplace}+[\length]_{\init}[\p]_{\init}\big)Y+[\length]_{\init}=0$
+            \end{listthree}
+        	\item Pseudo First Order
+            	\begin{listthree}
+                	\item For $[\length]_{\init}>>[\p]_{\init}$
+                    \item $Y=\dfrac{[\length]_{\init}}{[\length]_{\init}+\dilfac_{\elecdisplace}}$
+                    \item$ [\conc]=\dfrac{\thermcond_{on}}{\thermcond_{obs}}[\length]_{\init}[\p]_{\init}\big(1-exp(-\thermcond_{obs}\timet)\big)$
+                    	\begin{listfour}
+                        \item $\thermcond_{obs}\equiv\thermcond_{off}+\thermcond_{on}[\length]_{\init}$
+                        \end{listfour}
+                \end{listthree}
+        \end{listtwo}
+\end{listone}       
+\end{mitframe}

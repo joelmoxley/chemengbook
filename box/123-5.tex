@@ -1,0 +1,27 @@
+\begin{mitframe}{123-5}
+		\mdfsubtitle{Basic Chemostat Bioreactor (Box 123-5)}
+\begin{listone}
+	\item $\vol\dfrac{\mathrm{d}X}{\mathrm{d}\timet}=\force{X}_{\init}-\force{X}+\vol\chempot{X}-\vol\thermcond_{death}X$
+    	\begin{listtwo}
+        	\item Sterile feed and no death
+            	\begin{listthree}
+                	\item $\chempot=\elecdisplace=\dfrac{\force}{\vol}$ (D, dilution rate0 mat. bal
+                    \item $\entropy=\dfrac{\dilfac_{\entropy}\elecdisplace}{\chempot_{max}-\elecdisplace}$
+                    \item $X=Y_{\sfrac{X}{\entropy}}\big(\entropy_{\init}-\entropy\big)$
+                \end{listthree}
+       	\item Endogenous Metabolism
+       	\begin{listthree}
+        	\item $\entropy=\dfrac{\dilfac_{\entropy}\big(\elecdisplace+\thermcond_d\big)}{\chempot_{max}-\elecdisplace-\thermcond_d}$
+            % not sure of "d"
+            	\begin{listfour}
+                	\item $\chempot=\dfrac{\chempot_{max}\entropy}{\dilfac_{\entropy}+\entropy}-\thermcond_d$
+                    
+                \end{listfour}
+        \end{listthree}
+       	\item Optimal dilution rate
+        	\begin{listthree}
+            	\item $\elecdisplace_{opt}=\chempot_{max}\Bigg(1-\sqrt{\dfrac{\dilfac_{\entropy}}{\dilfac_{\entropy}+\entropy_{\int}}}\Bigg)$
+            \end{listthree}
+       \end{listtwo}
+\end{listone}       
+\end{mitframe}

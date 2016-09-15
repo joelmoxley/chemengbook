@@ -1,0 +1,38 @@
+\begin{mitframe}{065-2}
+      \mdfsubtitle{Singular Pertubation Solution(Box 65-2)}
+\begin{listone}
+	\item Small parameter $\varepsilon$  multiplying leading order term in differential equation
+    \item Make problem dimensionless:
+    \item Define inner ($\varepsilon$  negligible) and outer ($\varepsilon$ important) solution notation
+    	\begin{listtwo}
+          \item $\tilde{\eleccoeff}$ - Inner solution ($\varepsilon\rightarrow{0}$)
+          \item $\hat{\eleccoeff}$ -Outer solution (coordinate stretching)
+        \end{listtwo}
+    \item Solve inner region with regular pertubation theorem ($\varepsilon=0$)
+    	\begin{listtwo}
+        	\item Assume form of solution (not always valid)
+            		\begin{listthree}
+                    	\item $\tilde{\eleccoeff}(\intrinsvisc)=\sum\limits_{n=0}^{\infty}\tilde{\eleccoeff}_n(\intrinsvisc)\varepsilon^n=\tilde{\eleccoeff}_{\init}+\tilde{\eleccoeff_1}\varepsilon+O(\varepsilon^2)$
+                        %not sure of "n" & "O"
+                    \end{listthree}
+            \item Do not apply boundary conditions
+        \end{listtwo}
+    \item  Stretch coordinates for boundary layer
+    		\begin{listtwo}
+            	\item Make highest order derivative times coefficient $O(1)$
+                \item $Y=(1-\intrinsvisc)\varepsilon^{n}$
+                %not sure of "Y"
+                \item $\activity=-\sfrac{1}{2}$ for generalized second order ODE
+                \item Rescale ODE and boundary conditions with Y
+                \item Solve as regular pertubation
+                	\begin{listthree}
+                    	\item $\hat{\eleccoeff}(Y)=\sum\limits_{n=0}^{\infty}\hat{\eleccoeff}_n(Y)\varepsilon^{\sfrac{n}{2}}=\hat{\eleccoeff}_{\init}+\hat{\eleccoeff}_1\varepsilon^{\sfrac{1}{2}}+O(\varepsilon)$
+                    \end{listthree}
+                \item Match for each level of approximation
+                	\begin{listthree}
+                    	\item $\lim\limits_{\intrinsvisc\rightarrow{1}}\tilde{\eleccoeff}(\intrinsvisc)=\lim\limits_{Y\rightarrow\infty}(\hat{\eleccoeff}(Y))=\hat{\eleccoeff}(Y)+\tilde{\eleccoeff}(\intrinsvisc)-\lim\limits_{n\rightarrow{1}}(\tilde{\eleccoeff}(\intrinsvisc))$
+                    \end{listthree}
+            \end{listtwo}
+    \item  Form composite solution
+\end{listone}      
+\end{mitframe}

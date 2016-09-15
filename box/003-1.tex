@@ -12,7 +12,7 @@
  \hline%
 
 %Row 1
-    \text{Ensemble} &%
+    \text{Ensembles} &%
     {\text{Microcanonical}} &%
     \text{Canonical} &%
     \text{Grand Canonical} &%
@@ -47,29 +47,29 @@
 %Row 5    
     \p &%
     \boltz\Temp\bigg(\dfrac{\partial\ln\mpc}{\partial\uline{\vol}}\bigg)_{\nummoles,\uline{\energy}} &%
-    \boltz\Temp\bigg(\dfrac{\partial\ln\cpf}{\partial\uline{\vol}}\bigg)_{\Temp} &%
+    \boltz\Temp\bigg(\dfrac{\partial\ln\cpf}{\partial\uline{\vol}}\bigg)_{\Temp,\nummoles} &%
     \dfrac{\boltz\Temp\ln\gcpf}{\uline{\vol}} &%
     \text{N/A}%
     \\ \hline%
-    % 20160714MAC: P x Canonical (row "P", column Canonical), subscript should include 'N' or '\nummoles' i.e. "_{\Temp}" should be changed to "_{{\Temp},{\nummoles}}" (Tester, p.401, Eq.10-49)   
+    % 20160714MAC: P x Canonical (row "P", column Canonical), subscript should include 'N' or '\nummoles' i.e. "_{\Temp}" should be changed to "_{{\Temp},{\nummoles}}" (Tester, p.401, Eq.10-49)   <resolved>
     
 %Row 6    
     \uline{\entropy} &%
     \boltz\ln\mpc &%
-    {\boltz&\Temp\bigg(\dfrac{\partial\ln\cpf}{\partial\Temp}\bigg)_{\vol}+\\ &\boltz\Temp\ln\cpf} &%
+    {\boltz&\Temp\bigg(\dfrac{\partial\ln\cpf}{\partial\Temp}\bigg)_{\uline{\vol}}+\\ &\boltz\Temp\ln\cpf} &%
     {\boltz&\ln\gcpf+\\ &\boltz\Temp\bigg(\dfrac{\partial\ln\gcpf}{\partial\Temp}\bigg)_{\uline{\vol},\chempot}} &%
     { \boltz&\ln\iipf+ \\ &\boltz\Temp\bigg(\dfrac{\partial\ln\iipf}{\partial\Temp}\bigg)_{\nummoles,\p} }%
     \\ \hline%
-    % 20160714MAC: Under Canonical, subscript 'V' should be underlined i.e. '_{\vol}' should be changed to '\uline{\vol}' similar to the subscript of Grand Canonical (Tester, p.400, Eq.10-44)
+    % 20160714MAC: Under Canonical, subscript 'V' should be underlined i.e. '_{\vol}' should be changed to '\uline{\vol}' similar to the subscript of Grand Canonical (Tester, p.400, Eq.10-44) <resolved>
   
 %Row 7  
 	\uline{\energy}=\uline{\intenergy} &%
     \text{N/A} &%
-    \boltz\Temp^{2}\bigg(\dfrac{\partial\ln\cpf}{\partial\Temp}\bigg)_{\uline{\vol}} &%
+    \boltz\Temp^{2}\bigg(\dfrac{\partial\ln\cpf}{\partial\Temp}\bigg)_{\uline{\vol},\nummoles} &%
  { \sum\nolimits&\chempot_{\state}\nummoles_{\state}+\\ &\boltz\Temp^{2}\bigg(\dfrac{\partial\ln\gcpf}{\partial\Temp}\bigg)_{\uline{\vol},\chempot} }&%
  { \boltz&\Temp^{2}\bigg(\dfrac{\partial\ln\iipf}{\partial\Temp}\bigg)_{\nummoles,\p}+\\& \p\boltz\Temp\bigg(\dfrac{\partial\ln\iipf}{\partial\nummoles}\bigg)_{\Temp,\p} }%
  \\ \hline   %
-    % 20160714MAC: Under Canonical, subscript should include 'N' or '\nummoles' i.e. "_{uline{\vol}}" should be changed to "_{uline{\vol},{\nummoles}}" (Tester, Eq.10-49)  
+    % 20160714MAC: Under Canonical, subscript should include 'N' or '\nummoles' i.e. "_{uline{\vol}}" should be changed to "_{uline{\vol},{\nummoles}}" (Tester, Eq.10-49) <resolved>  
  
 %Row 8 
     \uline{\enthalpy} &%

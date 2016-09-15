@@ -1,0 +1,29 @@
+\begin{mitframe}{054-4}
+	\mdfsubtitle{Entrance Region Analysis (steady state flow in $\specfrac{i}$ direction) (Box 54-4)}
+		\begin{listone}
+        		\item $\dfrac{\length_{\Temp}}{\length_{0}}\approx{1}+0.1\peclet$
+                \item Obtain velocity profile from fluid dynamic analysis
+                \item Assume $\peclet\approx{1}$in streamline direction
+                \begin{listtwo}
+                	\item Molecular effects only perpendicular to flow 
+                \end{listtwo}
+        \item Nondimensionalize with:
+        		\begin{listtwo}
+                		\item $\intrinsvisc\equiv\dfrac{\specfrac{2}}{\length}$
+                        \item $\zeta\equiv\dfrac{\specfrac{1}}{\length\peclet}$
+                        
+                \end{listtwo}
+        \item Redefine coordinate system
+        		\begin{listtwo}
+                		\item $\fhparam\equiv{1}-\intrinsvisc$
+                 \end{listtwo}
+        		\item Retain only linear, dominant terms (Leveque Approximation)
+                	\begin{listtwo}
+                    		\item $\activity\fhparam\dfrac{\partial\dimltemp}{\partial\zeta}=\dfrac{\partial^2\dimltemp}{\partial\fhparam^2}$ where $\activity$ determined by velocity field
+                           
+                    \end{listtwo}
+        \item Solve with similarity variables
+        \item $\nusselt_{\length}=\sherwood_{\length}=1.357\bigg(\dfrac{\gasconst}{z}\bigg)^{\sfrac{1}{3}} \peclet^{\sfrac{1}{3}}$ Cylindrical pipe, $\sfrac{\Temp}{\conc}$ const
+        \item $\nusselt_{\length}=\sherwood_{\length}=1.640\bigg(\dfrac{\gasconst}{z}\bigg)^{\sfrac{1}{3}}\peclet^{\sfrac{1}{3}}$ Circular, $\sfrac{\heatflux}{\nummoles}$ const
+        \end{listone}    
+\end{mitframe}

@@ -1,0 +1,15 @@
+\begin{mitframe}{104-1}
+	\mdfsubtitle{CSTR (Box 104-1)}
+ \begin{listone}
+	\item $\sum\nolimits\dimltemp_{\state}\cp._{mean}(\Temp-\Temp_{\state\init})=-X\lfloor\iipf\enthalpy_{rxn}|_{\Temp_{ref}}+\iipf\cp(\Temp-\Temp_{ref})\rfloor$
+    	\begin{listtwo}
+        	\item $X_{M\exergy}=\dfrac{\helmholtz{exp}(-\sfrac{\energy}{\gasconst\Temp})}{1+\helmholtz{exp}(-\sfrac{\energy}{\gasconst\Temp})}=\dfrac{\dilfac{eq}(\Temp)}{1+\dilfac{eq}(\Temp)}$
+            \item $X_{\energy\exergy}=\dfrac{\cp,_{mean}(\Temp-\Temp_{\init})}{-\iipf\enthalpy|_{\Temp_{ref}}}$, adiabatic conversion
+            \item $\Temp=\Temp_{\init}-\dfrac{\iipf\enthalpy|_{\Temp_{ref}}}{\cp,_{mean}}$
+            \end{listtwo}
+\item With Heat Exchanger
+\item $\dot{\heatflow}=\uvel\helmholtz(\Temp_{\helmholtz}-\Temp)$
+\item $\sum\nolimits\dimltemp_{\state}\cp,_{mean}(\Temp-\Temp_{\state\init})=\dfrac{\uvel\helmholtz(\Temp_{\helmholtz}-\Temp)}{\force_{\helmholtz\init}}-X\bigg[\iipf\enthalpy_{rxn}|_{\Temp_{ref}+\iipf\cp\big(\Temp-\Temp_{ref}\big)}\bigg]$
+
+\end{listone}   
+\end{mitframe}

@@ -1,0 +1,38 @@
+\begin{mitframe}{046-1}
+		\mdfsubtitle{Energy and Mass Conservation Equations (Box 46-1)}
+
+\begin{listone}
+\item Generalized Single Component Conservation Equations
+
+\item $\dens\hat{\cp}\dfrac{\elecdisplace\Temp}{\elecdisplace{t}}=-\tilde{\gradop}\cdot\uline{\heatflow}-\dfrac{\Temp}{\dens}\bigg(\dfrac{\partial\dens}{\partial\Temp}_{\p}\bigg)\dfrac{\elecdisplace\p}{\elecdisplace{t}}+\uuline{\torque}:\gradop\uline{\vvel}$
+\item $\dfrac{\conc_{\state}}{\partial{t}}=-\gradop\cdot\uline{\nummoles_{\state}}+\gasconst_{\vvel_{\state}}$ with $\uline{\nummoles}_{\state}=\conc_{\state}\uline{\vvel}+\molspecflux$
+
+				\begin{listtwo}
+                			\item Newtonian (No Source Terms)
+                            \begin{listthree}
+                            			\item $\uuline{\torque}:\gradop\uline{\vvel}=\chempot\pot$
+                                        
+                                        \begin{listfour}
+                                        		\item $\pot$ : Dissipation functions, Table 5-10, Deen p.231
+                                        \end{listfour}
+                            
+                            \item Energy; $\p\e\uline{\tilde{\vvel}}\cdot\tilde{\gradop}\dimltemp=\tilde{\nabla}^2\dimltemp+\brinkman\pot$
+                            			\begin{listfour}
+                                        \item $\brinkman=\dfrac{\chempot\uvel^2}{\thermcond\iipf\Temp}$ where $\iipf\Temp$= scale for $\dimltemp$
+                                        \end{listfour}
+                           \item Mass $\peclet\uline{\tilde{\vvel}}\cdot\tilde{\gradop}\dimltemp=\nabla^2\dimltemp$
+                           \item Incompressible Assumption
+                           				\begin{listfour}
+                                        		\item $\dfrac{\elecdisplace\p}{\elecdisplace{t}}=0$
+                                        \end{listfour}
+                           		\item Ideal Gas Assumption
+                                		\begin{listfour}
+                                        		\item $\dfrac{\Temp}{\p}\bigg(\dfrac{\partial\dens}{\partial\Temp}\bigg)_{\p}=1$
+                                                
+                                        \end{listfour}
+                           \end{listthree}
+                \end{listtwo}
+\end{listone}
+
+
+\end{mitframe}

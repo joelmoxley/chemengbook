@@ -1,26 +1,19 @@
 \begin{mitframe} {038-2}
-
-		\mdfsubtitle {Nearly Unidirectional (Box 038-3)}
-        
-%\begin{listone}
-%\item NSE: $\diss\dfrac{\partial\uline{\vvel}}{\partial\time}=-\uline{\gailop}\uline{\dynpress}+\chempot\gailop^2\uline{\vvel}$
-%		\begin{listtwo}
-%		\item Summary: Geometric, $\dfrac{\length_{y}}{\length_{\specfrac}}<< 1$,  Dynamic, $\reynolds\dfrac{\length_{y}}{\length_{\specfrac}}<< 1$ 
-%\item Requirements        
-%       \end{listtwo}
-        
-%        		\begin{listthree}
-%                \item $\dfrac{\mathrm{d}\dynpress}{\mathrm{d}y}<<\dfrac{\mathrm{d}\dynpress}{\mathrm{d}\specfrac}=>\dfrac{\vol}{\internergy<< 1=> \dynpress=\dynpress(\specfrac)}$
+		\mdfsubtitle {Nearly Unidirectional (Box 38-3)}    
+\begin{listone}
+	\item NSE: $\dens\dfrac{\partial\uline{\vvel}}{\partial{t}}=-\gradop\uline{\dynpress}+\chempot\nabla^2\uline{\vvel}$
+			\begin{listtwo}
+				\item Summary: Geometric, $\dfrac{\length_{y}}{\length_{\disp}}<< 1$,  Dynamic, $\reynolds\dfrac{\length_{y}}{\length_{\disp}}<< 1$ 
+				\item Requirements        
+               		\begin{listthree}
+        		        \item $\dfrac{\mathrm{d}\dynpress}{\mathrm{d}y}<<\dfrac{\mathrm{d}\dynpress}{\mathrm{d}\disp}=>\dfrac{\vol}{\intenergy}<< 1=> \dynpress=\dynpress(\disp)$
 % not sure "y"
-%				\item $\dfrac{\mathrm{d}^{2}\vvel_{\specfrac}}{\mathrm{d}\specfrac}<<\chempot\dfrac{\mathrm{d}^{2}\vvel_{\specfrac}}{\mathrm{d}y^{2}}=>\bigg(\dfrac{\length_{y}}{\length_{\specfrac}}\bigg)^2 << 1$
-                
-                %\item$\diss\vvel_{\specfrac}\dfrac{\mathrm{d}\vvel_{\specfrac}}{\mathrm{d}\specfrac}<<\chempot\dfrac{\mathrm{d}^2\vvel_{\specfrac}}{\mathrm{d}y^2}, \diss\vvel_y\dfrac{\mathrm{d}\vvel_y}{\mathrm{d}y}<<\chempot\dfrac{\mathrm{d}^2\vvel_{\specfrac}}{\mathrm{d}y^2}$
- %               	\begin{listfour}
-                  
- %                 \item $=>\bigg(\dfrac{\internergy\length_y}{\vvel}\bigg)\bigg(\dfrac{\length_y}{\length_{\specfrac}}\bigg)<< 1$
-                  
-
-%\end{listfour}
-%\end{listthree}
-%\end{listone}
+						\item $\dfrac{\mathrm{d}^{2}\vvel_{\disp}}{\mathrm{d}\disp}<<\dfrac{\mathrm{d}^{2}\vvel_{\disp}}{\mathrm{d}y^{2}}=>\bigg(\dfrac{\length_{y}}{\length_{\disp}}\bigg)^2 << 1$
+                         \item$\dens\vvel_{\disp}\dfrac{\mathrm{d}\vvel_{\disp}}{\mathrm{d}\disp}<<\chempot\dfrac{\mathrm{d}^2\vvel_{\disp}}{\mathrm{d}y^2}, \dens\vvel_y\dfrac{\mathrm{d}\vvel_y}{\mathrm{d}y}<<\chempot\dfrac{\mathrm{d}^2\vvel_{\disp}}{\mathrm{d}y^2}$
+                			\begin{listfour}
+                                    \item $=>\bigg(\dfrac{\intenergy\length_y}{\vvel}\bigg)\bigg(\dfrac{\length_y}{\length_{\disp}}\bigg)<< 1$
+                  		\end{listfour}
+				\end{listthree}
+		\end{listtwo}
+\end{listone}
 \end{mitframe}

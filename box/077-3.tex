@@ -1,0 +1,38 @@
+\begin{mitframe}{077-3}
+	\mdfsubtitle{Initial Value Problems Stability (Box 77-3)}
+\begin{listone}
+	\item Linear, constant, coefficient
+    	\begin{listtwo}
+        	\item $\uline{\dot{\disp}}=\helmholtz\uline{\disp}$
+            	\begin{listthree}
+                	\item $\disp$= state vector
+                    \item $\helmholtz$= coefficient matrix
+                \end{listthree}
+        \end{listtwo}
+\item General Solution
+	\begin{listtwo}
+    	\item $\uline{\disp}\big(\timet\big)=\sum\limits_{j=1}^{\nummoles}\forcepot_j\e^{\wavel_j\timet}\vort^{[j]}$
+        % not sure of "j" 
+        	\begin{listthree}
+            	\item $\forcepot_j$=constant from ICs
+                \item $\wavel_j,\vort^{[j]}$=eigenvalues, eigenvectors of $\helmholtz$
+            \end{listthree}
+    \item Steady State Stability
+    	\begin{listthree}
+        	\item $\reynolds(\wavel_j)\leq{0}$
+                    \end{listthree}
+    \end{listtwo}
+	\item General Case
+    	\begin{listtwo}
+        	\item $\uline{\dot{\disp}}=\fug(\uline{\disp},\uline{\theta})$
+            \item Steady State Stability
+            	\begin{listthree}
+                	\item Small pertubation $\uline{\varepsilon}$
+                    \item $\uline{\dot{\varepsilon}}=J(\uline{\hat{\disp}},\uline{\theta})\uline{\varepsilon}$
+                    % not sure of "J"
+                    \item $\reynolds(\wavel_j \textnormal{of} J)\leq{0}$
+                    
+                \end{listthree}
+          \end{listtwo}
+\end{listone}    
+\end{mitframe}

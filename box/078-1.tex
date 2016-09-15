@@ -1,0 +1,55 @@
+\begin{mitframe}{078-1}
+		\mdfsubtitle{Euler Methods (Box 78-1)}
+        
+ \begin{listone}
+	\item $\uline{\dot{\disp}}=\uline{\fug}(\uline{\disp})$
+    
+    \item Explicit    
+    \begin{listtwo}
+    	\item $\uline{\disp}_{(\mass+1)}=\uline{\disp}_{(\mass)}+(\iipf\timet)\uline{\fug}(\uline{\disp}_{(\mass)})+O(\iipf\timet^2)$
+        % not sure of "O"
+        
+        \item $\iipf\uline{\disp}_{(\mass)}=(\iipf\timet)\uline{\fug}(\uline{\disp}_{(\mass)})$
+        
+        \item Overall Stability
+        \begin{listthree}
+			\item $1+(\iipf\timet)\wavel_{\state}<1$
+		\end{listthree}
+            
+        \item Maximum timestep
+		\begin{listthree}
+			\item $(\iipf\timet)_{max}=\dfrac{2}{|\wavel_{\state}|}$
+		\end{listthree}       
+                
+        \item Required steps (condition number)
+		\begin{listthree}
+        	\item $\nummoles=\dfrac{1}{2}\dfrac{|\wavel_{max}|}{|\wavel_{min}|}=\dfrac{1}{2}\dfrac{(\iipf\timet)_{max}}{(\iipf\timet)_{min}}=\dfrac{1}{2}\dilfac$           
+		\end{listthree}
+	\end{listtwo}
+    
+    \item Implicit
+	\begin{listtwo}
+       	\item  $\uline{\disp}_{(\mass+1)}=\uline{\disp}_{(\mass)}+(\iipf\timet)\uline{\fug}(\uline{\disp}_{(\mass+1)})+O(\iipf\timet^2)$
+% not sure of "O"
+		
+        \item $\iipf\uline{\disp}_{(\mass)}=(\iipf\timet)\uline{\fug}(\uline{\disp}_{(\mass)}+\iipf\disp_{(\mass)})$
+        
+		\item Linearized Implicit
+		\begin{listthree}
+			\item $\lfloor\mominertia-(\iipf\timet)J(\uline{\disp}_{(\mass)})\rfloor\iipf\uline{\disp}_{(\mass)}=(\iipf\timet)\uline{\fug}(\uline{\disp}_{(\mass)})$
+% not sure of "J"
+			\item Solve using iterative method
+		\end{listthree}
+            
+		\item Overall stability
+		\begin{listthree}
+			\item $\bigg|\dfrac{1}{1+(\iipf\timet)\wavel_{\state}}\bigg|<1$         
+		\end{listthree}
+        
+        \item Maximum timestep
+        \begin{listthree}
+        	\item None, always stable for $\wavel_{\state}\leq{0}$
+        \end{listthree}
+	\end{listtwo}
+\end{listone}   
+\end{mitframe}

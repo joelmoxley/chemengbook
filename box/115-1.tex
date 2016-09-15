@@ -1,0 +1,40 @@
+\begin{lscapemitframe}[-3pt]{115-1}
+\mdfsubtitle{(Box 115-1)}
+
+\begin{tabularx}%
+	{\textwidth}%
+    {| >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}%
+     | >{\collectcell\mitalign}m{0.1\textwidth}<{\endcollectcell}|}% 
+ \hline%
+ 
+%row 1
+\text{Resistance} & \text{Expression Form} & {&\text{Particle Size} \\ &\text{dependence}} & {&\text{Temperature} \\ &\text{dependence}} & {&\text{Velocity} \\ &\text{dependence}} \\ \hline
+     
+%row 2     
+\text{Internal} &% 
+\intrinsvisc=\dfrac{1}{\eleccoeff}\dfrac{3\eleccoeff\coth(3\eleccoeff)-1}{3\eleccoeff}\sim\dfrac{1}{\eleccoeff}~\text{for}~\eleccoeff>>1 &%
+\dfrac{1}{\pos_{p}} &% 
+{ &\sqrt{\dfrac{\thermcond(\Temp)}{\elecdisplace(\Temp)}} \\ &\text{(exponential)} } &% 
+\text{None} \\ \hline
+     
+%row 3     
+\text{External} &%
+\dfrac{1}{\thermcond_{c}a_{c}} &%
+\dfrac{1}{(\pos_{p})^{\text{1.5 to 2}}} &%
+\text{Linear} &%
+\intenergy^{1/2}\\ \hline
+     
+%row 4     
+\text{Reaction} &%
+\dfrac{1}{\thermcond}~\text{or}~\dfrac{1}{\thermcond\intrinsvisc} &%
+\text{None or }\dfrac{1}{\pos_{p}} &%
+{ &\text{Exponential Rate}\\ &\text{dependence} } &%
+\text{None} \\ \hline
+
+     
+ 
+\end{tabularx}
+\end{lscapemitframe}

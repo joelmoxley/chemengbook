@@ -1,0 +1,35 @@
+\begin{mitframe}{048-1}
+		\mdfsubtitle {Pseudosteady Analysis (Box 48-1)}
+\begin{listone}
+		\item Get profile assuming $\dfrac{\mathrm{d}\dimltemp}{\mathrm{d}{t}}=0, \dfrac{\mathrm{d}\disp}{\mathrm{d}{t}}\approx{0}, t_{molec}=t_{diffusion}=\dfrac{\length^2}{\pdiff}=\dfrac{\length^2}{\iipf}>>1$
+        \item Introduce spatial time dependence through a rate balance
+        \item Phase change rate balance
+        \item $\heatflux_n|_1-\heatflux_n|_2=\hat{\wavel}\dens_{\state}\big(\vvel_n|_1-\vvel_{ln}\big)\hat{\wavel}\dens_{\state}\bigg(\vvel_n|_1-\dfrac{\mathrm{d}\disp_{\state}}{\mathrm{d}t}\bigg), \hat{\wavel}=\hat{\enthalpy}_2-\hat{\enthalpy}_1$ =latent heat per unit mass
+        \item Volume flux rate balance surface=$\fug(t)$
+       \item General Mass: $\dfrac{\mathrm{d}}{\mathrm{d}t}\big(\dens_{sol}\vol\big)=-\entropy_{\helmholtz}\nummoles_{\helmholtz,\disp}|_{surface}\mw =>Fickian=>\entropy_{\helmholtz}\big(-\elecdisplace\gradop\conc\big)\mw$
+       
+       		\begin{listtwo}
+            		\item Sphere: $\vol=\dfrac{3}{4}\pi{R}^3, \entropy=4\pi{R}^2$
+                    
+                    % assumed  & "R"-radius
+                    \item Cylindrical $\vol =\pi{r}^3h|_{surface},\entropy=2\pi{r}h|_{surface} $
+                    %assumed "r"-radius &  "h" -height
+                           \end{listtwo}
+      
+       \item General Energy $\dfrac{\mathrm{d}\vol}{\mathrm{d}t}=-\entropy_{\helmholtz}\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}\heatflux|_{surface}=> $ Fourier$=>-\entropy_{\helmholtz}\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}\big(-\thermcond\nabla\Temp\big)$
+			\begin{listtwo}
+            		\item Sphere : $\vol =\dfrac{3}{4}\pi{R}^3,  \entropy=2\pi{R}^2$
+                   \item Cylindrical: $\vol=\pi{r}^3h|_{surface},  \entropy=2\pi{r}h|_{surface}$
+                    \item Ideal gas $\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}=\dfrac{\gasconst}{\p}=\vol\bigg(\dfrac{1}{\Temp}\bigg)=\vol\texpcoeff$
+                    
+            \end{listtwo}
+\item Reacting surface rate balance
+\item General Mass: $\dfrac{\mathrm{d}}{\mathrm{d}t}\big(\dens_{sol}\vol\big)=\entropy_{\helmholtz}\mw\surfreac|_{surface}$ where $\surfreac$ =surface reaction rate
+
+				\begin{listtwo}
+                		\item Sphere: $\vol =\dfrac{3}{4}\pi{R}^3,  \entropy=4\pi{R}^2$
+                        \item Cylindrical: $\vol =\pi{r}^2h|_{surface},  \entropy=2\pi{r}h|_{surface}$
+                        \item $\surfreac|_{surface}$ found from steady state analysis (if concentration dependent-if not, zero order)
+                \end{listtwo}
+\end{listone} 
+\end{mitframe}

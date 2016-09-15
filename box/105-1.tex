@@ -1,0 +1,17 @@
+\begin{mitframe}{105-1}
+	\mdfsubtitle{Nonisothermal Reactors (Box 105-1)}
+\begin{listone}
+	\item Adiabatic flame, conversion
+    \item Energy Balance
+    	\begin{listtwo}
+        	\item $\dfrac{\mathrm{d}\hat{\energy}}{\mathrm{d}\timet}=\dot{\heatflow}-\dot{\work_{\entropy}}+\force_{\helmholtz\init}\sum\nolimits\dimltemp_{\state}(\enthalpy_{\state\init}-\enthalpy_{\state})-\iipf\enthalpy_{rxn}\force_{\helmholtz\init}X$
+            % not sure of "X"
+            \item Steady State, no phase change, constant heat capacity, no shaft work
+            	\begin{listthree}
+                	\item $0=\dot{\heatflow}-\force_{\helmholtz\init}\sum\dimltemp_{\state}\cp,_{mean}(\Temp-\Temp_{\state\init})-\force_{\helmholtz\init}X\lfloor\iipf\enthalpy_{rxn}|_{\Temp_{ref}}+\iipf\cp(\Temp-\Temp_{ref})\rfloor$
+                    \item $\dimltemp_{\state}=\dfrac{\force_{\state\init}}{\force_{\helmholtz\init}}=\dfrac{\conc_{\state\init}}{\conc_{\helmholtz\init}}=\dfrac{y_{\exergy\init}}{y_{\helmholtz\init}}$
+                 % not sure of "y"   
+                \end{listthree}
+        \end{listtwo}
+    \end{listone}    
+\end{mitframe}

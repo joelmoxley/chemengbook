@@ -1,0 +1,26 @@
+\begin{mitframe}{086-1}
+	
+    	\mdfsubtitle{Nonisothermal Reactors (Box 86-1)}
+
+\begin{listone}
+
+	\item Adiabatic flame, conversion
+    \item Energy Balance
+
+	\begin{listtwo}
+		\item $\dfrac{\mathrm{d}\hat{\energy}}{\mathrm{d}\timet}=\dot{\heatflow}-{\dot{\work}}_{\entropy}+\force_{\helmholtz\init}\sum\nolimits\dimltemp_{\state}(\enthalpy_{\state{\init}}-\enthalpy_{\state})-\iipf\enthalpy_{rxn}\force_{\helmholtz\init}X$
+%benjie: not sure of \helmholtz for 'A', 'X', \iipf\enthalpy_{rxn}
+		
+        \item Steady State, no phase change, constant heat capacity, no shaft work
+		
+        \begin{listthree}
+			\item $0=\dot{\heatflow}-\force_{\helmholtz\init}\sum\nolimits\dimltemp_{\state}\cp,_{mean}(\Temp-\Temp_{\state\init})-\force_{\helmholtz\init}X\lfloor\iipf\enthalpy_{rxn}\big|_{\Temp_{ref}}+\iipf\cp(\Temp-\Temp_{ref})\rfloor$
+			\item $\dimltemp_{\state}=\dfrac{\force_{\state\init}}{\force_{\helmholtz\init}}=\dfrac{\conc_{\state\init}}{\conc_{\helmholtz\init}}=\dfrac{y_{\exergy\init}}{y_{\helmholtz\init}}$
+	    \end{listthree}
+%benjie: not sure of '\cp,_{mean}', \force_{\helmholtz\init}, 'X', 'y_{\exergy\init}', 'y_{\helmholtz\init}'
+                
+    \end{listtwo}
+
+\end{listone}
+
+\end{mitframe}

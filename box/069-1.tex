@@ -2,35 +2,35 @@
 
 		\mdfsubtitle{Reynolds-Averaging Basics (Box 69-1)}
 
-%\begin{listone}
+\begin{listone}
 
-%\item Time Smoothing Operation
+\item Time Smoothing Operation
 		
-%        \begin{listtwo}
-%        \item $\langle\force\rangle\equiv\dfrac{1}{\time_{\activity}}\int\limits_{\time}^{\time+\time_{\activity}}\force(\uline{\pos}, t)\mathrm{d}t$
-%        \item Valid when:
+        \begin{listtwo}
+        \item $\langle\force\rangle\equiv\dfrac{1}{t_{\activity}}\int\limits_{t}^{t+t_{\activity}}\force(\uline{\pos}, t)\mathrm{d}\torque$
+        \item Valid when:
         
- %       			\begin{listthree}
- %                   \item $\dfrac{\time_f}{\time_a}=\dfrac{fluctuation time}{experiment time}\rightarrow{0}$
-%                    \item$\dfrac{\time_a}{\time_p}=\dfrac{experimant time}{process time}\rightarrow {0}$
-%                    \end{listthree}
+       			\begin{listthree}
+                   \item $\dfrac{t_f}{t_a}=\dfrac{fluctuation time}{experiment time}\rightarrow{0}$
+                    \item$\dfrac{t_a}{t_p}=\dfrac{experiment    time}{process time}\rightarrow {0}$
+                    \end{listthree}
 
-      %t=not sure         
+      t=not sure         
 
-%\end{listtwo}
+\end{listtwo}
 
-%\item Field Variables
-%		\begin{listtwo}
-%       \item$ \uline{\vvel}=\langle\uline{\vvel}\rangle+\uline{\uvel}$
+\item Field Variables
+		\begin{listtwo}
+       \item$ \uline{\vvel}=\langle\uline{\vvel}\rangle+\uline{\forcepot}$
        
-%       \item $\dynpress=\langle\dynpress\rangle+\p$
+       \item $\dynpress=\langle\dynpress\rangle+\p$
        
-%       \item $\Temp=\langle\Temp\rangle+\dimltemp$
+       \item $\Temp=\langle\Temp\rangle+\theta$
        
-%       \item$\conc_{\state}=\langle\conc_{\state}\rangle+\specfrac{i}$
+       \item$\conc_{\state}=\langle\conc_{\state}\rangle+\specfrac{i}$
        
        
 
-%\end{listtwo}
-%\end{listone}
+\end{listtwo}
+\end{listone}
 \end{mitframe}

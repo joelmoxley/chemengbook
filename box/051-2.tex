@@ -1,0 +1,29 @@
+\begin{mitframe}{051-2}
+		\mdfsubtitle{Fin Approximation (Box 51-2)}
+\begin{listone}
+	\item General Formulation $z$ =axial direction
+    
+    % not sure : z
+    		\begin{listtwo}
+            		\item Energy coversation: $\dfrac{\partial^2\Temp}{\partial\disp^2}+\dfrac{\partial^2\Temp}{\partial{z}^2}=0$
+                    \item Define: $\biot\equiv\dfrac{\heattranscoeff\work}{\thermcond}-\dfrac{\Temp(0,z)-\Temp(\work,z)}{\Temp(\work,z)-\Temp_{\infty}}$
+     \item $\biot\ll 1=>\dfrac{\partial\Temp}{\partial\disp}\ll\dfrac{\partial\Temp}{\partial{z}}$   
+     \item Define average temperature over half-width, $\overline\Temp=\dfrac{1}{\work}\int\limits_0^{\work}\Temp\big(\disp,z\big)\mathrm{d}\disp$
+     \item Nondimensionalize and reformulate: $\dfrac{\mathrm{d}^2\dimltemp}{\mathrm{d}\zeta}-\biot\dimltemp=0$
+     		\begin{listthree}
+            			\item $\dimltemp(\zeta)=\dfrac{\overline{\Temp}-\Temp_{\infty}}{\Temp_{0}-\Temp_{\infty}}, \zeta=\dfrac{z}{\work}$
+                        \item $\dimltemp(0)=1, \dfrac{\mathrm{d}\dimltemp}{\mathrm{d}\zeta}(\zeta)=-\biot\dimltemp(\zeta)$
+                                              
+                 \end{listthree}
+            
+            	\item Results
+                \begin{listthree}
+                		\item $\dimltemp(\compress)=\cosh\compress-\tanh\debroglie\sinh\compress$
+                        \item $\compress=\debroglie\dfrac{z}{\length}, \debroglie=\bigg(\dfrac{\heattranscoeff}{\work\thermcond})^{\sfrac{1}{2}}$  $\length$=dynamic length scale
+                        \item dynamic length scale reflects competition between heat conduction at the base of the tip and heat loss from the top and bottom.
+                        \item $\biot\ll1=>$ the tip will act as if it were insulated
+                        \item Deen p. 83
+                \end{listthree}    
+            \end{listtwo}
+\end{listone}                
+\end{mitframe}

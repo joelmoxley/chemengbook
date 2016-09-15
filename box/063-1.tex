@@ -1,0 +1,21 @@
+\begin{mitframe}{063-1}
+		\mdfsubtitle{Scaling (Box 63-1)}
+\begin{listone}
+	\item Generalized problem formulation
+    	\begin{listtwo}
+        	\item Field Variables $\conc,\Temp, \vvel$
+            \item Spatial coordinates
+            \item Time coordinates
+            \item Parameters
+        \end{listtwo}
+    \item Define scaling for all except parameters
+    	\begin{listtwo}
+        	\item Field Variables $\iipf\conc, \iipf\Temp, \iipf\vvel$
+            \item Spatial coordinates $\iipf\disp$ etc
+            \item Time coordinates $\iipf\timet$
+        \end{listtwo}
+    \item Goal: $\intrinsvisc\sim{1}, \dimltemp\sim{1}=>\dfrac{\mathrm{d}\dimltemp}{\mathrm{d}\intrinsvisc}\sim{1}=>\dfrac{\mathrm{d}^2\dimltemp}{\mathrm{d}\intrinsvisc^2}\sim{1}$
+    \item $\dfrac{\mathrm{d}\fug}{\mathrm{d}\disp}\sim\dfrac{\iipf\fug}{\iipf\disp}$
+    \item $\dfrac{\mathrm{d}^2\fug}{\mathrm{d}\disp^2}\sim\dfrac{\iipf\fug}{\big(\iipf\disp\big)^2}$
+\end{listone}        
+\end{mitframe}

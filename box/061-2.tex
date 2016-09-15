@@ -1,0 +1,16 @@
+\begin{mitframe}{061-2}
+		\mdfsubtitle{Governing Equations (Box 61-2)}
+\begin{listone}
+	\item Governing Equations
+	\begin{listtwo}
+	\item Continuity, incompressible fluid: $\gradop\cdot\uline{\vvel}=0$
+    \item Momentum Conservation: $\dens\dfrac{\elecdisplace\uline{\vvel}}{\elecdisplace{t}}=-\gradop\dynpress+\gradop\cdot\uuline{\torque}-\dens_{\e}\gradop\cdot\eleccoeff$
+    	\item Species Conservation: $\dfrac{\partial\conc_{\state}}{\partial{t}}=\gradop\cdot\uline{\massspecflux{i}}+\specsource{i}$
+        		\begin{listthree}
+                		\item $\nummoles\p=>\dfrac{\elecdisplace\conc_{\state}}{\elecdisplace_{t}}=\pdiff\bigg[\nabla^2\conc_{\state}+{z}_{\state}\bigg(\dfrac{\force}{\gasconst\Temp}\bigg)\gradop\cdot\big(\conc_{\state}\gradop\eleccoeff\big)\bigg]+\specsource{i}$
+                \end{listthree} 
+             \item Poisson's Equation: $\nabla^2\eleccoeff=\dfrac{-\dens_{\e}}{\varepsilon}=\dfrac{-\force\sum\nolimits{z}_{\state}\conc-{\state}}{\varepsilon}$
+      \end{listtwo}          
+                
+\end{listone}
+\end{mitframe}

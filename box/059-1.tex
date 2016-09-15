@@ -1,0 +1,17 @@
+\begin{mitframe}{059-1}
+	\mdfsubtitle {Generalized Multi-Component Conservation Equations (Box 59-1)}
+\begin{listone}
+	\item $\dfrac{\partial}{\partial {t}}\bigg(\sum\limits_{\state=1}^{n}\conc_{\state}\overline{\henry}\bigg)=-\gradop\cdot\e+\dfrac{\elecdisplace\p}{\pdiff}+\uuline{\torque}:\gradop\uline{n}+\sum\limits_{\state-1}^{n}\molspecflux\uline{\grav_{\state}}$
+    \item $\dfrac{\partial\conc_{\state}}{\partial{t}}=-\gradop\cdot\massspecflux{i}+\specsource{i}$
+    		\begin{listtwo}
+            	\item Modified Fluxes
+                	\begin{listthree}
+                    		\item Energy: $\mcef=-\thermcond\gradop\Temp+\sum\limits_{\state-1}^{n}
+                            \massspecflux{i}\overline{\henry}+\uline{\dufour}$
+                               \item Mass: $\massspecflux=\conc_{\state}\uline{\vvel}-\pdiff\bigg[\gradop\conc_{\state}+z\conc_{\state}\bigg(\dfrac{\force}{\gasconst\Temp}\bigg)\gradop\eleccoeff\bigg]$
+                               
+                            
+                    \end{listthree}
+            \end{listtwo}
+\end{listone}
+\end{mitframe}

@@ -2,44 +2,44 @@
 
               \mdfsubtitle{Constitutive Models (Eddy Diffusivity Model) (Box 70-1)}
               
-%\begin{listone}
-
-%		\begin {\listtwo}
+\begin{listone}
+\item
+		\begin {listtwo}
 \item Shear Stress
-%					\begin{listthree}
-%            		\item $\dfrac{\torque}*_{y\height}{\diss}\equiv\varepsilon_{M}\dfrac{\partial\langle\vvel-{\height\rangle}}{\partia{y}}\enthalpy$
+					\begin{listthree}
+            		\item $\dfrac{\torque^{*}_{yz}}{\dens}\equiv\varepsilon_{M}\dfrac{\partial\langle\vvel_{z}\rangle}{\partial{y}}\enthalpy$
             
- % not sure $\varepsilon$
+% not sure $\varepsilon$, y & z
 
-%			  		\end{listthree}
+			  		\end{listthree}
 
-%			\item Energy Flux
+			\item Energy Flux
 
-%					\begin{listthree}
-%            		\item $\dfrac{\heatflow^*}{\diss}\equiv\varepsilon_{\enthalpy}\dfrac{\partial\langle\temp\rangle}{\partial{y}}$
-%           				\end{listthree}
+					\begin{listthree}
+            		\item $\dfrac{\heatflux_{y}^*}{\dens\hat{\cp}}\equiv\varepsilon_{\enthalpy}\dfrac{\partial\langle\Temp\rangle}{\partial{y}}$
+           				\end{listthree}
             
-%			\item Species Flux
+			\item Species Flux
 
-%			\begin{listthree}
+			\begin{listthree}
             
-%            \item $ \molespecflux_,{y}^*\equiv-\varepsilon_{\state}\dfrac{\partial\langle\conc_{\state}\rangle}{\partial{y}}$
+            \item $ \molspecflux^*,_{y}\equiv-\varepsilon_{\state}\dfrac{\partial\langle\conc_{\state}\rangle}{\partial{y}}$
             
-%            \end{listthree}
+            \end{listthree}
 
-%			\end{listtwo}
-% \item Reynold's Analogy
+			\end{listtwo}
+ \item Reynold's Analogy
  
-% 			\begin{listtwo}
+ 			\begin{listtwo}
             
-%            \item $\varepsilon_M=\varepsilon_{\enthalpy}=\varepsilon_{\state}$
-%            			\begin{listthree}
+            \item $\varepsilon_M=\varepsilon_{\enthalpy}=\varepsilon_{\state}$
+            			\begin{listthree}
                         
-%                        \item All turbulent transfer arises from same convective transport mechanism.
+                        \item All turbulent transfer arises from same convective transport mechanism.
                         
 
-%						\end{listthree}
-%\end{listtwo}
-%\end{listone}
+						\end{listthree}
+\end{listtwo}
+\end{listone}
 
 \end{mitframe}

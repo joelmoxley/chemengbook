@@ -1,4 +1,4 @@
-\begin{mitframe}{034-1} 
+\begin{mitframe}{034-1} %20160906MAC
     \mdfsubtitle{Unified Theory (Box 34-1)}
     
 \begin{listone}
@@ -8,6 +8,9 @@
     \begin{listtwo}
     
     	\item $\dof=\big(n+2\big)-\big(\pie+\pos\big)$
+        %20160906MAC: define "n" as "number of chemical species" In Tester, it is "number of components"
+        %20160906MAC: "pi" is not "\pie" but should be defined as "number of phases"
+        %20160906MAC: "r" is not "\pos" but should be defined as "number of independent reactions" In Tester, it is "number of independent chemical reactions and/or additional constraints on a system"
     
     	\begin{listthree}
 		
@@ -25,17 +28,21 @@
 
 			\end{listfour}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%20160906MAC: This portion can be removed
 			\item $n= number of chemical species$
             
             \item $\pie=number of phases$
             
             \item $\pos=number of independent reactions$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 		\end{listthree}     
     
     \end{listtwo}
     
     \item Phase equations $(\pie)$
+    %20160906MAC: "pi" here is not "\pie" 
     
     \begin{listtwo}
 
@@ -43,7 +50,10 @@
 
       	\begin{listthree}
             
-            \item $\bigg[\dfrac{\enthalpy^{(\tdiff)}}{\Temp^2}\bigg]\mathrm{d}\Temp-\bigg[\dfrac{\vol^{(\tdiff)}}{\Temp}\bigg]\mathrm{d}\p+\sum\limits^{n}_{i=1}\specfrac{i}^{\tdiff}\mathrm{d}\bigg[\chempot_{i}\bigg]=0$          
+            \item $\bigg[\dfrac{\enthalpy^{(\tdiff)}}{\Temp^2}\bigg]\mathrm{d}\Temp-\bigg[\dfrac{\vol^{(\tdiff)}}{\Temp}\bigg]\mathrm{d}\p+\sum\limits^{n}_{i=1}\specfrac{i}^{(\tdiff)}\mathrm{d}\bigg[\chempot_{i}\bigg]=0$          
+ %20160906MAC: "alpha" is not "\tdiff" In Tester, it is defined as "any phase in the assemblage of pi phases"
+ 
+ %20160906MAC: "n" is "number of chemical species"
 
 		\end{listthree}
         
@@ -51,15 +61,21 @@
 
       	\begin{listthree}
             
-            \item $\bigg[\dfrac{1}{\gasconst\Temp^2}\bigg(\enthalpy^{(\tdiff)}-\sum\limits_{i-1}^{n}\enthalpy_i^0\bigg)\bigg]\mathrm{d}\Temp-\bigg[\dfrac{\vol^{(\tdiff)}}{\gasconst\Temp}\bigg]\mathrm{d}\p+\sum\limits_{i-1}^{n}\specfrac{i}^{\tdiff}\mathrm{d}ln\int_{i}=0$          
+            \item $\bigg[\dfrac{1}{\gasconst\Temp^2}\bigg(\enthalpy^{(\tdiff)}-\sum\limits_{i=1}^{n}\enthalpy_i^0\bigg)\bigg]\mathrm{d}\Temp-\bigg[\dfrac{\vol^{(\tdiff)}}{\gasconst\Temp}\bigg]\mathrm{d}\p+\sum\limits_{i=1}^{n}\specfrac{i}^{(\tdiff)}\mathrm{d}ln\int_{i}=0$          
 %not sure \int^
+%20160906MAC: "\int^" should be "f_i" defined as "fugacity of component i in a mixture"
+
+%20160906MAC: "alpha" is not "\tdiff" In Tester, it is defined as "any phase in the assemblage of pi phases"
+
+%20160906MAC: "n" is "number of chemical species"
+
 		\end{listthree}
     
     \end{listtwo}
     
     \item Reaction equations (r)
-    
     %benjie: not sure with 'r'
+    %20160906MAC: "r" is "number of independent reactions"
     
     \begin{listtwo}
 
@@ -67,7 +83,13 @@
 
       	\begin{listthree}
             
-            \item $\sum\nolimits\chargeval^{\thermcond}\mathrm{d}\bigg[\dfrac{\chempot_{i}}{\Temp}\bigg]=0$
+            \item $\sum\nolimits\chargeval^{(k)}\mathrm{d}\bigg[\dfrac{\chempot_{i}}{\Temp}\bigg]=0	    for     k=1,...,r$
+     %20160906MAC: "k" is not "\thermcond" but "any independent reaction r" <resolved>
+     %20160907MAC: need to put "\tab" before and after "for" for spacing
+     
+     %20160906MAC: "r" is "number of independent reactions"
+     
+     %20160906MAC: include from "i=1" to "n" in the summation
             
 		\end{listthree}
        
@@ -75,7 +97,13 @@
 
       	\begin{listthree}
             
-            \item $\sum\nolimits\chargeval^{\thermcond}\mathrm{d}ln\int_{i}=0$          
+            \item $\sum\nolimits\chargeval^{(k)}\mathrm{d}ln\int_{i}=0     for     k=1,...,r$
+     %20160906MAC: "k" is not "\thermcond" but "any independent reaction r" <resolved>
+     %20160907MAC: need to put "\tab" before and after "for" for spacing
+     
+     %20160906MAC: "r" is "number of independent reactions"
+     
+     %20160906MAC: include from "i=1" to "n" in the summation
 
 		\end{listthree}
     

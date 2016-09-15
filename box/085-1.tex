@@ -1,0 +1,65 @@
+\begin{mitframe}{085-1}
+
+		\mdfsubtitle {Stoichiometric Table (Box 85-1)}
+        
+\begin{listone}
+
+		\item Goal: Convert reaction rate concentrations to conversions
+        
+        \item Variable Volume / Volumetric Flow Rate
+        
+        \begin{listtwo}
+        
+        	\item $\dimltemp_{\state}=\dfrac{\force_{\state{0}}}{\force_{\helmholtz{0}}}$
+            
+            \item $\vol=\vol_0\dfrac{\p_0}{\p}\dfrac{\Temp}{\Temp_0}\dfrac{\compress}{\compress_0}(1+\varepsilon{X})$
+            % not sure "X"
+            
+            \item $\dot{\vol}=\dot{\vol}_0\dfrac{\p_0}{\p}\dfrac{\Temp}{\Temp_0}\dfrac{\compress}{\compress_0}\big(1+\varepsilon{X}\big)$
+            
+            \item $\conc_{\state}=\conc_{\Temp{0}}\dfrac{\force_{\state}}{\force_{\Temp}}\dfrac{\p}{\p_0}\dfrac{\Temp_0}{\Temp}\dfrac{\compress_0}{\compress}$
+            
+            		\begin{listthree}
+                    
+                    		\item Single Reaction
+                            
+                            \begin{listfour}
+                            
+                            	\item $\conc_{\state}=\conc_{\helmholtz{0}}\Bigg(\dfrac{\dimltemp_{\state}+\dfrac{\vvel_{\state}}{\activity}X}{1+\varepsilon{X}}\Bigg)\dfrac{\p}{\p_0}\dfrac{\Temp_0}{\Temp}\dfrac{\compress_0}{\compress}$
+                                
+                                \begin{listfive}
+                                
+                                		\item Inert, $\vvel_{\state}=0$
+                                
+                                \end{listfive}
+                            
+                            \end{listfour}
+                    
+                    \end{listthree}
+        	
+            \item Flow
+            
+            			\begin{listthree}
+                        
+                        		\item $\force_{\Temp}=\force_{\Temp}0+\blthick\force_{\helmholtz{0}}X$
+                        
+                        \end{listthree}
+        
+        \end{listtwo}
+
+\item Constant Volume / Volumetric Flow Rate
+
+		\begin{listtwo}
+        
+        		\item $\dimltemp_{\state}=\dfrac{\nummoles_{\state{0}}}{\nummoles_{\helmholtz{0}}}$ or $\dimltemp_{\state}=\dfrac{\force_{\state{0}}}{\force_{\helmholtz{0}}}$
+                
+                \item $\vol=\vol_0$ or $\dot{\vol}=\dot{\vol}_0$
+                
+                \item $\conc_{\state}=\dfrac{\massspecflux{i}}{\vol}$ or $\dfrac{\force_{\state}}{\dot{\vol}}$
+                
+                \item $\conc_{\state}=\conc_{\helmholtz{0}}\big(\dimltemp_{\state}+\dfrac{\vvel_{\state}}{\activity}X\big)$
+%benjie: Not sure with 'X'                
+        \end{listtwo}
+\end{listone}
+
+\end{mitframe}

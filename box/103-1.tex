@@ -1,0 +1,20 @@
+\begin{mitframe}{103-1}
+		\mdfsubtitle{(Box 103-1)}
+\begin{listone}
+\item Taylor Dispersion  $\dfrac{\partial\overline{\conc}}{\partial\timet}=\dilfac\dfrac{\partial^2\overline{\conc}}{\partial{z}^2}, \overline{\conc}=\dfrac{1}{\helmholtz}\int\limits_{\helmholtz}\conc\mathrm{d}\helmholtz$
+\item Approach
+		\begin{listtwo}
+        	\item Fully developed laminar flow, no $\eleccoeff$ dependence, dil.
+            \item $\dfrac{\partial{c}}{\partial\timet}+(\vvel(\pos)-\forcepot)\dfrac{\partial{c}}{\partial{z}*}=\elecdisplace\bigg[\dfrac{1}{\pos}\bigg(\pos\dfrac{\partial{c}}{\partial\pos}\bigg)+\dfrac{\partial^2c}{\partial{z}^2}\bigg]$
+            % not sure of "c"," z"
+            \item convective >> diffusion, quasisteady state $\dfrac{\partial{c}}{\partial\timet}\approx{0}$
+            \item long times $\dfrac{\partial{c}}{\partial{z}*}, \conc=\dfrac{1}{\pi\gasconst^2}\int\limits_{\init}^{\pos}(2\pi\pos)\conc\mathrm{d}\pos$
+            \item $\uvel\bigg[1-2\bigg(\dfrac{\pos}{\gasconst}\bigg)^2\bigg]\dfrac{\partial\overline{c}}{\partial{z}*}=\elecdisplace\bigg[\dfrac{1}{\pos}\bigg(\pos\dfrac{\partial{c}}{\partial{\pos}}\bigg)+\partial(\dfrac{\partial^2{c}}{\partial{z^2}})\bigg]$
+            \item $\dfrac{\partial{c}}{\partial\pos}\bigg|_{\pos=\gasconst}=0$
+            \item$c\rightarrow{0} as |z*|\rightarrow\infty$
+            \item Integrate equation w.r.t.r
+            \item $\dfrac{\partial\overline{c}}{\partial\timet}+\uvel\dfrac{\partial{c}}{\partial{z}}=\dilfac\dfrac{\partial^2\overline{c}}{\partial{z^2}}$
+            \item $\dilfac=\elecdisplace+\dfrac{\uvel^2\gasconst^2}{48\elecdisplace}$
+            \end{listtwo}
+\end{listone}        
+\end{mitframe}

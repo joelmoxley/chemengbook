@@ -1,0 +1,29 @@
+\begin{mitframe}{079-1}
+	\mdfsubtitle{Function Space Discretization (Box 79-1)}
+ \begin{listone}
+	\item $\nabla^2\theta=(\wavel\theta+\helmholtz)$
+    	\begin{listtwo}
+        	\item Discretize Function Space
+            	\begin{listthree}
+                	\item $\theta(\disp,y)=\pot_{\mass}(\disp)\theta_n(y)$
+                \end{listthree}
+            \item Find Eigenfunctions to satisfy Boundary Conditions
+\item Determine functional form using $\disp=0$ boundary condition
+            \begin{listthree}
+            	\item $\pot_{\mass}(\disp)=\dfrac{\sqrt{2}}{\length_{\disp}}\sin(\dilfac\disp) \textit{or }\dfrac{\sqrt{2}}{\length_{\disp}}\cos(\dilfac\disp) $
+            \end{listthree}
+            \item Determine form of constant $\dilfac$ using $\disp=\length$ boundary condition
+            \item Expand Series Solution
+            \item Plug in solution to Differential Equation to get constant $\debroglie$
+            \item Use properties of orthonormality to find constants
+            	\begin{listthree}
+                	\item $ \langle{X}_{\mass}|X_{n}\rangle=\int\limits_{\init}^{\length}X_{\mass}^*X_n\mathrm{d}\disp=\blthick_{\mass{n}}$
+                    
+       				\item $\langle{X}_{\mass}|\fug\rangle=\sum_{\mass=1}^{\infty}\forcepot_{\mass}\blthick_{\mass{n}}=\forcepot_n$
+                    
+                    \item $\int_{\init}^{\length_{\disp}}\sin\bigg(\dfrac{(p+\dfrac{1}{2})\pi\disp}{\length_{\disp}}\bigg)\mathrm{d}\disp=\bigg(\dfrac{\length_{\disp}}{(p+\dfrac{1}{2})\pi}\bigg)$
+                \end{listthree}
+        \end{listtwo}
+\end{listone}   
+
+\end{mitframe}

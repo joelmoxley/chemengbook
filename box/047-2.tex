@@ -1,0 +1,31 @@
+\begin{mitframe}{047-2}
+		\mdfsubtitle{Pure Laplacian Diffusion/Conduction (Box 47-2)}
+\begin{listone}
+		\item Table 2.2 and 2.3
+        \item Conservation, no source=>$\iipf\Temp, \damkohler<< 1$
+        
+        
+        	\begin{listtwo}
+            		\item$ \iipf^2\Temp=0$
+                    \item $\iipf^2\conc_{\state}=0$
+            \end{listtwo}
+		\item Unidirectional
+        	\begin{listtwo}
+            		\item Direction of transport, $\specfrac{i}=\disp,\pos,\theta,\eleccoeff$
+                    \item Cartesian $\disp: \dimltemp=\fug(\tilde{\disp})$
+                    \item Cylindrical
+                    		\begin{listthree}
+                            		\item $\pos: \dimltemp=\fug(ln\tilde{\pos})$
+                                    \item $\theta:\dimltemp=\fug(\theta)$
+                                    \item $\torque:\dimltemp=\fug(\tilde{z})$
+                                 % not sure "z"   
+                                    \end{listthree}
+            		\item Spherical
+                    				\begin{listthree}
+                                    		\item$\pos:\dimltemp=\fug\bigg(\dfrac{1}{\tilde{\pos}}\bigg)$
+                                            \item $\theta:\dimltemp=\fug(ln(\csc(\theta)-\cot(\theta))$
+                                            
+                                    \end{listthree}
+            \end{listtwo}
+\end{listone}        
+\end{mitframe}

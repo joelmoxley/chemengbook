@@ -1,0 +1,28 @@
+\begin{mitframe}{110-1}
+	\mdfsubtitle{Pseudosteady Analysis (Box 110-1)}
+\begin{listone}
+	\item Get profile assuming $\dfrac{\mathrm{d}\dimltemp}{\mathrm{d}\timet}=0, \dfrac{\mathrm{d}\specfrac{i}}{\mathrm{d}\timet}=0, \timet_{molec}=\timet_{diffusion}=\dfrac{\length^2}{\pdiff}=\dfrac{\length^2}{\tdiff}>>1$
+    \item Introduce spartial time dependence through a rate balance
+    \item Phase change rate balance
+    \item $\heatflux_{n}|_1-\heatflux_n|_2=\hat{\wavel}\dens_{\state}\big(\vvel_n|_1-\vvel_{ln}\big)=\hat{\wavel}\dens_{\state}\bigg(\vvel_n|_1-\dfrac{\mathrm{d}\specfrac{i}}{\mathrm{d}\timet}\bigg), \hat{\wavel}=\hat{\enthalpy_2-\hat{\enthalpy_1}}$ =latent heat per unit mass
+    \item Volume flux rate balance, $surface=\fug(\timet)$
+    \item General mass: $\dfrac{\mathrm{d}}{\mathrm{d}\timet}(\dens_{sol}\vol)=-\entropy_{\helmholtz}\nummoles_{\helmholtz,\pos}|_{surface}\mw=>Fickian=>-\entropy_{\helmholtz}\big(-\elecdisplace\gradop\conc\big)\mw$
+    	\begin{listtwo}
+        	\item Sphere: $\vol=\dfrac{4}{3}\pi\gasconst^3 , \entropy=4\pi\gasconst^2$
+            \item  Cylindrical: $\vol=\pi\pos^2\heattranscoeff|_{surface}, \entropy=2\pi\pos\heattranscoeff|_{surface}$
+             \end{listtwo}
+	\item General Energy: $\dfrac{\mathrm{d}\vol}{\mathrm{d}\timet}=-\entropy_{\helmholtz}\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}\heatflux|_{surface}, =>Fourier=>-\entropy_{\helmholtz}\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}(-\thermcond\nabla\Temp)$
+      	\begin{listtwo}
+        	\item Sphere: $\vol=\dfrac{4}{3}\pi\gasconst^3$,    $\entropy=4\pi\gasconst^2$
+            \item Cylindrical: $\vol=\pi\pos^2\heattranscoeff|_{surface}, \entropy=2\pi\pos\heattranscoeff|_{surface}$
+        	\item Ideal gas: $\bigg(\dfrac{\partial\vol}{\partial\Temp}\bigg)_{\p}=\dfrac{\gasconst}{\p}=\vol\bigg(\dfrac{1}{\Temp}\bigg)=\vol\texpcoeff$
+            \end{listtwo}
+ \item Reacting surface rate balance
+ \item General Mass: $\dfrac{\mathrm{d}}{\mathrm{d}\timet}(\dens_{sol}\vol)=\entropy_{\helmholtz}\mw\surfreac|_{surface}$, where $\surfreac$=surface reaction rate
+ 		\begin{listtwo}
+        	\item Sphere: $\vol=\dfrac{4}{3}\pi\gasconst^3$,    $\entropy=4\pi\gasconst^2$
+            \item Cylindrical: $\vol=\pi\pos^2\heattranscoeff|_{surface}. \entropy=2\pi\pos\heattranscoeff|_{surface}$
+            \item $\surfreac|_{surface}$, found from steady state analysis (if concentration dependent-if not, zero order)
+        \end{listtwo}
+\end{listone}    
+\end{mitframe}
