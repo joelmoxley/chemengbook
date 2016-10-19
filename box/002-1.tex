@@ -2,44 +2,45 @@
 
     \mdfsubtitle{Statistical Mechanics (Box 2-1)} 
     
-\begin{listone}
+	\begin{listone}
     
-    \item Goal: Connect quantum state of matter (microscopic) to classical thermodynamics (macroscopic).
+    	\item Goal: Connect quantum state of matter (microscopic) to classical thermodynamics (macroscopic).
     
-    \item Postulates
+    	\item Postulates
     
-    \begin{listtwo}
+    	\begin{listtwo}
     
-    	\item Ergodic
+    		\item Ergodic
         
-        \begin{listthree}
+        	\begin{listthree}
         
-    		\item Time averaging equivalent to ensemble averaging
+    			\item Time averaging equivalent to ensemble averaging
 
-		\end{listthree}
+			\end{listthree}
 
-    	\item Equal A Priori Probabilites
+    		\item Equal A Priori Probabilities
         
-       	\begin{listthree}
+       			\begin{listthree}
         
-    		\item States with equal \nummoles,\uline{\vol},\uline{\energy} are equally likely
+    				\item States with equal \nummoles,\uline{\vol},\uline{\energy} are equally likely
     
-    	\end{listthree}
+    			\end{listthree}
     
-    \end{listtwo}
+    	\end{listtwo}
     
-    \item $\boltznorm = \dfrac{1}{\boltz\Temp},~\big\langle\exergy\big\rangle = \sum\nolimits\prob{i}\virialcoeff{i},~\ln\nummoles!\approx \nummoles\ln\nummoles - \nummoles,~\prob{i} = \dfrac{\exp(-\boltznorm\uline{\energy}_{\state})}{\sum\nolimits\exp(-\boltznorm\uline{\energy}_{\state})}$
- %comment   
- % go pit rho
+    	\item $\boltznorm = \dfrac{1}{\boltz\Temp},~\big\langle\genvar\big\rangle = \mathlarger\sum\nolimits\prob{i}\genvar_{\state},~\ln\nummoles!\approx \nummoles\ln\nummoles - \nummoles,~\prob{i} = \dfrac{\exp(-\boltznorm\uline{\energy}_{\state})}{\mathlarger\sum\nolimits\exp(-\boltznorm\uline{\energy}_{\state})}$
  
 	% 20160705MAC: 'B' is not '\exergy', it is "any observable property such as energy and pressure" while '<B>' means the ensemble average of observable property 'B'. 'B' should be declared as a new quantity. (Tester, p.394, Eq.10-10 cf. Eq.10-17 & Eq.10-22)
+    % 20161019BFF: 'B' is changed from '\exergy' to new quantity '\genvar' which stands for "Generalized variable"
     
     % 20160705MAC: 'B_i' is not '\virialcoeff', it is the instantaneous value of any observable property B in their respective energy states E_i
+    % 20161019BFF: 'B_i' is changed from '\virialcoeff_{i}' into '\genvar_{\state}' 
  
- % 20160630MAC: 'k' is not '\thermcond' it should be replaced by the Boltzmann constant '\boltz' <resolved>
+	% 20160630MAC: 'k' is not '\thermcond' it should be replaced by the Boltzmann constant '\boltz' <resolved>
  
  	% 20160704MAC: '\prob{i}'s complete definition is 'Probability distribution of energy states' instead of just 'probability' (Tester, p.xvi & p.394, Eq.10-10)
+    % 20161019BFF: '\prob{i}' is changed from ''Probability' into 'Probability distribution of energy states' 
  
-\end{listone}
+	\end{listone}
      
 \end{mitframe}

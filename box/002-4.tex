@@ -2,28 +2,26 @@
 
     \mdfsubtitle{Grand Canonical (Box 2-4)} 
     
-\begin{listone}
+	\begin{listone}
     
-    \item Constant: $\chempot, \uline{\vol}, \Temp$
+    	\item Constant: $\chempot, \uline{\vol}, \Temp$
 
-    \item Constraint Equations: $\sum\nolimits \molspecies{i} = \totmoles, ~\sum\nolimits \molspecies{i}\uline{\energy}_{i} = \uline{\energy}^{total},~\sum\nolimits \molspecies{i}\nummoles = \nummoles^{total}  $     %'n_{i}' is an unknown symbol, changed to '\molspecies'
+   	 	\item Constraint Equations: $\mathlarger\sum\nolimits \molspecies{i} = \totmoles,~\mathlarger\sum\nolimits \molspecies{i}\uline{\energy}_{i} = \uline{\energy}^{total},~\mathlarger\sum\nolimits \molspecies{i}\nummoles = \nummoles^{total}$
+        %'n_{i}' is an unknown symbol, changed to '\molspecies'
     
-    \item Partition Function:
+    	\item Partition Function:
     
-    \begin{listtwo}
+    	\begin{listtwo}
         
-    	\item $\gcpf \equiv \sum\limits_{\nummoles}\sum\limits_{\uline{\energy}_{i}} \cpf\exp(\boltznorm\chempot\nummoles) = \sum\limits_{\nummoles}\sum\limits_{\uline{\energy}_{i}} \mpf(\uline{\energy}_{i})\exp(-\boltznorm\uline{\energy}_{i})\exp(\boltznorm\chempot\nummoles) $
-    done
-    	\item $\gcpf \equiv \sum\limits_{\nummoles}\sum\limits_{i} \exp(-\boltznorm\uline{\energy}_{i})\exp(\boltznorm\chempot\nummoles) $
+    		\item $\gcpf \equiv \mathlarger\sum\limits_{\nummoles}\mathlarger\sum\limits_{\uline{\energy}_{i}} \cpf\exp(\boltznorm\chempot\nummoles) = \mathlarger\sum\limits_{\nummoles}\mathlarger\sum\limits_{\uline{\energy}_{i}} \mpf(\uline{\energy}_{i})\exp(-\boltznorm\uline{\energy}_{i})\exp(\boltznorm\chempot\nummoles) $
+
+    		\item $\gcpf \equiv \mathlarger\sum\limits_{\nummoles}\mathlarger\sum\limits_{i} \exp(-\boltznorm\uline{\energy}_{i})\exp(\boltznorm\chempot\nummoles) $
     
-    \end{listtwo}
+    	\end{listtwo}
     
-    \medskip       
-    
-    \item Natural Function: $\p\uline{\vol} = \boltz\Temp\ln\gcpf$
-    
+    \item Natural Function: $\p\uline{\vol} = \boltz\Temp\ln\gcpf$   
     % 20160630MAC: 'k' is not '\thermcond' it should be replaced by the Boltzmann constant '\boltz' <resolved>
     
-\end{listone}
+	\end{listone}
     
 \end{mitframe}

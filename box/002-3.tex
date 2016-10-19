@@ -2,29 +2,27 @@
 
     \mdfsubtitle{Canonical (Box 2-3)} 
     
-\begin{listone}
+	\begin{listone}
     
-    \item Constant: \nummoles, \uline{\vol}, \Temp
+    	\item Constant: \nummoles, \uline{\vol}, \Temp
     
-    \item Constraint Equations: $\sum\nolimits \molspecies{i} = \totmoles, \sum\nolimits \molspecies{i}\uline{\energy}_{i} = \uline{\energy}^{total}  $     
-    %'n_{i}' is an unknown symbol, changed to '\molspecies' <resolved>
+    	\item Constraint Equations: $\mathlarger\sum\nolimits \molspecies{i} = \totmoles, ~\mathlarger\sum\nolimits \molspecies{i}\uline{\energy}_{i} = \uline{\energy}^{total}  $     
+    	%'n_{i}' is an unknown symbol, changed to '\molspecies' <resolved>
     
-    \item Partition Function:
+    	\item Partition Function:
     
-    \begin{listtwo}
+    	\begin{listtwo}
     
-    	\item $\cpf \equiv \sum\limits_{\uline{\energy}_{i}} \mpc\exp(-\boltznorm\uline{\energy}_{i}) = \sum\limits_{\uline{\energy}_{i}} \mpf(\uline{\energy}_{i})\exp(-\boltznorm\uline{\energy}_{i}) $
+    		\item $\cpf \equiv \mathlarger\sum\limits_{\uline{\energy}_{i}} \mpc\exp(-\boltznorm\uline{\energy}_{i}) = \mathlarger\sum\limits_{\uline{\energy}_{i}} \mpf(\uline{\energy}_{i})\exp(-\boltznorm\uline{\energy}_{i}) $
     
-    	\item $\cpf \equiv \sum\limits_{i} \exp(-\boltznorm\uline{\energy}_{i}) $
+    		\item $\cpf \equiv \mathlarger\sum\limits_{i} \exp(-\boltznorm\uline{\energy}_{i}) $
            
-    \end{listtwo}
+   	 	\end{listtwo}
            
-    \item Natural Function: $\uline{\helmholtz} = -\boltz\Temp\ln\cpf$
+    	\item Natural Function: $\uline{\helmholtz} = -\boltz\Temp\ln\cpf$	    
+    	% 20160705MAC: '\helmholtz' should be 'uline{\helmholtz}' meaning "total helmholtz free energy" instead of "specific helmholtz free energy" (Tester, p.xv & p.401, Eq.10-48) See also Box 3-1 <resolved>	    
+    	% 20160630MAC: 'k' is not '\thermcond' it should be replaced by the Boltzmann constant '\boltz' <resolved>
     
-    % 20160705MAC: '\helmholtz' should be 'uline{\helmholtz}' meaning "total helmholtz free energy" instead of "specific helmholtz free energy" (Tester, p.xv & p.401, Eq.10-48) See also Box 3-1 <resolved>
-    
-    % 20160630MAC: 'k' is not '\thermcond' it should be replaced by the Boltzmann constant '\boltz' <resolved>
-    
-\end{listone}
+	\end{listone}
     
 \end{mitframe}

@@ -1,84 +1,62 @@
 \begin{mitframe}{001-1} % 20160703MAC
-
+	
     \mdfsubtitle{Physics (Box 1-1)} 
-{	\centering
-\begin{listone}
-    
-    \item Descriptions of Matter, Energy, and Momenta
-    
-    \item Macro- and Micro- Views
-    
-\end{listone}
 
+	\begin{listone}
+		\item Descriptions of Matter, Energy, and Momenta
+		\item Macro- and Micro- Views
+	\end{listone}
+
+	%\begin{framed} %for enclosing table in a box
+	{
+	\centering 
+
+	Types of work interactions
+
+	$\delta\work = \force \cdot \mathrm{d}\gendisp$
         
-Types of work interactions
+	%\bigskip
+        
+    % not sure if the delta symbol the boundary layer thickness ('\blthick')? underlined x the extensive vector ('\exvecone')?        
+    % (from joel) this is just a differential (hal double check me)
+    % 20160703MAC: this is just a differential (Tester, p.22, Eq. 3-2)
+        
+    % i think the exvecone is the right usage (hal double check me)
+    % 20160703MAC: underlined x is a 'general displacement vector' (Tester, p.xvi & p.22) <resolved>
                 
-$\delta\work = \force \cdot \mathrm{d}\gendisp$
-        
-\bigskip
-        
-        %not sure if the delta symbol the boundary layer thickness ('\blthick')? underlined x the extensive vector ('\exvecone')?
-        
-        % (from joel) this is just a differential (hal double check me)
-        % 20160703MAC: this is just a differential (Tester, p.22, Eq. 3-2)
-        
-        % i think the exvecone is the right usage (hal double check me)
-        % 20160703MAC: underlined x is a 'general displacement vector' (Tester, p.xvi & p.22) <resolved>
-                
-\begin{tabular}{ | c | c |  }
-        
-	\hline
-            
-	Type of work & $\force \cdot \mathrm{d}\gendisp$ \\
-    % 20160703MAC: underlined x should be a 'general displacement vector' (Tester, p.xvi & p.22) <resolved>
-            
-	\hline
-            
-	Pressure-Volume & $-\p \cdot \mathrm{d}\uline{\vol}$ \\
-            
-	\hline
-            
-	Frictional & $\fricforce \cdot \mathrm{d}\gendisp$ \\
-    % 20160703MAC: underlined x should be a 'general displacement vector' (Tester, p.xvi & p.22) <resolved>
-            
-	\hline
-            
-	Surface Deformation & $\surftens \cdot \mathrm{d}\totalsa$ \\
-            
-	\hline  
-    %not sure if the sigma symbol is the boundary quantity. not sure if 'a' is activity
-    % 20160630MAC: sigma here is surface tension [N/m] and underlined 'a' is total surface area [m^2] (Tester, p.xv & xvii). <resolved>
-            
-	Electrical Charge Transport & $\elecpot \cdot \mathrm{d}\eleccharge$ \\
-            
-	\hline  
-    % 20160706MAC: 'epsilon' here is not '\dielec', it is defined as "electric potential" or "electromotive force" <resolved>
-    
-    %not sure what 'q' symbolizes (is it heat flux?).
-    % 20160630MAC: 'q' here refers to electric charge (Tester, p.31 & p.xvi) <resolved>
-            
-	Electric Polarization & $\elecfield \cdot \mathrm{d}\uline{\elecdisplace}$ \\
-            
-	\hline
-            
-	Magnetic Polarization & $\magfield \cdot \mathrm{d}\magind$ \\ \hline
-            
-	Stress-Strain & $\origvol(\sfrac{\force_{\disp}}{\totalsa})\mathrm{d}\linstrain = \origvol(\sfrac{\force_{\disp}}{\totalsa})\sfrac{\mathrm{d}\disp}{\disp_{\init}} $ \\ 
-% * <floresbenjie@gmail.com> 2016-07-11T10:41:57.646Z:
-%
-% > \force_{\disp}
-%
-% ^.    
-    \hline  
-    %not sure what '\uline{\vol}_{0}' is correct. This symbol is not indexed.
-    % 20160703MAC: \uline{\vol}_{o}' means 'original volume' (Tester, p.31)
+	\begin{longtable}{ | c | c | } \hline       
+	           
+		Type of work & $\force \cdot \mathrm{d}\gendisp$ \\ \hline
+    	% 20160703MAC: underlined x should be a 'general displacement vector' (Tester, p.xvi & p.22) <resolved>            
+	            
+		Pressure-Volume & $-\p \cdot \mathrm{d}\uline{\vol}$ \\ \hline            
+	            
+		Frictional & $\fricforce \cdot \mathrm{d}\gendisp$ \\ \hline
+   		% 20160703MAC: underlined x should be a 'general displacement vector' (Tester, p.xvi & p.22) <resolved>
+            	           
+		Surface Deformation & $\surftens \cdot \mathrm{d}\totalsa$ \\ \hline            
+    	% not sure if the sigma symbol is the boundary quantity. not sure if 'a' is activity
+    	% 20160630MAC: sigma here is surface tension [N/m] and underlined 'a' is total surface area [m^2] (Tester, p.xv & xvii). <resolved>     
+     
+		Electrical Charge Transport & $\elecpot \cdot \mathrm{d}\eleccharge$ \\ \hline        
+    	% 20160706MAC: 'epsilon' here is not '\dielec', it is defined as "electric potential" or "electromotive force" <resolved> 
+    	% not sure what 'q' symbolizes (is it heat flux?).
+    	% 20160630MAC: 'q' here refers to electric charge (Tester, p.31 & p.xvi) <resolved>    
+	
+		Electric Polarization & $\elecfield \cdot \mathrm{d}\uline{\elecdisplace}$ \\ \hline            
+	            
+		Magnetic Polarization & $\magfield \cdot \mathrm{d}\magind$ \\ \hline      
+     
+		Stress-Strain & $\origvol(\force_{\disp}/\totalsa)\mathrm{d}\linstrain = \origvol(\force_{\disp}/\totalsa)\mathrm{d}\disp/\disp_{\init} $ \\ \hline       
+    	% not sure what '\uline{\vol}_{0}' is correct. This symbol is not indexed.
+    	% 20160703MAC: \uline{\vol}_{o}' means 'original volume' (Tester, p.31)
     % 20160704MAC: i think this should be indexed as one (i.e. '\origvol') just like '\fricforce' or friction force instead of {\vol}_{0} <resolved>
     
     % 20160703MAC: 'omega' is not '\mpc', it means 'one-dimensional strain' or linear strain (Tester, p.xvii & p.31) <resolved>
     
-    % 20160703MAC: replace '\activity'. underlined 'a' is total surface area [m^2] (Tester, p.xvii & p.31). this is similar with 'S_A' in the index <resolved>
-            
-\end{tabular}
-
-}
+    % 20160703MAC: replace '\activity'. underlined 'a' is total surface area [m^2] (Tester, p.xvii & p.31). this is similar with 'S_A' in the index <resolved>            
+	\end{longtable}
+	}
+	%\end{framed}
+    
 \end{mitframe}

@@ -2,88 +2,92 @@
 
     \mdfsubtitle{Potential (Box 7-4)}
     
-\begin{listone}
+	\begin{listone}
     
-    \item Ideal
-    
-    \begin{listtwo}
-    
-    	\item $\pot(\pos) = 0 $
-    
-    	\item Parameters: none
-    
-    \end{listtwo}
-    
-    \item Hard Sphere
-    
-    \begin{listtwo}
-
-    	\item $\pot(\pos)=\begin{cases}
-                    \infty ~~\pos \leq \molecrad
-                    ~0 ~~ \pos > \molecrad\\
-                \end{cases}$
-
-      	\item Parameters: $\molecrad$
-    
-    \end{listtwo}
-    
-    \item Square well
+    	\item Ideal
     
     	\begin{listtwo}
     
-    	\item $\pot(\pos)=\begin{cases}
+    		\item $\pot(\pos) = 0 $
+    
+    		\item Parameters: none
+    
+   		\end{listtwo}
+    
+    	\item Hard Sphere
+    
+   		\begin{listtwo}
+
+    		\item $\pot(\pos)=\begin{cases}
+                    \infty ~~\pos \leq \molecrad\\
+                    ~0 ~~ \pos > \molecrad\\
+                	\end{cases}$
+
+      		\item Parameters: $\molecrad$
+    
+    	\end{listtwo}
+    
+    	\item Square well
+    
+    	\begin{listtwo}
+    
+    		\item $\pot(\pos)=\begin{cases}
                     ~\infty ~~\pos \leq \molecrad\\
-                    -\dielec ~~\molecrad < \pos \leq \gasconst\molecrad\\
+                    -\partpoten ~~\molecrad < \pos \leq \gasconst\molecrad\\
                     ~~0 ~~ \pos > \gasconst\molecrad\\
                 \end{cases}$
                 
-      	\item Parameters: $\molecrad, \dielec, \gasconst$
+      		\item Parameters: $\molecrad, \partpoten, \gasconst$
 
-	% 20160706MAC: epsilon is not '\dielec'. it is an energy parameter defined as "well depth" or "energy well depth" with units in [J]
+			% 20160706MAC: epsilon is not '\dielec'. it is an energy parameter defined as "well depth" or "energy well depth" with units in [J]
+            % 20161019BFF: epsilon is "particle potential energy" or '\partpoten'
         
-    \end{listtwo}
+    	\end{listtwo}
         
-    \item \text{Lennard-Jones}
+    	\item \text{Lennard-Jones}
     
-    \begin{listtwo}
+   		\begin{listtwo}
         
-    	\item $\pot(\pos) = 4\dielec\bigg[\bigg(\dfrac{\molecrad}{\pos}\bigg)^{12}-\bigg(\dfrac{\molecrad}{\pos}\bigg)^6\bigg] $
+    		\item $\pot(\pos) = 4\partpoten\bigg[\bigg(\dfrac{\molecrad}{\pos}\bigg)^{12}-\bigg(\dfrac{\molecrad}{\pos}\bigg)^6\bigg] $
     
-    	\item Parameters: $\molecrad, \dielec$
+    		\item Parameters: $\molecrad, \partpoten$
 
-	% 20160706MAC: epsilon is not '\dielec'. it is an energy parameter defined as "well depth" or "energy well depth" with units in [J]
+			% 20160706MAC: epsilon is not '\dielec'. it is an energy parameter defined as "well depth" or "energy well depth" with units in [J]
+            % 20161019BFF: epsilon is "particle potential energy" or '\partpoten'
     
-    \end{listtwo}
+    	\end{listtwo}
     
-    \item Kihara
+    	\item Kihara
     
-    \begin{listtwo}
+    	\begin{listtwo}
     
-    	\item $\pot(\pos) = 4\dielec\bigg[\bigg(\dfrac{\molecrad-2\activity}{\pos-2\activity}\bigg)^{12}-\bigg(\dfrac{\molecrad-2\activity}{\pos-2\activity}\bigg)^6\bigg] $
+    		\item $\pot(\pos) = 4\partpoten\bigg[\bigg(\dfrac{\molecrad-2\sphcorerad}{\pos-2\sphcorerad}\bigg)^{12}-\bigg(\dfrac{\molecrad-2\sphcorerad}{\pos-2\sphcorerad}\bigg)^6\bigg] $
     
-    	\item Parameters: $\molecrad, \dielec, \activity$
+    		\item Parameters: $\molecrad, \partpoten, \sphcorerad$
 
-	% 20160706MAC: epsilon is not '\dielec'. it is an energy parameter defined as "well depth" or "energy well depth" with units in [J]
+			% 20160706MAC: epsilon is not '\dielec'. it is an energy parameter defined as "well depth" or "energy well depth" with units in [J]
+            % 20161019BFF: epsilon is "particle potential energy" or '\partpoten'
         
-	% 20160706MAC: 'a' is not '\activity', it is defined as the "spherical core radius" unit should be in [m] (Tester, p.421, Fig.10.3b)
+			% 20160706MAC: 'a' is not '\activity', it is defined as the "spherical core radius" unit should be in [m] (Tester, p.421, Fig.10.3b) 
+    		% 20161019BFF: a is "Spherical core radius" or '\sphcorerad'
+    	\end{listtwo}
     
-    \end{listtwo}
+   		\item Sutherland $(\freq \mathrm{d}\work)$
     
-    \item Sutherland $(\freq \mathrm{d}\work)$
+    	\begin{listtwo}
     
-    \begin{listtwo}
-    
-    	\item $\pot(\pos)=\begin{cases}
+    		\item $\pot(\pos)=\begin{cases}
                     ~~~~\infty ~~~~~~~ \pos \leq \molecrad\\
-                    -\dielec\bigg(\dfrac{\molecrad}{\pos}\bigg)^6 ~~ \pos > \molecrad\\
+                    -\partpoten\bigg(\dfrac{\molecrad}{\pos}\bigg)^6 ~~ \pos > \molecrad\\
                 \end{cases}$
                 
-    	\item Parameters: $\molecrad, \dielec$
+    		\item Parameters: $\molecrad, \partpoten$
 	
-    % 20160706MAC: epsilon is not '\dielec'. it is an energy parameter defined as "well depth" or "energy well depth" with units in [J]
+    	% 20160706MAC: epsilon is not '\dielec'. it is an energy parameter defined as "well depth" or "energy well depth" with units in [J]
+        % 20161019BFF: epsilon is "particle potential energy" or '\partpoten'
     
-    \end{listtwo}
+    	\end{listtwo}
     
-\end{listone}
+	 \end{listone}
 
 \end{mitframe}

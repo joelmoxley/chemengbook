@@ -4,26 +4,27 @@
     
     \begin{listone}
     
-    \item $\configint = \exp\Bigg[-\dfrac{\Big\langle\pot(\uline{\pos}^{\nummoles})\Big\rangle}{2\boltz\Temp}\Bigg]^N\big[\uline{\vol}_{\fug}\big]^{\nummoles}$
+    	\item $\configint = \exp\Bigg[-\dfrac{\Big\langle\pot\big(\uline{\pos}^{\nummoles}\big)\Big\rangle}{2\boltz\Temp}\Bigg]^{\nummoles}\big[\uline{\freevol}\big]^{\nummoles}$
     
-    % 20160702MAC: 'k' is not '\thermcond' it should be replaced by the Boltzmann constant '\boltz' <resolved>
+    	% 20160702MAC: 'k' is not '\thermcond' it should be replaced by the Boltzmann constant '\boltz' <resolved>
     
-    % 20160702MAC: 'V_f' or '{\vol}_{\fug}' is defined as the "free volume" and not related to fugacity (Tester,p.428,Eq.10-138) this should be defined as specific quantity <>unresolved<>
+    	% 20160702MAC: 'V_f' or '{\vol}_{\fug}' is defined as the "free volume" and not related to fugacity (Tester,p.428,Eq.10-138) this should be defined as specific quantity <>unresolved<>
+        % 20161019BFF: '{\vol}_{\fug}' is changed to '\freevol' <resolved>
     
-    % 20160706MAC: '\uline{\pos}^{\nummoles}' or r^N can be separately indexed and defined as "Configuration space vector for N particles or molecules" (Tester, p.xvi)
+    	% 20160706MAC: '\uline{\pos}^{\nummoles}' or r^N can be separately indexed and defined as "Configuration space vector for N particles or molecules" (Tester, p.xvi) <>unresolved<>
     
     	\begin{listtwo}
     
-    	\item $\Big\langle\pot(\uline{\pos}^{\nummoles})\Big\rangle \dfrac{\nummoles\big\langle\dens\big\rangle}{2}\int\limits_{0}^{\infty}\potfunc\raddist4\pie\pos^2\mathrm{d}\pos $
+    		\item $\Big\langle\pot\big(\uline{\pos}^{\nummoles}\big)\Big\rangle \dfrac{\nummoles\big\langle\dens\big\rangle}{2}\int\limits_{0}^{\infty}\potfunc\raddist4\pie\pos^2\mathrm{d}\pos $
         
-	% 20160706MAC: 'r' can be more specifically defined as "Radial position coordinate" instead of just "position" (Tester, p.xvi)
+			% 20160706MAC: 'r' can be more specifically defined as "Radial position coordinate" instead of just "position" (Tester, p.xvi) <>unresolved<>
         
-			\begin{listthree}
+				\begin{listthree}
 
-    		\item $\raddist$ , radial distribution function 
-    		\item $\potfunc$ , potential function
+    				\item $\raddist$, radial distribution function 
+    				\item $\potfunc$, potential function
     	
-        	\end{listthree}
+        		\end{listthree}
     
     	\end{listtwo}
     
