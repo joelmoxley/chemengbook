@@ -2,26 +2,25 @@
 
     \mdfsubtitle{Isobaric/Isothermal (Box 2-5)}
     
-\begin{listone}
+	\begin{listone}
     
-    \item Constant: $\nummoles, \p, \Temp$
+    	\item Constant: $\nummoles, \p, \Temp$
 
-    \item Constraint Equations: $\sum\nolimits \molspecies{i} = \totmoles, \sum\nolimits \molspecies{i}\uline{\energy}_{i} = \uline{\energy}^{total},\sum\nolimits \molspecies{i}\uline{\vol}_{i} = \uline{\vol}^{total}  $     %'n_{i}' is an unknown symbol, changed to '\molspecies'
+   		\item Constraint Equations: $\mathlarger\sum\nolimits \molspecies{i} = \totmoles,~\mathlarger\sum\nolimits \molspecies{i}\uline{\energy}_{i} = \uline{\energy}^{total},~\mathlarger\sum\nolimits \molspecies{i}\uline{\vol}_{i} = \uline{\vol}^{total}  $     %'n_{i}' is an unknown symbol, changed to '\molspecies'
     
-    \item Partition Function:
+    	\item Partition Function:
     
-    \begin{listtwo}
+    	\begin{listtwo}
     
-    	\item $\iipf \equiv \sum\limits_{\uline{\vol}}\sum\limits_{\uline{\energy}_{i}} \cpf\exp(-\boltznorm\p\uline{\vol}) = \sum\limits_{\uline{\vol}}\sum\limits_{\uline{\energy}_{i}} \mpf(\uline{\energy}_{i})\exp(-\boltznorm\uline{\energy}_{i})\exp(-\boltznorm\p\uline{\vol}) $
+    		\item $\iipf \equiv \mathlarger\sum\limits_{\uline{\vol}}\mathlarger\sum\limits_{\uline{\energy}_{i}} \cpf\exp(-\boltznorm\p\uline{\vol}) = \mathlarger\sum\limits_{\uline{\vol}}\mathlarger\sum\limits_{\uline{\energy}_{i}} \mpf(\uline{\energy}_{i})\exp(-\boltznorm\uline{\energy}_{i})\exp(-\boltznorm\p\uline{\vol}) $
     
-    	\item $\iipf \equiv \sum\limits_{\uline{\vol}}\sum\limits_{i} \exp(-\boltznorm\uline{\energy}_{i})\exp(-\boltznorm\p\uline{\vol}) $
+    		\item $\iipf \equiv \mathlarger\sum\limits_{\uline{\vol}}\mathlarger\sum\limits_{i} \exp(-\boltznorm\uline{\energy}_{i})\exp(-\boltznorm\p\uline{\vol}) $
     
-    \end{listtwo}
+    	\end{listtwo}
         
-    \item Natural Function: $\uline{\gibbs} = -\boltz\Temp\ln\iipf$
+    	\item Natural Function: $\uline{\gibbs} = -\boltz\Temp\ln\iipf$    
+    	% 20160630MAC: 'k' is not '\thermcond' it should be replaced by the Boltzmann constant '\boltz' <resolved>
     
-    % 20160630MAC: 'k' is not '\thermcond' it should be replaced by the Boltzmann constant '\boltz' <resolved>
-    
-\end{listone}
+	\end{listone}
     
 \end{mitframe}
